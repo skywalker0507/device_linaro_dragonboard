@@ -33,6 +33,13 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
+# Set BT address
+PRODUCT_PACKAGES += bdaddr
+
+# Install bdaddr script
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/shared/utils/bdaddr/set_bdaddr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_bdaddr.sh
+
 # Install scripts to set vendor.* properties
 PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/shared/utils/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh \
