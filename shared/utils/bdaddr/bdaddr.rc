@@ -1,0 +1,8 @@
+service set_bdaddr /vendor/bin/set_bdaddr.sh
+    class core
+    user root
+    group system
+    capabilities NET_ADMIN
+
+on post-fs
+    start set_bdaddr
