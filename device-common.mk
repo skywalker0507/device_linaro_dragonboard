@@ -33,6 +33,11 @@ PRODUCT_BUILD_SUPER_PARTITION := true
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_USE_DYNAMIC_PARTITION_SIZE :=true
 
+# HACK: Avoid usb crash
+PRODUCT_PRODUCT_PROPERTIES := \
+    persist.adb.nonblocking_ffs=0 \
+    ro.adb.nonblocking_ffs=0
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
