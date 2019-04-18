@@ -101,3 +101,10 @@ PRODUCT_PACKAGES +=	\
 # Necessary to bundle license with firmware files
 PRODUCT_PACKAGES +=	\
     LICENSE.qcom.txt
+
+# Bluetooth
+# Firmware files (qca/cr*) copied from
+# https://git.kernel.org/pub/scm/linux/kernel/git/firmware/linux-firmware.git/tree/qca
+PRODUCT_PACKAGES +=	\
+    crbtfw21.tlv	\
+    crnv21.bin
