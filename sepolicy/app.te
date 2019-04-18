@@ -1,0 +1,4 @@
+# Few system/untrusted_app_xx apps eg. deskclock,
+# gallery3d et al. need access to graphics_device
+# as well, otherwise they don't open.
+gpu_access(appdomain -isolated_app)
