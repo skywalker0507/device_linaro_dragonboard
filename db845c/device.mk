@@ -40,3 +40,6 @@ PRODUCT_COPY_FILES := \
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.db845c
+
+# Copy firmware files
+$(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
