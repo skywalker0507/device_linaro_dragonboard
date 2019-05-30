@@ -1,0 +1,20 @@
+These instructions will help you flashing the prebuilt bootloader
+and AOSP images(built from sources) on db845c.
+
+To flash the bootloader using qdl tool and AOSP images, we start
+with booting into recovery mode. Connect power while holding the
+"USB" button (next to volume buttons and on top of USB-A ports),
+then connect USB-C cable to boot into recovery.
+
+Run the flash-all-aosp.sh script on your Host device to flash
+bootloader and AOSP images using fastboot. It assumes that we
+have already build db845c AOSP images locally, or are flashing
+factory images.
+
+$ ./flash-all-aosp.sh
+
+Troubleshooting -->
+Wait for qdl to tell you that it succeeded, otherwise try one more
+time... Disconnect power and USB cable. On successful flashing, it
+should get you to fastboot prompt on db845c and bootloader splash
+screen on the HDMI output.
