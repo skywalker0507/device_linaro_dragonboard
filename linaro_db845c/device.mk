@@ -40,3 +40,10 @@ PRODUCT_COPY_FILES := \
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.linaro_db845c
+
+# Software Gatekeeper
+#
+PRODUCT_PACKAGES += \
+    gatekeeper.linaro_db845c \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service

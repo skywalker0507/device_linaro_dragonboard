@@ -41,3 +41,10 @@ PRODUCT_COPY_FILES := \
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.linaro_blueline
+
+# Software Gatekeeper
+#
+PRODUCT_PACKAGES += \
+    gatekeeper.linaro_blueline \
+    android.hardware.gatekeeper@1.0-impl \
+    android.hardware.gatekeeper@1.0-service
