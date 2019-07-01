@@ -1,6 +1,9 @@
-#!/bin/sh
+#!/bin/bash
 
 INSTALLER_DIR="`dirname ${0}`"
+
+QDL="`readlink -f ${INSTALLER_DIR}/qdl`"
+FIRMWARE_DIR="dragonboard-845c-bootloader-ufs-aosp-11"
 
 # for cases that don't run "lunch linaro_db845c-userdebug"
 if [ -z "${ANDROID_BUILD_TOP}" ]; then
@@ -17,12 +20,13 @@ echo "android out dir:${ANDROID_PRODUCT_OUT}"
 
 # TODO: Pull one-time recovery/qdl path out of standard install
 # Flash bootloader firmware files
-if [ ! -d "${INSTALLER_DIR}/firmware-binaries/" ]; then
+if [ ! -d "${INSTALLER_DIR}/${FIRMWARE_DIR}/" ]; then
     echo "No firmware directory? Make sure binaries have been provided"
     exit
 fi
-pushd "${INSTALLER_DIR}"/firmware-binaries/
-sudo "${INSTALLER_DIR}"/qdl prog_firehose_ddr.elf rawprogram[012345].xml patch[012345].xml
+
+pushd "${INSTALLER_DIR}/${FIRMWARE_DIR}"
+sudo "${QDL}" prog_firehose_ddr.elf rawprogram[012345].xml patch[012345].xml
 popd
 
 # Flash AOSP images
@@ -42,3 +46,4 @@ fastboot flash userdata "${ANDROID_PRODUCT_OUT}"/userdata.img
 # so set the active slot again just in case..
 fastboot set_active a
 fastboot flash boot "${ANDROID_PRODUCT_OUT}"/boot.img
+fastboot reboot
