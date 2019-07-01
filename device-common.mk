@@ -156,6 +156,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
+# mkbootimg host tool to build boot.img separately
+PRODUCT_HOST_PACKAGES := \
+    mkbootimg
+
 # Copy standard platform config files
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
