@@ -147,6 +147,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
+# mkbootimg host tool to build boot.img separately
+PRODUCT_HOST_PACKAGES := \
+    mkbootimg
+
 # Copy standard platform config files
 PRODUCT_COPY_FILES +=  \
     device/linaro/hikey/etc/permissions/android.hardware.screen.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.screen.xml \
