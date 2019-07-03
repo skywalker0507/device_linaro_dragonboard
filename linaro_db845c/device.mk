@@ -32,7 +32,7 @@ $(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048
 PRODUCT_COPY_FILES := \
     device/linaro/dragonboard-kernel/$(TARGET_PREBUILT_KERNEL):kernel \
     $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.linaro_db845c \
-    $(LOCAL_PATH)/fstab.linaro_db845c:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.linaro_db845c \
+    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.linaro_db845c \
     device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.linaro_db845c.rc \
     device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.linaro_db845c.usb.rc \
     device/linaro/dragonboard/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.linaro_db845c.rc \

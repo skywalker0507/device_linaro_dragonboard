@@ -31,7 +31,6 @@ $(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048
 
 PRODUCT_COPY_FILES := \
     device/linaro/dragonboard-kernel/$(TARGET_PREBUILT_KERNEL):kernel \
-    $(LOCAL_PATH)/fstab.linaro_blueline:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.linaro_blueline \
     $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.linaro_blueline \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.linaro_blueline \
     device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.linaro_blueline.rc \
