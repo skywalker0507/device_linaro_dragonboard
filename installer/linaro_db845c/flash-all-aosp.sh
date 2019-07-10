@@ -25,25 +25,35 @@ if [ ! -d "${INSTALLER_DIR}/${FIRMWARE_DIR}/" ]; then
     exit
 fi
 
-pushd "${INSTALLER_DIR}/${FIRMWARE_DIR}"
+pushd "${INSTALLER_DIR}/${FIRMWARE_DIR}" > /dev/null
 sudo "${QDL}" prog_firehose_ddr.elf rawprogram[012345].xml patch[012345].xml
-popd
+popd > /dev/null
 
-# Flash AOSP images
-# Timeout (atleast 10sec) to let db845c reboot in fastboot mode
-sleep 15
+# Flash AOSP images if rebooted into fastboot mode
+echo "   **********   Flash AOSP images."
+# Timeout (atleast 20sec) to let db845c reboot in fastboot mode
+echo "FLASH-ALL-AOSP: Sleep 20sec to let db845c reboot in fastboot mode post QDL flashing"
+sleep 20
+
+FASTBOOT_DEVICE=$(fastboot devices | grep fastboot)
+if [[ -z ${FASTBOOT_DEVICE} ]]; then
+    echo "FLASH-ALL-AOSP: db845c has not rebooted into fastboot mode."
+    echo "   **********   Abort flashing of AOSP images."
+    exit
+fi
 
 # Set HDMI monitor output
+echo "FLASH-ALL-AOSP: Set HDMI monitor output"
 fastboot oem select-display-panel foobar
 fastboot reboot bootloader
 
 # Slot _a is already marked as active by bootloader but just in case..
+echo "FLASH-ALL-AOSP: Mark _a slot as active"
 fastboot set_active a
-fastboot flash system_a "${ANDROID_PRODUCT_OUT}"/super.img
+echo "FLASH-ALL-AOSP: Flash super/dynamic image"
+fastboot flash super "${ANDROID_PRODUCT_OUT}"/super.img
+echo "FLASH-ALL-AOSP: Flash userdata image"
 fastboot flash userdata "${ANDROID_PRODUCT_OUT}"/userdata.img
-# Mostly redundant but we run into following flashing error at times
-# FAILED (remote: 'Failed to load/authenticate boot image: Load Error')
-# so set the active slot again just in case..
-fastboot set_active a
+echo "FLASH-ALL-AOSP: Flash boot image"
 fastboot flash boot "${ANDROID_PRODUCT_OUT}"/boot.img
 fastboot reboot
