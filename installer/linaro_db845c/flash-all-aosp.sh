@@ -2,7 +2,7 @@
 
 INSTALLER_DIR="`dirname ${0}`"
 
-FIRMWARE_DIR="dragonboard-845c-bootloader-ufs-aosp-14"
+FIRMWARE_DIR="dragonboard-845c-bootloader-ufs-aosp-20"
 
 # for cases that don't run "lunch linaro_db845c-userdebug"
 if [ -z "${ANDROID_BUILD_TOP}" ]; then
