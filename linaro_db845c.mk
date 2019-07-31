@@ -1,4 +1,4 @@
-TARGET_PREBUILT_KERNEL ?= Image.gz-dtb-db845c-5.1
+TARGET_PREBUILT_KERNEL ?= Image.gz-dtb-db845c
 
 # Inherit the full_base and device configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
