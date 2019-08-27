@@ -2,7 +2,7 @@ These instructions will help you flashing the prebuilt bootloader
 and AOSP images(built from sources) on db845c.
 
 First, you wil need to have first built AOSP for the
-linaro_db845c lunch target.
+db845c lunch target.
 
 
 Boot the board into fastboot mode:
@@ -36,7 +36,7 @@ Flash the board:
 ----------------
 Once the board is in fastboot mode, you can then flash it by
 running the following from the
-device/linaro/dragonboard/installer/linaro_db845c/ directory:
+device/linaro/dragonboard/installer/db845c/ directory:
 
   $ ./flash-all-aosp.sh
 
@@ -67,7 +67,7 @@ button. Then re-connect USB-C cable. There will be no HDMI
 display output in recovery mode, and initially no serial output.
 
 Then run the recovery script from the
-device/linaro/dragonboard/installer/linaro_db845c/ directory:
+device/linaro/dragonboard/installer/db845c/ directory:
 
   $ ./recovery.sh
 

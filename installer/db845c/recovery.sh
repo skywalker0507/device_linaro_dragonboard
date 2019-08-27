@@ -5,10 +5,10 @@ INSTALLER_DIR="`dirname ${0}`"
 QDL="`readlink -f ${INSTALLER_DIR}/qdl`"
 FIRMWARE_DIR="dragonboard-845c-bootloader-ufs-aosp-20"
 
-# for cases that don't run "lunch linaro_db845c-userdebug"
+# for cases that don't run "lunch db845c-userdebug"
 if [ -z "${ANDROID_BUILD_TOP}" ]; then
     ANDROID_BUILD_TOP=${INSTALLER_DIR}/../../../../../
-    ANDROID_PRODUCT_OUT="${ANDROID_BUILD_TOP}/out/target/product/linaro_db845c"
+    ANDROID_PRODUCT_OUT="${ANDROID_BUILD_TOP}/out/target/product/db845c"
 fi
 
 if [ ! -d "${ANDROID_PRODUCT_OUT}" ]; then

@@ -30,13 +30,16 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 $(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.linaro_blueline \
-    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.linaro_blueline \
-    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.linaro_blueline \
-    device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.linaro_blueline.rc \
-    device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.linaro_blueline.usb.rc \
+    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.db845c \
+    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
+    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.db845c \
+    device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.db845c.rc \
+    device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.db845c.usb.rc \
     device/linaro/dragonboard/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
-    device/linaro/dragonboard/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/linaro_blueline.kl
+    device/linaro/dragonboard/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/db845c.kl
 
 # Build generic Audio HAL
-PRODUCT_PACKAGES := audio.primary.linaro_blueline
+PRODUCT_PACKAGES := audio.primary.db845c
+
+# Copy firmware files
+$(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)

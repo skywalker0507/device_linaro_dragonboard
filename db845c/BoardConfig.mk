@@ -1,13 +1,13 @@
 include device/linaro/dragonboard/BoardConfigCommon.mk
 
 # Board Information
-TARGET_BOOTLOADER_BOARD_NAME := linaro_db845c
-TARGET_BOARD_PLATFORM := linaro_db845c
+TARGET_BOOTLOADER_BOARD_NAME := db845c
+TARGET_BOARD_PLATFORM := db845c
 
 # Bootloader/Kernel Configuration
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-BOARD_KERNEL_CMDLINE := firmware_class.path=/vendor/firmware/ androidboot.hardware=linaro_db845c
+BOARD_KERNEL_CMDLINE := firmware_class.path=/vendor/firmware/ androidboot.hardware=db845c
 BOARD_KERNEL_CMDLINE += init=/init androidboot.boot_devices=soc/1d84000.ufshc printk.devkmsg=on
 
 # Image Configuration

@@ -10,9 +10,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/linaro_db845c.mk \
-    $(LOCAL_DIR)/linaro_blueline.mk
+    $(LOCAL_DIR)/db845c.mk \
+    $(LOCAL_DIR)/pixel3_mainline.mk
 
 COMMON_LUNCH_CHOICES := \
-    linaro_db845c-userdebug \
-    linaro_blueline-userdebug
+    db845c-userdebug \
+    pixel3_mainline-userdebug

@@ -30,13 +30,13 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 $(call inherit-product-if-exists, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.linaro_db845c \
-    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.linaro_db845c \
-    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.linaro_db845c \
-    device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.linaro_db845c.rc \
-    device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.linaro_db845c.usb.rc \
+    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_RAMDISK)/fstab.pixel3_mainline \
+    $(LOCAL_PATH)/fstab.ramdisk:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.pixel3_mainline \
+    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.pixel3_mainline \
+    device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pixel3_mainline.rc \
+    device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pixel3_mainline.usb.rc \
     device/linaro/dragonboard/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
-    device/linaro/dragonboard/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/linaro_db845c.kl
+    device/linaro/dragonboard/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/pixel3_mainline.kl
 
 # Build generic Audio HAL
-PRODUCT_PACKAGES := audio.primary.linaro_db845c
+PRODUCT_PACKAGES := audio.primary.pixel3_mainline
