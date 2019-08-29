@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c9f1f0cb_d5086a99",
+        "filename": "db845c/firmware/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2019-08-29T22:46:12Z",
+      "side": 1,
+      "message": "So the issue seems to be that you moved Android.mk from firmware/ to db845c/firmware/ but there is no Android.mk in db845c to pull the moved Android.mk into the build.",
+      "revId": "9d911926eb4bedeab0f4dc7f024d2f58621f91ea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
