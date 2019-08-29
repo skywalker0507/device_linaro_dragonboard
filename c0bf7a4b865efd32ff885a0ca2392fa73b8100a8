@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8ccc91b7_67f54666",
+        "filename": "installer/db845c/flash-all-aosp.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2019-08-29T17:05:56Z",
+      "side": 1,
+      "message": "Can we make sure this gets documented in the wiki text?",
+      "revId": "c0bf7a4b865efd32ff885a0ca2392fa73b8100a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
