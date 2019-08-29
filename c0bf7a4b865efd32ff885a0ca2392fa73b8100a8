@@ -16,6 +16,29 @@
       "revId": "c0bf7a4b865efd32ff885a0ca2392fa73b8100a8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "187ef67b_7ab5c3df",
+        "filename": "installer/db845c/flash-all-aosp.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2019-08-29T18:40:48Z",
+      "side": 1,
+      "message": "Is this right? I get:\nFLASH-ALL-AOSP: Building boot image with user provided ../../../dragonboard-kernel/Image.gz-dtb-db845c kernel image\n./flash-all-aosp.sh: line 49: ./../../../../..//out/host/linux-x86/bin/mkbootimg: No such file or directory\nFLASH-ALL-AOSP: Flash boot image\nfastboot: error: cannot load \u0027./../../../../..//out/target/product/db845c/boot.img\u0027: No such file or directory",
+      "range": {
+        "startLine": 49,
+        "startChar": 28,
+        "endLine": 49,
+        "endChar": 37
+      },
+      "revId": "c0bf7a4b865efd32ff885a0ca2392fa73b8100a8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
