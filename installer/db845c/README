@@ -17,12 +17,16 @@ follows.
 
 To manually enter fastboot mode:
 --------------------------------
-To manually boot the board into fastboot mode, disconnect the
-power *and* USB-C cable. Flip the board over, and while holding
-down the "VOL-" button plug in the power cable. Continue holding
-down the "VOL-" button and tap the "ON/OFF" button. The board
-should then boot to fastboot mode. Be sure to then re-connect
-the USB-C cable so that you can flash the board.
+* To manually boot the board into fastboot mode, press DOWN arrow
+  key over serial UART console when restarting the board.
+
+                         OR
+
+* Disconnect the power *and* USB-C cable. Flip the board over, and
+  while holding down the "VOL-" button plug in the power cable.
+  Continue holding down the "VOL-" button and tap the "ON/OFF"
+  button. The board should then boot to fastboot mode. Be sure to
+  then re-connect the USB-C cable so that you can flash the board.
 
 If HDMI is plugged in, you should see a text based
 "FastBoot Mode" prompt on your screen. Or you can check by running
@@ -38,11 +42,12 @@ Once the board is in fastboot mode, you can then flash it by
 running the following from the
 device/linaro/dragonboard/installer/db845c/ directory:
 
-  $ ./flash-all-aosp.sh
+  $ ./flash-all-aosp.sh <optional_kernel_binary>
 
 
-This will flash the bootloader binaries, and AOSP images and
-reboot the board into AOSP.
+This will flash the bootloader binaries, AOSP images (userdata.img
+and super.img), and will also generate and flash boot.img if kernel
+binary (in Image.gz-dtb format) is passed to the script.
 
 
 Troubleshooting:
