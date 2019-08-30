@@ -1,0 +1,61 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8c5a140c_29f6f795",
+        "filename": "linaro_blueline/BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-08-30T15:42:02Z",
+      "side": 1,
+      "message": "Why do we need this on pixel 3? Don\u0027t we have native a/b support in the bootloader?",
+      "range": {
+        "startLine": 14,
+        "startChar": 24,
+        "endLine": 14,
+        "endChar": 60
+      },
+      "revId": "e47623940c33e201966966ea7b97ab715d682c9e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "947fe9af_6931b3c9",
+        "filename": "linaro_blueline/BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-08-30T15:42:02Z",
+      "side": 1,
+      "message": "Nit. Remove space.",
+      "revId": "e47623940c33e201966966ea7b97ab715d682c9e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ca1829ec_dec9f94c",
+        "filename": "linaro_blueline/fstab.ramdisk",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-08-30T15:42:02Z",
+      "side": 1,
+      "message": "Can you check blueline and see if system_ext / metadata have been added and copy here?",
+      "revId": "e47623940c33e201966966ea7b97ab715d682c9e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
