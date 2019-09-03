@@ -22,6 +22,30 @@
       "revId": "7cb8ea2468e6767faceb0bf1f9ad84f5cf50905d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "07a15950_0a693e10",
+        "filename": "pixel3_mainline/fstab.ramdisk",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:51:32Z",
+      "side": 1,
+      "message": "You can mark it \"formattable\" and this mount failure will be non-fatal, then it\u0027ll get formatted and mounted on first boot. Subsequently it\u0027ll be mounted by first stage init.",
+      "parentUuid": "e0c11149_e1b25357",
+      "range": {
+        "startLine": 4,
+        "startChar": 14,
+        "endLine": 4,
+        "endChar": 15
+      },
+      "revId": "7cb8ea2468e6767faceb0bf1f9ad84f5cf50905d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
