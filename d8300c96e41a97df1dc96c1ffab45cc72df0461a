@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "944b9158_79e5a43f",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "7ece9358_44a84c7d",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 39
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "f2e15a06_87935455",
         "filename": "device-common.mk",
         "patchSetId": 1
@@ -36,6 +60,30 @@
       "writtenOn": "2019-08-30T15:40:22Z",
       "side": 1,
       "message": "why so low?",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 32
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "029be59c_d0490b79",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "ACK. It was fixed in later commits. I\u0027ll fold that change into this.",
+      "parentUuid": "f2e15a06_87935455",
       "range": {
         "startLine": 23,
         "startChar": 0,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "69b3eec7_6e50a1c8",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "Interesting.. I remember picking up this config variable from one of the treble compliant device. Also I see PRODUCT_FULL_TREBLE :\u003d $(PRODUCT_FULL_TREBLE_OVERRIDE) in build/make/core/config.mk. Which I believed, is taking care of full treble compliance. Let me know if it is not true.",
+      "parentUuid": "63c55426_209c9670",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 36
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "64756f00_95afb6ac",
         "filename": "device-common.mk",
         "patchSetId": 1
@@ -88,6 +160,24 @@
     },
     {
       "key": {
+        "uuid": "0fc815e8_1022476a",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "64756f00_95afb6ac",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9ccb42d6_2f436fb0",
         "filename": "init.common.rc",
         "patchSetId": 1
@@ -99,6 +189,24 @@
       "writtenOn": "2019-08-30T15:40:22Z",
       "side": 1,
       "message": "Better to do this with a healthd HAL no?",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f8365d7f_40d707f3",
+        "filename": "init.common.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "ACK. I have not looked into healthd HAL before though. I\u0027ll remove these battery props and fix it in later commits?",
+      "parentUuid": "9ccb42d6_2f436fb0",
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
@@ -122,6 +230,24 @@
     },
     {
       "key": {
+        "uuid": "4dd3032d_aba0f226",
+        "filename": "init.common.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "ACK.",
+      "parentUuid": "4d7f2915_0e65ffd0",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bc94a6cd_204eea3c",
         "filename": "libmemtrack/memtrack_dragonboard.c",
         "patchSetId": 1
@@ -139,6 +265,24 @@
     },
     {
       "key": {
+        "uuid": "390b1c85_4945c016",
+        "filename": "libmemtrack/memtrack_dragonboard.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "Copy-paste error. Fixing it in next patchset.",
+      "parentUuid": "bc94a6cd_204eea3c",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "20d6d43c_7d238c5d",
         "filename": "linaro_db845c.mk",
         "patchSetId": 1
@@ -150,6 +294,30 @@
       "writtenOn": "2019-08-30T15:40:22Z",
       "side": 1,
       "message": "Image.gz-dtb is deprecated. Do we have a path to fix depending on these old patches before we submit?",
+      "range": {
+        "startLine": 1,
+        "startChar": 26,
+        "endLine": 1,
+        "endChar": 38
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f0710d5d_0a0efaa2",
+        "filename": "linaro_db845c.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "ACK. It was fixed in later commits. I\u0027ll fold that change into this.",
+      "parentUuid": "20d6d43c_7d238c5d",
       "range": {
         "startLine": 1,
         "startChar": 26,
@@ -185,6 +353,30 @@
     },
     {
       "key": {
+        "uuid": "cc6c2144_8804d20e",
+        "filename": "linaro_db845c/BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "ACK. It was fixed in later commits. I\u0027ll fold that change into this patchset.",
+      "parentUuid": "96e650c7_4f6d4942",
+      "range": {
+        "startLine": 12,
+        "startChar": 24,
+        "endLine": 12,
+        "endChar": 60
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "8d507298_663ac80b",
         "filename": "linaro_db845c/fstab.ramdisk",
         "patchSetId": 1
@@ -196,6 +388,24 @@
       "writtenOn": "2019-08-30T15:40:22Z",
       "side": 1,
       "message": "Can you build and add /system_ext too?\n\nCan you add /metadata too?",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5c5896a8_7e52626b",
+        "filename": "linaro_db845c/fstab.ramdisk",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T18:38:38Z",
+      "side": 1,
+      "message": "Added and built system_ext image as part of logical partition and it booted fine.\n\nmetadata need to be a separate partition it seem though. I\u0027ll fix it in later commits. Any clue how much the partition size should i reserve for this?",
+      "parentUuid": "8d507298_663ac80b",
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
