@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "66b0f2cd_1f0e471c",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:52:39Z",
+      "side": 1,
+      "message": "Setting the OVERRIDE is bad - PRODUCT_FULL_TREBLE is enough for treble.",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 36
+      },
+      "revId": "b636459bb9c43df2ccb0bd0138c511182f731a9d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
