@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "e0c11149_e1b25357",
+        "filename": "pixel3_mainline/fstab.ramdisk",
+        "patchSetId": 3
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-03T20:37:30Z",
+      "side": 1,
+      "message": "Could not mount /metadata. May be I\u0027m missing info on how to use it. I\u0027ll look around. I see:\n\n[    3.830338] init: [libfs_mgr]Invalid ext4 superblock on \u0027/dev/block/by-name/metadata\u0027\n[    3.838651] EXT4-fs (sda20): VFS: Can\u0027t find ext4 filesystem\n[    3.844693] init: [libfs_mgr]__mount(source\u003d/dev/block/by-name/metadata,target\u003d/metadata,type\u003dext4)\u003d-1: Invalid argument",
+      "range": {
+        "startLine": 4,
+        "startChar": 14,
+        "endLine": 4,
+        "endChar": 15
+      },
+      "revId": "7cb8ea2468e6767faceb0bf1f9ad84f5cf50905d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
