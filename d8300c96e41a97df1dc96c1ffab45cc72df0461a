@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "8a8e0333_a15fe508",
+        "filename": "BoardConfigCommon.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:58:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "944b9158_79e5a43f",
+      "range": {
+        "startLine": 35,
+        "startChar": 0,
+        "endLine": 35,
+        "endChar": 39
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f2e15a06_87935455",
         "filename": "device-common.mk",
         "patchSetId": 1
@@ -96,6 +120,30 @@
     },
     {
       "key": {
+        "uuid": "d0ef164e_2127d9d7",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:58:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "029be59c_d0490b79",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 32
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "63c55426_209c9670",
         "filename": "device-common.mk",
         "patchSetId": 1
@@ -140,6 +188,30 @@
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "43b31ba9_b0fbeb78",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:58:19Z",
+      "side": 1,
+      "message": "Updated with a comment on v2.",
+      "parentUuid": "69b3eec7_6e50a1c8",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 36
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -213,6 +285,24 @@
     },
     {
       "key": {
+        "uuid": "29e74e7c_d1aa0189",
+        "filename": "init.common.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:58:19Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "f8365d7f_40d707f3",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4d7f2915_0e65ffd0",
         "filename": "init.common.rc",
         "patchSetId": 1
@@ -283,6 +373,24 @@
     },
     {
       "key": {
+        "uuid": "36747c01_160cb085",
+        "filename": "libmemtrack/memtrack_dragonboard.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:58:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "390b1c85_4945c016",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "20d6d43c_7d238c5d",
         "filename": "linaro_db845c.mk",
         "patchSetId": 1
@@ -327,6 +435,30 @@
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a553e0d5_a076cae6",
+        "filename": "linaro_db845c.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:58:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f0710d5d_0a0efaa2",
+      "range": {
+        "startLine": 1,
+        "startChar": 26,
+        "endLine": 1,
+        "endChar": 38
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -406,6 +538,24 @@
       "side": 1,
       "message": "Added and built system_ext image as part of logical partition and it booted fine.\n\nmetadata need to be a separate partition it seem though. I\u0027ll fix it in later commits. Any clue how much the partition size should i reserve for this?",
       "parentUuid": "8d507298_663ac80b",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b4d3a436_3ffc5bb6",
+        "filename": "linaro_db845c/fstab.ramdisk",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-03T21:58:19Z",
+      "side": 1,
+      "message": "I believe it can be small, 32 or 64 mb, whatever matches the other small partitions you have.",
+      "parentUuid": "5c5896a8_7e52626b",
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
