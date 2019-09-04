@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "006e084d_12c282b2",
+        "filename": "device-common.mk",
+        "patchSetId": 4
+      },
+      "lineNbr": 153,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-04T13:57:40Z",
+      "side": 1,
+      "message": "Alistair, our bootloader/aosp flashing script provides an option to build and flash boot.img if we pass Image.gz-dtb as argument. It depends on mkbootimg host binary, which got dropped from default PRODUCT_HOST_PACKAGES list lately. Is it reasonable to add it here?",
+      "revId": "56e3b9c038c1dcb13a82320fc1fb11c54d73c5a3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
