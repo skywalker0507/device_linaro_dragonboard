@@ -22,6 +22,30 @@
       "revId": "b636459bb9c43df2ccb0bd0138c511182f731a9d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "63c8119a_dad4158c",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-05T19:55:25Z",
+      "side": 1,
+      "message": "argh.. i forgot to took care of this config in this new patchset.",
+      "parentUuid": "66b0f2cd_1f0e471c",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 36
+      },
+      "revId": "b636459bb9c43df2ccb0bd0138c511182f731a9d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
