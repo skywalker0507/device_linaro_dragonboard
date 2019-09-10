@@ -215,6 +215,30 @@
     },
     {
       "key": {
+        "uuid": "1a75b533_85eed9e0",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "Fixed in v4",
+      "parentUuid": "43b31ba9_b0fbeb78",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 26,
+        "endChar": 36
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "64756f00_95afb6ac",
         "filename": "device-common.mk",
         "patchSetId": 1
@@ -244,6 +268,24 @@
       "side": 1,
       "message": "Ack",
       "parentUuid": "64756f00_95afb6ac",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "234e7ea4_b9172417",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0fc815e8_1022476a",
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
@@ -335,6 +377,24 @@
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "de0e80ca_3b6b0a50",
+        "filename": "init.common.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4dd3032d_aba0f226",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -509,6 +569,30 @@
     },
     {
       "key": {
+        "uuid": "dd711a2f_0871407c",
+        "filename": "linaro_db845c/BoardConfig.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "cc6c2144_8804d20e",
+      "range": {
+        "startLine": 12,
+        "startChar": 24,
+        "endLine": 12,
+        "endChar": 60
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8d507298_663ac80b",
         "filename": "linaro_db845c/fstab.ramdisk",
         "patchSetId": 1
@@ -562,6 +646,24 @@
     },
     {
       "key": {
+        "uuid": "012ba3fd_a3a1b9fd",
+        "filename": "linaro_db845c/fstab.ramdisk",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "fixed in v4. created a 64mb /metadata partition. updated ptable binaries as well.",
+      "parentUuid": "b4d3a436_3ffc5bb6",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "32ee7120_c837e59b",
         "filename": "sepolicy/app.te",
         "patchSetId": 1
@@ -602,6 +704,24 @@
     },
     {
       "key": {
+        "uuid": "684c0031_141336b0",
+        "filename": "sepolicy/app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "Moved to gpu_device \u0026 graphics_device combo as used in cuttlefiush. This rule is no longer required. Dropped in v4",
+      "parentUuid": "f49cd2e9_0dee7ff7",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "39390b52_258533d4",
         "filename": "sepolicy/bootanim.te",
         "patchSetId": 1
@@ -636,6 +756,24 @@
     },
     {
       "key": {
+        "uuid": "abba1cb8_2edd459a",
+        "filename": "sepolicy/bootanim.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "fixed in v4",
+      "parentUuid": "3e26de90_0add2f3e",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4c039dcd_f2d14931",
         "filename": "sepolicy/file_contexts",
         "patchSetId": 1
@@ -650,6 +788,24 @@
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8709dbfb_14ab98eb",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4c039dcd_f2d14931",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -670,6 +826,24 @@
     },
     {
       "key": {
+        "uuid": "2412de96_a287b6de",
+        "filename": "sepolicy/healthd.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "fixed upstream. dropped in v4",
+      "parentUuid": "5c849945_bfa87861",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "db00e646_41506a5f",
         "filename": "sepolicy/init.te",
         "patchSetId": 1
@@ -684,6 +858,24 @@
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ab05bd9_17c1668c",
+        "filename": "sepolicy/init.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "fixed upstream. dropped in v4",
+      "parentUuid": "db00e646_41506a5f",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
@@ -704,6 +896,24 @@
     },
     {
       "key": {
+        "uuid": "a1bcf3d1_57e6ccd5",
+        "filename": "sepolicy/proc_net.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "can not reproduce this denial in aosp master anymore. dropped in v4",
+      "parentUuid": "96939628_20e099ea",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f5fa454c_1a385c0a",
         "filename": "sepolicy/system_server.te",
         "patchSetId": 1
@@ -721,6 +931,24 @@
     },
     {
       "key": {
+        "uuid": "1e025818_76d16ba7",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "can not reproduce this denial in aosp master anymore. dropped in v4",
+      "parentUuid": "f5fa454c_1a385c0a",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d4adfce9_8221db07",
         "filename": "sepolicy/webview_zygote.te",
         "patchSetId": 1
@@ -735,6 +963,24 @@
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d9337257_0331dca3",
+        "filename": "sepolicy/webview_zygote.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-10T15:50:08Z",
+      "side": 1,
+      "message": "can not reproduce this denial in aosp master anymore. dropped in v4",
+      "parentUuid": "d4adfce9_8221db07",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
