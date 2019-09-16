@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb544508_75231580",
+        "filename": "device-common.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-16T19:23:13Z",
+      "side": 1,
+      "message": "Can you use an overlay for this instead?",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 48
+      },
+      "revId": "1cfb15976377e1b45b5eef4ff48665dd377229f0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
