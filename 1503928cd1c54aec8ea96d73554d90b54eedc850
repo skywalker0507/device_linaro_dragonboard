@@ -22,6 +22,30 @@
       "revId": "1503928cd1c54aec8ea96d73554d90b54eedc850",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9ec921d8_12237f20",
+        "filename": "sepolicy/te_macros",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-16T18:34:22Z",
+      "side": 1,
+      "message": "Fixed in v7",
+      "parentUuid": "06d223c8_7228fbfe",
+      "range": {
+        "startLine": 3,
+        "startChar": 46,
+        "endLine": 3,
+        "endChar": 51
+      },
+      "revId": "1503928cd1c54aec8ea96d73554d90b54eedc850",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
