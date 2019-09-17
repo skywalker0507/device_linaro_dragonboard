@@ -22,6 +22,30 @@
       "revId": "1cfb15976377e1b45b5eef4ff48665dd377229f0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "99568692_5f12e0c1",
+        "filename": "device-common.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-17T13:26:18Z",
+      "side": 1,
+      "message": "config_showNavigationBar overlay is already set. And as you pointed out this property may be redundant. I picked it up from Hikey running a GSI image https://android-review.googlesource.com/c/754028. Will check back again if we ever run into this problem. Dropped for now.",
+      "parentUuid": "cb544508_75231580",
+      "range": {
+        "startLine": 52,
+        "startChar": 0,
+        "endLine": 53,
+        "endChar": 48
+      },
+      "revId": "1cfb15976377e1b45b5eef4ff48665dd377229f0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
