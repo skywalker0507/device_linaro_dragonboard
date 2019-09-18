@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "18509425_7393ff81",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2019-09-18T23:36:11Z",
+      "side": 1,
+      "message": "I\u0027m not sure exactly what is wrong here, but I\u0027m seeing application crashes on launch (clock is the easiest example) with crashes in render ui. Digging further it seems its due to the following sepolicy denial:\n\ntype\u003d1400 audit(1568849449.975:20): avc: denied { read } for comm\u003d\"RenderThread\" name\u003d\"dri\" dev\u003d\"tmpfs\" ino\u003d7674 scontext\u003du:r:untrusted_app_25:s0:c512,c768 tcontext\u003du:object_r:gpu_device:s0 tclass\u003ddir permissive\u003d0 app\u003dcom.android.deskclock\n\n\nAnd using setenforce permissive makes the crashes go away.\n\nI suspect some of the sepolicy cleanup done since the v3 of this patchset, something went missing here.",
+      "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
