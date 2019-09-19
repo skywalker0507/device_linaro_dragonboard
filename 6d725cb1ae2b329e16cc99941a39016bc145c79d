@@ -52,6 +52,24 @@
       "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "52856c20_8f71174e",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-19T14:59:30Z",
+      "side": 1,
+      "message": "I think selinux requires that paths have only one label, so I guess you need to tweak this to do both of my suggestions (label with \"graphics\" instead of \"gpu\", and adjust your new rules.)",
+      "parentUuid": "f106c8d9_b9d1ff5b",
+      "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
