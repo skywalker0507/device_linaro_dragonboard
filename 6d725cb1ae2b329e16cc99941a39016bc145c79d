@@ -16,6 +16,24 @@
       "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f85a8a06_e93db6b4",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-19T00:03:39Z",
+      "side": 1,
+      "message": "Looks like a lot of Android services are granted \"r_dir_perms\" or \"search\" perms to \"graphics_device:dir\"\n\nTry making /dev/dri \"graphics_device\", not \"gpu_device\" first.\n\nIf that doesn\u0027t work, try something like:\n\nallow { appdomain -isolated_app } gpu_device:dir r_dir_perms;\n\nIn your board sepolicy. If the second change fixes it, please move it to system/sepolicy/public/app.te and upload a new AOSP review with nnk@ copied for further discussion. Thanks!",
+      "parentUuid": "18509425_7393ff81",
+      "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
