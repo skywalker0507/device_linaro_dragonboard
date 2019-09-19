@@ -34,6 +34,24 @@
       "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f106c8d9_b9d1ff5b",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-19T13:53:26Z",
+      "side": 1,
+      "message": "\"/dev/dri        u:object_r:graphics_device:s0\" didn\u0027t work.\n\n\"allow { appdomain -isolated_app } gpu_device:dir r_dir_perms;\" is needed but it is not sufficient. I needed to give to access to gpu sysfs nodes too.\n\nSo following combo worked and no app is crashing now:\n\nallow { appdomain -isolated_app } gpu_device:dir r_dir_perms;\nallow { appdomain -isolated_app } sysfs_mdss:file { getattr open read };\nallow { appdomain -isolated_app } sysfs_mdss:dir search;\n\nI\u0027ll submit a patch for above gpu_device r_dir_perms rule to system/sepolicy/public/app.te.",
+      "parentUuid": "f85a8a06_e93db6b4",
+      "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
