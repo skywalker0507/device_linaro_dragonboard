@@ -124,6 +124,24 @@
       "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "aa95f379_cba0f15b",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-19T21:02:04Z",
+      "side": 1,
+      "message": "Yes, I think so. And if this isn\u0027t correct, hopefully the security team can give us some guidance.",
+      "parentUuid": "96243e99_357b0c0b",
+      "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
