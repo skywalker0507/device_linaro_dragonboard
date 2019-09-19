@@ -106,6 +106,24 @@
       "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "96243e99_357b0c0b",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 8
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-09-19T20:57:03Z",
+      "side": 1,
+      "message": "I think I begin to understand what you meant here.\n\nI found out that gpu_device label has more relaxed permissions and probably meant only for /dev/dri/renderD128 device. And I don\u0027t even need to touch that device node for db845c because public sepolicies are already taking care of that.\n\nAs you pointed out, I labeled /dev/dir directory to graphics_device. Which has relatively restricted access, similar to /dev/dri/card0 and worked around that in my new patchset.\n\nuntrusted_app_xx like other system apps/services need read-only access to gpu sysfs nodes and graphics device. So I updated gpu_access macro accordingly, which only set rules (read-only) on graphics_device now.\n\nI\u0027ll submit the corresponding change ie.\n        \"allow { appdomain -isolated_app } graphics_device:dir r_dir_perms;\"\nto system/sepolicy/public/app.te too. If all this make sense to you guys.",
+      "parentUuid": "b8ea7082_a38bd7d5",
+      "revId": "6d725cb1ae2b329e16cc99941a39016bc145c79d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
