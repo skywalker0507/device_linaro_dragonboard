@@ -687,6 +687,30 @@
     },
     {
       "key": {
+        "uuid": "60c40efa_51ef73ff",
+        "filename": "sepolicy/app.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-25T06:55:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "32ee7120_c837e59b",
+      "range": {
+        "startLine": 4,
+        "startChar": 0,
+        "endLine": 4,
+        "endChar": 41
+      },
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "f49cd2e9_0dee7ff7",
         "filename": "sepolicy/app.te",
         "patchSetId": 1
@@ -736,6 +760,24 @@
       "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9a69de0f_f9ddad00",
+        "filename": "sepolicy/bootanim.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2019-09-25T06:55:14Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "39390b52_258533d4",
+      "revId": "d8300c96e41a97df1dc96c1ffab45cc72df0461a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     },
     {
       "key": {
