@@ -10,7 +10,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/db845c.mk
+    $(LOCAL_DIR)/db845c.mk \
+    $(LOCAL_DIR)/pixel3_mainline.mk
 
 COMMON_LUNCH_CHOICES := \
-    db845c-userdebug
+    db845c-userdebug \
+    pixel3_mainline-userdebug
