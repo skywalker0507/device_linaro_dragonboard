@@ -156,6 +156,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health@2.0-service \
+    android.hardware.health@2.0-impl
+
 # mkbootimg host tool to build boot.img separately
 PRODUCT_HOST_PACKAGES := \
     mkbootimg
