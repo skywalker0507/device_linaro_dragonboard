@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fc8d16af_3bf6bdfa",
+        "filename": "sepolicy/hal_health_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2019-11-05T15:15:54Z",
+      "side": 1,
+      "message": "Direct access to sysfs is a bad idea. We need to specifically point to sysfs nodes we need access to, like we do for display(mdss). Boot with selinux in permissive mode and dmesg will point to the exact sysfs path healthd/batterystats is trying to get access to. We then name that sysfs path/file as a separate label (sysfs_xyz) and use that instead.",
+      "revId": "37f08bebe8aeb46006c07d01bbda6ca304e46039",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
