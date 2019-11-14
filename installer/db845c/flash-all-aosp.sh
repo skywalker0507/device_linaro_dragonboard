@@ -52,7 +52,7 @@ if [ "$1" != "" ]; then
     fi
 
     echo "FLASH-ALL-AOSP: Building boot image with user provided ${1} kernel image"
-    ${ANDROID_OUT_HOST_BIN}/mkbootimg --kernel ${1} --ramdisk ${ANDROID_PRODUCT_OUT}/ramdisk.img --base 0x80000000 --pagesize 2048 --cmdline "firmware_class.path=/vendor/firmware/ androidboot.hardware=db845c init=/init androidboot.boot_devices=soc/1d84000.ufshc printk.devkmsg=on buildvariant=userdebug" --output ${ANDROID_PRODUCT_OUT}/boot.img
+    ${ANDROID_OUT_HOST_BIN}/mkbootimg --kernel ${1} --ramdisk ${ANDROID_PRODUCT_OUT}/ramdisk.img --base 0x80000000 --pagesize 2048 --cmdline "firmware_class.path=/vendor/firmware/ androidboot.hardware=db845c androidboot.selinux=permissive init=/init androidboot.boot_devices=soc/1d84000.ufshc printk.devkmsg=on buildvariant=userdebug" --output ${ANDROID_PRODUCT_OUT}/boot.img
 
     echo "FLASH-ALL-AOSP: Flash boot image"
     fastboot flash boot ${ANDROID_PRODUCT_OUT}/boot.img
