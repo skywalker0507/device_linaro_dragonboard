@@ -2,6 +2,29 @@
   "comments": [
     {
       "key": {
+        "uuid": "a70b725b_acd07a7d",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2020-01-14T00:46:30Z",
+      "side": 1,
+      "message": "typo",
+      "range": {
+        "startLine": 10,
+        "startChar": 48,
+        "endLine": 10,
+        "endChar": 54
+      },
+      "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "2819b756_9c05c9f6",
         "filename": "db845c/device.mk",
         "patchSetId": 1
@@ -31,6 +54,24 @@
       "side": 1,
       "message": "Previously yes, but Amit has added support for abootimg v2 to the db845c bootloader",
       "parentUuid": "2819b756_9c05c9f6",
+      "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9fd0fe6c_e8328b0c",
+        "filename": "db845c/device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2020-01-14T00:46:30Z",
+      "side": 1,
+      "message": "That\u0027s 1 fewer hacks. Nice.\n\nSince Amit has these powers, what would it take to add a v3 header and support the vendor_boot partition?",
+      "parentUuid": "f4fab034_644ffed5",
       "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
