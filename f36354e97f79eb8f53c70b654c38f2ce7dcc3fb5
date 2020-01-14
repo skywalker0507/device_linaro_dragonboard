@@ -1,0 +1,8 @@
+Code-Review+2: Todd Kjos <tkjos@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Submitted-by: Todd Kjos <tkjos@google.com>
+Submitted-at: Tue, 14 Jan 2020 19:42:48 +0000
+Reviewed-on: https://android-review.googlesource.com/c/device/linaro/dragonboard/+/1207395
+Project: device/linaro/dragonboard
+Branch: refs/heads/master
