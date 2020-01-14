@@ -135,6 +135,24 @@
       "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9a342937_6087da51",
+        "filename": "db845c/device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-01-14T17:29:00Z",
+      "side": 1,
+      "message": "Resolving this for now. We\u0027ll look into v3 for the future.",
+      "parentUuid": "8ee5a011_acfeb0e0",
+      "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
