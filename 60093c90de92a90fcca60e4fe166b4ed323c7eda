@@ -75,6 +75,24 @@
       "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9d64d177_f04d91d0",
+        "filename": "db845c/device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-01-14T00:50:25Z",
+      "side": 1,
+      "message": "That\u0027s something we can look into. We were able to get it enabled as the upstream qcom bootloader source already had it (there\u0027s a strong push to keep it in sync with upstream).\n\nMay take a little while. Is that ok, or is that something needed more urgently?",
+      "parentUuid": "9fd0fe6c_e8328b0c",
+      "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
