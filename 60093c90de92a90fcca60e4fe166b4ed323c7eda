@@ -117,6 +117,24 @@
       "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8ee5a011_acfeb0e0",
+        "filename": "db845c/device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2020-01-14T01:05:14Z",
+      "side": 1,
+      "message": "Not urgent.",
+      "parentUuid": "9d64d177_f04d91d0",
+      "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
