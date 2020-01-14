@@ -16,6 +16,24 @@
       "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f4fab034_644ffed5",
+        "filename": "db845c/device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-01-14T00:35:12Z",
+      "side": 1,
+      "message": "Previously yes, but Amit has added support for abootimg v2 to the db845c bootloader",
+      "parentUuid": "2819b756_9c05c9f6",
+      "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
