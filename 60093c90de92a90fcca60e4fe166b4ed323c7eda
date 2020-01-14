@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "eae08dd2_9ae6b123",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-01-14T00:51:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a70b725b_acd07a7d",
+      "range": {
+        "startLine": 10,
+        "startChar": 48,
+        "endLine": 10,
+        "endChar": 54
+      },
+      "revId": "60093c90de92a90fcca60e4fe166b4ed323c7eda",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "2819b756_9c05c9f6",
         "filename": "db845c/device.mk",
         "patchSetId": 1
