@@ -43,4 +43,4 @@ fastboot flash super "${ANDROID_PRODUCT_OUT}"/super.img
 echo "FLASH-ALL-AOSP: Flash userdata image"
 fastboot flash userdata "${ANDROID_PRODUCT_OUT}"/userdata.img
 
-
+fastboot reboot
