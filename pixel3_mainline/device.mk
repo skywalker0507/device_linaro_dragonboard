@@ -19,6 +19,7 @@
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES := \
+    device/linaro/dragonboard-kernel/Image.gz-pixel3:kernel \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.pixel3_mainline \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.pixel3_mainline \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.pixel3_mainline \
