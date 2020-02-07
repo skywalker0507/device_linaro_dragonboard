@@ -25,6 +25,15 @@ on early-boot
     chmod 777 /sys/kernel/debug/sync/sw_sync
     chown graphics graphics /sys/kernel/debug/sync/info
 
+on post-fs-data
+    mkdir /data/vendor
+    mkdir /data/vendor/tmp
+    mkdir /data/vendor/readwrite
+    mkdir /data/vendor/readonly
+    mkdir /data/vendor/readonly/firmware
+    mkdir /data/vendor/readonly/firmware/image
+    write /sys/class/firmware/timeout 1
+
 on zygote-start
     mkdir /data/vendor/wifi 0770 wifi wifi
     mkdir /data/vendor/wifi/wpa 0770 wifi wifi
