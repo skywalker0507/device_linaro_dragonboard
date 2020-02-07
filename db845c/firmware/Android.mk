@@ -6,7 +6,7 @@ include device/linaro/dragonboard/utils.mk
 # http://releases.linaro.org/96boards/dragonboard845c/qualcomm/firmware/RB3_firmware_20190529180356-v3.zip
 
 # Adreno
-firmware_files :=	\
+sdm845_firmware_files +=	\
     a630_gmu.bin	\
     a630_sqe.fw		\
     a630_zap.b00	\
@@ -99,5 +99,6 @@ firmware_files +=	\
     LICENSE.qcom.txt
 
 $(foreach f, $(firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/))
+$(foreach f, $(sdm845_firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/qcom/sdm845/))
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
