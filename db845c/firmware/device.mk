@@ -108,6 +108,7 @@ PRODUCT_PACKAGES +=	\
 
 #ath10k
 PRODUCT_PACKAGES +=	\
+    board-2.bin		\
     firmware-5.bin	\
     notice.txt_wlanmdsp
 
