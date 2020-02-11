@@ -106,6 +106,11 @@ PRODUCT_PACKAGES +=	\
     bdwlan.txt		\
     wlanmdsp.mbn
 
+#ath10k
+PRODUCT_PACKAGES +=	\
+    firmware-5.bin	\
+    notice.txt_wlanmdsp
+
 # License
 # Necessary to bundle license with firmware files
 PRODUCT_PACKAGES +=	\
