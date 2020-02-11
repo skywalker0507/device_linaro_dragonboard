@@ -18,6 +18,8 @@
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES := \
+    $(DB845C_KERNEL_DIR)/Image.gz:kernel \
+    $(DB845C_KERNEL_DIR)/sdm845-db845c.dtb:dtb.img \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.db845c \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.db845c \
