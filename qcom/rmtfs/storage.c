@@ -14,7 +14,7 @@
 #ifndef ANDROID
 #define BY_PARTLABEL_PATH "/dev/disk/by-partlabel"
 #else
-#define BY_PARTLABEL_PATH "/dev/block/by-name"
+#define BY_PARTLABEL_PATH "/dev/block/platform/soc@0/1d84000.ufshc/by-name"
 #endif
 
 #define MIN(x, y) ((x) < (y) ? (x) : (y))
