@@ -29,6 +29,7 @@
 /system/bin/ip										u:object_r:ip_exec:s0
 /system/bin/awk										u:object_r:awk_exec:s0
 /system/bin/eth_mac_addr\.sh								u:object_r:eth_mac_addr_exec:s0
+/system/bin/tinymix									u:object_r:tinymix_exec:s0
 
 /vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software			u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/pd-mapper									u:object_r:pd_mapper_exec:s0
