@@ -112,3 +112,13 @@ PRODUCT_PACKAGES +=	\
 PRODUCT_PACKAGES +=	\
     crbtfw21.tlv	\
     crnv21.bin
+
+#Have to duplicate the zap as path changed between kernels
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/db845c/firmware/a630_gmu.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_gmu.bin \
+    device/linaro/dragonboard/db845c/firmware/a630_sqe.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_sqe.fw \
+    device/linaro/dragonboard/db845c/firmware/a630_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.b00 \
+    device/linaro/dragonboard/db845c/firmware/a630_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.b01 \
+    device/linaro/dragonboard/db845c/firmware/a630_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.b02 \
+    device/linaro/dragonboard/db845c/firmware/a630_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.elf \
+    device/linaro/dragonboard/db845c/firmware/a630_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.mbn
