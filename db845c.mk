@@ -21,8 +21,10 @@ endif
 ifeq ($(DB845C_USES_GKI), true)
 DB845C_MODS := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
 ifneq ($(DB845C_MODS),)
-  BOARD_VENDOR_KERNEL_MODULES += $(DB845C_MODS)
   DB845C_ONLY_VENDOR := %/btqca.ko %/hci_uart.ko
-  BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(DB845C_ONLY_VENDOR),$(DB845C_MODS))
+  # Copy only DB845C_ONLY_VENDOR modules to vendor.img.
+  # Rest all go to generic ramdisk.img
+  BOARD_VENDOR_KERNEL_MODULES := $(filter $(DB845C_ONLY_VENDOR),$(DB845C_MODS))
+  BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(filter-out $(DB845C_ONLY_VENDOR),$(DB845C_MODS))
 endif
 endif
