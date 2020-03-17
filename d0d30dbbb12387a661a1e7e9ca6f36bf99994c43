@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "be14e9d9_9e45ff6a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-03-17T19:29:13Z",
+      "side": 1,
+      "message": "Not sure this is the case yet, at least I still have some trouble w/ mainline-WIP. But maybe that\u0027s config based? I\u0027ll need to revalidate.",
+      "revId": "d0d30dbbb12387a661a1e7e9ca6f36bf99994c43",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
