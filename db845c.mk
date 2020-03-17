@@ -21,7 +21,11 @@ endif
 ifeq ($(DB845C_USES_GKI), true)
 DB845C_MODS := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
 ifneq ($(DB845C_MODS),)
-  DB845C_ONLY_VENDOR := %/btqca.ko %/hci_uart.ko
+  ifndef TARGET_KERNEL_USE
+    # BT doesn't work with android-5.4 kernel if driver modules
+    # are installed in ramdisk.img. Fixed in v5.6+ kernels.
+    DB845C_ONLY_VENDOR := %/btqca.ko %/hci_uart.ko
+  endif
   # Copy only DB845C_ONLY_VENDOR modules to vendor.img.
   # Rest all go to generic ramdisk.img
   BOARD_VENDOR_KERNEL_MODULES := $(filter $(DB845C_ONLY_VENDOR),$(DB845C_MODS))
