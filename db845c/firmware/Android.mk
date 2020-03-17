@@ -90,6 +90,10 @@ firmware_files +=	\
     bdwlan.txt		\
     wlanmdsp.mbn
 
+ath10k_firmware_files += \
+    firmware-5.bin	\
+    notice.txt_wlandsp
+
 # I2C/SPI fix
 firmware_files +=	\
     devcfg.mbn
@@ -105,5 +109,6 @@ firmware_files +=	\
 
 $(foreach f, $(firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/))
 $(foreach f, $(sdm845_firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/qcom/sdm845/))
+$(foreach f, $(ath10k_firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/ath10k/WCN3990/hw1.0/))
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
