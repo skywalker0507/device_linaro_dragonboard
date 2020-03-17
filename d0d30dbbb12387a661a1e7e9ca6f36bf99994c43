@@ -16,6 +16,23 @@
       "revId": "d0d30dbbb12387a661a1e7e9ca6f36bf99994c43",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "831f8204_f9174bbc",
+        "filename": "db845c.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-03-17T20:41:41Z",
+      "side": 1,
+      "message": "This should be more specific (only on 5.4). Since eventually there may be a 5.4, 5.9 and 5.14 kernel targets",
+      "revId": "d0d30dbbb12387a661a1e7e9ca6f36bf99994c43",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
     }
   ]
 }
