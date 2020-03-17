@@ -1,0 +1,92 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000001999303",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1238347?revision\u003d3",
+      "fixSuggestions": [
+        {
+          "fixId": "57d5a67f_6c08f2d9",
+          "description": "Change to \"audio/audio_hw.c\"",
+          "replacements": [
+            {
+              "path": "audio/audio_hw.c",
+              "range": {
+                "startLine": 397,
+                "startChar": 30,
+                "endLine": 397,
+                "endChar": 38
+              },
+              "replacement": "parameter"
+            }
+          ]
+        }
+      ],
+      "key": {
+        "uuid": "1b8fe3df_7afbf1d1",
+        "filename": "audio/audio_hw.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 397,
+      "author": {
+        "id": 1550585
+      },
+      "writtenOn": "2020-03-17T16:19:06Z",
+      "side": 1,
+      "message": "Common typo found: \"paramter\" -- should it be \"parameter\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line.",
+      "range": {
+        "startLine": 397,
+        "startChar": 30,
+        "endLine": 397,
+        "endChar": 38
+      },
+      "revId": "9843649c36eae9d333a54220693802acc0773ab1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000001999303",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1238347?revision\u003d3",
+      "fixSuggestions": [
+        {
+          "fixId": "937c1b4b_aeeeff51",
+          "description": "Change to \"audio/audio_hw.c\"",
+          "replacements": [
+            {
+              "path": "audio/audio_hw.c",
+              "range": {
+                "startLine": 916,
+                "startChar": 30,
+                "endLine": 916,
+                "endChar": 38
+              },
+              "replacement": "parameter"
+            }
+          ]
+        }
+      ],
+      "key": {
+        "uuid": "d0192d3d_0f1ed516",
+        "filename": "audio/audio_hw.c",
+        "patchSetId": 3
+      },
+      "lineNbr": 916,
+      "author": {
+        "id": 1550585
+      },
+      "writtenOn": "2020-03-17T16:19:06Z",
+      "side": 1,
+      "message": "Common typo found: \"paramter\" -- should it be \"parameter\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line.",
+      "range": {
+        "startLine": 916,
+        "startChar": 30,
+        "endLine": 916,
+        "endChar": 38
+      },
+      "revId": "9843649c36eae9d333a54220693802acc0773ab1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
