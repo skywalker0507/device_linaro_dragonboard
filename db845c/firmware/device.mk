@@ -47,6 +47,11 @@ PRODUCT_PACKAGES +=	\
 PRODUCT_PACKAGES +=	\
     devcfg.mbn
 
+
+PRODUCT_PACKAGES +=	\
+    mba.mbn		\
+    modem.mbn
+
 # Venus
 # Video encoder/decoder accelerator
 PRODUCT_PACKAGES +=	\
@@ -100,6 +105,12 @@ PRODUCT_PACKAGES +=	\
     bdwlan.bin		\
     bdwlan.txt		\
     wlanmdsp.mbn
+
+#ath10k
+PRODUCT_PACKAGES +=	\
+    board-2.bin		\
+    firmware-5.bin	\
+    notice.txt_wlanmdsp
 
 # License
 # Necessary to bundle license with firmware files
