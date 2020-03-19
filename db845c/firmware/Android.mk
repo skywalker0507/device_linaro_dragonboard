@@ -93,7 +93,7 @@ sdm845_firmware_files +=	\
 ath10k_firmware_files += \
     board-2.bin		\
     firmware-5.bin	\
-    notice.txt_wlandsp
+    notice.txt_wlanmdsp
 
 # I2C/SPI fix
 firmware_files +=	\
