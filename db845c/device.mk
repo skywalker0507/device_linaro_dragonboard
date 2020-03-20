@@ -14,10 +14,15 @@
 # limitations under the License.
 #
 
+PRODUCT_SOONG_NAMESPACES += \
+    device/linaro/dragonboard
+
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_COPY_FILES := \
+    $(DB845C_KERNEL_DIR)/Image.gz:kernel \
+    $(DB845C_KERNEL_DIR)/sdm845-db845c.dtb:dtb.img \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.db845c \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.db845c \
@@ -27,6 +32,17 @@ PRODUCT_COPY_FILES := \
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.db845c
+
+PRODUCT_PACKAGES += \
+    pd-mapper \
+    qrtr-ns \
+    qrtr-cfg \
+    qrtr-lookup \
+    rmtfs \
+    tqftpserv
+
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
 
 # Copy firmware files
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
