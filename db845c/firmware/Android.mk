@@ -1,3 +1,5 @@
+ifneq ($(filter db845c, $(TARGET_BOARD_PLATFORM)),)
+
 LOCAL_PATH := $(call my-dir)
 
 include device/linaro/dragonboard/utils.mk
@@ -113,3 +115,4 @@ $(foreach f, $(sdm845_firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_
 $(foreach f, $(ath10k_firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/ath10k/WCN3990/hw1.0/))
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+endif
