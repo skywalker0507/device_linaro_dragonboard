@@ -11,7 +11,7 @@ BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := earlycon firmware_class.path=/vendor/firmware/ androidboot.hardware=db845c
-BOARD_KERNEL_CMDLINE += init=/init androidboot.boot_devices=soc/1d84000.ufshc printk.devkmsg=on
+BOARD_KERNEL_CMDLINE += init=/init androidboot.boot_devices=soc@0/1d84000.ufshc printk.devkmsg=on
 
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864 #64M
