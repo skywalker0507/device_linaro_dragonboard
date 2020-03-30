@@ -1,3 +1,5 @@
+ifneq ($(filter db845c, $(TARGET_BOARD_PLATFORM)),)
+
 LOCAL_PATH := $(call my-dir)
 
 include device/linaro/dragonboard/utils.mk
@@ -16,7 +18,7 @@ firmware_files :=	\
     a630_zap.mdt
 
 # DSP (adsp+cdsp)
-firmware_files +=	\
+sdm845_firmware_files +=	\
     adsp.b00		\
     adsp.b01		\
     adsp.b02		\
@@ -47,7 +49,7 @@ firmware_files +=	\
     K2026090.mem
 
 # Wlan
-firmware_files +=	\
+sdm845_firmware_files +=	\
     bdwlan.102		\
     bdwlan.104		\
     bdwlan.105		\
@@ -90,14 +92,27 @@ firmware_files +=	\
     bdwlan.txt		\
     wlanmdsp.mbn
 
+ath10k_firmware_files += \
+    board-2.bin		\
+    firmware-5.bin	\
+    notice.txt_wlanmdsp
+
 # I2C/SPI fix
 firmware_files +=	\
     devcfg.mbn
+
+# wifi/modem/mba
+sdm845_firmware_files +=	\
+    mba.mbn		\
+    modem.mbn
 
 # License
 firmware_files +=	\
     LICENSE.qcom.txt
 
 $(foreach f, $(firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/))
+$(foreach f, $(sdm845_firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/qcom/sdm845/))
+$(foreach f, $(ath10k_firmware_files), $(call add-qcom-firmware, $(f), $(TARGET_OUT_VENDOR)/firmware/ath10k/WCN3990/hw1.0/))
 
 include $(call all-makefiles-under,$(LOCAL_PATH))
+endif
