@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ae3a646d_5b6ce63e",
+        "filename": "manifest.xml",
+        "patchSetId": 5
+      },
+      "lineNbr": 137,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-04-01T03:04:54Z",
+      "side": 1,
+      "message": "Can you add these to be alphabetically sorted in the manifest file?",
+      "revId": "696c7345bfbf95faef3a00105ce8be28d2b93294",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
