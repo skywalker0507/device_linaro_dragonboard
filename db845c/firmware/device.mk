@@ -28,6 +28,7 @@ PRODUCT_PACKAGES +=	\
     adsp.b12		\
     adsp.b13		\
     adsp.mdt		\
+    adspua.jsn		\
     cdsp.b00		\
     cdsp.b01		\
     cdsp.b02		\
@@ -50,7 +51,8 @@ PRODUCT_PACKAGES +=	\
 
 PRODUCT_PACKAGES +=	\
     mba.mbn		\
-    modem.mbn
+    modem.mbn		\
+    modemuw.jsn
 
 # Venus
 # Video encoder/decoder accelerator
