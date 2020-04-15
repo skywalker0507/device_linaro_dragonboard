@@ -32,10 +32,9 @@ PRODUCT_COPY_FILES := \
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.db845c
 
+# Build and install Qcom userspace tools to talk to dsp and modem
 PRODUCT_PACKAGES += \
     pd-mapper \
-    qrtr-ns \
-    qrtr-cfg \
     qrtr-lookup \
     rmtfs \
     tqftpserv
