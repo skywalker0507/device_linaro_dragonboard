@@ -24,8 +24,7 @@ PRODUCT_COPY_FILES := \
     $(DB845C_KERNEL_DIR)/Image.gz:kernel \
     $(DB845C_KERNEL_DIR)/sdm845-db845c.dtb:dtb.img \
     device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.db845c \
-    device/linaro/dragonboard/fstab.ramdisk.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
-    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/init/fstab.db845c \
+    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
     device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.db845c.rc \
     device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.db845c.usb.rc \
     device/linaro/dragonboard/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/db845c.kl
