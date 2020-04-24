@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "24809275_a3b8f55c",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-04-24T18:22:28Z",
+      "side": 1,
+      "message": "Ack. Setting it to 02.xx.xx.xx.xx.xx.",
+      "parentUuid": "c15e4a98_c1bcb511",
+      "range": {
+        "startLine": 5,
+        "startChar": 16,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "14fcc9e72f619d64187e1c1884f498bdb137e617",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "e5b9f9d6_27f58768",
         "filename": "db845c/eth_mac_addr.sh",
         "patchSetId": 4
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "e6c3674e_94a722db",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-04-24T18:22:28Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "e5b9f9d6_27f58768",
+      "range": {
+        "startLine": 11,
+        "startChar": 43,
+        "endLine": 11,
+        "endChar": 51
+      },
+      "revId": "14fcc9e72f619d64187e1c1884f498bdb137e617",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b4e06c51_91d4b6bc",
         "filename": "sepolicy/file_contexts",
         "patchSetId": 4
@@ -59,6 +107,30 @@
       "writtenOn": "2020-04-24T17:31:03Z",
       "side": 1,
       "message": "this doesn\u0027t seem kosher.\n\ngive the script the ability to exec ip/awk with whatever label they already have",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 0
+      },
+      "revId": "14fcc9e72f619d64187e1c1884f498bdb137e617",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "af2a2a56_298a09f1",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-04-24T18:22:28Z",
+      "side": 1,
+      "message": "Ack. Default label for them is \"system_file\", which can be used as is.",
+      "parentUuid": "b4e06c51_91d4b6bc",
       "range": {
         "startLine": 32,
         "startChar": 0,
