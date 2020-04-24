@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "934fe5cd_19e582ca",
+        "filename": "db845c/eth_mac_addr.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1003247
+      },
+      "writtenOn": "2020-04-24T19:02:20Z",
+      "side": 1,
+      "message": "this might be too late... ideally this would run before netd, so more like when the bpfloader runs",
+      "range": {
+        "startLine": 8,
+        "startChar": 16,
+        "endLine": 8,
+        "endChar": 30
+      },
+      "revId": "05615dfc7f4c5f3be2adf27fde04e3b5651f76d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a2456522_ebe29baf",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003247
+      },
+      "writtenOn": "2020-04-24T19:02:20Z",
+      "side": 1,
+      "message": ".* is spurious.  perhaps you really meant serialno\u003d or ^serialno\u003d",
+      "range": {
+        "startLine": 11,
+        "startChar": 46,
+        "endLine": 11,
+        "endChar": 47
+      },
+      "revId": "05615dfc7f4c5f3be2adf27fde04e3b5651f76d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7dd1fce3_8bcb5fdc",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003247
+      },
+      "writtenOn": "2020-04-24T19:02:20Z",
+      "side": 1,
+      "message": "probably :",
+      "range": {
+        "startLine": 11,
+        "startChar": 131,
+        "endLine": 11,
+        "endChar": 132
+      },
+      "revId": "05615dfc7f4c5f3be2adf27fde04e3b5651f76d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
