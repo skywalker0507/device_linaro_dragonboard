@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c15e4a98_c1bcb511",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1003247
+      },
+      "writtenOn": "2020-04-24T17:31:03Z",
+      "side": 1,
+      "message": "There\u0027s some requirements on the bottom two bits of the first byte.\n(I think they should be 0 for real MACs, but maybe not quite that for randomized ones)\n\nhttps://en.wikipedia.org/wiki/MAC_address\nbyte 0 - bit 0 - \u003d0 unicast \u003d1 multicast\nbyte 0 - bit 1 - \u003d0 globally unique OUI enforced, \u003d1 locally administered.\n\nSo I think you need to make sure bit 0 clear bit 1 set.",
+      "range": {
+        "startLine": 5,
+        "startChar": 16,
+        "endLine": 5,
+        "endChar": 33
+      },
+      "revId": "14fcc9e72f619d64187e1c1884f498bdb137e617",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e5b9f9d6_27f58768",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1003247
+      },
+      "writtenOn": "2020-04-24T17:31:03Z",
+      "side": 1,
+      "message": "google shell style always says to use \"${SERIALNO}\"\n\n(not that this is followed particularly well)",
+      "range": {
+        "startLine": 11,
+        "startChar": 43,
+        "endLine": 11,
+        "endChar": 51
+      },
+      "revId": "14fcc9e72f619d64187e1c1884f498bdb137e617",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b4e06c51_91d4b6bc",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 4
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1003247
+      },
+      "writtenOn": "2020-04-24T17:31:03Z",
+      "side": 1,
+      "message": "this doesn\u0027t seem kosher.\n\ngive the script the ability to exec ip/awk with whatever label they already have",
+      "range": {
+        "startLine": 32,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 0
+      },
+      "revId": "14fcc9e72f619d64187e1c1884f498bdb137e617",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
