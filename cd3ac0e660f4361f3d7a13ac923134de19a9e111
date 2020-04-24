@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "61f5e8b5_f81c7604",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 3
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2020-04-24T15:30:55Z",
+      "side": 1,
+      "message": "Do you have to be careful about the multicast and global/local bits (bits 0-1 of MSB)? Seems like we\u0027d always want local\u003d1, multicast\u003d0.",
+      "revId": "cd3ac0e660f4361f3d7a13ac923134de19a9e111",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    }
+  ]
+}
