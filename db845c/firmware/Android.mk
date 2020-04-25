@@ -34,6 +34,7 @@ sdm845_firmware_files +=	\
     adsp.b12		\
     adsp.b13		\
     adsp.mdt		\
+    adspua.jsn		\
     cdsp.b00		\
     cdsp.b01		\
     cdsp.b02		\
@@ -104,7 +105,8 @@ firmware_files +=	\
 # wifi/modem/mba
 sdm845_firmware_files +=	\
     mba.mbn		\
-    modem.mbn
+    modem.mbn		\
+    modemuw.jsn
 
 # License
 firmware_files +=	\
