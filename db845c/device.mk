@@ -43,5 +43,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
 
+# Install scripts to set Ethernet MAC address
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/eth_mac_addr.rc:/system/etc/init/eth_mac_addr.rc \
+    $(LOCAL_PATH)/eth_mac_addr.sh:/system/bin/eth_mac_addr.sh
+
 # Copy firmware files
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
