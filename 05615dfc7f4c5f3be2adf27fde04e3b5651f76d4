@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ba47abf1_2e119d91",
+        "filename": "db845c/eth_mac_addr.rc",
+        "patchSetId": 5
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-04-25T07:33:14Z",
+      "side": 1,
+      "message": "as per logcat, \"on post-fs-data\" also guarantees it to run before netd. so switching to that trigger. thanks",
+      "parentUuid": "934fe5cd_19e582ca",
+      "range": {
+        "startLine": 8,
+        "startChar": 16,
+        "endLine": 8,
+        "endChar": 30
+      },
+      "revId": "05615dfc7f4c5f3be2adf27fde04e3b5651f76d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "a2456522_ebe29baf",
         "filename": "db845c/eth_mac_addr.sh",
         "patchSetId": 5
@@ -64,6 +88,54 @@
         "startChar": 131,
         "endLine": 11,
         "endChar": 132
+      },
+      "revId": "05615dfc7f4c5f3be2adf27fde04e3b5651f76d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f874b580_ac739a00",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-04-25T07:33:14Z",
+      "side": 1,
+      "message": "Ack.",
+      "parentUuid": "7dd1fce3_8bcb5fdc",
+      "range": {
+        "startLine": 11,
+        "startChar": 131,
+        "endLine": 11,
+        "endChar": 132
+      },
+      "revId": "05615dfc7f4c5f3be2adf27fde04e3b5651f76d4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "88fe3bdb_812d0285",
+        "filename": "db845c/eth_mac_addr.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-04-25T07:33:14Z",
+      "side": 1,
+      "message": "I used \"serialno.*\" to match the /proc/cmdline output starting from serialno bootarg to the last booatarg. If i don\u0027t use that then \"grep -o\" only match serialno text and nothing else. I\u0027m sure there are better ways to the parsing that but I have not used grep/cut/awk/sed extensively. I was initially counting on \"getprop ro.serialno\" but turned out ro.serialno is off limits.",
+      "parentUuid": "a2456522_ebe29baf",
+      "range": {
+        "startLine": 11,
+        "startChar": 46,
+        "endLine": 11,
+        "endChar": 47
       },
       "revId": "05615dfc7f4c5f3be2adf27fde04e3b5651f76d4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
