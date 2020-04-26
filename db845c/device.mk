@@ -32,16 +32,20 @@ PRODUCT_COPY_FILES := \
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.db845c
 
+# Build and install Qcom userspace tools to talk to dsp and modem
 PRODUCT_PACKAGES += \
     pd-mapper \
-    qrtr-ns \
-    qrtr-cfg \
     qrtr-lookup \
     rmtfs \
     tqftpserv
 
 PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
+
+# Install scripts to set Ethernet MAC address
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/eth_mac_addr.rc:/system/etc/init/eth_mac_addr.rc \
+    $(LOCAL_PATH)/eth_mac_addr.sh:/system/bin/eth_mac_addr.sh
 
 # Copy firmware files
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
