@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "e95cc766_80d7f89d",
+        "filename": "pixel3_mainline.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1052193
+      },
+      "writtenOn": "2020-05-13T10:32:13Z",
+      "side": 1,
+      "message": "Additionally, in my test, I had to move the following modules to only vendor to allow successful boot:\n\n%/ath.ko %/ath10k_core.ko %/ath10k_pci.ko %/ath10k_snoc.ko\n\nWithout these moved to vendor, the boot.img size was \u003e 25M and won\u0027t boot.",
+      "parentUuid": "30189a83_d841fa39",
+      "range": {
+        "startLine": 23,
+        "startChar": 0,
+        "endLine": 23,
+        "endChar": 28
+      },
+      "revId": "8b9166886e3b5ecb4d34bcfab67c4292d85749db",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "825da85b_18db753e",
         "filename": "pixel3_mainline.mk",
         "patchSetId": 3
