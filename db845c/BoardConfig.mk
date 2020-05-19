@@ -13,6 +13,9 @@ BOARD_KERNEL_PAGESIZE := 2048
 BOARD_KERNEL_CMDLINE := earlycon firmware_class.path=/vendor/firmware/ androidboot.hardware=db845c
 BOARD_KERNEL_CMDLINE += init=/init androidboot.boot_devices=soc@0/1d84000.ufshc printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += deferred_probe_timeout=30
+# fw_devlink=on, https://android-review.googlesource.com/c/1305327, broke android-mainline
+# Set fw_devlink=permissive for the time being
+BOARD_KERNEL_CMDLINE += fw_devlink=permissive
 
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864 #64M
