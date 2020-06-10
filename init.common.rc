@@ -2,8 +2,8 @@ import init.${ro.hardware}.usb.rc
 import init.${ro.hardware}.power.rc
 
 on fs
-    mount_all /vendor/etc/init/fstab.${ro.hardware}
-    swapon_all /vendor/etc/init/fstab.${ro.hardware}
+    mount_all /vendor/etc/fstab.${ro.hardware}
+    swapon_all /vendor/etc/fstab.${ro.hardware}
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
