@@ -1,0 +1,9 @@
+Code-Review+2: Alistair Delva <adelva@google.com>
+Autosubmit+1: Alistair Delva <adelva@google.com>
+Verified+1: Amit Pundir <amit.pundir@linaro.org>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-at: Mon, 15 Jun 2020 16:04:12 +0000
+Reviewed-on: https://android-review.googlesource.com/c/device/linaro/dragonboard/+/1331554
+Project: device/linaro/dragonboard
+Branch: refs/heads/master
