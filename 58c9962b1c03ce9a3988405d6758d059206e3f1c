@@ -1,0 +1,9 @@
+Code-Review+1: John Stultz <john.stultz@linaro.org>
+Code-Review+2: Mark Salyzyn <salyzyn@google.com>
+Presubmit-Verified+1: Treehugger Robot <treehugger-gerrit@google.com>
+Lint+1: Lint 🤖 <android-build-prod-ayeaye@system.gserviceaccount.com>
+Submitted-by: Mark Salyzyn <salyzyn@google.com>
+Submitted-at: Wed, 08 Jul 2020 03:29:11 +0000
+Reviewed-on: https://android-review.googlesource.com/c/device/linaro/dragonboard/+/1356366
+Project: device/linaro/dragonboard
+Branch: refs/heads/master
