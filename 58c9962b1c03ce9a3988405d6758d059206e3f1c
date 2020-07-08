@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "34f9be98_7a8e9463",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-07-08T01:02:18Z",
+      "side": 1,
+      "message": "I\u0027ve been testing with the same change locally with the two android-mainline patches. Looks good once those land.",
+      "revId": "58c9962b1c03ce9a3988405d6758d059206e3f1c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
