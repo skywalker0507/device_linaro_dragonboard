@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "df645774_28dff91c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-07-09T15:27:52Z",
+      "side": 1,
+      "message": "Verified with android-mainline (5.8.0-rc4-mainline-00002-g987d0b5bcf09) as well.",
+      "revId": "ac5ab76ae185210f5eb94a50d9b7ae96fa81b95f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
