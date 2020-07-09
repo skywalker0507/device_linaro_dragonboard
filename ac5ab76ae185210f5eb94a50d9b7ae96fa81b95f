@@ -16,6 +16,23 @@
       "revId": "ac5ab76ae185210f5eb94a50d9b7ae96fa81b95f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "da446d9f_c7177053",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-07-09T21:54:35Z",
+      "side": 1,
+      "message": "If possible add topic:\ndb845c-5.4-wifi-backport\n",
+      "revId": "ac5ab76ae185210f5eb94a50d9b7ae96fa81b95f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
