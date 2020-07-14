@@ -50,6 +50,23 @@
       "revId": "ac5ab76ae185210f5eb94a50d9b7ae96fa81b95f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0e259f0e_b89b01e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1125653
+      },
+      "writtenOn": "2020-07-14T06:22:23Z",
+      "side": 1,
+      "message": "As this is in a different repo, I can\u0027t submit the kernel patches as well 😞\n\nMaybe remove the topic name from this patch so that can happen?  Or someone else needs to approve it...",
+      "revId": "ac5ab76ae185210f5eb94a50d9b7ae96fa81b95f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
     }
   ]
 }
