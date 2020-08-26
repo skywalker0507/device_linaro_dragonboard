@@ -1,3 +1,10 @@
+service qrtr-ns /vendor/bin/qrtr-ns -f 1
+    class core
+    user root
+    group system
+    disabled
+    oneshot
+
 service pd_mapper /vendor/bin/pd-mapper
     class core
     user root
@@ -19,10 +26,15 @@ service rmtfs /vendor/bin/rmtfs -o /dev/block/platform/soc@0/1d84000.ufshc/by-na
     disabled
     oneshot
 
+on early-init
+    exec - root -- /vendor/bin/qrtr-cfg 1
+    start qrtr-ns
+
 on post-fs
     start pd_mapper
     exec - root -- /system/bin/sleep 1
     exec - system audio -- /system/bin/tinymix "QUAT_MI2S_RX Audio Mixer MultiMedia1" 1
+    exec - system audio -- /system/bin/tinymix "QUAT_MI2S_RX Audio Mixer MultiMedia2" 1
     exec - system audio -- /system/bin/tinymix "SLIM RX0 MUX" AIF1_PB
     exec - system audio -- /system/bin/tinymix "SLIM RX0 MUX" ZERO
     exec - system audio -- /system/bin/tinymix "SLIM RX1 MUX" ZERO
@@ -56,3 +68,6 @@ on post-fs-data
     write /sys/class/firmware/timeout 1
     start tqftpserv
     start rmtfs
+
+on shutdown
+    stop rmtfs
