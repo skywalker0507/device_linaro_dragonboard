@@ -19,5 +19,10 @@ DB845C_USES_GKI := true
 endif
 
 ifeq ($(DB845C_USES_GKI), true)
-BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
+  DB845C_MODS := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
+  ifneq ($(DB845C_MODS),)
+    BOARD_VENDOR_KERNEL_MODULES += $(DB845C_MODS)
+    DB845C_ONLY_VENDOR := %/msm.ko
+    BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(DB845C_ONLY_VENDOR),$(DB845C_MODS))
+  endif
 endif
