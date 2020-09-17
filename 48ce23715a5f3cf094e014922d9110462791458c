@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "88fc2722_13e86ec6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-09-17T22:13:05Z",
+      "side": 1,
+      "message": "Updated to pull in one minor cleanup that landed upstream last night.",
+      "revId": "48ce23715a5f3cf094e014922d9110462791458c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
