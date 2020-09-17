@@ -24,11 +24,12 @@
 
 #define LOG_TAG "GRALLOC-GBM"
 
-#include <cutils/log.h>
+#include <log/log.h>
 #include <cutils/atomic.h>
 #include <cutils/properties.h>
 #include <stdlib.h>
 #include <string.h>
+#include <unistd.h>
 #include <errno.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -382,8 +383,7 @@ buffer_handle_t gralloc_gbm_bo_create(struct gbm_device *gbm,
 	gbm_bo_handle_map.emplace(handle, bo);
 
 	/* in pixels */
-	struct gralloc_handle_t *ghandle = gralloc_handle(handle);
-	*stride = ghandle->stride / gralloc_gbm_get_bpp(format);
+	*stride = gralloc_handle(handle)->stride / gralloc_gbm_get_bpp(format);
 
 	return handle;
 }
@@ -491,7 +491,7 @@ int gralloc_gbm_bo_lock_ycbcr(buffer_handle_t handle,
 {
 	struct gralloc_handle_t *hnd = gralloc_handle(handle);
 	int ystride, cstride;
-	void *addr;
+	void *addr = 0;
 	int err;
 
 	ALOGD("handle %p, hnd %p, usage 0x%x", handle, hnd, usage);
