@@ -46,24 +46,36 @@ PRODUCT_PRODUCT_PROPERTIES := \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
     android.hardware.drm@1.0-service \
-    android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.2-impl \
-    android.hardware.graphics.composer@2.2-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
-    gralloc.gbm \
-    hwcomposer.drm \
     libGLES_mesa
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.gralloc=gbm \
-    ro.hardware.hwcomposer=drm \
+    ro.hardware.gralloc=minigbm \
+    ro.hardware.hwcomposer=drm_minigbm \
     debug.sf.no_hw_vsync=1 \
     hwc.drm.use_framebuffer_target=1 \
     hwc.drm.use_overlay_planes=0 \
     ro.sf.lcd_density=160 \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
+
+
+#
+# Hardware Composer HAL
+#
+PRODUCT_PACKAGES += \
+    gralloc.minigbm \
+    hwcomposer.drm_minigbm \
+    hwcomposer-stats \
+    android.hardware.graphics.composer@2.2-impl \
+    android.hardware.graphics.composer@2.2-service
+
+#
+# Gralloc HAL
+#
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0-service.minigbm \
+    android.hardware.graphics.mapper@4.0-impl.minigbm
+
 
 # Use Launcher3QuickStep
 PRODUCT_PACKAGES += Launcher3QuickStep
