@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "160036b2_c098836e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-05T18:15:43Z",
+      "side": 1,
+      "message": "Todd/Alistair: Just wanted to nudge this one.",
+      "revId": "365efe26a8f0aca15f0df6661084e12f402d104b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
+      "unresolved": false
+    }
+  ]
+}
