@@ -68,6 +68,24 @@
       "parentUuid": "4b79474e_f4273a7f",
       "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04affb3d_7d096140",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-06T20:41:14Z",
+      "side": 1,
+      "message": "Amit: So I can\u0027t seem reproduce this with android-mainline (5.9.0-rc8-mainline-00150-gd47a4b6ba183). Can you provide any more details as the exact steps your using to trigger this? Can you try with the newer kernel as well?",
+      "parentUuid": "6adaee70_d1e6f113",
+      "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
