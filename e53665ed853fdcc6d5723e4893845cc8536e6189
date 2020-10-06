@@ -1,6 +1,7 @@
 {
   "comments": [
     {
+      "unresolved": false,
       "key": {
         "uuid": "202d04db_4ded54c8",
         "filename": "/PATCHSET_LEVEL",
@@ -14,8 +15,24 @@
       "side": 1,
       "message": "This should resolve adb remount issue.",
       "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
-      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889",
-      "unresolved": false
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b79474e_f4273a7f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-10-06T09:48:31Z",
+      "side": 1,
+      "message": "Verified with 5.4.38-01037-g307fef1b71be.\n\nNot much luck with android-mainline build.\n\nIf selinux\u003dpermissive, \"adb remount\" and \"adb sync\" works with 5.9.0-rc7-mainline-00003-g0bbae53bf635 too. But runs into kernel panic at {security,selinux}_file_permission for any file operation (e.g ls) and boot loops with same kernel panic.\n\nIf selinux is in enforcing mode, then \"adb remount\" runs into the kernel panic at {security,selinux}_inode_getattr. https://android-review.googlesource.com/c/kernel/common/+/1448816 does help and there is no kernel panic on \"adb remount\". \"adb sync\" works as well but db845c doesn\u0027t come up on next boot and runs into a boot loop https://pastebin.ubuntu.com/p/M8mhZBFxZS/. Fixing the overlayfs_file selinux denial in the log above didn\u0027t help and we run into boot loop again with \"Abort message: \u0027Check failed: serviceManager Could not retrieve ServiceManager\u0027\".",
+      "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
