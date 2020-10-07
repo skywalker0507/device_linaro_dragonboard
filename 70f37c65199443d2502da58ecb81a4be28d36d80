@@ -34,6 +34,24 @@
       "parentUuid": "f3ca7b45_3a71c17d",
       "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0c55ad81_db62aa05",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1290458
+      },
+      "writtenOn": "2020-10-07T17:51:28Z",
+      "side": 1,
+      "message": "Is this device an A/B or non-A/B device?",
+      "parentUuid": "a19b449d_4662784e",
+      "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
