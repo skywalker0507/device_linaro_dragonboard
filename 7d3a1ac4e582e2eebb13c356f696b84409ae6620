@@ -16,6 +16,23 @@
       "message": "I am concerned that adb remount would fail on a truncated image size, I believe vendor remained r/o (Amit reported), dvander@ is there anything that can be done to allow it to succeed in the corner case?\n\nAlso, as noted in the discussions in aosp/1451780, /cache was used as the backing storage. Do we want to deprecate that heuristic and move towards fiemap to userdata?",
       "revId": "7d3a1ac4e582e2eebb13c356f696b84409ae6620",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86fc4776_0def4314",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-07T16:50:28Z",
+      "side": 1,
+      "message": "Validated as well here. ",
+      "revId": "7d3a1ac4e582e2eebb13c356f696b84409ae6620",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
