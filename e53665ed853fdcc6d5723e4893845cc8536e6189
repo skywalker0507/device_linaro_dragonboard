@@ -140,6 +140,23 @@
       "parentUuid": "3c025c07_662fd3b6",
       "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c624473c_c5dd38d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-07T04:41:18Z",
+      "side": 1,
+      "message": "Adding Mark in case he has any clues on this.\n\nHey Mark: We\u0027re seeing some odd behavior on db845c. This series with 5.4 allows \"adb remount; adb sync; adb reboot\" to work, but we\u0027re seeing crashes with android-mainline.\n\nAmit found a patch you submitted which improved things some but we\u0027re still seeing issues where we can\u0027t execute anything after the overlay mount happens. Does this sound familiar at all?",
+      "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
