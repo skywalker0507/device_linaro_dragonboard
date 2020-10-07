@@ -157,6 +157,24 @@
       "message": "Adding Mark in case he has any clues on this.\n\nHey Mark: We\u0027re seeing some odd behavior on db845c. This series with 5.4 allows \"adb remount; adb sync; adb reboot\" to work, but we\u0027re seeing crashes with android-mainline.\n\nAmit found a patch you submitted which improved things some but we\u0027re still seeing issues where we can\u0027t execute anything after the overlay mount happens. Does this sound familiar at all?",
       "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0d7c5542_7bba9f4a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-07T16:50:04Z",
+      "side": 1,
+      "message": "With Amit\u0027s change https://android-review.googlesource.com/c/device/linaro/dragonboard/+/1452362\n\nand the kernel side change (currently just a workaround, to be redone) to android-mainline here:\nhttps://android-review.googlesource.com/c/kernel/common/+/1451780\n\nI think this issues is resolved. So I\u0027m marking it as such. \n\nLet me know if there\u0027s any further issues.",
+      "parentUuid": "9e5607a5_f2a28111",
+      "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
