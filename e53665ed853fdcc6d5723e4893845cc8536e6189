@@ -122,6 +122,24 @@
       "parentUuid": "b77203cd_dc43f37f",
       "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9e5607a5_f2a28111",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-07T03:10:07Z",
+      "side": 1,
+      "message": "From your log, it almost looks like keymaster isn\u0027t starting up properly. I\u0027ll dig a bit tonight on that.\n\n\n init: starting service \u0027vendor.keymaster-3-0\u0027...\n init: cannot execv(\u0027/vendor/bin/hw/android.hardware.keymaster@3.0-service\u0027). See the \u0027Debugging init\u0027 section of init\u0027s README.md for tips: Operation not permitted\n init: Service \u0027system_suspend\u0027 (pid 301) exited with status 127\n init: Sending signal 9 to service \u0027system_suspend\u0027 (pid 301) process group...\n libprocessgroup: Successfully killed process cgroup uid 1000 pid 301 in 0ms\n init: Service \u0027vendor.keymaster-3-0\u0027 (pid 302) exited with status 127\n init: Sending signal 9 to service \u0027vendor.keymaster-3-0\u0027 (pid 302) process group...",
+      "parentUuid": "3c025c07_662fd3b6",
+      "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
