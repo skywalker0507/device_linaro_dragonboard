@@ -52,6 +52,24 @@
       "parentUuid": "a19b449d_4662784e",
       "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "611f842d_e7375b80",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-07T17:56:51Z",
+      "side": 1,
+      "message": "Non-A/B (though the current ptables are configured for A/B but I believe we had the sense that virtual A/B was the way forward so we don\u0027t use the B partitions).",
+      "parentUuid": "0c55ad81_db62aa05",
+      "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
