@@ -86,6 +86,24 @@
       "parentUuid": "6adaee70_d1e6f113",
       "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b77203cd_dc43f37f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2020-10-07T00:49:54Z",
+      "side": 1,
+      "message": "I\u0027ve been seeing many of the same symptoms as Amit. Here\u0027s my recipe for reproducing:\n\n1. m installclean\n2. m\n3. flash boot/super/cache/userdata\n4. adb root\n5. adb remount\n6. adb reboot\n7. make a change to libc\n8. m\n9. adb root\n10. adb remount\n11. adb sync\n12. adb reboot\n\nWith that and after patching in the kernel panic fix found by Amit (aosp/1448816) my serial console output looks a lot like Amit\u0027s: https://pastebin.ubuntu.com/p/hYGhDf7XHh/\n\nFixing the selinux denials like so:\n\ndiff --git a/system/sepolicy/public/init.te b/system/sepolicy/public/init.te\nindex f84bacbf5f..43d269b95a 100644\n--- a/system/sepolicy/public/init.te\n+++ b/system/sepolicy/public/init.te\n@@ -335,7 +335,8 @@ allow init proc_filesystems:file r_file_perms;\n userdebug_or_eng(`\n   # Overlayfs workdir write access check during mount to permit remount,rw\n   allow init overlayfs_file:dir { relabelfrom mounton write };\n-  allow init overlayfs_file:file { append };\n+  allow init overlayfs_file:file { append rename };\n+  allow init overlayfs_file:chr_file { unlink };\n   allow init system_block_device:blk_file { write };\n \u0027)\n \n\ndoesn\u0027t help much; I still see a very similar console output (including init being unable to exec anything with \"Operation not permitted\").\n\nI also tried kernel version 5.4 by unsetting TARGET_KERNEL_USE. With that and following the recipe above the boot succeeds and I can see my changes to libc on the device. Unfortunately I need to work with the mainline kernel and not 5.4 so this doesn\u0027t help me very much.",
+      "parentUuid": "04affb3d_7d096140",
+      "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
