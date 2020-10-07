@@ -104,6 +104,24 @@
       "parentUuid": "04affb3d_7d096140",
       "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c025c07_662fd3b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2020-10-07T02:09:16Z",
+      "side": 1,
+      "message": "I can also repro with an unmodified 5.9.0-rc8-mainline-00150-gd47a4b6ba183 kernel. For some reason I only need to follow steps 1-6 with the newer kernel. Here\u0027s the serial output with that kernel: https://pastebin.ubuntu.com/p/PQ3tqHPkMD/",
+      "parentUuid": "b77203cd_dc43f37f",
+      "revId": "e53665ed853fdcc6d5723e4893845cc8536e6189",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
