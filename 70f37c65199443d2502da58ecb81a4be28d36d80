@@ -16,6 +16,24 @@
       "message": "The /cache partition is a fallback for the legacy non-A/B devices from a couple of years back. The new devices using R+ should be arranging for a raw fiemap\u0027d reservation on /data as the backing storage.\n\ndvander@ do you have any advice, documentation or cookbook on how to configure the device correctly to take advantage of utilizing userdata for backing storage for overlayfs?",
       "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a19b449d_4662784e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-07T16:59:48Z",
+      "side": 1,
+      "message": "Yea. A guide here would be helpful, we had been using a link to /data/cache for the /cache/ but that didn\u0027t seem to work properly. So I moved to a /cache/ partition as that\u0027s what cuttlefish is using. \n\nAs an aside, I\u0027ve been hitting a number of other config quirks where we were missing some new include or build variable, and was thinking there should be an easier way to \"follow the book\". Being able to $(call inherit-product, product/R_release_device.mk) and have all the expected things called would be nice.",
+      "parentUuid": "f3ca7b45_3a71c17d",
+      "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
