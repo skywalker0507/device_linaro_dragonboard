@@ -16,6 +16,24 @@
       "message": "Hi, John, Amit\n\nCould you let me know what\u0027s problem(or error messages) you have seen without this patch?\n\n\nThanks,\nYongqin Liu",
       "revId": "80e228b5d8be952e30cd7bfbc57c152be37f6c7a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e7b4293_1a28e994",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-08T21:29:13Z",
+      "side": 1,
+      "message": "The easiest way to trip over it is, if you boot with a newer kernel on a fresh userdata partition, the gallery app will open with an error. \n\nAlso, If you boot with a older kernel and download some videos and open gallery, and then switch to a newer kernel the gallery app won\u0027t render the video thumbnails, and in some cases won\u0027t be able to play those videos.",
+      "parentUuid": "2d5d26a3_ed43a5b8",
+      "revId": "80e228b5d8be952e30cd7bfbc57c152be37f6c7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
