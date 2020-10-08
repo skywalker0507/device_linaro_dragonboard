@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2d5d26a3_ed43a5b8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2020-10-08T11:32:16Z",
+      "side": 1,
+      "message": "Hi, John, Amit\n\nCould you let me know what\u0027s problem(or error messages) you have seen without this patch?\n\n\nThanks,\nYongqin Liu",
+      "revId": "80e228b5d8be952e30cd7bfbc57c152be37f6c7a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
