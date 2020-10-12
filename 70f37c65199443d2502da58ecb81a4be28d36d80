@@ -88,6 +88,24 @@
       "parentUuid": "611f842d_e7375b80",
       "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a3c1b1b_841f07e4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1290458
+      },
+      "writtenOn": "2020-10-12T18:09:57Z",
+      "side": 1,
+      "message": "If it\u0027s non-A/B then the cache partition is indeed needed. If it\u0027s Virtual A/B then it\u0027d automatically use /data for adb remount. Having the /cache partition seems fine if the device isn\u0027t actually configured for A/B.",
+      "parentUuid": "611f842d_e7375b80",
+      "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
