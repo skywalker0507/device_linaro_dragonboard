@@ -70,6 +70,24 @@
       "parentUuid": "0c55ad81_db62aa05",
       "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "79595c76_2847b59f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-12T18:02:04Z",
+      "side": 1,
+      "message": "Just wanted to follow up on this. If the cache partition isn\u0027t the right way, any suggestions on how to move this series forward?",
+      "parentUuid": "611f842d_e7375b80",
+      "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
