@@ -106,6 +106,24 @@
       "parentUuid": "611f842d_e7375b80",
       "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c99411f3_6d382ff4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-12T18:14:44Z",
+      "side": 1,
+      "message": "Ok, thanks! I\u0027ll look into more detail on whats needed to transition for virtual A/B, but its clear we\u0027re not there yet.",
+      "parentUuid": "6a3c1b1b_841f07e4",
+      "revId": "70f37c65199443d2502da58ecb81a4be28d36d80",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
