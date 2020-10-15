@@ -1,7 +1,7 @@
 ifndef TARGET_KERNEL_USE
 TARGET_KERNEL_USE := 5.4
 endif
-DB845C_KERNEL_DIR := device/linaro/dragonboard-kernel/android-$(TARGET_KERNEL_USE)
+DB845C_KERNEL_DIR ?= device/linaro/dragonboard-kernel/android-$(TARGET_KERNEL_USE)
 
 # Inherit the full_base and device configurations
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
