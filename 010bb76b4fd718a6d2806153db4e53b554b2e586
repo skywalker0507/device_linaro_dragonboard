@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f59e566_4f7b7182",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-10-15T15:26:29Z",
+      "side": 1,
+      "message": "John please start using this WIP HAL and let me know if you run into static noise again. I can\u0027t reproduce that noise again. May have run into just one corner case once in last 2 weeks. For me ,the easiest way to reproduce that static noise was to switch between BT audio and HDMI out or test audio playback after a reasonable monkey test run (adb shell monkey -v -v -v -s 0 --hprof --kill-process-after-error --monitor-native-crashes 1000).",
+      "revId": "010bb76b4fd718a6d2806153db4e53b554b2e586",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
