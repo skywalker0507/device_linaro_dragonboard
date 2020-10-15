@@ -40,6 +40,8 @@ echo "FLASH-ALL-AOSP: Flash boot img"
 fastboot flash boot "${ANDROID_PRODUCT_OUT}"/boot.img
 echo "FLASH-ALL-AOSP: Flash super/dynamic image"
 fastboot flash super "${ANDROID_PRODUCT_OUT}"/super.img
+echo "FLASH-ALL-AOSP: Flash cache image"
+fastboot flash cache "${ANDROID_PRODUCT_OUT}"/cache.img
 echo "FLASH-ALL-AOSP: Flash userdata image"
 fastboot flash userdata "${ANDROID_PRODUCT_OUT}"/userdata.img
 
