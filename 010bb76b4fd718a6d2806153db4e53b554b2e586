@@ -33,6 +33,23 @@
       "message": "Moved mixer controls from init.qcom.rc script to mixer_path.xml (only for HDMI out for now).\n\nWill cleanup audio policy configuration and remove unused equalizer filter file in next iteration.",
       "revId": "010bb76b4fd718a6d2806153db4e53b554b2e586",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5afc9dfe_26aa158d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-19T19:16:11Z",
+      "side": 1,
+      "message": "Seems to be working in my initial testing! Thanks so much for submitting this!\n\n",
+      "revId": "010bb76b4fd718a6d2806153db4e53b554b2e586",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
