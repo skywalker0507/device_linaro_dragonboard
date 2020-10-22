@@ -16,6 +16,23 @@
       "message": "tkjos: Ping.",
       "revId": "ebef015a20ca2b7a7b0ec49f94539886312c2705",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "880cbc03_58af65fc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-10-22T22:08:47Z",
+      "side": 1,
+      "message": "Sorry for the slow test on this. Validated here and audio and wifi still are working fine.",
+      "revId": "ebef015a20ca2b7a7b0ec49f94539886312c2705",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
