@@ -51,6 +51,24 @@
       "parentUuid": "880cbc03_58af65fc",
       "revId": "ebef015a20ca2b7a7b0ec49f94539886312c2705",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d6c8ab7_8354ad80",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2020-10-22T23:05:47Z",
+      "side": 1,
+      "message": "Thanks, it\u0027s landed upstream as well now.",
+      "parentUuid": "a04d2779_34f1a96c",
+      "revId": "ebef015a20ca2b7a7b0ec49f94539886312c2705",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
