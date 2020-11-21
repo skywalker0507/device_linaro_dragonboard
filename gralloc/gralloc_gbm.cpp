@@ -43,12 +43,18 @@
 
 #include "gralloc_gbm_priv.h"
 #include <android/gralloc_handle.h>
-
 #include <unordered_map>
+#include <BufferAllocator/BufferAllocator.h>
 
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 
 #define unlikely(x) __builtin_expect(!!(x), 0)
+
+#define ALIGN(x, a)            __ALIGN_MASK(x, (typeof(x))(a) - 1)
+#define __ALIGN_MASK(x, mask)    (((x) + (mask)) & ~(mask))
+
+
+static class BufferAllocator bufallocator;
 
 static std::unordered_map<buffer_handle_t, struct gbm_bo *> gbm_bo_handle_map;
 
@@ -194,6 +200,18 @@ static struct gbm_bo *gbm_import(struct gbm_device *gbm,
 	return bo;
 }
 
+static char* pick_heap(int usage) {
+	/*
+	if (usage & (GRALLOC_USAGE_HW_FB | GRALLOC_USAGE_HW_COMPOSER))
+		return "reserved";
+	*/
+
+	if (usage & (GRALLOC_USAGE_SW_READ_OFTEN | GRALLOC_USAGE_SW_WRITE_OFTEN))
+		return "system";
+
+	return "system"; /* system-uncached, eventually */
+}
+
 static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 		buffer_handle_t _handle)
 {
@@ -202,6 +220,9 @@ static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 	int format = get_gbm_format(handle->format);
 	int usage = get_pipe_bind(handle->usage);
 	int width, height;
+	int buf_fd = -1;
+	long size;
+	char* heap_name = pick_heap(handle->usage);
 
 	width = handle->width;
 	height = handle->height;
@@ -219,22 +240,49 @@ static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 	if (handle->format == HAL_PIXEL_FORMAT_YV12) {
 		width /= 2;
 		height += handle->height / 2;
+		ALOGE("JDB: YUV: width: %ld height: %ld\n", width, height);
 	}
 
 	ALOGV("create BO, size=%dx%d, fmt=%d, usage=%x",
 	      handle->width, handle->height, handle->format, usage);
-	bo = gbm_bo_create(gbm, width, height, format, usage);
-	if (!bo) {
-		ALOGE("failed to create BO, size=%dx%d, fmt=%d, usage=%x",
+
+	handle->stride = ALIGN(handle->width,64) * gralloc_gbm_get_bpp(handle->format);
+	size = ALIGN(handle->height,64) * handle->stride;
+
+#define HACK 1
+#if HACK
+	/* HAAACK - YV12 is still broken, so overallocate */
+	if (handle->format == HAL_PIXEL_FORMAT_YV12)
+		size *= 2;
+#endif
+	buf_fd = bufallocator.Alloc(heap_name, size);
+	if (buf_fd < 0) {
+		ALOGE("failed to allocate dmabuf, size=%dx%d, fmt=%d, usage=%x",
 		      handle->width, handle->height, handle->format, usage);
 		return NULL;
 	}
-
-	handle->prime_fd = gbm_bo_get_fd(bo);
-	handle->stride = gbm_bo_get_stride(bo);
+	handle->prime_fd = buf_fd;
 	#ifdef GBM_BO_IMPORT_FD_MODIFIER
-	handle->modifier = gbm_bo_get_modifier(bo);
+	handle->modifier = 0;
 	#endif
+
+
+#if HACK  /*HACK TO TRY TO FIX THINGS UP WHEN WE MISCALCULATE FOR YV12 */
+	bo = gbm_bo_create(gbm, width, height, format, usage);
+	if (handle->stride !=  gbm_bo_get_stride(bo)) {
+		ALOGE("JDB: bad stride: %ld vs %ld width: %ld bpp: %d\n", handle->stride, gbm_bo_get_stride(bo), handle->width, gralloc_gbm_get_bpp(handle->format));
+		handle->stride = gbm_bo_get_stride(bo);
+	}
+	gbm_bo_destroy(bo);
+#endif
+	ALOGE("JDB: created buffer: %ldx%ld size=%ld fmt=%d stride: %ld mod: %ld\n", handle->width, handle->height, size, handle->format, handle->stride, handle->modifier);
+
+	bo = gbm_import(gbm, _handle);
+	if (!bo) {
+		ALOGE("failed to import dmabuf, size=%dx%d, fmt=%d, usage=%x",
+		      handle->width, handle->height, handle->format, usage);
+		return NULL;
+	}
 
 	return bo;
 }
@@ -242,11 +290,13 @@ static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 void gbm_free(buffer_handle_t handle)
 {
 	struct gbm_bo *bo = gralloc_gbm_bo_from_handle(handle);
+	struct gralloc_handle_t *hnd = gralloc_handle(handle);
 
 	if (!bo)
 		return;
 
 	gbm_bo_handle_map.erase(handle);
+	close(hnd->prime_fd);
 	gbm_bo_destroy(bo);
 }
 

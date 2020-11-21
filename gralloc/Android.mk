@@ -30,7 +30,8 @@ LOCAL_SHARED_LIBRARIES := \
 	libdrm \
 	libgbm_mesa \
 	liblog \
-	libcutils
+	libcutils \
+	libdmabufheap
 
 LOCAL_EXPORT_C_INCLUDE_DIRS := \
 	$(LOCAL_PATH)
