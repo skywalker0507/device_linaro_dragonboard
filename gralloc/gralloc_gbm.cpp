@@ -43,12 +43,18 @@
 
 #include "gralloc_gbm_priv.h"
 #include <android/gralloc_handle.h>
-
 #include <unordered_map>
+#include <BufferAllocator/BufferAllocator.h>
 
 #define MAX(a, b) (((a) > (b)) ? (a) : (b))
 
 #define unlikely(x) __builtin_expect(!!(x), 0)
+
+#define ALIGN(x, a)            __ALIGN_MASK(x, (typeof(x))(a) - 1)
+#define __ALIGN_MASK(x, mask)    (((x) + (mask)) & ~(mask))
+
+
+static class BufferAllocator bufallocator;
 
 static std::unordered_map<buffer_handle_t, struct gbm_bo *> gbm_bo_handle_map;
 
@@ -194,6 +200,29 @@ static struct gbm_bo *gbm_import(struct gbm_device *gbm,
 	return bo;
 }
 
+static bool system_uncached_supported(void)
+{
+	static int cached_result = -1;
+
+	if (cached_result == -1) {
+		struct stat buffer;
+		cached_result = (stat("/dev/dma_heap/system-uncached", &buffer) == 0);
+	}
+	return (cached_result == 1);
+};
+
+static char* pick_heap(int usage) {
+//	if (usage & (GRALLOC_USAGE_HW_FB))
+//		return "linux,cma";
+
+	if (usage & (GRALLOC_USAGE_SW_READ_OFTEN | GRALLOC_USAGE_SW_WRITE_OFTEN))
+		return "system";
+
+	if (system_uncached_supported())
+		return "system-uncached";
+	return "system";
+}
+
 static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 		buffer_handle_t _handle)
 {
@@ -202,15 +231,24 @@ static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 	int format = get_gbm_format(handle->format);
 	int usage = get_pipe_bind(handle->usage);
 	int width, height;
+	int buf_fd = -1;
+	long size;
+	char* heap_name = pick_heap(handle->usage);
+
+	ALOGV("Allocating from %s: size=%dx%d, fmt=%d, usage=%x",
+	      heap_name, handle->width, handle->height, handle->format, usage);
 
 	width = handle->width;
 	height = handle->height;
 	if (usage & GBM_BO_USE_CURSOR) {
-		if (handle->width < 64)
+		if (width < 64)
 			width = 64;
-		if (handle->height < 64)
+		if (height < 64)
 			height = 64;
 	}
+
+	handle->stride = ALIGN(handle->width,64) * gralloc_gbm_get_bpp(handle->format);
+	size = ALIGN(handle->height,64) * handle->stride;
 
 	/*
 	 * For YV12, we request GR88, so halve the width since we're getting
@@ -219,22 +257,26 @@ static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 	if (handle->format == HAL_PIXEL_FORMAT_YV12) {
 		width /= 2;
 		height += handle->height / 2;
+		size = (size*3)/2;
 	}
 
-	ALOGV("create BO, size=%dx%d, fmt=%d, usage=%x",
-	      handle->width, handle->height, handle->format, usage);
-	bo = gbm_bo_create(gbm, width, height, format, usage);
-	if (!bo) {
-		ALOGE("failed to create BO, size=%dx%d, fmt=%d, usage=%x",
+	buf_fd = bufallocator.Alloc(heap_name, size);
+	if (buf_fd < 0) {
+		ALOGE("failed to allocate dmabuf, size=%dx%d, fmt=%d, usage=%x",
 		      handle->width, handle->height, handle->format, usage);
 		return NULL;
 	}
-
-	handle->prime_fd = gbm_bo_get_fd(bo);
-	handle->stride = gbm_bo_get_stride(bo);
+	handle->prime_fd = buf_fd;
 	#ifdef GBM_BO_IMPORT_FD_MODIFIER
-	handle->modifier = gbm_bo_get_modifier(bo);
+	handle->modifier = 0;
 	#endif
+
+	bo = gbm_import(gbm, _handle);
+	if (!bo) {
+		ALOGE("failed to import dmabuf, size=%dx%d, fmt=%d, usage=%x",
+		      handle->width, handle->height, handle->format, usage);
+		return NULL;
+	}
 
 	return bo;
 }
@@ -242,6 +284,7 @@ static struct gbm_bo *gbm_alloc(struct gbm_device *gbm,
 void gbm_free(buffer_handle_t handle)
 {
 	struct gbm_bo *bo = gralloc_gbm_bo_from_handle(handle);
+	struct gralloc_handle_t *hnd = gralloc_handle(handle);
 
 	if (!bo)
 		return;
