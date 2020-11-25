@@ -25,7 +25,7 @@ PRODUCT_COPY_FILES := \
     device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.pixel3_mainline.usb.rc \
     device/linaro/dragonboard/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/pixel3_mainline.kl
 
-ifneq ("$(wildcard $(PIXEL3_KERNEL_DIR)/Image.gz-dtb)","")
+ifneq (,$(wildcard $(PIXEL3_KERNEL_DIR)/Image.gz-dtb))
     PRODUCT_COPY_FILES += $(PIXEL3_KERNEL_DIR)/Image.gz-dtb:kernel
     PIXEL3_KERNEL_FOUND := true
 else
