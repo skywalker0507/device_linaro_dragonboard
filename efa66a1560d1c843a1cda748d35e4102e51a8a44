@@ -33,6 +33,24 @@
       "message": "Locally boottested and seem to be ok, though I\u0027m a bit foggy on how to validate the issue Peter was hitting earlier.",
       "revId": "efa66a1560d1c843a1cda748d35e4102e51a8a44",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d41abc64_f095e3ce",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2020-12-01T07:51:24Z",
+      "side": 1,
+      "message": "Thanks for getting this released!\n\nTo validate you can try cherry-picking aosp/1468056, building a kernel with BUILD_CONFIG\u003dcommon/build.config.db845c_khwasan and booting into that kernel.",
+      "parentUuid": "865e8c8e_d19f31c3",
+      "revId": "efa66a1560d1c843a1cda748d35e4102e51a8a44",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
