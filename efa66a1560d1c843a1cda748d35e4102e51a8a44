@@ -16,6 +16,23 @@
       "message": "I\u0027ve not had the chance to test this locally yet, but updated per Nico\u0027s pointer.",
       "revId": "efa66a1560d1c843a1cda748d35e4102e51a8a44",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "865e8c8e_d19f31c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-12-01T07:20:31Z",
+      "side": 1,
+      "message": "Locally boottested and seem to be ok, though I\u0027m a bit foggy on how to validate the issue Peter was hitting earlier.",
+      "revId": "efa66a1560d1c843a1cda748d35e4102e51a8a44",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
