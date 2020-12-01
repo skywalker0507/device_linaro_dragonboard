@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d76b8991_fd851d8e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2020-12-01T07:15:44Z",
+      "side": 1,
+      "message": "I\u0027ve not had the chance to test this locally yet, but updated per Nico\u0027s pointer.",
+      "revId": "efa66a1560d1c843a1cda748d35e4102e51a8a44",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
