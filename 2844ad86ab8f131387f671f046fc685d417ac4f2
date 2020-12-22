@@ -52,6 +52,24 @@
       "parentUuid": "fe7eacbe_bd396d24",
       "revId": "2844ad86ab8f131387f671f046fc685d417ac4f2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc65323b_c765336a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-12-22T19:58:08Z",
+      "side": 1,
+      "message": "Done. TARGET_USES_BOOT_HDR_V3\u003dtrue will build boot img header v3 images. Default build will fallback to header v2.",
+      "parentUuid": "6393dfe4_87643a43",
+      "revId": "2844ad86ab8f131387f671f046fc685d417ac4f2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
