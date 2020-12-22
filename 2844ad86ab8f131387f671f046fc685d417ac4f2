@@ -34,6 +34,24 @@
       "parentUuid": "34f94b23_b4f094ee",
       "revId": "2844ad86ab8f131387f671f046fc685d417ac4f2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6393dfe4_87643a43",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2020-12-22T17:38:45Z",
+      "side": 1,
+      "message": "Yes, please. We\u0027ll have to coordinate the bootloader update for the devices in the lab.",
+      "parentUuid": "fe7eacbe_bd396d24",
+      "revId": "2844ad86ab8f131387f671f046fc685d417ac4f2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
