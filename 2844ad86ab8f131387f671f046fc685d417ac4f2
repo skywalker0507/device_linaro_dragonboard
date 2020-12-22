@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34f94b23_b4f094ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2020-12-22T16:45:28Z",
+      "side": 1,
+      "message": "Is this going to break devices that don\u0027t update the bootloader right away or does the device work with either bootloader so folks can upgrade when convenient?",
+      "revId": "2844ad86ab8f131387f671f046fc685d417ac4f2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
