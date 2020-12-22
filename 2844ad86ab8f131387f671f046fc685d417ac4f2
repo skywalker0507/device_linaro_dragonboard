@@ -16,6 +16,24 @@
       "message": "Is this going to break devices that don\u0027t update the bootloader right away or does the device work with either bootloader so folks can upgrade when convenient?",
       "revId": "2844ad86ab8f131387f671f046fc685d417ac4f2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fe7eacbe_bd396d24",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-12-22T17:35:09Z",
+      "side": 1,
+      "message": "Yes it will break the devices running older bootloader versions. Should I make this switch build-time conditional for now? i.e. default build will remain unchanged and new conditional builds will use header image v3 and will need newer bootloader to boot.",
+      "parentUuid": "34f94b23_b4f094ee",
+      "revId": "2844ad86ab8f131387f671f046fc685d417ac4f2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
