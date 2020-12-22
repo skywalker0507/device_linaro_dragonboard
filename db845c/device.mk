@@ -28,7 +28,11 @@ AB_OTA_PARTITIONS += \
     system_ext \
     vendor
 
+ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
+else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+endif
 
 PRODUCT_COPY_FILES := \
     $(DB845C_KERNEL_DIR)/Image.gz:kernel \
