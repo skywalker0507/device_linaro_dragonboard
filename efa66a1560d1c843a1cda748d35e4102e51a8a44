@@ -51,6 +51,24 @@
       "parentUuid": "865e8c8e_d19f31c3",
       "revId": "efa66a1560d1c843a1cda748d35e4102e51a8a44",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2f4b2113_c4cf9b96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2020-12-22T10:25:57Z",
+      "side": 1,
+      "message": "Uploaded a new bootloader build at aosp/1533190 and tested khwasan kernel build on db845c as pointed by Peter. So we can abandon this one and merge that change instead.",
+      "parentUuid": "d41abc64_f095e3ce",
+      "revId": "efa66a1560d1c843a1cda748d35e4102e51a8a44",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
