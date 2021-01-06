@@ -16,6 +16,23 @@
       "message": "Smoke tested Peter\u0027s khwasan kernel build, aosp/1468056, as well.",
       "revId": "e521642853ac275ac3e79995f317a9ba46355bf0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d6e4e0f_56f544ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-01-06T06:12:40Z",
+      "side": 1,
+      "message": "Tested here and works well with both v3 and v2 abootimg builds",
+      "revId": "e521642853ac275ac3e79995f317a9ba46355bf0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
