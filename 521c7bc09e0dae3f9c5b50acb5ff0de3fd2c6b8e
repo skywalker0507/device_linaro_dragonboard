@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de39c6c8_9c142ddf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-01-06T06:07:00Z",
+      "side": 1,
+      "message": "Validated here. Using the build time flag is a good idea to let folks get their boards transitioned to the new firmware.\n\nThat said, I did run into some trouble where I built a V3 build right after a v2 build and the resulting images didn\u0027t flash properly. After clobbering the vendor* and boot* files in out, and rebuilding it worked fine, but switching between the two methods without clobbering things may give bad results. So hopefully we can give it some time for folks to transition the bootloaders and then switch the default and move forward.",
+      "revId": "521c7bc09e0dae3f9c5b50acb5ff0de3fd2c6b8e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
