@@ -16,6 +16,23 @@
       "message": "1st pass at virtual_ab, with all dynamic partitions as A/B. I see:\n\nconsole:/ # getprop | grep virt\n[ro.virtual_ab.enabled]: [true]\n\nconsole:/ # ls /dev/block/mapper/\nby-uuid  product_a  system_a  system_ext_a  vendor_a\n\nWhat else testing we can do to make sure that we are fully compliant?",
       "revId": "44f3990603403ab80bf74fece9950efdb22a3eae",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "27508de7_5f6921a4",
+        "filename": "db845c/device.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-01-12T12:26:18Z",
+      "side": 1,
+      "message": "I\u0027ll switch to \"launch_with_vendor_ramdisk.mk\" in bootimg v3 patchset.",
+      "revId": "44f3990603403ab80bf74fece9950efdb22a3eae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
