@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "355561e4_9ac766bc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-01-12T12:21:58Z",
+      "side": 1,
+      "message": "1st pass at virtual_ab, with all dynamic partitions as A/B. I see:\n\nconsole:/ # getprop | grep virt\n[ro.virtual_ab.enabled]: [true]\n\nconsole:/ # ls /dev/block/mapper/\nby-uuid  product_a  system_a  system_ext_a  vendor_a\n\nWhat else testing we can do to make sure that we are fully compliant?",
+      "revId": "44f3990603403ab80bf74fece9950efdb22a3eae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
