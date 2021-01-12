@@ -20,6 +20,16 @@ PRODUCT_SOONG_NAMESPACES += \
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
+# Enable Virtual A/B
+AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    product \
+    system \
+    system_ext \
+    vendor
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
 PRODUCT_COPY_FILES := \
     $(DB845C_KERNEL_DIR)/Image.gz:kernel \
     $(DB845C_KERNEL_DIR)/sdm845-db845c.dtb:dtb.img \
