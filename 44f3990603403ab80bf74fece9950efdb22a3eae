@@ -18,6 +18,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "35e10d5b_3d041ab6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-01-13T05:59:15Z",
+      "side": 1,
+      "message": "I too am not sure if this is all that\u0027s needed, but with this patch I reproduced  [ro.virtual_ab.enabled]: [true]. Looks ok to me.",
+      "revId": "44f3990603403ab80bf74fece9950efdb22a3eae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "27508de7_5f6921a4",
