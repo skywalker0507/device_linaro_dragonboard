@@ -37,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "0affd951_3e72c589",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-01-14T20:24:30Z",
+      "side": 1,
+      "message": "Missing virtual_ab support was one of the reasons we had to re-enable cache partition. So I verified \"adb remount\" with this patch working, without cache partition. That counts as one of the valid tests to verify virtual_ab support I suppose.",
+      "parentUuid": "35e10d5b_3d041ab6",
+      "revId": "44f3990603403ab80bf74fece9950efdb22a3eae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "27508de7_5f6921a4",
         "filename": "db845c/device.mk",
         "patchSetId": 1
