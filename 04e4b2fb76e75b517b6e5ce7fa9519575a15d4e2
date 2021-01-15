@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2e590469_e16c2450",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-01-15T04:00:04Z",
+      "side": 1,
+      "message": "validated adb remount seemed to work properly after this change.",
+      "revId": "04e4b2fb76e75b517b6e5ce7fa9519575a15d4e2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
