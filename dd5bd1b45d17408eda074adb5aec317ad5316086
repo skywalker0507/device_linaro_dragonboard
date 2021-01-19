@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "64c53621_28cc3065",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1293738
+      },
+      "writtenOn": "2021-01-19T21:15:59Z",
+      "side": 1,
+      "message": "I reordered your stack slightly just out of paranoia, in case this change has some side effects for our lab testing.",
+      "revId": "dd5bd1b45d17408eda074adb5aec317ad5316086",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
