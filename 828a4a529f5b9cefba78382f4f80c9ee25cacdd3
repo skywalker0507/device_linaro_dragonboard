@@ -16,6 +16,23 @@
       "message": "PTAL",
       "revId": "828a4a529f5b9cefba78382f4f80c9ee25cacdd3",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "935c41f5_4110ab98",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1742510
+      },
+      "writtenOn": "2021-01-22T00:38:32Z",
+      "side": 1,
+      "message": "What are these OEM licenses and where are their terms?",
+      "revId": "828a4a529f5b9cefba78382f4f80c9ee25cacdd3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
