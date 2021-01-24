@@ -33,6 +33,41 @@
       "message": "What are these OEM licenses and where are their terms?",
       "revId": "828a4a529f5b9cefba78382f4f80c9ee25cacdd3",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9db61c91_48f0f783",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2021-01-24T16:23:23Z",
+      "side": 1,
+      "message": "See:\n\nhttps://android.googlesource.com/device/linaro/dragonboard/+/master/installer/db845c/dragonboard-845c-bootloader-ufs-aosp/LICENSE\n\nhttps://android.googlesource.com/device/linaro/dragonboard/+/master/db845c/firmware/NOTICE\n\nhttps://android.googlesource.com/device/linaro/dragonboard/+/master/db845c/firmware/qcom/venus-5.2/NOTICE\n\nhttps://android.googlesource.com/device/linaro/dragonboard/+/master/db845c/firmware/LICENSE.qcom.txt",
+      "parentUuid": "935c41f5_4110ab98",
+      "revId": "828a4a529f5b9cefba78382f4f80c9ee25cacdd3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ffa59c52_60b0d321",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1359095
+      },
+      "writtenOn": "2021-01-24T16:23:23Z",
+      "side": 1,
+      "message": "PTAL",
+      "revId": "828a4a529f5b9cefba78382f4f80c9ee25cacdd3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
