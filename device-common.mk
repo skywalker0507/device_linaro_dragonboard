@@ -63,6 +63,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     hwc.drm.use_overlay_planes=0 \
     ro.sf.lcd_density=160 \
     ro.opengles.version=196608 \
+    debug.c2.use_dmabufheaps=1 \
     persist.demo.rotationlock=1
 
 # Use Launcher3QuickStep
