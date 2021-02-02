@@ -1,0 +1,10 @@
+Open-Source-Licensing+2: Bob Badour <bbadour@google.com>
+Open-Source-Licensing+2: Dashiell Renaud <rend@google.com>
+Lint+1: Lint 🤖 <ayeaye-gerrit@google.com>
+Code-Review+2: Bob Badour <bbadour@google.com>
+Presubmit-Verified+2: Treehugger Robot <treehugger-gerrit@google.com>
+Submitted-by: Bob Badour <bbadour@google.com>
+Submitted-at: Tue, 02 Feb 2021 03:29:27 +0000
+Reviewed-on: https://android-review.googlesource.com/c/device/linaro/dragonboard/+/1556485
+Project: device/linaro/dragonboard
+Branch: refs/heads/master
