@@ -1,3 +1,21 @@
+package {
+    default_applicable_licenses: [
+        "device_linaro_dragonboard_qcom_qrtr_license",
+    ],
+}
+
+// Added automatically by a large-scale-change
+license {
+    name: "device_linaro_dragonboard_qcom_qrtr_license",
+    visibility: [":__subpackages__"],
+    license_kinds: [
+        "SPDX-license-identifier-BSD",
+    ],
+    license_text: [
+        "LICENSE",
+    ],
+}
+
 cc_library {
     name: "libqrtr",
     vendor: true,
