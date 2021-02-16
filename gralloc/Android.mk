@@ -39,6 +39,8 @@ LOCAL_C_INCLUDES += system/core/include hardware/libhardware/include
 LOCAL_C_INCLUDES += system/core/libsystem/include system/core
 
 LOCAL_MODULE := gralloc.gbm
+LOCAL_LICENSE_KINDS := SPDX-license-identifier-MIT
+LOCAL_LICENSE_CONDITIONS := notice
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_RELATIVE_PATH := hw
 LOCAL_PROPRIETARY_MODULE := true
@@ -51,6 +53,8 @@ LOCAL_EXPORT_C_INCLUDE_DIRS := \
 	$(LOCAL_PATH)
 
 LOCAL_MODULE := libgralloc_drm
+LOCAL_LICENSE_KINDS := SPDX-license-identifier-MIT
+LOCAL_LICENSE_CONDITIONS := notice
 LOCAL_MODULE_TAGS := optional
 LOCAL_PROPRIETARY_MODULE := true
 
