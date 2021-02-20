@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2653cb64_6ce90e54",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-02-20T08:48:10Z",
+      "side": 1,
+      "message": "Here\u0027s a first pass at fixing things w/ newer mesa.\n\nI\u0027m not totally sure mesa is right here, but I\u0027d also suspect gbm_gralloc isn\u0027t doing the right thing.\n\nAnd for some reason this breaks the gallery app in seemingly the exact oposite way (expected planes is 1 instead of 3).  I suspect there is some quirk with the actual format we\u0027re passing through.",
+      "revId": "d2ab8c2d83ce7e6cbeeb0a28b789ec12a7678195",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
