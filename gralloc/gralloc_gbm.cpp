@@ -181,8 +181,14 @@ static struct gbm_bo *gbm_import(struct gbm_device *gbm,
 
 	#ifdef GBM_BO_IMPORT_FD_MODIFIER
 	data.num_fds = 1;
+	if (handle->format == HAL_PIXEL_FORMAT_YV12)
+		data.num_fds = 3;
 	data.fds[0] = handle->prime_fd;
+	data.fds[1] = handle->prime_fd;
+	data.fds[2] = handle->prime_fd;
 	data.strides[0] = handle->stride;
+	data.strides[1] = handle->stride;
+	data.strides[2] = handle->stride;
 	data.modifier = handle->modifier;
 	bo = gbm_bo_import(gbm, GBM_BO_IMPORT_FD_MODIFIER, &data, 0);
 	#else
