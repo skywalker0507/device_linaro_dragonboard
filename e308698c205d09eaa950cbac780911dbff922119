@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce28016e_d49d44ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-03-01T18:10:31Z",
+      "side": 1,
+      "message": "I\u0027ve not had a chance to boot test with this, but it looks straightforward and reasonable. ",
+      "revId": "e308698c205d09eaa950cbac780911dbff922119",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
