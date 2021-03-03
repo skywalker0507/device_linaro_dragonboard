@@ -33,6 +33,23 @@
       "message": "Yongqin: Did you happen to get a chance to give this a try?",
       "revId": "624bb6888c976b3eed859e559757449d6b02e7cf",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "586a1fb7_c3f00ef5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-03-03T06:19:47Z",
+      "side": 1,
+      "message": "with ion being disabled on android12-5.10, we can probably skip this",
+      "revId": "624bb6888c976b3eed859e559757449d6b02e7cf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
