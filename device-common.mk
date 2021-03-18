@@ -163,8 +163,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-cuttlefish \
-    android.hardware.health@2.1-service
+    android.hardware.health@2.0-service \
+    android.hardware.health@2.0-impl
 
 # mkbootimg host tool to build boot.img separately
 PRODUCT_HOST_PACKAGES := \
