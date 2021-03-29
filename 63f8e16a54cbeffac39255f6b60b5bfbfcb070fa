@@ -16,6 +16,24 @@
       "message": "Hi, Todd, Alistair\n\nPlease note, this would affect the test farm if the bootloader has not been updated with the new firmware, our side is ready for the switch, so submitted this change here for check.\n\nThanks,\nYongqin Liu",
       "revId": "63f8e16a54cbeffac39255f6b60b5bfbfcb070fa",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7bf6ba63_4e26cf18",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2021-03-29T15:34:48Z",
+      "side": 1,
+      "message": "Yup. The db845s in the lab have been updated.",
+      "parentUuid": "be84a664_090d7acb",
+      "revId": "63f8e16a54cbeffac39255f6b60b5bfbfcb070fa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
