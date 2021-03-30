@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "131da7dc_9b943283",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-03-30T01:38:40Z",
+      "side": 1,
+      "message": "Upstream kernels stopped booting on db845c with 5.12-rc5 due to two problems.\n\nThis patch fixes the first, which is our SQE firmware is too old (apparently there are security issues with it), so this patch updates it to the latest file from linux-firmware.",
+      "revId": "c34f56ce4f291362ecf4bae379c7607d0e0faf54",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
