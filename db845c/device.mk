@@ -68,5 +68,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/eth_mac_addr.rc:/system/etc/init/eth_mac_addr.rc \
     $(LOCAL_PATH)/eth_mac_addr.sh:/system/bin/eth_mac_addr.sh
 
+PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
+PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SDM845
+
 # Copy firmware files
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
