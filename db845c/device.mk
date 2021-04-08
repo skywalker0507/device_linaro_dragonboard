@@ -35,7 +35,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 endif
 
 PRODUCT_COPY_FILES := \
-    $(DB845C_KERNEL_DIR)/Image.gz:kernel \
+    kernel/prebuilts/5.4/arm64/kernel-5.4-gz:kernel \
     $(DB845C_KERNEL_DIR)/sdm845-db845c.dtb:dtb.img \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.db845c \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
