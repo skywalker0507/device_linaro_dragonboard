@@ -33,6 +33,24 @@
       "message": "Since gralloc4 is used, there is no need to use hwcomposer.drm_minigbm.\nUsing hwcomposer.drm should be enough.\n\nI plan to convert hwcomposer.drm_minigbm soong target to filegroup to be able to build drm_hwc in Android-9 tree.\nhwcomposer.drm_minigbm target may be either put into minigbm tree or removed completely.",
       "revId": "9269a4754b167394e00aeba03ae7f82b2a9a8c44",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a0705785_9a5eb420",
+        "filename": "device-common.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-04-09T23:02:13Z",
+      "side": 1,
+      "message": "thanks for that, i\u0027ve changed it in the latest version",
+      "parentUuid": "1cb0c379_ed1bcccf",
+      "revId": "9269a4754b167394e00aeba03ae7f82b2a9a8c44",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
