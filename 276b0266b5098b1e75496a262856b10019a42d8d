@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9d763d73_ee35e35b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-04-15T05:44:42Z",
+      "side": 1,
+      "message": "First pass at porting db845c AOSP/master changes to android11-gsi\n\nThis should enable VirtA/B (removing the cache partition requirement) and abootimgv3 support.",
+      "revId": "276b0266b5098b1e75496a262856b10019a42d8d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
