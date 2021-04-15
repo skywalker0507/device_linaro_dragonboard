@@ -16,6 +16,23 @@
       "message": "First pass at porting db845c AOSP/master changes to android11-gsi\n\nThis should enable VirtA/B (removing the cache partition requirement) and abootimgv3 support.",
       "revId": "276b0266b5098b1e75496a262856b10019a42d8d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8a9ecda4_10c90660",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-04-15T14:00:01Z",
+      "side": 1,
+      "message": "when I tried to build the bootv3 version, I got the following error reported:\n    lunch db845c-userdebug\n    In file included from build/make/core/config.mk:291:\n    In file included from build/make/core/envsetup.mk:266:\n    device/linaro/dragonboard/db845c/device.mk:75: error: _nic.PRODUCTS.[[device/linaro/dragonboar/db845c.mk]]: \"build/make/target/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk\" does not exist.\n    21:54:24 dumpvars failed with: exit status 1\n    21:54:24 dl380:android11$\n\nthe launch_with_vendor_ramdisk.mk does not exist on the android11-gsi branch, is vendor_boot supported by android11-gsi?",
+      "revId": "276b0266b5098b1e75496a262856b10019a42d8d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
