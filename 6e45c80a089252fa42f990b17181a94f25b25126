@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a7aaf686_f62d0884",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-04-17T03:25:30Z",
+      "side": 1,
+      "message": "hmm, with the Patchset2, the support for bootv3 removed? no vendor-boot.img generated.\nwill this still cause deployment broken problem for google?",
+      "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
