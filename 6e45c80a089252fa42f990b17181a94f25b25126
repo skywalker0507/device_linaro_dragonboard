@@ -34,6 +34,24 @@
       "parentUuid": "a7aaf686_f62d0884",
       "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "111673ef_5561c3b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-04-18T15:32:49Z",
+      "side": 1,
+      "message": "sorry, I guess I was wrong somewhere, With a clean build, and I have the the vendor_boot.img generated.",
+      "parentUuid": "9671f1d4_fe56488a",
+      "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
