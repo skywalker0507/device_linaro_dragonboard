@@ -52,6 +52,24 @@
       "parentUuid": "ba65989e_67711b3d",
       "revId": "8777c38d5369b415024458c9a0faa4f340769d05",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8458ea88_adfa147a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2021-04-19T23:59:20Z",
+      "side": 1,
+      "message": "Ah yes, I remember now. This is basically the issue of breaking db845c devices in the lab if we try to enable bh v3 for android12 cases and then go back v2 for android11 cases. I\u0027ll check around on this.",
+      "parentUuid": "7f2543d5_97db6699",
+      "revId": "8777c38d5369b415024458c9a0faa4f340769d05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
