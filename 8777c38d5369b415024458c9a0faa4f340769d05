@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9f620a83_aa84bfb0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-04-19T18:22:04Z",
+      "side": 1,
+      "message": "Hey Alistair/Todd: Wanted to share this series as it provides updates to the android11-gsi branch to bring it in line with AOSP/master (virtA/B and abootimgv3 support).",
+      "revId": "8777c38d5369b415024458c9a0faa4f340769d05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
