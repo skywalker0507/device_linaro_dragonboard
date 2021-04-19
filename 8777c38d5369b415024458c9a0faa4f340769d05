@@ -34,6 +34,24 @@
       "parentUuid": "9f620a83_aa84bfb0",
       "revId": "8777c38d5369b415024458c9a0faa4f340769d05",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7f2543d5_97db6699",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-04-19T23:41:34Z",
+      "side": 1,
+      "message": "So Sumit asked me to pick this up, as Amit was going to do it and was out. So I have some missing context. My understanding was that it was requested from your side, but it sounds like that may be wrong? :)\n\nI believe the goal was around the desire to align android11-gsi w/ the virtA/B and abootimgv3 support so we don\u0027t need to flash different partitions depending on what we\u0027re testing.\n\nI can also try to thin down to specific feature changes if that helps with additional approvals, but the ask was just to sync android11-gsi w/ AOSP/master, so that\u0027s what I did.",
+      "parentUuid": "ba65989e_67711b3d",
+      "revId": "8777c38d5369b415024458c9a0faa4f340769d05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
