@@ -75,6 +75,30 @@
       },
       "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b852be51_767163b0",
+        "filename": "db845c/BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-04-29T23:43:48Z",
+      "side": 1,
+      "message": "Eh. We haven\u0027t done it in the master branch, so I\u0027m hesitant to set it default here until later.",
+      "parentUuid": "e87b158a_a5f3ca31",
+      "range": {
+        "startLine": 9,
+        "startChar": 8,
+        "endLine": 9,
+        "endChar": 31
+      },
+      "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
