@@ -52,6 +52,29 @@
       "parentUuid": "9671f1d4_fe56488a",
       "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e87b158a_a5f3ca31",
+        "filename": "db845c/BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-04-29T10:38:55Z",
+      "side": 1,
+      "message": "btw, should we set up to enable boot v3 by default?",
+      "range": {
+        "startLine": 9,
+        "startChar": 8,
+        "endLine": 9,
+        "endChar": 31
+      },
+      "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
