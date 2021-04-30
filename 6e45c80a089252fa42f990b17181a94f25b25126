@@ -99,6 +99,30 @@
       },
       "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dfd2a782_fb3da77f",
+        "filename": "db845c/BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-04-30T15:56:24Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "b852be51_767163b0",
+      "range": {
+        "startLine": 9,
+        "startChar": 8,
+        "endLine": 9,
+        "endChar": 31
+      },
+      "revId": "6e45c80a089252fa42f990b17181a94f25b25126",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
