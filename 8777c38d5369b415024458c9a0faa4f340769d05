@@ -70,6 +70,24 @@
       "parentUuid": "7f2543d5_97db6699",
       "revId": "8777c38d5369b415024458c9a0faa4f340769d05",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b9dd4e8c_89332b29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-05-01T00:17:38Z",
+      "side": 1,
+      "message": "Hey Todd: Any update here? Is there a preference to minimize the series or try to have it match the master branch as closely as possible?",
+      "parentUuid": "8458ea88_adfa147a",
+      "revId": "8777c38d5369b415024458c9a0faa4f340769d05",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
