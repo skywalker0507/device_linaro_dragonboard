@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "455acb3c_a01497ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-05-05T12:28:22Z",
+      "side": 1,
+      "message": "Smoke tested on upstream commit 9ccce092fc64 (Merge tag \u0027for-linus-5.13-ofs-1\u0027 of git://git.kernel.org/pub/scm/linux/kernel/git/hubcap/linux) plus this additional WIP upstream fix https://patchwork.kernel.org/project/alsa-devel/patch/20210504125909.16108-1-srinivas.kandagatla@linaro.org/. Audio (HDMI) doesn\u0027t work on db845c without this firmware fix.",
+      "revId": "54dcccf381d2ea726e1bb465b4e00f0306bc5774",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
