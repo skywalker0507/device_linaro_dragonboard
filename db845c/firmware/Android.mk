@@ -15,7 +15,8 @@ firmware_files :=	\
     a630_zap.b01	\
     a630_zap.b02	\
     a630_zap.elf	\
-    a630_zap.mdt
+    a630_zap.mdt	\
+    a630_zap.mbn
 
 # DSP (adsp+cdsp)
 sdm845_firmware_files +=	\
@@ -34,6 +35,8 @@ sdm845_firmware_files +=	\
     adsp.b12		\
     adsp.b13		\
     adsp.mdt		\
+    adsp.mbn		\
+    adspr.jsn		\
     adspua.jsn		\
     cdsp.b00		\
     cdsp.b01		\
@@ -43,7 +46,10 @@ sdm845_firmware_files +=	\
     cdsp.b05		\
     cdsp.b06		\
     cdsp.b08		\
-    cdsp.mdt
+    cdsp.mdt		\
+    cdsp.mbn		\
+    cdspr.jsn		\
+
 
 # USB
 firmware_files +=	\
