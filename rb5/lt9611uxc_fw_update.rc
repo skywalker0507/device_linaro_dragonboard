@@ -1,0 +1,6 @@
+service lt9611uxc_fw_update /system/bin/lt9611uxc_fw_update.sh
+    class core
+    user root
+    group system
+    disabled
+    oneshot

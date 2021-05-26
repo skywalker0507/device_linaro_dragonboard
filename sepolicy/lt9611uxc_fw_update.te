@@ -1,0 +1,16 @@
+type lt9611uxc_fw_file, file_type, vendor_file_type;
+type sysfs_lt9611uxc, fs_type, sysfs_type;
+
+type lt9611uxc_fw_update, domain, coredomain;
+type lt9611uxc_fw_update_exec, exec_type, system_file_type, file_type;
+init_daemon_domain(lt9611uxc_fw_update);
+
+# audit2allow
+allow lt9611uxc_fw_update shell_exec:file { execute getattr map read };
+allow lt9611uxc_fw_update sysfs_lt9611uxc:dir { open read search };
+allow lt9611uxc_fw_update sysfs_lt9611uxc:file { getattr open read write };
+allow lt9611uxc_fw_update toolbox_exec:file { execute execute_no_trans getattr map open read };
+
+#FIXME
+# Can't build past the following actual firmware handling/flashing policy
+#allow lt9611uxc_fw_update lt9611uxc_fw_file:file { open read };
