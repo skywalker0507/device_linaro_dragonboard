@@ -61,3 +61,9 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     class main
     disabled
     oneshot
+
+# TODO: disable this service once we implement system suspend
+service suspend_blocker /vendor/bin/suspend_blocker
+    class early_hal # Start together with system_suspend HAL
+    group system
+    user root
