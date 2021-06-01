@@ -59,7 +59,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=gbm \
     ro.hardware.hwcomposer=drm \
     debug.sf.no_hw_vsync=1 \
-    ro.sf.lcd_density=160 \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
 
