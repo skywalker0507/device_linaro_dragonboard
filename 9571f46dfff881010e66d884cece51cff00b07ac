@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df124e2c_d1ad4fdb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052193
+      },
+      "writtenOn": "2021-06-01T12:20:00Z",
+      "side": 1,
+      "message": "Some changes needed to boot pixel3_mainline target in sync with mainline kernels",
+      "revId": "9571f46dfff881010e66d884cece51cff00b07ac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
