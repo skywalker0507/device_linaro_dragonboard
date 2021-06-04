@@ -35,5 +35,8 @@ endif
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.pixel3_mainline
 
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=443
+
 # Copy firmware files
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
