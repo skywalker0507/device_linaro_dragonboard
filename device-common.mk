@@ -163,6 +163,10 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-cuttlefish \
     android.hardware.health@2.1-service
 
+# TODO: disable this service once we implement system suspend
+PRODUCT_PACKAGES += \
+    suspend_blocker
+
 # mkbootimg host tool to build boot.img separately
 PRODUCT_HOST_PACKAGES := \
     mkbootimg
