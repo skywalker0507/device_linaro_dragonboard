@@ -63,6 +63,30 @@
       },
       "revId": "d3525fb544b4af4a40b4238a04c9d41c7223f0f1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "de07ac6e_46d4e7dd",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1069543
+      },
+      "writtenOn": "2021-06-04T19:36:13Z",
+      "side": 1,
+      "message": "Oops, I missed that this was a wrapped line.",
+      "parentUuid": "37352745_c305dea7",
+      "range": {
+        "startLine": 39,
+        "startChar": 47,
+        "endLine": 39,
+        "endChar": 66
+      },
+      "revId": "d3525fb544b4af4a40b4238a04c9d41c7223f0f1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
