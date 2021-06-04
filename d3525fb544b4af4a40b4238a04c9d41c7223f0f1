@@ -39,6 +39,30 @@
       },
       "revId": "d3525fb544b4af4a40b4238a04c9d41c7223f0f1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "37352745_c305dea7",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 39,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-06-04T19:34:05Z",
+      "side": 1,
+      "message": "The label is \"u:object_r:suspend_blocker_exec:s0\", so that part is correct and not a typo.\nI tried to keep the line format consistent with the file and that resulted in a longer line which created the confusion. Sorry about that.",
+      "parentUuid": "18835f60_b2cf708e",
+      "range": {
+        "startLine": 39,
+        "startChar": 47,
+        "endLine": 39,
+        "endChar": 66
+      },
+      "revId": "d3525fb544b4af4a40b4238a04c9d41c7223f0f1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
