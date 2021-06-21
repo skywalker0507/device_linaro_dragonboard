@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd9362ba_746b3b6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-06-21T20:19:12Z",
+      "side": 1,
+      "message": "Todd/Peter: Minor nudge on this, as it resolves a reported adb remount issue",
+      "revId": "7ed62c68338ff71c62d44db0a0925cfde5f71401",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
