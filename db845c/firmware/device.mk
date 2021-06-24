@@ -9,7 +9,8 @@ PRODUCT_PACKAGES :=	\
     a630_zap.b01	\
     a630_zap.b02	\
     a630_zap.elf	\
-    a630_zap.mdt
+    a630_zap.mdt	\
+    a630_zap.mbn
 
 # DSP (adsp+cdsp)
 PRODUCT_PACKAGES +=	\
@@ -28,6 +29,8 @@ PRODUCT_PACKAGES +=	\
     adsp.b12		\
     adsp.b13		\
     adsp.mdt		\
+    adsp.mbn		\
+    adspr.jsn		\
     adspua.jsn		\
     cdsp.b00		\
     cdsp.b01		\
@@ -37,7 +40,9 @@ PRODUCT_PACKAGES +=	\
     cdsp.b05		\
     cdsp.b06		\
     cdsp.b08		\
-    cdsp.mdt
+    cdsp.mdt		\
+    cdsp.mbn		\
+    cdspr.jsn
 
 # USB (USB Host to PCIE)
 # For Ethernet and one of the USB-A host port to work
@@ -62,7 +67,8 @@ PRODUCT_PACKAGES +=	\
     venus.b02		\
     venus.b03		\
     venus.b04		\
-    venus.mdt
+    venus.mdt		\
+    venus.mbn
 
 # Wlan
 PRODUCT_PACKAGES +=	\

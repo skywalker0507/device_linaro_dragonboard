@@ -59,9 +59,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=gbm \
     ro.hardware.hwcomposer=drm \
     debug.sf.no_hw_vsync=1 \
-    hwc.drm.use_framebuffer_target=1 \
-    hwc.drm.use_overlay_planes=0 \
-    ro.sf.lcd_density=160 \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
 
@@ -165,6 +162,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-cuttlefish \
     android.hardware.health@2.1-service
+
+# TODO: disable this service once we implement system suspend
+PRODUCT_PACKAGES += \
+    suspend_blocker
 
 # mkbootimg host tool to build boot.img separately
 PRODUCT_HOST_PACKAGES := \
