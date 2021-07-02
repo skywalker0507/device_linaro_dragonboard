@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8158282_463e9e6f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000414
+      },
+      "writtenOn": "2021-07-02T23:34:39Z",
+      "side": 1,
+      "message": "You may want to remove memtrace.default library from the tree",
+      "revId": "e313d58a7a5e6a1acfe3cafc2a858f75c8486855",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
