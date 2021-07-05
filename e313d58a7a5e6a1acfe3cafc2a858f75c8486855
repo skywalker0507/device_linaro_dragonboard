@@ -34,6 +34,23 @@
       "parentUuid": "b8158282_463e9e6f",
       "revId": "e313d58a7a5e6a1acfe3cafc2a858f75c8486855",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "105b554d_229f8801",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-07-05T08:15:24Z",
+      "side": 1,
+      "message": "Smoke tested on db845c running android12-5.10(.43).\n\n$ adb shell getprop | grep -w 31\n[ro.product.first_api_level]: [31]\n\nWiFi/BT/Audio works. No obvious regression in logcat.\n\nShould we squash these 3 API_LEVEL and FCM version bump patches into a single commit instead?",
+      "revId": "e313d58a7a5e6a1acfe3cafc2a858f75c8486855",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
