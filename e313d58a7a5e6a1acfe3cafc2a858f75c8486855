@@ -51,6 +51,42 @@
       "message": "Smoke tested on db845c running android12-5.10(.43).\n\n$ adb shell getprop | grep -w 31\n[ro.product.first_api_level]: [31]\n\nWiFi/BT/Audio works. No obvious regression in logcat.\n\nShould we squash these 3 API_LEVEL and FCM version bump patches into a single commit instead?",
       "revId": "e313d58a7a5e6a1acfe3cafc2a858f75c8486855",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e1b7017b_76290ce4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-07T01:11:19Z",
+      "side": 1,
+      "message": "Amit: Thanks for the verification! I\u0027ll keep these separate in case an issue comes up,which will make it easier to drop back a step without having to go all the way back.",
+      "parentUuid": "105b554d_229f8801",
+      "revId": "e313d58a7a5e6a1acfe3cafc2a858f75c8486855",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a9ff4959_4a0fa888",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-07T01:11:19Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "96296256_8cf03778",
+      "revId": "e313d58a7a5e6a1acfe3cafc2a858f75c8486855",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
