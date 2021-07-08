@@ -23,7 +23,7 @@ DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 # Build and run only ART
 PRODUCT_RUNTIMES := runtime_libart_default
 
-PRODUCT_SHIPPING_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Enable Scoped Storage related
@@ -155,12 +155,6 @@ PRODUCT_COPY_FILES += \
 # Copy hardware config file(s)
 PRODUCT_COPY_FILES +=  \
         device/linaro/dragonboard/etc/permissions/android.software.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.xml
-
-# Memtrack
-PRODUCT_PACKAGES += \
-    memtrack.default \
-    android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl
 
 # Keymaster
 PRODUCT_PACKAGES += \
