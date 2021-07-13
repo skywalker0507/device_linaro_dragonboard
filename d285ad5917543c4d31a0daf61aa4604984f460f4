@@ -39,6 +39,30 @@
       },
       "revId": "d285ad5917543c4d31a0daf61aa4604984f460f4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "051eed86_1840fb40",
+        "filename": "manifest.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T03:55:08Z",
+      "side": 1,
+      "message": "Oh, I think this might be noise from a rebase. Thanks for pointing it out. I\u0027ll clean it up!",
+      "parentUuid": "9ca81b60_34773160",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 10
+      },
+      "revId": "d285ad5917543c4d31a0daf61aa4604984f460f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
