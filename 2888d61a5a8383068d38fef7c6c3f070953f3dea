@@ -54,6 +54,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "75b7a9c1_f551c474",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1339259
+      },
+      "writtenOn": "2021-07-13T19:16:16Z",
+      "side": 1,
+      "message": "Totally, audit2allow solves it in the \"raw\" way, while there exists a lot sepolicy macros wrapping a couple common \"raw\" rules, which is annoying and requires expert reviews to point them out (apparently I\u0027m not one of them...). For device specific sepolicy extensions, the requirements on the rules format is very relaxed as long as they are correct ; )",
+      "parentUuid": "021a8674_319f1f3d",
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "e06cb45b_36859ff9",

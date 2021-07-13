@@ -16,6 +16,24 @@
       "message": "Resolved the minor issues, and resubmitted.\n\nI can still start over on the sepolicy rules, as advised, if needed. ",
       "revId": "26f5a0dceb025ba5312047fc7f4684953e0451e2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4001353c_016041f3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1339259
+      },
+      "writtenOn": "2021-07-13T19:16:16Z",
+      "side": 1,
+      "message": "As long as there\u0027s no new violations introduced with this entire CL (including the rules added), you don\u0027t have to redo the troublesome flow. Just some pointers for later integrations of similar ; )",
+      "parentUuid": "6f58bf49_271b8b3b",
+      "revId": "26f5a0dceb025ba5312047fc7f4684953e0451e2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
