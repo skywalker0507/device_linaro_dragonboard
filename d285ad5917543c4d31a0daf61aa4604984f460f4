@@ -53,6 +53,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f14b92e_c12fb58c",
+        "filename": "device-common.mk",
+        "patchSetId": 13
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T17:50:23Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "701333ce_4b60614c",
+      "revId": "d285ad5917543c4d31a0daf61aa4604984f460f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9ca81b60_34773160",
