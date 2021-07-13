@@ -38,6 +38,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "021a8674_319f1f3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:07:47Z",
+      "side": 1,
+      "message": "Thanks for the suggestion and the pointer! Its just in the past I\u0027ve run into trouble with audit2allow, in that it resolves the problem, but not always in the way reviewers prefer. That\u0027s why I usually try to minimc the sepolicy rules from existing devices.\n\nBut maybe I\u0027m generalizing too much from an early experience. :)",
+      "parentUuid": "ffc71a4e_e649f9b0",
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e06cb45b_36859ff9",
         "filename": "device-common.mk",
         "patchSetId": 15
@@ -49,6 +67,30 @@
       "writtenOn": "2021-07-13T18:22:29Z",
       "side": 1,
       "message": "nit: add a space",
+      "range": {
+        "startLine": 53,
+        "startChar": 30,
+        "endLine": 53,
+        "endChar": 31
+      },
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "941b6638_b1975155",
+        "filename": "device-common.mk",
+        "patchSetId": 15
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:07:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e06cb45b_36859ff9",
       "range": {
         "startLine": 53,
         "startChar": 30,
@@ -82,6 +124,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "8cb0bf63_7bb34912",
+        "filename": "device-common.mk",
+        "patchSetId": 15
+      },
+      "lineNbr": 63,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:07:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f6b6a219_dd7b0b12",
+      "range": {
+        "startLine": 63,
+        "startChar": 18,
+        "endLine": 63,
+        "endChar": 19
+      },
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "eeaa3082_2c3b4f7f",
@@ -99,6 +165,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "35db1f47_a020972c",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 15
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:07:47Z",
+      "side": 1,
+      "message": "Quite right, this was added when I was working on the v4l2_codec2 enablement (wanted to see if the minigbm gralloc did better then gbm_gralloc), but as that work is still in progress this change should go in there.  Will remove. Thanks!",
+      "parentUuid": "eeaa3082_2c3b4f7f",
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6a0ee9c0_276616e4",
@@ -112,6 +196,24 @@
       "writtenOn": "2021-07-13T18:22:29Z",
       "side": 1,
       "message": "move this line to the bottom. it looks like this section is ordered alphabetically.",
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f7de92f5_d7bc9f0f",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 15
+      },
+      "lineNbr": 54,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:07:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "6a0ee9c0_276616e4",
       "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
@@ -139,6 +241,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d46ac860_6307af02",
+        "filename": "sepolicy/hal_graphics_composer_default.te",
+        "patchSetId": 15
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:07:47Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "37efaea3_0d497349",
+      "range": {
+        "startLine": 6,
+        "startChar": 2,
+        "endLine": 6,
+        "endChar": 9
+      },
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "6ea2b303_fbb71b43",
@@ -152,6 +278,30 @@
       "writtenOn": "2021-07-13T18:22:29Z",
       "side": 1,
       "message": "This is not Cuttlefish iiuc?",
+      "range": {
+        "startLine": 7,
+        "startChar": 16,
+        "endLine": 7,
+        "endChar": 26
+      },
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3872e252_06e80bc5",
+        "filename": "sepolicy/hal_graphics_composer_default.te",
+        "patchSetId": 15
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:07:47Z",
+      "side": 1,
+      "message": "Yes, that chunk was pulled from Cuttlefish. Will fix.",
+      "parentUuid": "6ea2b303_fbb71b43",
       "range": {
         "startLine": 7,
         "startChar": 16,
