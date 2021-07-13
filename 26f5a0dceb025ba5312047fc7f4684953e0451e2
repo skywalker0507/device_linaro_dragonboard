@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6f58bf49_271b8b3b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T19:09:07Z",
+      "side": 1,
+      "message": "Resolved the minor issues, and resubmitted.\n\nI can still start over on the sepolicy rules, as advised, if needed. ",
+      "revId": "26f5a0dceb025ba5312047fc7f4684953e0451e2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
