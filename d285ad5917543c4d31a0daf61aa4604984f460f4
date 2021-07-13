@@ -104,6 +104,30 @@
       },
       "revId": "d285ad5917543c4d31a0daf61aa4604984f460f4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "73429f9e_5a464416",
+        "filename": "manifest.xml",
+        "patchSetId": 13
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1339259
+      },
+      "writtenOn": "2021-07-13T17:00:47Z",
+      "side": 1,
+      "message": "Ah, I see. That explains why the CL can work. Then removing the legacy 2.1 stuff is enough for a cleanup.",
+      "parentUuid": "384b5fbe_df99a534",
+      "range": {
+        "startLine": 60,
+        "startChar": 0,
+        "endLine": 77,
+        "endChar": 10
+      },
+      "revId": "d285ad5917543c4d31a0daf61aa4604984f460f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
