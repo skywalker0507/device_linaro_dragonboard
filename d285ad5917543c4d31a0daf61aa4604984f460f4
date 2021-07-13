@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aaf71476_79fefb29",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 13
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-13T02:13:27Z",
+      "side": 1,
+      "message": "Now the upstream issues with minigbm are resolved, we should be able to switch db845c to using it.",
+      "revId": "d285ad5917543c4d31a0daf61aa4604984f460f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
