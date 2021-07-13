@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ffc71a4e_e649f9b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 15
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1339259
+      },
+      "writtenOn": "2021-07-13T18:26:13Z",
+      "side": 1,
+      "message": "See here for more information on sepolicy in Android: https://source.android.com/security/selinux/validate#using_audit2allow",
+      "parentUuid": "9ec70657_584989da",
+      "revId": "2888d61a5a8383068d38fef7c6c3f070953f3dea",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "e06cb45b_36859ff9",
         "filename": "device-common.mk",
         "patchSetId": 15
