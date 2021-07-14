@@ -23,7 +23,7 @@ DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 # Build and run only ART
 PRODUCT_RUNTIMES := runtime_libart_default
 
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Enable Scoped Storage related
@@ -44,8 +44,8 @@ PRODUCT_PRODUCT_PROPERTIES := \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.3-service.widevine \
     android.hardware.graphics.allocator@2.0-impl \
     android.hardware.graphics.allocator@2.0-service \
     android.hardware.graphics.composer@2.2-impl \
@@ -91,12 +91,25 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
+#
+# Power HAL
+#
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.example
+
+#
+# PowerStats HAL
+#
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats-service.example
+
+
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0-impl:32 \
-    android.hardware.audio.effect@4.0-impl:32 \
-    android.hardware.audio@2.0-service \
-    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio@2.0-impl
 
 # Build default bluetooth a2dp and usb audio HALs
@@ -142,12 +155,6 @@ PRODUCT_COPY_FILES += \
 # Copy hardware config file(s)
 PRODUCT_COPY_FILES +=  \
         device/linaro/dragonboard/etc/permissions/android.software.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.xml
-
-# Memtrack
-PRODUCT_PACKAGES += \
-    memtrack.default \
-    android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl
 
 # Keymaster
 PRODUCT_PACKAGES += \
