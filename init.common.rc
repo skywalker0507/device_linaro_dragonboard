@@ -1,8 +1,15 @@
 import init.${ro.hardware}.usb.rc
 import init.${ro.hardware}.power.rc
 
+on early-fs
+    start vold
+
 on fs
-    mount_all /vendor/etc/fstab.${ro.hardware}
+#    mount_all /vendor/etc/fstab.${ro.hardware}
+
+on late-fs
+    exec_start wait_for_keymaster
+    mount_all /vendor/etc/fstab.${ro.hardware} --late
     swapon_all /vendor/etc/fstab.${ro.hardware}
 
 on post-fs
