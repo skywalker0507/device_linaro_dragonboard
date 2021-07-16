@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52eeb1eb_183cb5bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-16T20:43:09Z",
+      "side": 1,
+      "message": "Hey Amit, just sharing my initial pass at this.\n\nIts not working, but maybe you have some ideas?",
+      "revId": "698a846338cd1e671acccc1bf85973714055cea6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
