@@ -51,6 +51,24 @@
       "message": "Hi John, let me know if this patch is ready to be submitted.",
       "revId": "26f5a0dceb025ba5312047fc7f4684953e0451e2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3643735_b445271c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 16
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-19T18:14:17Z",
+      "side": 1,
+      "message": "Yes, that would be great!",
+      "parentUuid": "678655b8_f5c87b7c",
+      "revId": "26f5a0dceb025ba5312047fc7f4684953e0451e2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
