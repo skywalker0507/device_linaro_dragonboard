@@ -26,12 +26,20 @@ service rmtfs /vendor/bin/rmtfs -o /dev/block/platform/soc@0/1d84000.ufshc/by-na
     disabled
     oneshot
 
+service set_udc /vendor/bin/set_udc.sh
+    class core
+    user root
+    group system
+    disabled
+    oneshot
+
 on early-init
     exec - root -- /vendor/bin/qrtr-cfg 1
     start qrtr-ns
 
 on post-fs
     start pd_mapper
+    start set_udc
 
 on post-fs-data
     mkdir /data/vendor
