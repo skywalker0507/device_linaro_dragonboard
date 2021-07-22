@@ -94,6 +94,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/wpa_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant_overlay.conf \
     $(LOCAL_PATH)/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf
 
+# usb bits
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/set_udc.sh::$(TARGET_COPY_OUT_VENDOR)/bin/set_udc.sh
+
 # Enable BT
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service.btlinux
