@@ -45,6 +45,7 @@
 /vendor/bin/rmtfs									u:object_r:rmtfs_exec:s0
 /vendor/bin/tqftpserv									u:object_r:tqftpserv_exec:s0
 /vendor/bin/suspend_blocker								u:object_r:suspend_blocker_exec:s0
+/vendor/bin/set_udc\.sh									u:object_r:set-udc-sh_exec:s0
 
 /vendor/lib(64)?/dri/.*									u:object_r:same_process_hal_file:s0
 /vendor/lib(64)?/hw/gralloc\.gbm\.so							u:object_r:same_process_hal_file:s0

@@ -1,0 +1,20 @@
+type set-udc-sh, domain;
+type set-udc-sh_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(set-udc-sh)
+
+allow set-udc-sh vendor_shell_exec:file rx_file_perms;
+allow set-udc-sh vendor_toolbox_exec:file rx_file_perms;
+
+# execute grep
+allow set-udc-sh vendor_file:file rx_file_perms;
+
+# Set the property
+# XXX THIS DOESNT WORK, we hit neverallow rules
+#set_prop(set-udc-sh, usb_control_prop)
+
+
+allow set-udc-sh sysfs:dir r_dir_perms;
+# Ignore permissions used but not needed.
+dontaudit set-udc-sh sysfs:file { create getattr };
+dontaudit set-udc-sh sysfs_type:dir { read write };
