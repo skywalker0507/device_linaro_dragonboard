@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e05abc31_ca652f0d",
+        "filename": "sepolicy/set-udc-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-22T22:21:07Z",
+      "side": 1,
+      "message": "Not sure what to do here in order to allow the set_udc.sh script to call setprop on sys.usb.controller",
+      "revId": "ba771793129ad4bfda93e53a7e13aea619b92108",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
