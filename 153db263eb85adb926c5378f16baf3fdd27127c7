@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "20c8ca5b_63bd4f86",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-23T19:06:55Z",
+      "side": 1,
+      "message": "Thanks Amit! This is working for me!\n\nJust a few thoughts for further improvements below.",
+      "revId": "153db263eb85adb926c5378f16baf3fdd27127c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "1393e15b_e5b96f31",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-23T19:06:55Z",
+      "side": 1,
+      "message": "Few thoughts here.\n\nWe may want this script to be a little more re-usable (we may need something similar for hikey).\n\nIn my earlier attempt I grepped for a known address value (which would resolve the case if there were multiple dwc3/usb udc nodes).\n\nIt might be nice to check for a known value, then fall back to \"anything but the dummy\".",
+      "revId": "153db263eb85adb926c5378f16baf3fdd27127c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "70c1fd87_2e868c4a",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-23T19:06:55Z",
+      "side": 1,
+      "message": "Should we only call this if $UDC has a value?",
+      "revId": "153db263eb85adb926c5378f16baf3fdd27127c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
