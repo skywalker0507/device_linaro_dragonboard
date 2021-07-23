@@ -34,6 +34,24 @@
       "parentUuid": "e05abc31_ca652f0d",
       "revId": "ba771793129ad4bfda93e53a7e13aea619b92108",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab688142_5b9a15ee",
+        "filename": "sepolicy/set-udc-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-07-23T09:30:15Z",
+      "side": 1,
+      "message": "Luca beat me to that :p\n\nI cooked up a similar implementation as he suggested https://android-review.googlesource.com/c/device/linaro/dragonboard/+/1774872. Smoke tested on RB5. I\u0027ll try it on RB3 now.\n\nI tried to be clever and falied miserably after spending sometime on something like \"exec - root system -- /system/bin/setprop vendor.sys.usb.controller `/system/bin/ls /sys/class/udc | /system/bin/grep -v dummy`\" but nope didn\u0027t get through that.",
+      "parentUuid": "cfbb1d7f_b0feb7ed",
+      "revId": "ba771793129ad4bfda93e53a7e13aea619b92108",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
