@@ -54,6 +54,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b974316a_64b44aa4",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-23T19:11:10Z",
+      "side": 1,
+      "message": "Luca: That\u0027s a good thought. The androidboot.usbcontroller\u003d argument should probably be like an override (even if we don\u0027t use it), which we should prioritize if its set.\n\nAmit: Maybe if that value is set we just exit out?",
+      "parentUuid": "a6606a6e_559a992e",
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7ec00cf_76c90434",
