@@ -52,6 +52,24 @@
       "parentUuid": "cfbb1d7f_b0feb7ed",
       "revId": "ba771793129ad4bfda93e53a7e13aea619b92108",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ab2cd43c_9e491b5b",
+        "filename": "sepolicy/set-udc-sh.te",
+        "patchSetId": 2
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-23T18:10:19Z",
+      "side": 1,
+      "message": "Luca: Thanks so much for the suggestion! Very helpful! It seems Amit\u0027s using exactly that, so I\u0027ll abandon this and move over to his series.",
+      "parentUuid": "ab688142_5b9a15ee",
+      "revId": "ba771793129ad4bfda93e53a7e13aea619b92108",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
