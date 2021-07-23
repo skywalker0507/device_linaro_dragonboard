@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000013719176",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1774872?revision\u003d1",
+      "fixSuggestions": [
+        {
+          "fixId": "8efb7183_a9fef4fc",
+          "description": "Change to \"qcom/set_udc.sh\"",
+          "replacements": [
+            {
+              "path": "qcom/set_udc.sh",
+              "range": {
+                "startLine": 8,
+                "startChar": 2,
+                "endLine": 8,
+                "endChar": 10
+              },
+              "replacement": "platform"
+            }
+          ]
+        }
+      ],
+      "key": {
+        "uuid": "e2e55f40_0f925e20",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-07-23T09:24:56Z",
+      "side": 1,
+      "message": "Common typo found: \"platfrom\" -- should it be \"platform\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line or include \u0027No-Typo-Check: \u003creason\u003e\u0027in the commit message.",
+      "range": {
+        "startLine": 8,
+        "startChar": 2,
+        "endLine": 8,
+        "endChar": 10
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000013719173",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1774872?revision\u003d1",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "b1780050_aef538fb",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-07-23T09:24:56Z",
+      "side": 1,
+      "message": "Prefer to use inclusive terms like \u0027complex\u0027, \u0027unexpected\u0027, or \u0027placeholder\u0027; see https://developers.google.com/style/inclusive-documentation#ableist-language for more details. In the case of a false positive add BYPASS_INCLUSIVE_LANGUAGE_REASON\u003dmy_reason_here to your commit message to disable this check.",
+      "range": {
+        "startLine": 15,
+        "startChar": 58,
+        "endLine": 15,
+        "endChar": 63
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
