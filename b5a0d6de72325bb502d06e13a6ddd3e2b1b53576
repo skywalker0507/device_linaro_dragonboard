@@ -16,6 +16,23 @@
       "message": "Smoke tested on db845c(RB3)",
       "revId": "b5a0d6de72325bb502d06e13a6ddd3e2b1b53576",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6a9a95d9_1a130202",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T10:13:38Z",
+      "side": 1,
+      "message": "Looks good.",
+      "revId": "b5a0d6de72325bb502d06e13a6ddd3e2b1b53576",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }

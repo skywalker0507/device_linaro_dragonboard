@@ -36,6 +36,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6606a6e_559a992e",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T10:13:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "863b4393_7453b515",
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7ec00cf_76c90434",
@@ -107,6 +125,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "17a6ee2d_847643ad",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T10:13:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6bb2bfc2_e4673dee",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 1
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "939dbbf9_9d3abaa7",
@@ -144,6 +186,30 @@
       "side": 1,
       "message": "nice. I\u0027ll try that out. This is the first time I\u0027m dealing with properties+selinux denials so I just copied most of the policies from crosshatch.",
       "parentUuid": "939dbbf9_9d3abaa7",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 1
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85a26287_e349ecfc",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T10:13:38Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "88235c7d_5d1f8730",
       "range": {
         "startLine": 12,
         "startChar": 0,
