@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "47a88d2e_e8372c2b",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T09:40:40Z",
+      "side": 1,
+      "message": "This looks really fragile...\nAt least add a | head -1 to ensure only one entry is there\n\nI\u0027d rather keep using the _standard_ hardcode method via\nBOARD_KERNEL_CMDLINE +\u003d androidboot.usbcontroller\u003d$name\neven if you have to maintain the correct name in case the kernel renames it",
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d7ec00cf_76c90434",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T09:40:40Z",
+      "side": 1,
+      "message": "this looks too broad and/or wrong. What file is it trying to read AND exec?",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 1
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "939dbbf9_9d3abaa7",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T09:40:40Z",
+      "side": 1,
+      "message": "get_prop(vendor_init, vendor_usb_prop)",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 1
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
