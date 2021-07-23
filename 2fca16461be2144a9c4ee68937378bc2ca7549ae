@@ -22,6 +22,30 @@
       },
       "revId": "2fca16461be2144a9c4ee68937378bc2ca7549ae",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "96e84edf_c221c11b",
+        "filename": "init.common.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-23T18:08:26Z",
+      "side": 1,
+      "message": "Thanks for the heads up! I\u0027ve removed it from the updated version.",
+      "parentUuid": "3260007f_4ae936b6",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 1
+      },
+      "revId": "2fca16461be2144a9c4ee68937378bc2ca7549ae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
