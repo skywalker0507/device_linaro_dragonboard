@@ -20,6 +20,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "863b4393_7453b515",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-07-23T09:52:50Z",
+      "side": 1,
+      "message": "Ack on \"head -1\".\n\nSorry, I\u0027m not sure if I followed the usability of androidboot.usbcontroller in this context.",
+      "parentUuid": "47a88d2e_e8372c2b",
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "d7ec00cf_76c90434",
         "filename": "sepolicy/set_udc.te",
         "patchSetId": 1
@@ -43,6 +61,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c80ad304_173cddcf",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-07-23T09:52:50Z",
+      "side": 1,
+      "message": "grep but let me quickly verify if this denial fix is really needed or is it a good to have fix.",
+      "parentUuid": "d7ec00cf_76c90434",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 1
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "939dbbf9_9d3abaa7",
         "filename": "sepolicy/set_udc.te",
         "patchSetId": 1
@@ -54,6 +96,30 @@
       "writtenOn": "2021-07-23T09:40:40Z",
       "side": 1,
       "message": "get_prop(vendor_init, vendor_usb_prop)",
+      "range": {
+        "startLine": 12,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 1
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "88235c7d_5d1f8730",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-07-23T09:52:50Z",
+      "side": 1,
+      "message": "nice. I\u0027ll try that out. This is the first time I\u0027m dealing with properties+selinux denials so I just copied most of the policies from crosshatch.",
+      "parentUuid": "939dbbf9_9d3abaa7",
       "range": {
         "startLine": 12,
         "startChar": 0,
