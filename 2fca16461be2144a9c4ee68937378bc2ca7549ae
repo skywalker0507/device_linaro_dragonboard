@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3260007f_4ae936b6",
+        "filename": "init.common.rc",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T08:47:59Z",
+      "side": 1,
+      "message": "wait_for_keymaster has been removed in master\nhttps://android-review.googlesource.com/q/topic:no-wait-for-keymaster",
+      "range": {
+        "startLine": 16,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 1
+      },
+      "revId": "2fca16461be2144a9c4ee68937378bc2ca7549ae",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
