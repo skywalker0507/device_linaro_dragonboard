@@ -85,6 +85,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "6bb2bfc2_e4673dee",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-23T09:56:17Z",
+      "side": 1,
+      "message": "Makes sense. As bad as it sounds this will do ( that\u0027s how QCOM handles with grep )\n/(vendor|system/vendor)/bin/grep u:object_r:vendor_toolbox_exec:s0",
+      "parentUuid": "c80ad304_173cddcf",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 1
+      },
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "939dbbf9_9d3abaa7",
         "filename": "sepolicy/set_udc.te",
         "patchSetId": 1
