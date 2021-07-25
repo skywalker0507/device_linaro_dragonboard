@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "4c468191_d3c92e1d",
+        "filename": "db845c.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-07-25T19:11:07Z",
+      "side": 1,
+      "message": "argh.. this should be \"BOARD_VENDOR_RAMDISK_KERNEL_MODULES :\u003d $(DB845C_MODS)\" otherwise vendor_ramdisk build will fail for boot image header v3. Will fix it in next patchset.",
+      "range": {
+        "startLine": 24,
+        "startChar": 0,
+        "endLine": 24,
+        "endChar": 58
+      },
+      "revId": "040bb5a8bb83702cbc21d41ce254d11cc4b9e648",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
