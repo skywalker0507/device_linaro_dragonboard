@@ -16,6 +16,24 @@
       "message": "\u003e Patch Set 2:\n\u003e \n\u003e Wouldn\u0027t it be better to list the required modules for early boot so that they can go in vendor_ramdisk?\n\nIndeed it is. Ideally I would like GKI (Image.gz) and all common aarch64 kernel modules be part of boot.img and all the platform specific kernel modules (from db845_gki.fragment) to be in vendor_ramdisk. But for that we either need to do the kernel modules segregation in device/linaro/dragonboard-kernel project or maintain a list of vendor_ramdisk kernel modules and use the copy filter to track which kernel module goes where. I\u0027m too lazy to maintain any of the above cases unfortunately :(. So the easiest way out was to just copy all the kernel modules to either ramdisk.img or vendor_ramdisk.img. I\u0027m open for ideas and keen to learn how the other platforms are doing that.\n",
       "revId": "135a09f3c59f7e9a8caa9639a14bcb59ca6438af",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3aedb90_e92d7f8a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-07-27T18:07:59Z",
+      "side": 1,
+      "message": "They, as you said  maintain a list of the required modules for early loading.\nThere isn\u0027t much to play around to get a somewhat sane GKI environment.\nAck.",
+      "parentUuid": "41c365e7_c9ac7150",
+      "revId": "135a09f3c59f7e9a8caa9639a14bcb59ca6438af",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
