@@ -72,6 +72,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c366103e_d93d16a0",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-07-27T17:50:27Z",
+      "side": 1,
+      "message": "RB3 and RB5 bootloaders do not append androidboot.usbcontroller\u003d argument. We can set it in our BoardConfig but it will be similar to adding a static value all over again.",
+      "parentUuid": "b974316a_64b44aa4",
+      "revId": "7fa5ed4dc9ec02939c68de1a6857e6661f5f5c96",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d7ec00cf_76c90434",
