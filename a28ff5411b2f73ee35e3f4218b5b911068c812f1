@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "172ed72a_b3abb7ee",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-28T05:11:24Z",
+      "side": 1,
+      "message": "Hey Roman: I\u0027m curious if you have run into something similar with minigbm\u0027s is_supported() call failing for video buffers? I\u0027m guessing we need something like the translation to GR88 as done here:\n  https://github.com/GloDroid/glodroid_forks/blob/4be2c4656c6313fa19f2f2a20e0c568d2122d851/gralloc_gbm.cpp#L97",
+      "revId": "a28ff5411b2f73ee35e3f4218b5b911068c812f1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
