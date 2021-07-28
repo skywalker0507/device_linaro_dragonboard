@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "52f707aa_8fc3d162",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-28T05:33:23Z",
+      "side": 1,
+      "message": "One more tiny nit.",
+      "revId": "c3919e9780b9609fe1482be4fbaec90d6df2212b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "442db520_0a602b0c",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 5
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-28T05:33:23Z",
+      "side": 1,
+      "message": "Just to make this a touch cleaner, do you mind putting the a60000 behind a env variable?\n\nUDC_ADDRESS\u003da600000\nUDC\u003d`/vendor/bin/ls /sys/class/udc/ | /vendor/bin/grep $UDC_ADDRESS`",
+      "revId": "c3919e9780b9609fe1482be4fbaec90d6df2212b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

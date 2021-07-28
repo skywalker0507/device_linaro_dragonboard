@@ -53,6 +53,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "335c2b94_71ec8b64",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-28T05:33:23Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "ec74e57a_40ceba7b",
+      "revId": "153db263eb85adb926c5378f16baf3fdd27127c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "70c1fd87_2e868c4a",
@@ -84,6 +102,24 @@
       "side": 1,
       "message": "\"setprop vendor... $UDC\" is a no-op if UDC is empty. So the device will fallback to dummy_udc if it is enabled.",
       "parentUuid": "70c1fd87_2e868c4a",
+      "revId": "153db263eb85adb926c5378f16baf3fdd27127c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ba8a5b61_30ba9c01",
+        "filename": "qcom/set_udc.sh",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-28T05:33:23Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "4a8e9992_2d5776b9",
       "revId": "153db263eb85adb926c5378f16baf3fdd27127c7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
