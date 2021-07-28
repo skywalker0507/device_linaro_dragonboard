@@ -50,6 +50,24 @@
       "message": "Potential fix for minigbm here: https://chromium-review.googlesource.com/c/chromiumos/platform/minigbm/+/3058396\n\nAt least I can get things working with that.\n\nThe only issue remaining is that camera capture works, and video preview works but video capture fails with this change. I\u0027ll need to dig a little further there.",
       "revId": "a28ff5411b2f73ee35e3f4218b5b911068c812f1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af28f6aa_f0495a77",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1684060
+      },
+      "writtenOn": "2021-07-28T18:26:39Z",
+      "side": 1,
+      "message": "\u003e Hey Roman: I\u0027m curious if you have run into something similar with minigbm\u0027s is_supported() call failing for video buffers? I\u0027m guessing we need something like the translation to GR88 as done here:\n\u003e   https://github.com/GloDroid/glodroid_forks/blob/4be2c4656c6313fa19f2f2a20e0c568d2122d851/gralloc_gbm.cpp#L97\n\nNo, I haven\u0027t checked camera with minigbm yet. Translation to GR88 is a gbm_gralloc hack to allow allocating YUV buffers through DRI API that has no support for YUV allocation at ths moment. \nYour other patch that adds one more combination looks like a right way to fix the issue.",
+      "parentUuid": "172ed72a_b3abb7ee",
+      "revId": "a28ff5411b2f73ee35e3f4218b5b911068c812f1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
