@@ -34,6 +34,23 @@
       "parentUuid": "41c365e7_c9ac7150",
       "revId": "135a09f3c59f7e9a8caa9639a14bcb59ca6438af",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "529d91d3_ad88c65b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-07-29T08:06:50Z",
+      "side": 1,
+      "message": "Hi, Amit\nJust one concern about this change, there was a change[1] that to have some of the modules(msm.ko) to be in the vendor partition, as that module was too large to have it in the ramdisk.img.\nNot sure if you already have that in consideration for this change.\n\n[1] https://android.googlesource.com/device/linaro/dragonboard/+/b59e05d450e992c70205998ef372312837810829%5E%21/#F0",
+      "revId": "135a09f3c59f7e9a8caa9639a14bcb59ca6438af",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
