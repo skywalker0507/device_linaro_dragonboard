@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec5db93b_e69808ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-07-30T21:22:00Z",
+      "side": 1,
+      "message": "Adding Greg for context. Even though you\u0027ve reverted the problematic change usptream, this tries to avoid the issue, so the patch authors can eventually resubmit without breaking anyone.",
+      "revId": "242bcef2b15ad0cf1c879871bd65f6e9ce344eb4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
