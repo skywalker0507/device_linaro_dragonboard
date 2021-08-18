@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e9ad3c2a_49f09be8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-08-18T21:20:38Z",
+      "side": 1,
+      "message": "Briefly smoke tested on db845c and I\u0027m not seeing any obvious regressions. Patch looks sane as well.",
+      "revId": "7e190bde80063462317769f3116e221633f81384",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
