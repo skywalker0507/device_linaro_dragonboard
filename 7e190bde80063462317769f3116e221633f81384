@@ -16,6 +16,23 @@
       "message": "Briefly smoke tested on db845c and I\u0027m not seeing any obvious regressions. Patch looks sane as well.",
       "revId": "7e190bde80063462317769f3116e221633f81384",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50a4c5d3_7c894738",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-08-19T02:48:48Z",
+      "side": 1,
+      "message": "Hi, Bart\n\nSorry, just a question here, from the commit message, it says bdev_type is needed for all block devices, then should not it be added via the rules in system/sepolicy/?\nFrom this commit I could not see if we should do the same update for other boards too, like the hikey960, x15 boards.\n\nThanks,\nYongqin Liu",
+      "revId": "7e190bde80063462317769f3116e221633f81384",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
