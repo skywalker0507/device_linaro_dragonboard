@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014647342",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804417?revision\u003d1",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "be98e848_175d76b2",
+        "filename": "rb5/Android.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-20T18:49:52Z",
+      "side": 1,
+      "message": "Android.​mk files are being deprecated, please use blueprint files (go/soong) to define the modules",
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014647343",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804417?revision\u003d1",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "f0fcd485_7bd0ae46",
+        "filename": "rb5/lt9611uxc_fw_update.sh",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-20T18:49:52Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 7,
+        "startChar": 1,
+        "endLine": 7,
+        "endChar": 2
+      },
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
