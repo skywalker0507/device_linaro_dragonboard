@@ -51,6 +51,24 @@
       "parentUuid": "50a4c5d3_7c894738",
       "revId": "7e190bde80063462317769f3116e221633f81384",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "24bff46c_fd09fbf6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2021-08-20T01:18:39Z",
+      "side": 1,
+      "message": "Thanks for the changes! I could not access the above links shared, but guess that would mean we don\u0027t need to do separate update for other boards then.",
+      "parentUuid": "e5396e0f_e7f7f29b",
+      "revId": "7e190bde80063462317769f3116e221633f81384",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
