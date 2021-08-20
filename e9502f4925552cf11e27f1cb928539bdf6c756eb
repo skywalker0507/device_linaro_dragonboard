@@ -26,6 +26,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "ef165f66_123dc637",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-20T19:24:39Z",
+      "side": 1,
+      "message": "Adding it to a flash script seem to be an overkill because we need to upgrade the firmware only once. I have been told that there is a relatively easier way to update the firmware by writing to a sysfs entry which might be doable from init.rc. I\u0027m gonna try doing that next.",
+      "parentUuid": "3c9f7d2f_e13d11c5",
+      "range": {
+        "startLine": 14,
+        "startChar": 5,
+        "endLine": 14,
+        "endChar": 75
+      },
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2b49cde2_5cd0ef8e",
         "filename": "sepolicy/lt9611uxc_fw_update.te",
         "patchSetId": 1
@@ -37,6 +61,24 @@
       "writtenOn": "2021-08-20T19:11:54Z",
       "side": 1,
       "message": "this doesn\u0027t look good.\nkernel should attempt to get the firmware by default, compare the version and then flash if needed",
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0010d3d9_3ff9b8c6",
+        "filename": "sepolicy/lt9611uxc_fw_update.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-20T19:24:39Z",
+      "side": 1,
+      "message": "Indeed. Selinux won\u0027t allow firmware handling from userspace at all and this is just a placeholder. Firmware upgrade part was missing in the driver when I tried it the last time. I have been told that there is also a relatively easier way to update the firmware by writing to a sysfs entry which might be doable from init.rc. I\u0027m gonna try doing that next.",
+      "parentUuid": "2b49cde2_5cd0ef8e",
       "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
