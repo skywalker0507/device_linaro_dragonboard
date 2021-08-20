@@ -81,6 +81,24 @@
       "parentUuid": "2b49cde2_5cd0ef8e",
       "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5b475a9_7c8b87cc",
+        "filename": "sepolicy/lt9611uxc_fw_update.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-08-20T19:46:08Z",
+      "side": 1,
+      "message": "Looking at the driver a simple \"write $path/lt9611uxc_firmware 1\" will trigger it ( any value )\nBut I\u0027d rather have the kernel handle firmware by itself instead of relying of firmware to update it manually.\nCurrently it only attempts to update if version is 0",
+      "parentUuid": "0010d3d9_3ff9b8c6",
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
