@@ -99,6 +99,24 @@
       "parentUuid": "0010d3d9_3ff9b8c6",
       "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "02dca646_cde4c087",
+        "filename": "sepolicy/lt9611uxc_fw_update.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-20T20:16:45Z",
+      "side": 1,
+      "message": "yeah.. \"write /sys/bus/i2c/devices/5-002b/lt9611uxc_firmware 1\" is what it is but so far I\u0027m not able to update the fw early enough (takes about 60-70 seconds to update fw) to avoid SF tripping over it. I\u0027ll try again tomorrow.",
+      "parentUuid": "d5b475a9_7c8b87cc",
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
