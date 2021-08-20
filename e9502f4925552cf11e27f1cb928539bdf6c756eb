@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3c9f7d2f_e13d11c5",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-08-20T19:07:10Z",
+      "side": 1,
+      "message": "Might we add this command to the flashall script?",
+      "range": {
+        "startLine": 14,
+        "startChar": 5,
+        "endLine": 14,
+        "endChar": 75
+      },
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
