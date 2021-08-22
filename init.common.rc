@@ -1,13 +1,19 @@
 import init.${ro.hardware}.usb.rc
 import init.${ro.hardware}.power.rc
 
+on early-fs
+    start vold
+
 on fs
-    mount_all /vendor/etc/fstab.${ro.hardware}
+    mount_all /vendor/etc/fstab.${ro.hardware} --early
     swapon_all /vendor/etc/fstab.${ro.hardware}
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
     setrlimit 8 67108864 67108864
+
+on late-fs
+    mount_all /vendor/etc/fstab.${ro.hardware} --late
 
 on init
     # For legacy support
@@ -61,3 +67,9 @@ service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
     class main
     disabled
     oneshot
+
+# TODO: disable this service once we implement system suspend
+service suspend_blocker /vendor/bin/suspend_blocker
+    class early_hal # Start together with system_suspend HAL
+    group system
+    user root

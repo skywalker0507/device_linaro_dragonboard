@@ -1,5 +1,5 @@
 ifndef TARGET_KERNEL_USE
-TARGET_KERNEL_USE := 5.4
+TARGET_KERNEL_USE := 5.10
 endif
 DB845C_KERNEL_DIR := device/linaro/dragonboard-kernel/android-$(TARGET_KERNEL_USE)
 
@@ -21,8 +21,6 @@ endif
 ifeq ($(DB845C_USES_GKI), true)
   DB845C_MODS := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
   ifneq ($(DB845C_MODS),)
-    BOARD_VENDOR_KERNEL_MODULES += $(DB845C_MODS)
-    DB845C_ONLY_VENDOR := %/msm.ko
-    BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(DB845C_ONLY_VENDOR),$(DB845C_MODS))
+    BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(DB845C_MODS)
   endif
 endif
