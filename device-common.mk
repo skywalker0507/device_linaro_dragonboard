@@ -23,7 +23,7 @@ DEVICE_PACKAGE_OVERLAYS := $(LOCAL_PATH)/overlay
 # Build and run only ART
 PRODUCT_RUNTIMES := runtime_libart_default
 
-PRODUCT_SHIPPING_API_LEVEL := 29
+PRODUCT_SHIPPING_API_LEVEL := 31
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
 # Enable Scoped Storage related
@@ -44,24 +44,34 @@ PRODUCT_PRODUCT_PROPERTIES := \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.0-impl \
-    android.hardware.drm@1.0-service \
-    android.hardware.graphics.allocator@2.0-impl \
-    android.hardware.graphics.allocator@2.0-service \
-    android.hardware.graphics.composer@2.2-impl \
-    android.hardware.graphics.composer@2.2-service \
-    android.hardware.graphics.mapper@2.0-impl-2.1 \
-    gralloc.gbm \
-    hwcomposer.drm \
+    android.hardware.drm@1.3-service.clearkey \
+    android.hardware.drm@1.3-service.widevine \
     libGLES_mesa
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.gralloc=gbm \
+    ro.hardware.gralloc=minigbm_msm \
     ro.hardware.hwcomposer=drm \
     debug.sf.no_hw_vsync=1 \
-    ro.sf.lcd_density=160 \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
+
+
+#
+# Hardware Composer HAL
+#
+PRODUCT_PACKAGES += \
+    hwcomposer.drm \
+    android.hardware.graphics.composer@2.3-impl \
+    android.hardware.graphics.composer@2.3-service
+
+#
+# Gralloc HAL
+#
+PRODUCT_PACKAGES += \
+    gralloc.minigbm_msm \
+    android.hardware.graphics.allocator@4.0-service.minigbm_msm \
+    android.hardware.graphics.mapper@4.0-impl.minigbm_msm
+
 
 # Use Launcher3QuickStep
 PRODUCT_PACKAGES += Launcher3QuickStep
@@ -92,12 +102,25 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
+#
+# Power HAL
+#
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.example
+
+#
+# PowerStats HAL
+#
+PRODUCT_PACKAGES += \
+    android.hardware.power.stats-service.example
+
+
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@4.0-impl:32 \
-    android.hardware.audio.effect@4.0-impl:32 \
-    android.hardware.audio@2.0-service \
-    android.hardware.soundtrigger@2.0-impl \
+    android.hardware.audio.service \
+    android.hardware.audio@7.0-impl \
+    android.hardware.audio.effect@7.0-impl \
+    android.hardware.soundtrigger@2.2-impl \
     android.hardware.bluetooth.audio@2.0-impl
 
 # Build default bluetooth a2dp and usb audio HALs
@@ -144,12 +167,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
         device/linaro/dragonboard/etc/permissions/android.software.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.xml
 
-# Memtrack
-PRODUCT_PACKAGES += \
-    memtrack.default \
-    android.hardware.memtrack@1.0-service \
-    android.hardware.memtrack@1.0-impl
-
 # Keymaster
 PRODUCT_PACKAGES += \
     android.hardware.keymaster@3.0-impl \
@@ -163,6 +180,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl-cuttlefish \
     android.hardware.health@2.1-service
+
+# TODO: disable this service once we implement system suspend
+PRODUCT_PACKAGES += \
+    suspend_blocker
 
 # mkbootimg host tool to build boot.img separately
 PRODUCT_HOST_PACKAGES := \
