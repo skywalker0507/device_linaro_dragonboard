@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0290c3a6_3209ec01",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-08-23T10:36:53Z",
+      "side": 1,
+      "message": "This might not work as readdir doesn\u0027t return the file/dir list in any particular order, so it depends on how dummy shows itself.\nA solution might be simply be to skip dummy if found ( will upload a CL )",
+      "revId": "0ada9f66025b3df56554184be74785d03b840c36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
