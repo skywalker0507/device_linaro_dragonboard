@@ -61,7 +61,6 @@ PRODUCT_PACKAGES += \
     tqftpserv
 
 PRODUCT_COPY_FILES += \
-    device/linaro/dragonboard/qcom/set_udc.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_udc.sh \
     device/linaro/dragonboard/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
 
 # Install scripts to set Ethernet MAC address

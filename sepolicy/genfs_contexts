@@ -3,7 +3,6 @@ genfscon sysfs   /devices/platform/remoteproc-adsp/remoteproc					u:object_r:sys
 genfscon sysfs   /devices/platform/remoteproc-cdsp/remoteproc					u:object_r:sysfs_remoteproc:s0
 genfscon sysfs   /devices/platform/soc@0/4080000.remoteproc					u:object_r:sysfs_remoteproc:s0
 genfscon sysfs   /devices/platform/soc@0/ae00000.mdss						u:object_r:sysfs_gpu:s0
-genfscon sysfs   /class/udc									u:object_r:sysfs_udc:s0
 genfscon sysfs   /devices/platform/soc@0/1c00000.pci/pci0000:00/0000:00:00.0/0000:01:00.0/wakeup/wakeup1					u:object_r:sysfs_wakeup:s0
 genfscon sysfs   /devices/platform/soc@0/a6f8800.usb/wakeup/wakeup2										u:object_r:sysfs_wakeup:s0
 genfscon sysfs   /devices/platform/soc@0/a8f8800.usb/wakeup/wakeup3										u:object_r:sysfs_wakeup:s0
