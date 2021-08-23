@@ -16,6 +16,24 @@
       "message": "This might not work as readdir doesn\u0027t return the file/dir list in any particular order, so it depends on how dummy shows itself.\nA solution might be simply be to skip dummy if found ( will upload a CL )",
       "revId": "0ada9f66025b3df56554184be74785d03b840c36",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6fefeac_99ea0aa4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1081223
+      },
+      "writtenOn": "2021-08-23T11:14:25Z",
+      "side": 1,
+      "message": "Or not https://android-review.googlesource.com/c/platform/system/core/+/1472602...\nI still believe it should be hardcoded.",
+      "parentUuid": "0290c3a6_3209ec01",
+      "revId": "0ada9f66025b3df56554184be74785d03b840c36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
