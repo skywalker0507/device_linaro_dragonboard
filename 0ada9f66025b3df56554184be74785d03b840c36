@@ -34,6 +34,24 @@
       "parentUuid": "0290c3a6_3209ec01",
       "revId": "0ada9f66025b3df56554184be74785d03b840c36",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "faab9aa0_67c371ac",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1684060
+      },
+      "writtenOn": "2021-08-25T11:03:24Z",
+      "side": 1,
+      "message": "Instead of skipping dummy controllers, we shouldn\u0027t \u0027break\u0027 on them and try to select the real one, https://android-review.googlesource.com/c/platform/system/core/+/1472602/comments/16614c07_f604c5bf",
+      "parentUuid": "c6fefeac_99ea0aa4",
+      "revId": "0ada9f66025b3df56554184be74785d03b840c36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
