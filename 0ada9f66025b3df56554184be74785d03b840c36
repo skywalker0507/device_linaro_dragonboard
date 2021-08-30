@@ -69,6 +69,24 @@
       "message": "Hi, It doesn\u0027t work if DUMMY_USB_HCD is enabled. See aosp/1349264",
       "revId": "0ada9f66025b3df56554184be74785d03b840c36",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bda535cc_9051f47b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-30T10:44:13Z",
+      "side": 1,
+      "message": "argh sorry i see that it has already been addressed above.",
+      "parentUuid": "f490fa08_7edcd53e",
+      "revId": "0ada9f66025b3df56554184be74785d03b840c36",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
