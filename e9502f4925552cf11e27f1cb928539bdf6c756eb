@@ -50,6 +50,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d7a54b4c_0644f4cb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-31T11:38:12Z",
+      "side": 1,
+      "message": "Now that I have spent considerable amount of time experimenting around this, adding this fimrware update in flashall script makes most sense to me :p\n\nWe can work around the selinux issues in existing firmware update service/script but it takes about 60-80 seconds to finish the firmware update and by that time Composer and other graphics services are already up and crashing, and they do not recover even after the firmware update is done.\n\nI\u0027ve already raised this issue with lt9611uxc driver maintainer and requested him if this firmware-update can be handled more efficiently in the driver itself.",
+      "parentUuid": "ef165f66_123dc637",
+      "range": {
+        "startLine": 14,
+        "startChar": 5,
+        "endLine": 14,
+        "endChar": 75
+      },
+      "revId": "e9502f4925552cf11e27f1cb928539bdf6c756eb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "2b49cde2_5cd0ef8e",
         "filename": "sepolicy/lt9611uxc_fw_update.te",
         "patchSetId": 1
