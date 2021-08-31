@@ -33,6 +33,23 @@
       "message": "I validated this script on v5.14 mainline but \"adb root\" doesn\u0027t work for some reason on v5.14-rc6 android-mainline prebuilt artifacts. May be an intermittent breakage. I\u0027ll switch to \"adb root\" as soon as v5.14 is merged in android-mainline. Meanwhile lets go with \"su 0\"?",
       "revId": "da822acee0bbaf518b2c900da5f80c0a8b82b1ba",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9bc29f63_090c6391",
+        "filename": "rb5/BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-31T18:57:13Z",
+      "side": 1,
+      "message": "typo. will fix it in next version.",
+      "revId": "da822acee0bbaf518b2c900da5f80c0a8b82b1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
