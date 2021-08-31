@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50ab9aff_659c9182",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-31T18:55:55Z",
+      "side": 1,
+      "message": "Removed lt9611uxc_fw_update firmware update service and we are handling the firmware update from host side adb commands now.",
+      "revId": "da822acee0bbaf518b2c900da5f80c0a8b82b1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6f045271_bc2ae7bf",
+        "filename": "installer/rb5/flash-all-aosp.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-08-31T18:55:55Z",
+      "side": 1,
+      "message": "I validated this script on v5.14 mainline but \"adb root\" doesn\u0027t work for some reason on v5.14-rc6 android-mainline prebuilt artifacts. May be an intermittent breakage. I\u0027ll switch to \"adb root\" as soon as v5.14 is merged in android-mainline. Meanwhile lets go with \"su 0\"?",
+      "revId": "da822acee0bbaf518b2c900da5f80c0a8b82b1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
