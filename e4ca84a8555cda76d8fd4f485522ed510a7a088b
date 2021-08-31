@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f47953f4_4465c6a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-08-31T21:48:58Z",
+      "side": 1,
+      "message": "I don\u0027t have an RB5, but I tested the build with this and the android-mainline prebuilt kernel on db845c/RB3 and it worked ok here.\n\n(also resolving comments that seem to have been addressed)",
+      "revId": "e4ca84a8555cda76d8fd4f485522ed510a7a088b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

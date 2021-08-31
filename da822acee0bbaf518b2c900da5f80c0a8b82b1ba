@@ -35,6 +35,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "54ac3ca8_140c3d89",
+        "filename": "installer/rb5/flash-all-aosp.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-08-31T21:48:58Z",
+      "side": 1,
+      "message": "Ack",
+      "parentUuid": "6f045271_bc2ae7bf",
+      "revId": "da822acee0bbaf518b2c900da5f80c0a8b82b1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "9bc29f63_090c6391",
@@ -48,6 +66,24 @@
       "writtenOn": "2021-08-31T18:57:13Z",
       "side": 1,
       "message": "typo. will fix it in next version.",
+      "revId": "da822acee0bbaf518b2c900da5f80c0a8b82b1ba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c9cdc09c_4159533f",
+        "filename": "rb5/BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-08-31T21:48:58Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "9bc29f63_090c6391",
       "revId": "da822acee0bbaf518b2c900da5f80c0a8b82b1ba",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
