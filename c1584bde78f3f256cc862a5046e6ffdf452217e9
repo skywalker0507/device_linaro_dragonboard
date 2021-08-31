@@ -1,0 +1,290 @@
+{
+  "comments": [
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "d0b0ee84_8c945e79",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 1,
+        "startChar": 77,
+        "endLine": 1,
+        "endChar": 78
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "4b2f46c2_9afa2d41",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 3,
+        "startChar": 79,
+        "endLine": 3,
+        "endChar": 80
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "04e305bf_5b4f5c01",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 4,
+        "startChar": 79,
+        "endLine": 4,
+        "endChar": 80
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "5e6b5da0_1d67e278",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 5,
+        "startChar": 79,
+        "endLine": 5,
+        "endChar": 80
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "d37158a6_cf101244",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 6,
+        "startChar": 76,
+        "endLine": 6,
+        "endChar": 77
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "c7677d5b_51a21899",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 7,
+        "startChar": 79,
+        "endLine": 7,
+        "endChar": 80
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "f7b92996_12a685d5",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 8,
+        "startChar": 78,
+        "endLine": 8,
+        "endChar": 79
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "0c25b54c_d98665ce",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 9,
+        "startChar": 77,
+        "endLine": 9,
+        "endChar": 78
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "3bc9cf3a_0e0c5926",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 10,
+        "startChar": 75,
+        "endLine": 10,
+        "endChar": 76
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "355b111c_28a474d0",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Please remove the trailing whitespace.",
+      "range": {
+        "startLine": 11,
+        "startChar": 78,
+        "endLine": 11,
+        "endChar": 79
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "robotId": "ayeaye",
+      "robotRunId": "AR00000000000014967686",
+      "url": "https://android-build.googleplex.com/builds/treetop/android-review/1804416?revision\u003d2",
+      "fixSuggestions": [],
+      "key": {
+        "uuid": "a0ba83a9_84950b93",
+        "filename": "rb5/firmware/ath11k/QCA6390/hw2.0/Notice.txt",
+        "patchSetId": 2
+      },
+      "lineNbr": 1255,
+      "author": {
+        "id": 1757831
+      },
+      "writtenOn": "2021-08-31T18:49:21Z",
+      "side": 1,
+      "message": "Prefer to use inclusive terms like \u0027deny list\u0027 or \u0027allow list\u0027; see https://developers.google.com/style/word-list#blacklist for more details. In the case of a false positive add BYPASS_INCLUSIVE_LANGUAGE_REASON\u003dmy_reason_here to your commit message to disable this check.",
+      "range": {
+        "startLine": 1255,
+        "startChar": 96,
+        "endLine": 1255,
+        "endChar": 105
+      },
+      "revId": "c1584bde78f3f256cc862a5046e6ffdf452217e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
