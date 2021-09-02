@@ -30,6 +30,7 @@
 /* Minimum granularity - Arbitrary but small value */
 #define CODEC_BASE_FRAME_COUNT 32
 
+#define CHANNEL_MONO   1
 #define CHANNEL_STEREO 2
 
 #ifdef AEC_HAL
