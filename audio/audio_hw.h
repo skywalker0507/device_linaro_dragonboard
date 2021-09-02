@@ -24,7 +24,7 @@
 
 #define PORT_HDMI 0
 #define PORT_INTERNAL_SPEAKER 1
-#define PORT_BUILTIN_MIC 3
+#define PORT_BUILTIN_MIC 0
 
 #define MIXER_XML_PATH "/vendor/etc/mixer_paths.xml"
 /* Minimum granularity - Arbitrary but small value */
