@@ -1037,7 +1037,7 @@ static int adev_open_input_stream(struct audio_hw_device* dev, audio_io_handle_t
     in->stream.get_capture_position = in_get_capture_position;
     in->stream.get_active_microphones = in_get_active_microphones;
 
-    in->config.channels = CHANNEL_STEREO;
+    in->config.channels = 1;
     if (source == AUDIO_SOURCE_ECHO_REFERENCE) {
         in->config.rate = PLAYBACK_CODEC_SAMPLING_RATE;
     } else {
