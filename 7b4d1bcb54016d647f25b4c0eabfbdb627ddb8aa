@@ -16,6 +16,23 @@
       "message": "Just initial WIP pass on this. Feedback on the approach would be welcome!",
       "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "eed4f740_814f0d54",
+        "filename": "audio/audio_hw.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1890913
+      },
+      "writtenOn": "2021-09-03T12:19:31Z",
+      "side": 1,
+      "message": "I\u0027m not sure how feasible it is to implement, but can\u0027t we make use of https://android.googlesource.com/platform/system/media/+/master/audio/include/system/audio-hal-enums.h#323 and intelligently do audio card switching by looking at out-\u003edevices and picking the output card based on that.",
+      "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
