@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "14a0bd5b_bf6b0bad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-09-10T22:34:49Z",
+      "side": 1,
+      "message": "Ok, I spun a bit on this and I think a much deeper rework will be needed to properly query the device capabilities. \n\nWith that large effort looming, I realized that we probably don\u0027t have many \"stereo\" mics, so just having the default record mono is probably ok.\n\nAmit/Caleb: Could you both test with the pf1/op6 form-factor devices to make sure this doesn\u0027t break anything for you all?\n\nI\u0027m hoping the headphone/earpiece switching work that was done recently doesn\u0027t collide (should we submit those changes upstream to AOSP too?).",
+      "revId": "7261b6e368cde2b2a7f0020395b88c182e1352d3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
