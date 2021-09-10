@@ -16,6 +16,23 @@
       "message": "Ok, I spun a bit on this and I think a much deeper rework will be needed to properly query the device capabilities. \n\nWith that large effort looming, I realized that we probably don\u0027t have many \"stereo\" mics, so just having the default record mono is probably ok.\n\nAmit/Caleb: Could you both test with the pf1/op6 form-factor devices to make sure this doesn\u0027t break anything for you all?\n\nI\u0027m hoping the headphone/earpiece switching work that was done recently doesn\u0027t collide (should we submit those changes upstream to AOSP too?).",
       "revId": "7261b6e368cde2b2a7f0020395b88c182e1352d3",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a8ef9688_028f1b40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-09-10T23:30:37Z",
+      "side": 1,
+      "message": "Going back to WIP, as I\u0027m not seeing the behavior I expect when using a alternative USB audio headset (I get audio output through the headset, but not audio input). Digging further in the code, I worry I\u0027m competing with AOSP internal usb handling logic.",
+      "revId": "7261b6e368cde2b2a7f0020395b88c182e1352d3",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
