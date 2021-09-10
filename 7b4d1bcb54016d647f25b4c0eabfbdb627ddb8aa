@@ -51,6 +51,24 @@
       "parentUuid": "eed4f740_814f0d54",
       "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d1f71651_9b433b33",
+        "filename": "audio/audio_hw.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1890913
+      },
+      "writtenOn": "2021-09-10T22:53:41Z",
+      "side": 1,
+      "message": "I guess what I\u0027m trying to suggest is that you can infer the sound card based on the output device, at least you can know which sound card it is not. If the output device is USB (I don\u0027t have the list to hand, I seem to remember seem some USB / external options) then we be sure that it\u0027s not sound card zero, as that should always be the built in audio. If  it\u0027s possible to fetch information about a given sound card then we can produce a set of rules to determine which output device we should be using at any given point in time based on what outputs are available.\n\nI\u0027m not sure how desirable that functionality is though, it might be more effort than it\u0027s worth for the rb3.",
+      "parentUuid": "c889c33f_a9cf2d4d",
+      "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
