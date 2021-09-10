@@ -69,6 +69,24 @@
       "parentUuid": "c889c33f_a9cf2d4d",
       "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f94fbb58_7aefa3e2",
+        "filename": "audio/audio_hw.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-09-10T23:16:45Z",
+      "side": 1,
+      "message": "\u003e I guess what I\u0027m trying to suggest is that you can infer the \n\u003e sound card based on the output device, at least you can know\n\u003e which sound card it is not. If the output device is USB (I\n\u003e don\u0027t have the list to hand, I seem to remember seem some USB\n\u003e / external options) then we be sure that it\u0027s not sound card\n\u003e zero, as that should always be the built in audio.\n\nI appreciate the continued feedback!\nAgain, I may be misunderstanding you, but I don\u0027t think that\u0027s valid, as if I boot with the usb-web-cam plugged in, the USB sound card is card0 and the built-in audio is card1.\n\nI\u0027m still tinkering a bit more with things in case I\u0027ve just missed something, but I suspect a proper dynamic selection audio HAL will need quite a bit more work on helper libraries to enumerate/query the various devices. We can sort of get what we want out of /proc/asound/card[\u003cN\u003e|s] and /proc/asound/pcm, but I am hoping to find something that involves less string parsing and directory scanning.",
+      "parentUuid": "d1f71651_9b433b33",
+      "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
