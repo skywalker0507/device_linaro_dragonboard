@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87fc3a0e_23ea5114",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1684060
+      },
+      "writtenOn": "2021-09-14T08:00:13Z",
+      "side": 1,
+      "message": "Hello John, Amit,\n\nIs it possible to use tinyhal here?\nIt is flexible and can be configured with small xml file and you can specify cardname instead of ids as well as ALSA controls values on transitions.\nGD team are contributing there, and if you could switch this project to tinyhal, we can consolidate our efforts.",
+      "revId": "57a023620c924beeb26590992116d76de2e7a51b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
