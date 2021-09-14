@@ -87,6 +87,24 @@
       "parentUuid": "d1f71651_9b433b33",
       "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bb3886b_1b639ca9",
+        "filename": "audio/audio_hw.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-09-14T03:53:28Z",
+      "side": 1,
+      "message": "Ok, I\u0027m still going to submit this as a initial step just to unblock the usb web cam enablement. We will still need to revisit the audio hal for more dynamic configurations.",
+      "parentUuid": "f94fbb58_7aefa3e2",
+      "revId": "7b4d1bcb54016d647f25b4c0eabfbdb627ddb8aa",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
