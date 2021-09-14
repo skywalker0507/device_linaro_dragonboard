@@ -16,6 +16,24 @@
       "message": "Hello John, Amit,\n\nIs it possible to use tinyhal here?\nIt is flexible and can be configured with small xml file and you can specify cardname instead of ids as well as ALSA controls values on transitions.\nGD team are contributing there, and if you could switch this project to tinyhal, we can consolidate our efforts.",
       "revId": "57a023620c924beeb26590992116d76de2e7a51b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1374f038_042abf48",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-09-14T21:54:05Z",
+      "side": 1,
+      "message": "Hey Roman,\n  So yes, in trying to address some of the audio limitations I was hitting with enabling usb web-cam support, I realized we probably need a more significant rework. I do very much think a shared cross-device HAL would be a good idea (as forking yukawa here isn\u0027t ideal), and I know cuttlefish is getting unified with the goldfish/ranchu audio hal as well, so there was some question if we should migrate back to that.\n  \n  We\u0027ve got a card to track such a rework, and I\u0027ll add a note to evaluate a move to tinyhal, but that\u0027s all work todo. \n  https://linaro.atlassian.net/browse/AOSP-101\n  \n  Pushing this change is more of a short term solution to enable usb-webcams without breaking current audio output.",
+      "parentUuid": "87fc3a0e_23ea5114",
+      "revId": "57a023620c924beeb26590992116d76de2e7a51b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
