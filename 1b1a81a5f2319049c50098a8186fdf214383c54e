@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "896602f1_8ee893fb",
+        "filename": "ueventd.common.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-09-30T05:33:03Z",
+      "side": 0,
+      "message": "So seeing this now, I recall early on this was critical to get the module loading actually working. Maybe changes to userland or where we put the modules now makes this irrelevant? Might be good to double check w/ Alistair/Todd/Steve just to make sure its ok for GKI",
+      "revId": "1b1a81a5f2319049c50098a8186fdf214383c54e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
