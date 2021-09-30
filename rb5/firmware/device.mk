@@ -32,3 +32,19 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/ath11k/QCA6390/hw2.0/m3.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ath11k/QCA6390/hw2.0/m3.bin		\
     $(LOCAL_PATH)/qca/htbtfw20.tlv:$(TARGET_COPY_OUT_VENDOR)/firmware/qca/htbtfw20.tlv					\
     $(LOCAL_PATH)/qca/htnv20.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/qca/htnv20.bin
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b00	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b01	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b02	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b03	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b04	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b05	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b06	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b07:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b07	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b08:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b08	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b09:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b09	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b10:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b10	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.b19:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.b19	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.mbn	\
+    $(LOCAL_PATH)/qcom/vpu-1.0/venus.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/vpu-1.0/venus.mdt
