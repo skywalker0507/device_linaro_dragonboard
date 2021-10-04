@@ -16,6 +16,24 @@
       "message": "So seeing this now, I recall early on this was critical to get the module loading actually working. Maybe changes to userland or where we put the modules now makes this irrelevant? Might be good to double check w/ Alistair/Todd/Steve just to make sure its ok for GKI",
       "revId": "1b1a81a5f2319049c50098a8186fdf214383c54e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "574e8caa_7461d71d",
+        "filename": "ueventd.common.rc",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-10-04T09:06:18Z",
+      "side": 0,
+      "message": "Done",
+      "parentUuid": "896602f1_8ee893fb",
+      "revId": "1b1a81a5f2319049c50098a8186fdf214383c54e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
