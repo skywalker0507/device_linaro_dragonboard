@@ -7,3 +7,4 @@ type dri_device, dev_type;
 type rmtfs_device, dev_type;
 type modem_block_device, dev_type, bdev_type;
 type tqftpserv_vendor_data_file, file_type, data_file_type, mlstrustedobject;
+type proc_sysctl_fw_loader_fallback, proc_type, fs_type;

@@ -1,6 +1,10 @@
 import init.${ro.hardware}.usb.rc
 import init.${ro.hardware}.power.rc
 
+on early-init
+    # Force enable the firmware sysfs fallback mechanism
+    write /proc/sys/kernel/firmware_config/force_sysfs_fallback 1
+
 on early-fs
     start vold
 
