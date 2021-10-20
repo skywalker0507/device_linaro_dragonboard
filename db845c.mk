@@ -21,6 +21,7 @@ endif
 ifeq ($(DB845C_USES_GKI), true)
   DB845C_MODS := $(wildcard $(DB845C_KERNEL_DIR)/*.ko)
   ifneq ($(DB845C_MODS),)
-    BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(DB845C_MODS)
+    DB845C_SKIP_MODS := %/venus-core.ko %/venus-dec.ko %/venus-enc.ko
+    BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(DB845C_SKIP_MODS),$(DB845C_MODS))
   endif
 endif
