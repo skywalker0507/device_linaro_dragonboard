@@ -21,6 +21,7 @@ endif
 ifeq ($(RB5_USES_GKI), true)
   RB5_MODS := $(wildcard $(RB5_KERNEL_DIR)/*.ko)
   ifneq ($(RB5_MODS),)
-    BOARD_VENDOR_RAMDISK_KERNEL_MODULES += $(RB5_MODS)
+    RB5_SKIP_MODS := %/venus-core.ko %/venus-dec.ko %/venus-enc.ko
+    BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(RB5_SKIP_MODS),$(RB5_MODS))
   endif
 endif
