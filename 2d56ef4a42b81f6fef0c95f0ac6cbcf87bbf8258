@@ -33,6 +33,24 @@
       "message": "Why are we copying binaries from external parties ?  Is building from source an option, we do this already on polygon.",
       "revId": "2d56ef4a42b81f6fef0c95f0ac6cbcf87bbf8258",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f402d1a0_52c6d1e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1131915
+      },
+      "writtenOn": "2021-10-28T00:36:02Z",
+      "side": 1,
+      "message": "Will reply on the internal email thread.",
+      "parentUuid": "87e031a2_dae964a4",
+      "revId": "2d56ef4a42b81f6fef0c95f0ac6cbcf87bbf8258",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
