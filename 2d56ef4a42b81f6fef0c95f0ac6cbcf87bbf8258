@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c4d8e552_2c5bace4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010363
+      },
+      "writtenOn": "2021-10-28T00:04:33Z",
+      "side": 1,
+      "message": "At a minimum, this CL must include license information on the binaries as well as any needed NOTICE files.  Until we finishing discussing this CL, please do not submit.",
+      "revId": "2d56ef4a42b81f6fef0c95f0ac6cbcf87bbf8258",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
