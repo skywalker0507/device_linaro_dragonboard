@@ -16,6 +16,23 @@
       "message": "At a minimum, this CL must include license information on the binaries as well as any needed NOTICE files.  Until we finishing discussing this CL, please do not submit.",
       "revId": "2d56ef4a42b81f6fef0c95f0ac6cbcf87bbf8258",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "87e031a2_dae964a4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1018026
+      },
+      "writtenOn": "2021-10-28T00:29:18Z",
+      "side": 1,
+      "message": "Why are we copying binaries from external parties ?  Is building from source an option, we do this already on polygon.",
+      "revId": "2d56ef4a42b81f6fef0c95f0ac6cbcf87bbf8258",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
