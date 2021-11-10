@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72d71376_351735e7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-11-10T16:41:44Z",
+      "side": 1,
+      "message": "Fixes the suspend issue we run into while running the CtsWindowManagerDeviceTestCases tests.",
+      "revId": "e88514aa4260d1e06a74a1c82440be380e5fb591",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
