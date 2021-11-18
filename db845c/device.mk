@@ -64,4 +64,4 @@ PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SDM845
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=160
 
 # Copy firmware files
-$(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
+$(call inherit-product-if-exists, vendor/linaro_devices/qcom/db845c/device.mk)
