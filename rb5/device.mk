@@ -52,4 +52,4 @@ PRODUCT_VENDOR_PROPERTIES += ro.soc.model=QRB5165
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=160
 
 # Copy firmware files
-$(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
+$(call inherit-product-if-exists, vendor/linaro_devices/qcom/rb5/device.mk)

@@ -2,31 +2,28 @@
 
 INSTALLER_DIR="`dirname ${0}`"
 
-QDL="`readlink -f ${INSTALLER_DIR}/qdl`"
-FIRMWARE_DIR="rb5-bootloader-ufs-aosp"
-
 # for cases that don't run "lunch rb5-userdebug"
 if [ -z "${ANDROID_BUILD_TOP}" ]; then
-    ANDROID_BUILD_TOP=${INSTALLER_DIR}/../../../../../
-    ANDROID_PRODUCT_OUT="${ANDROID_BUILD_TOP}/out/target/product/rb5"
+    ANDROID_BUILD_TOP="`readlink -f ${INSTALLER_DIR}/../../../../../`"
 fi
 
-if [ ! -d "${ANDROID_PRODUCT_OUT}" ]; then
-    echo "RECOVERY: error in locating out directory, check if it exist"
-    exit
-fi
-
-echo "android out dir:${ANDROID_PRODUCT_OUT}"
+FIRMWARE_DIR="${ANDROID_BUILD_TOP}/vendor/linaro_devices"
 
 # TODO: Pull one-time recovery/qdl path out of standard install
 # Flash bootloader firmware files
-if [ ! -d "${INSTALLER_DIR}/${FIRMWARE_DIR}/" ]; then
-    echo "RECOVERY: No firmware directory? Make sure binaries have been provided"
+if [ ! -d "${FIRMWARE_DIR}/" ]; then
+    echo "RECOVERY: No firmware directory?"
+    echo "          Make sure the vendor binaries have been downloaded from"
+    echo "          <URL>"
+    echo "          and extracted to $ANDROID_BUILD_TOP/"
     exit
 fi
 
-pushd "${INSTALLER_DIR}/${FIRMWARE_DIR}" > /dev/null
-sudo "${QDL}" prog_firehose_ddr.elf rawprogram?.xml patch?.xml
+QDL="`readlink -f ${FIRMWARE_DIR}/qcom/rb5/qdl/qdl`"
+
+pushd "${FIRMWARE_DIR}/qcom/rb5/rb5-bootloader-ufs-aosp" > /dev/null
+echo "RECOVERY: Running QDL board recovery tool"
+sudo ${QDL} prog_firehose_ddr.elf rawprogram?.xml patch?.xml
 popd > /dev/null
 
 echo

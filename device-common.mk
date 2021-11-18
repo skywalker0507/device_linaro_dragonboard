@@ -227,4 +227,6 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_SOONG_NAMESPACES += \
     device/linaro/dragonboard \
-    external/mesa3d
+    external/mesa3d \
+    vendor/linaro_devices/linux-firmware \
+    vendor/linaro_devices/qcom
