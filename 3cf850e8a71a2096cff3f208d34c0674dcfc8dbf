@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b13713a1_fb7bbd85",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-11-18T09:48:42Z",
+      "side": 1,
+      "message": "Locally build ptable just for reference. The actual binaries will drop as part of bootloader package update.",
+      "revId": "3cf850e8a71a2096cff3f208d34c0674dcfc8dbf",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
