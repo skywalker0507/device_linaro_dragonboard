@@ -141,3 +141,28 @@ PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/db845c/firmware/a630_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.b02 \
     device/linaro/dragonboard/db845c/firmware/a630_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.elf \
     device/linaro/dragonboard/db845c/firmware/a630_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/qcom/sdm845/a630_zap.mbn
+
+#Copy Venus and ADSP/CDSP firmware files to ramdisk
+ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
+    PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/adsp.mbn:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/sdm845/adsp.mbn				\
+        $(LOCAL_PATH)/cdsp.mbn:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/sdm845/cdsp.mbn				\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b00:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b00	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b01:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b01	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b02:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b02	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b03:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b03	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b04:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b04	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.mbn:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.mbn	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.mdt:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.mdt
+else
+    PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/adsp.mbn:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/sdm845/adsp.mbn				\
+        $(LOCAL_PATH)/cdsp.mbn:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/sdm845/cdsp.mbn				\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b00:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b00	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b01:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b01	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b02:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b02	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b03:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b03	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.b04:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.b04	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.mbn:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.mbn	\
+        $(LOCAL_PATH)/qcom/venus-5.2/venus.mdt:$(TARGET_COPY_OUT_RAMDISK)/vendor/firmware/qcom/venus-5.2/venus.mdt
+endif
