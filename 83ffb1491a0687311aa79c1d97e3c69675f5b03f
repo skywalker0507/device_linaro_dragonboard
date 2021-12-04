@@ -86,6 +86,24 @@
       "message": "freedreno vulkan require:\n\n+\n+# Vulkan\n+PRODUCT_PACKAGES +\u003d \\\n+    vulkan.freedreno\n+\n+PRODUCT_COPY_FILES +\u003d \\\n+    frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \\\n+    frameworks/native/data/etc/android.hardware.vulkan.version-1_0_3.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \\\n+    frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \\\n+\n+PRODUCT_VENDOR_PROPERTIES +\u003d \\\n+    ro.hardware.vulkan\u003dfreedreno\n\nAnd selinux:\n\n+/vendor/lib(64)?/hw/vulkan\\.freedreno\\.so  u:object_r:same_process_hal_file:s0",
       "revId": "83ffb1491a0687311aa79c1d97e3c69675f5b03f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bf6a3a21_2e586aa7",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-12-04T00:49:45Z",
+      "side": 1,
+      "message": "Thanks Roman! I\u0027ve added a follow on patch with this change.",
+      "parentUuid": "6ed62280_8a48d108",
+      "revId": "83ffb1491a0687311aa79c1d97e3c69675f5b03f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
