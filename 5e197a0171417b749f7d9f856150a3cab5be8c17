@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "96f216ba_e651c064",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2021-12-10T19:24:38Z",
+      "side": 1,
+      "message": "sorry i missed this part.\n\nupdated download url is https://releases.linaro.org/android/aosp-linaro-vendor-package/extract-linaro_devices-20211210.tgz\n\nwe can put staging-git... as source url, maybe?",
+      "revId": "5e197a0171417b749f7d9f856150a3cab5be8c17",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
