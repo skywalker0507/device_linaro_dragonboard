@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ce5336b2_8d24b093",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-12-10T19:05:23Z",
+      "side": 1,
+      "message": "Ok, this stack should remove the binary objects out to using the vendor package. \n\nAfter these land, folks will need to fetch the vendor package (the build will produce a warning if its missing or not the right version) before building. \n\nAdditionally, it is important to use the flash-all-aosp.sh script from the installer directory to make sure the new ptables from the vendor package are flashed to the device.\n\nAs this has the potential to be disruptive to automation, wanted to call out the above.\n\n",
+      "revId": "4f5a5487281341b0aa2f9217c471c86196af4cf9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
