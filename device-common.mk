@@ -188,8 +188,8 @@ PRODUCT_PACKAGES += \
 
 # Health
 PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-cuttlefish \
-    android.hardware.health@2.1-service
+    android.hardware.health-service.cuttlefish \
+    android.hardware.health-service.cuttlefish_recovery \
 
 # TODO: disable this service once we implement system suspend
 PRODUCT_PACKAGES += \
