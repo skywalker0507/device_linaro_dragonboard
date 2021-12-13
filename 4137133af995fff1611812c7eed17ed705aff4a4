@@ -16,6 +16,40 @@
       "message": "-1 for now as this is WIP",
       "revId": "4137133af995fff1611812c7eed17ed705aff4a4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "71b909a2_bbae6fb8",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1684060
+      },
+      "writtenOn": "2021-12-13T10:38:27Z",
+      "side": 1,
+      "message": "hardware.vulkan.version-1_1.xml should be used since turnip exposes 1.1",
+      "revId": "4137133af995fff1611812c7eed17ed705aff4a4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3e9b39fc_58023a93",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1684060
+      },
+      "writtenOn": "2021-12-13T10:38:27Z",
+      "side": 1,
+      "message": "To run Android UI on vulkan turnip should implement ANDROID_external_memory_android_hardware_buffer extension. I\u0027m currently working on it for v3dv. To be honest, I\u0027m just copy-pasting radv :) .\nSo once implemented you van enable vulkan HWUI by adding:\n\nTARGET_USES_VULKAN \u003d true\n\nline",
+      "revId": "4137133af995fff1611812c7eed17ed705aff4a4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
