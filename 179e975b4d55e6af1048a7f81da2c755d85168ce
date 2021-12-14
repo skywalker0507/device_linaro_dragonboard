@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c909c104_935dd49c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-12-14T06:45:21Z",
+      "side": 1,
+      "message": "Holding off on this for now until I can do some more vulkan cts testing to make sure adding the build options don\u0027t break things.",
+      "revId": "179e975b4d55e6af1048a7f81da2c755d85168ce",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
