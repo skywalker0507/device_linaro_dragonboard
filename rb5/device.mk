@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_SOONG_NAMESPACES += \
-    device/linaro/dragonboard
-
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
@@ -48,17 +45,6 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
-
-PRODUCT_PACKAGES += \
-    pd-mapper \
-    qrtr-ns \
-    qrtr-cfg \
-    qrtr-lookup \
-    rmtfs \
-    tqftpserv
-
-PRODUCT_COPY_FILES += \
-    device/linaro/dragonboard/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
 
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=QRB5165
