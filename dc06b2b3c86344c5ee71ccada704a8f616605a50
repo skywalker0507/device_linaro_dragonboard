@@ -16,6 +16,23 @@
       "message": "Still waiting on the URL to go live (-1). Just for review.",
       "revId": "dc06b2b3c86344c5ee71ccada704a8f616605a50",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f4e29880_7752042d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-12-18T03:37:57Z",
+      "side": 1,
+      "message": "Steve: This will need to wait until the internal vendor package mirror project is setup to be merged, but for external users this should be ready.",
+      "revId": "dc06b2b3c86344c5ee71ccada704a8f616605a50",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
