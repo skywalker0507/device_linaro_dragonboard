@@ -16,6 +16,24 @@
       "message": "-1 on this until the vendor package URL goes live",
       "revId": "deff10d34a238ab4051dfa2ec1084a86525c8bf9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bbf95dc9_d1a7b43c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2021-12-18T03:37:10Z",
+      "side": 1,
+      "message": "new vendor package is now public",
+      "parentUuid": "36521f4f_3e6506c4",
+      "revId": "deff10d34a238ab4051dfa2ec1084a86525c8bf9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
