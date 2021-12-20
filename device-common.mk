@@ -199,6 +199,18 @@ PRODUCT_PACKAGES += \
 PRODUCT_HOST_PACKAGES := \
     mkbootimg
 
+# Userspace vendor services for WiFi/Audio to work
+PRODUCT_PACKAGES += \
+    pd-mapper \
+    qrtr-ns \
+    qrtr-cfg \
+    qrtr-lookup \
+    rmtfs \
+    tqftpserv
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
+
 # Copy standard platform config files
 PRODUCT_COPY_FILES +=  \
     $(LOCAL_PATH)/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
@@ -213,4 +225,6 @@ PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.device_admin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_admin.xml
 
-PRODUCT_SOONG_NAMESPACES += external/mesa3d
+PRODUCT_SOONG_NAMESPACES += \
+    device/linaro/dragonboard \
+    external/mesa3d
