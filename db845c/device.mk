@@ -14,9 +14,6 @@
 # limitations under the License.
 #
 
-PRODUCT_SOONG_NAMESPACES += \
-    device/linaro/dragonboard
-
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
@@ -52,17 +49,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
-PRODUCT_PACKAGES += \
-    pd-mapper \
-    qrtr-ns \
-    qrtr-cfg \
-    qrtr-lookup \
-    rmtfs \
-    tqftpserv
-
+# Install script to set *.usb.controller properties
 PRODUCT_COPY_FILES += \
-    device/linaro/dragonboard/qcom/set_udc.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_udc.sh \
-    device/linaro/dragonboard/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
+    device/linaro/dragonboard/qcom/set_udc.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_udc.sh
 
 # Install scripts to set Ethernet MAC address
 PRODUCT_COPY_FILES += \
