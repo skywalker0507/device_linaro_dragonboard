@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c66a2658_9b572e31",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 7
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-14T00:32:27Z",
+      "side": 1,
+      "message": "This update fixes the url pointer to the new package. I forgot to commit that change earlier.\n\nStill -1 while we wait for internal repo stuff for the vendor package.",
+      "revId": "fbd3fbbd53128af13d41ed94d4d47f3c782a7b28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
