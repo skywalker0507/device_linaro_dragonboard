@@ -16,6 +16,24 @@
       "message": "On hold till we get the firmware package sorted to private repos",
       "revId": "22e4558614da8d641bcc52934665775083f41773",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ce7a703_34d6880b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-21T18:19:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e9b39aa4_ed7501dc",
+      "revId": "22e4558614da8d641bcc52934665775083f41773",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
