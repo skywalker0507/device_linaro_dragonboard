@@ -16,6 +16,23 @@
       "message": "WIP. Depends on vendor package update.",
       "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "22f3a08b_db6c786c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-01-25T13:29:24Z",
+      "side": 1,
+      "message": "Smoke tested on db845c and RB5. No obvious regression.",
+      "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
