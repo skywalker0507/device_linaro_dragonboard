@@ -33,6 +33,23 @@
       "message": "Smoke tested on db845c and RB5. No obvious regression.",
       "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "942056ae_7e645fab",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-01-25T13:30:15Z",
+      "side": 1,
+      "message": "Note: db845c-userdebug boots on RB5 for android13-5.15 and above kernels only.",
+      "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
