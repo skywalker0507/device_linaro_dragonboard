@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6c596d2a_c04fafa3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-26T23:56:57Z",
+      "side": 1,
+      "message": "Just wanted to get some initial feedback on this helper script to simplify the build instructions with the new vendor-package.",
+      "revId": "2c92d45cf3ed2966304f9fa738509fc807d81c11",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
