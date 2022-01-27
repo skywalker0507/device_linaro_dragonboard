@@ -33,6 +33,24 @@
       "message": "I do not see any obvious regression with this patch on RB5 with external/mesa\u0027 AOSP/master branch. Let me know if usptream Mesa is good to go and I\u0027ll smoke test AOSP with \"TARGET_USES_VULKAN \u003d true\" as well.",
       "revId": "f71b4a92859764f8c532d4b1bd609d9dae5a582c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1b84785_b9d8b6d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-27T06:03:24Z",
+      "side": 1,
+      "message": "Yea, upstream mesa should be fine. Just checkout remotes/aosp/upstream-main, and it should build and boot with this series.",
+      "parentUuid": "fe3b08b9_e35a7d58",
+      "revId": "f71b4a92859764f8c532d4b1bd609d9dae5a582c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
