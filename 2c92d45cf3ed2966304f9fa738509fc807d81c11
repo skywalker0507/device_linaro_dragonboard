@@ -16,6 +16,23 @@
       "message": "Just wanted to get some initial feedback on this helper script to simplify the build instructions with the new vendor-package.",
       "revId": "2c92d45cf3ed2966304f9fa738509fc807d81c11",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3bbc2177_c71e8327",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1131915
+      },
+      "writtenOn": "2022-01-27T00:26:59Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "2c92d45cf3ed2966304f9fa738509fc807d81c11",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
