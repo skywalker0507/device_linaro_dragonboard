@@ -16,6 +16,52 @@
       "message": "Minor update switching from wget to curl as wget isn\u0027t in the hermetic build",
       "revId": "97b2d04315bf29efd935761c8fc97cb1af8fa01b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3934767a_e9f7486f",
+        "filename": "fetch-vendor-pacakge.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-01-27T10:00:06Z",
+      "side": 1,
+      "message": "could we make it not depend on the lunch command?\nfor some cases, it would be easy for the build scripts to run this script to download and decompress the vendor package first, then run the source/lunch/make commands to build the images.\n\nwe could get ANDROID_BUILD_TOP with the path of this script, like this:\n    DIR_PARENT\u003d$(cd $(dirname $0); pwd)\n    ANDROID_BUILD_TOP\u003d$(cd ${DIR_PARENT}/../../../; pwd)",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 2
+      },
+      "revId": "97b2d04315bf29efd935761c8fc97cb1af8fa01b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cd10754c_491c27e9",
+        "filename": "fetch-vendor-pacakge.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-01-27T10:00:06Z",
+      "side": 1,
+      "message": "for this part, it would be better to consider the case for local build, where the file has been downloaded last time, then no need to download it again. like this:\n\n -curl -L ${VND_PKG_URL} -o  ${PKG_FILE}.tgz\n \n  # generate expected sha512sum, check \u0026 cleanup\n  echo \"${EXPECTED_LINARO_VENDOR_SHA}  ${PKG_FILE}.tgz\" \u003e ${PKG_FILE}.tgz.sha\n -sha512sum -c ${PKG_FILE}.tgz.sha\n +if [ ! -e \"${PKG_FILE}.tgz\"  ] || ! sha512sum -c ${PKG_FILE}.tgz.sha; then\n +    curl -L ${VND_PKG_URL} -o  ${PKG_FILE}.tgz\n +    sha512sum -c ${PKG_FILE}.tgz.sha\n +fi",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 32
+      },
+      "revId": "97b2d04315bf29efd935761c8fc97cb1af8fa01b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
