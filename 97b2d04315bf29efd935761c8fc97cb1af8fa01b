@@ -82,6 +82,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2ddcff89_37c5173e",
+        "filename": "fetch-vendor-pacakge.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-28T21:28:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a5d564ff_9d1eb41f",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 8,
+        "endChar": 2
+      },
+      "revId": "97b2d04315bf29efd935761c8fc97cb1af8fa01b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cd10754c_491c27e9",
@@ -119,6 +143,30 @@
       "side": 1,
       "message": "yes, in the first version I used wget -nc which would skip re-downloading, but when I switched to curl I lost that functionality. Thanks for pointing this out. I\u0027ll integrate something similar to what you suggest",
       "parentUuid": "cd10754c_491c27e9",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 32
+      },
+      "revId": "97b2d04315bf29efd935761c8fc97cb1af8fa01b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c325841c_ed1de2c3",
+        "filename": "fetch-vendor-pacakge.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-28T21:28:44Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a24f13c5_7fc3b151",
       "range": {
         "startLine": 15,
         "startChar": 0,
