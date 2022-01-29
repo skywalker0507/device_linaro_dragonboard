@@ -13,19 +13,6 @@
 # limitations under the License.
 #
 
-# Primary Arch
-TARGET_ARCH := arm64
-TARGET_ARCH_VARIANT := armv8-2a
-TARGET_CPU_VARIANT := kryo385
-TARGET_CPU_ABI := arm64-v8a
-
-# Secondary Arch
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
-TARGET_2ND_CPU_VARIANT := kryo385
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
-
 TARGET_USES_64_BIT_BINDER := true
 
 TARGET_NO_BOOTLOADER := true
@@ -69,9 +56,6 @@ BOARD_HAVE_BLUETOOTH := true
 BOARD_SEPOLICY_DIRS += \
     device/linaro/dragonboard/sepolicy \
     system/bt/vendor_libs/linux/sepolicy
-
-DEVICE_MANIFEST_FILE := device/linaro/dragonboard/manifest.xml
-DEVICE_MATRIX_FILE := device/linaro/dragonboard/compatibility_matrix.xml
 
 # Enable dex pre-opt to speed up initial boot
 ifeq ($(HOST_OS),linux)

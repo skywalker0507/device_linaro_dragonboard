@@ -1,10 +1,7 @@
 PIXEL3_KERNEL_DIR := device/linaro/dragonboard-kernel/pixel3_mainline/
 
-# Inherit the full_base and device configurations
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, device/linaro/dragonboard/pixel3_mainline/device.mk)
-$(call inherit-product, device/linaro/dragonboard/device-common.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
+$(call inherit-product, device/linaro/dragonboard/full.mk)
 
 # Product overrides
 PRODUCT_NAME := pixel3_mainline
@@ -25,3 +22,17 @@ ifneq ($(PIXEL3_MODS),)
   BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(filter-out $(P3_ONLY_VENDOR),$(PIXEL3_MODS))
 endif
 endif
+
+PRODUCT_SHIPPING_API_LEVEL := 31
+
+# Dynamic partitions
+PRODUCT_BUILD_SUPER_PARTITION := true
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+PRODUCT_USE_DYNAMIC_PARTITION_SIZE := true
+
+PRODUCT_SOONG_NAMESPACES += \
+    device/linaro/dragonboard \
+    external/mesa3d \
+    vendor/linaro/linux-firmware/$(EXPECTED_LINARO_VENDOR_VERSION) \
+    vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION) \
+    vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)
