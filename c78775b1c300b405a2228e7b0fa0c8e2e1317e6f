@@ -104,6 +104,24 @@
       "parentUuid": "4284e35d_ce724ca1",
       "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c1f6d029_033f58e0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-31T22:01:50Z",
+      "side": 1,
+      "message": "Created a card for it here: https://linaro.atlassian.net/browse/AOSP-273\nUnfortunately the BPF module info issue will block 5.15 images until its fixed.",
+      "parentUuid": "691f5beb_64eb180c",
+      "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
