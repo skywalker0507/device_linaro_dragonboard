@@ -50,6 +50,24 @@
       "message": "Note: db845c-userdebug boots on RB5 for android13-5.15 and above kernels only.",
       "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "75121297_d9895135",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-01-31T19:23:55Z",
+      "side": 1,
+      "message": "should we move the default build to use 5.15?",
+      "parentUuid": "942056ae_7e645fab",
+      "revId": "c78775b1c300b405a2228e7b0fa0c8e2e1317e6f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
