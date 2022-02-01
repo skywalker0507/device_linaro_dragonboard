@@ -71,7 +71,11 @@ PRODUCT_PRODUCT_PROPERTIES := \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
-    android.hardware.drm@1.3-service.widevine \
+    android.hardware.drm@1.3-service.widevine
+
+
+#mesa
+PRODUCT_PACKAGES += \
     libGLES_mesa \
     libEGL_mesa \
     libGLESv1_CM_mesa \
@@ -79,15 +83,32 @@ PRODUCT_PACKAGES += \
     libgallium_dri \
     libglapi
 
+# Vulkan
+PRODUCT_PACKAGES += \
+    vulkan.freedreno
+
+# Not sure why I have to set the default on this twice?
+TARGET_BUILD_MESA ?= true
+
+ifeq ($(TARGET_BUILD_MESA), true)
+   $(warning Building from external/mesa3d!)
+   $(warning TARGET_BUILD_MESA=($(TARGET_BUILD_MESA)))
+   PRODUCT_SOONG_NAMESPACES += \
+       external/mesa3d
+else
+    $(warning using prebuilt mesa drivers!)
+    $(warning TARGET_BUILD_MESA=($(TARGET_BUILD_MESA)))
+    PRODUCT_SOONG_NAMESPACES += \
+        vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/mesa_prebuilt
+    PRODUCT_PACKAGES += \
+        msm_dri
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=minigbm_msm \
     ro.hardware.hwcomposer=drm \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
-
-# Vulkan
-PRODUCT_PACKAGES += \
-	vulkan.freedreno
 
 PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
@@ -272,7 +293,6 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_SOONG_NAMESPACES += \
     device/linaro/dragonboard \
-    external/mesa3d \
     vendor/linaro/linux-firmware/$(EXPECTED_LINARO_VENDOR_VERSION) \
     vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION) \
     vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)
