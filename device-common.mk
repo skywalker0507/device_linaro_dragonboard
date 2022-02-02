@@ -72,7 +72,12 @@ PRODUCT_PRODUCT_PROPERTIES := \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.3-service.widevine \
-    libGLES_mesa
+    libGLES_mesa \
+    libEGL_mesa \
+    libGLESv1_CM_mesa \
+    libGLESv2_mesa \
+    libgallium_dri \
+    libglapi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=minigbm_msm \
