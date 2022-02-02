@@ -52,6 +52,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "85586f63_f72a7184",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-02T17:05:50Z",
+      "side": 1,
+      "message": "Also, if you\u0027re taking another spin at this, can you do the refactor of the \"full\" entries in one patch and add the mini configs in the second? It might help with the review.",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2de98bb8_683d02b7",
