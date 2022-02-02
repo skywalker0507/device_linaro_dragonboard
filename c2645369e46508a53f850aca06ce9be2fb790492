@@ -69,6 +69,42 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "d04470c5_fd92491a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-02T19:01:39Z",
+      "side": 1,
+      "message": "Okay, let me respin this with a patch at the front that removes pixel3_mainline if you\u0027re okay with dropping it at this point.",
+      "parentUuid": "335e6161_6141ea9e",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a44a0b8b_733b91cc",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-02T19:01:39Z",
+      "side": 1,
+      "message": "Sure, I can do that.",
+      "parentUuid": "85586f63_f72a7184",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2de98bb8_683d02b7",
@@ -82,6 +118,24 @@
       "writtenOn": "2022-02-02T03:58:31Z",
       "side": 1,
       "message": "This seems like it would push rb5 to try to use the 5.10 kernel, which won\u0027t boot (it needs 5.15/mainline)",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "81679a92_4a07d796",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-02T19:01:39Z",
+      "side": 1,
+      "message": "Oh, right. I\u0027ll move the TARGET_KERNEL_USE settings into the device-specific makefiles.",
+      "parentUuid": "2de98bb8_683d02b7",
       "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
@@ -103,6 +157,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "4b9437c7_46e925f6",
+        "filename": "mini.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-02T19:01:39Z",
+      "side": 1,
+      "message": "It\u0027s yet to land, see I4f918502e611e950fa039e4e2ed817c97b928ba2 for the patch series that adds it.",
+      "parentUuid": "4a7f6a2f_d83a8e7a",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "c9ac4dc5_4be0d2c0",
@@ -120,6 +192,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e1faf9a_522b5a99",
+        "filename": "pixel3_mainline.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-02T19:01:39Z",
+      "side": 1,
+      "message": "I ended up not including device-common.mk from pixel3_mainline (because it omits some modules from the ramdisk, so the logic wouldn\u0027t be the same), so I decided to duplicate some variables into pixel3_mainline instead.\n\nI could probably refactor things a bit more so that pixel3_mainline can use device-common.mk, but if you folks are okay with dropping pixel3_mainline (as Amit indicated), that would make things easier.",
+      "parentUuid": "c9ac4dc5_4be0d2c0",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f33f6c76_27e8bee8",
@@ -133,6 +223,24 @@
       "writtenOn": "2022-02-02T03:58:31Z",
       "side": 1,
       "message": "Same, isn\u0027t this already in device-common.mk?",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "150de159_825e5c07",
+        "filename": "pixel3_mainline.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-02T19:01:39Z",
+      "side": 1,
+      "message": "See above",
+      "parentUuid": "f33f6c76_27e8bee8",
       "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
