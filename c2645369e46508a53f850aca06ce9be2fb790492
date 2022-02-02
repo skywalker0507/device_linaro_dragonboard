@@ -35,6 +35,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "335e6161_6141ea9e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-02-02T14:19:33Z",
+      "side": 1,
+      "message": "Also, so excited to see the followup sm8450_mini target patch.\n\nTime we drop pixel3_mainline support here? DSC derailed the fantastic start we got there with mainline kernel and sadly we missed the opportunity to support Pixel3 as planned. We do have plan to add Pixel3 in Caleb\u0027s generic sdm845 phone builds project, https://github.com/aospm/android_device_generic_sdm845, where we already support OnePlus 6, PocoF1 and SHIFT6mq phones running AOSP with mainline kernel.",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "2de98bb8_683d02b7",
