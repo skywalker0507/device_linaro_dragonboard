@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4de5ce4_41d7490f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-02T02:46:10Z",
+      "side": 1,
+      "message": "The mini configs depend on I4f918502e611e950fa039e4e2ed817c97b928ba2 landing.\n\nI took this opportunity to unify various things about the kernel location including renaming some variables. Let me know if this will cause you any issues.",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
