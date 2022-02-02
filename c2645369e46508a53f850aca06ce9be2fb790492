@@ -16,6 +16,74 @@
       "message": "The mini configs depend on I4f918502e611e950fa039e4e2ed817c97b928ba2 landing.\n\nI took this opportunity to unify various things about the kernel location including renaming some variables. Let me know if this will cause you any issues.",
       "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bb00772c_c4b2e61f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-02T03:58:31Z",
+      "side": 1,
+      "message": "Haven\u0027t had a chance to test yet, but I have a few questions from skimming the diff.",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2de98bb8_683d02b7",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-02T03:58:31Z",
+      "side": 1,
+      "message": "This seems like it would push rb5 to try to use the 5.10 kernel, which won\u0027t boot (it needs 5.15/mainline)",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c9ac4dc5_4be0d2c0",
+        "filename": "pixel3_mainline.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-02T03:58:31Z",
+      "side": 1,
+      "message": "Does this not duplicate whats in device-common.mk?",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f33f6c76_27e8bee8",
+        "filename": "pixel3_mainline.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-02T03:58:31Z",
+      "side": 1,
+      "message": "Same, isn\u0027t this already in device-common.mk?",
+      "revId": "c2645369e46508a53f850aca06ce9be2fb790492",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
