@@ -72,7 +72,12 @@ PRODUCT_PRODUCT_PROPERTIES := \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.3-service.widevine \
-    libGLES_mesa
+    libGLES_mesa \
+    libEGL_mesa \
+    libGLESv1_CM_mesa \
+    libGLESv2_mesa \
+    libgallium_dri \
+    libglapi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=minigbm_msm \
@@ -80,6 +85,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
 
+# Vulkan
+PRODUCT_PACKAGES += \
+	vulkan.freedreno
+
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
+	frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
+	frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
+
+PRODUCT_VENDOR_PROPERTIES += \
+	ro.hardware.vulkan=freedreno
+
+# Will need to enable this after ANDROID_external_memory_android_hardware_buffer lands in mesa
+#TARGET_USES_VULKAN = true
 
 #
 # Hardware Composer HAL
