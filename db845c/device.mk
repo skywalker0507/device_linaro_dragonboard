@@ -34,7 +34,6 @@ endif
 
 PRODUCT_COPY_FILES := \
     $(DB845C_KERNEL_DIR)/Image.gz:kernel \
-    $(DB845C_KERNEL_DIR)/sdm845-db845c.dtb:dtb.img \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.db845c \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
     device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.db845c.rc \
@@ -50,8 +49,9 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
-# Install script to set *.usb.controller properties
+# Install scripts to set vendor.* properties
 PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/qcom/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh \
     device/linaro/dragonboard/qcom/set_udc.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_udc.sh
 
 # Install scripts to set Ethernet MAC address
@@ -66,3 +66,4 @@ PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=160
 
 # Copy firmware files
 $(call inherit-product-if-exists, vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
+$(call inherit-product-if-exists, vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
