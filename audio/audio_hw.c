@@ -27,6 +27,7 @@
 #include <stdlib.h>
 #include <sys/time.h>
 #include <unistd.h>
+#include <string.h>
 
 #include <log/log.h>
 #include <cutils/str_parms.h>
@@ -41,6 +42,7 @@
 #include <audio_utils/clock.h>
 #include <audio_utils/echo_reference.h>
 #include <audio_utils/resampler.h>
+#include <cutils/properties.h>
 #include <hardware/audio_alsaops.h>
 #include <hardware/audio_effect.h>
 #include <sound/asound.h>
@@ -1121,6 +1123,9 @@ static int adev_close(hw_device_t *device)
 static int adev_open(const hw_module_t* module, const char* name,
         hw_device_t** device)
 {
+    char vendor_hw[PROPERTY_VALUE_MAX] = {0};
+    // Prefix for the hdmi path, the board name is the suffix
+    char path_name[256] = "hdmi_";
     ALOGV("adev_open: %s", name);
 
     if (strcmp(name, AUDIO_HARDWARE_INTERFACE) != 0) {
@@ -1169,6 +1174,15 @@ static int adev_open(const hw_module_t* module, const char* name,
         ALOGE("%s: Failed to init audio route controls, aborting.", __func__);
         goto error_2;
     }
+
+    /*
+     * To support both the db845c and rb5 we need to used the right mixer path
+     * we do this by checking the hardware name. Which is set at boot time.
+     */
+    property_get("vendor.hw", vendor_hw, "db845c");
+    strlcat(path_name, vendor_hw, 256);
+    ALOGV("%s: Using mixer path: %s", __func__, path_name);
+    audio_route_apply_and_update_path(adev->audio_route, path_name);
 
     pthread_mutex_lock(&adev->lock);
     if (init_aec(CAPTURE_CODEC_SAMPLING_RATE, NUM_AEC_REFERENCE_CHANNELS,
