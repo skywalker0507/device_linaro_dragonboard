@@ -16,6 +16,24 @@
       "message": "I think we should be good to resubmit this now. \n\nYongQin/Amit: let me know if you have any objections, and if not I\u0027ll add Todd and Steve to the reviewers list to make sure it won\u0027t impact them.",
       "revId": "98fd0ee79cb034fdee7ebef6a54dd181b0d3a4ca",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d688f56e_8ce46416",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-02-14T19:32:13Z",
+      "side": 1,
+      "message": "lgtm. my only nit is should we have this new change or go with a revert of the earlier revert in aosp/1656128. I\u0027m slightly inclined towards reverting the earlier revert but I\u0027m OK either way.",
+      "parentUuid": "a7cc9986_f53d471c",
+      "revId": "98fd0ee79cb034fdee7ebef6a54dd181b0d3a4ca",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
