@@ -34,6 +34,24 @@
       "parentUuid": "a7cc9986_f53d471c",
       "revId": "98fd0ee79cb034fdee7ebef6a54dd181b0d3a4ca",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "df3f4a8a_f41552e1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-14T20:46:03Z",
+      "side": 1,
+      "message": "At some point I worry reverting reverts gets pretty cluttered, and resubmitting it is cleaner. But I\u0027ll see what Steve says.",
+      "parentUuid": "d688f56e_8ce46416",
+      "revId": "98fd0ee79cb034fdee7ebef6a54dd181b0d3a4ca",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
