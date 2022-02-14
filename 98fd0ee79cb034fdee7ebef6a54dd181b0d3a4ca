@@ -52,6 +52,23 @@
       "parentUuid": "d688f56e_8ce46416",
       "revId": "98fd0ee79cb034fdee7ebef6a54dd181b0d3a4ca",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5085d3ae_4073344f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1131915
+      },
+      "writtenOn": "2022-02-14T21:19:57Z",
+      "side": 1,
+      "message": "I also tend to prefer a new commit (with commit text explaining the history) instead of reverting reverts. Since Amit doesn\u0027t feel strongly here let\u0027s go ahead with this.",
+      "revId": "98fd0ee79cb034fdee7ebef6a54dd181b0d3a4ca",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
