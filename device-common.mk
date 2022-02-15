@@ -29,6 +29,32 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 # Enable Scoped Storage related
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+
+# Check vendor package version
+# If you need to make changes to the vendor partition,
+# please modify the source git project here:
+#   https://staging-git.codelinaro.org/linaro/linaro-aosp/aosp-linaro-vendor-package
+include $(LOCAL_PATH)/vendor-package-ver.mk
+ifneq (,$(wildcard $(LINARO_VENDOR_PATH)/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/version.mk))
+  # Unfortunately inherit-product doesn't export build variables from the
+  # called make file to the caller, so we have to include it directly here.
+  include $(LINARO_VENDOR_PATH)/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/version.mk
+  ifneq ($(TARGET_LINARO_VENDOR_VERSION), $(EXPECTED_LINARO_VENDOR_VERSION))
+    $(warning TARGET_LINARO_VENDOR_VERSION ($(TARGET_LINARO_VENDOR_VERSION)) does not match exiting the build ($(EXPECTED_LINARO_VENDOR_VERSION)).)
+    $(warning Please download new binaries here:)
+    $(warning    $(VND_PKG_URL) )
+    $(warning And extract in the ANDROID_TOP_DIR)
+    # Would be good to error out here, but that causes other issues
+  endif
+else
+  $(warning Missing Linaro Vendor Package!)
+  $(warning Please download new binaries here:)
+  $(warning    $(VND_PKG_URL) )
+  $(warning And extract in the ANDROID_TOP_DIR)
+  # Would be good to error out here, but that causes other issues
+endif
+
+
 # vndk
 PRODUCT_PACKAGES := vndk-sp
 
@@ -46,7 +72,12 @@ PRODUCT_PRODUCT_PROPERTIES := \
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
     android.hardware.drm@1.3-service.widevine \
-    libGLES_mesa
+    libGLES_mesa \
+    libEGL_mesa \
+    libGLESv1_CM_mesa \
+    libGLESv2_mesa \
+    libgallium_dri \
+    libglapi
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=minigbm_msm \
@@ -54,6 +85,20 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
 
+# Vulkan
+PRODUCT_PACKAGES += \
+	vulkan.freedreno
+
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
+	frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
+	frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
+
+PRODUCT_VENDOR_PROPERTIES += \
+	ro.hardware.vulkan=freedreno
+
+# Will need to enable this after ANDROID_external_memory_android_hardware_buffer lands in mesa
+#TARGET_USES_VULKAN = true
 
 #
 # Hardware Composer HAL
@@ -227,4 +272,8 @@ PRODUCT_COPY_FILES +=  \
 
 PRODUCT_SOONG_NAMESPACES += \
     device/linaro/dragonboard \
-    external/mesa3d
+    external/mesa3d \
+    vendor/linaro/linux-firmware/$(EXPECTED_LINARO_VENDOR_VERSION) \
+    vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION) \
+    vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)
+

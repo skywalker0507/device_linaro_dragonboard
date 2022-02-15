@@ -53,8 +53,12 @@ BOARD_VNDK_VERSION := current
 
 # Mesa DRM hwcomposer
 BOARD_USES_DRM_HWCOMPOSER := true
-BOARD_GPU_DRIVERS := freedreno virgl
+BOARD_GPU_DRIVERS := freedreno
 TARGET_USES_HWC2 := true
+BOARD_MESA3D_USES_MESON_BUILD := true
+BOARD_MESA3D_GALLIUM_DRIVERS := freedreno
+BOARD_MESA3D_VULKAN_DRIVERS := freedreno
+
 
 # WiFi
 WPA_SUPPLICANT_VERSION := VER_0_8_X
@@ -80,3 +84,7 @@ ifeq ($(HOST_OS),linux)
     WITH_DEXPREOPT_PIC := true
   endif
 endif
+
+# Copy firmware files to ramdisk/vendor_ramdisk to workaround
+# the dependency on FW_LOADER_USER_HELPER_FALLBACK kernel config
+BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
