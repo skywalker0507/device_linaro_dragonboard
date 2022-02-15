@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4c54dae6_60c91da5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-15T23:51:20Z",
+      "side": 1,
+      "message": "Marked as -1 until the internal build repos are updated with this version of the firmware.",
+      "revId": "5f2c088f9aaf19355d3471dae6a9a58d24257852",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
