@@ -16,6 +16,23 @@
       "message": "FYI: When this series is cherry-picked onto aosp/master I hit a build issue with this change.  Looking into it now.",
       "revId": "e691b8aa95a2d63410493d2e86723a5aac3c6521",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6b4b6f97_56a369ad",
+        "filename": "db845c/device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-02-16T00:55:09Z",
+      "side": 1,
+      "message": "This is currently 5.15",
+      "revId": "e691b8aa95a2d63410493d2e86723a5aac3c6521",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
