@@ -33,6 +33,24 @@
       "message": "This is currently 5.15",
       "revId": "e691b8aa95a2d63410493d2e86723a5aac3c6521",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a49ca92e_7bf6e5fd",
+        "filename": "db845c/device.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 56,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-16T01:04:52Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6b4b6f97_56a369ad",
+      "revId": "e691b8aa95a2d63410493d2e86723a5aac3c6521",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
