@@ -16,6 +16,24 @@
       "message": "Thank you for taking a swing at it. A quick grep still show a pixel3_mainline reference in device/linaro/dragonboard/Android.mk.",
       "revId": "2339f41f0336c3456f000235c5b198561534824e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5e356fe_82c4c2ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-16T00:20:28Z",
+      "side": 1,
+      "message": "Removed.",
+      "parentUuid": "9bca02f6_c732f9c0",
+      "revId": "2339f41f0336c3456f000235c5b198561534824e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
