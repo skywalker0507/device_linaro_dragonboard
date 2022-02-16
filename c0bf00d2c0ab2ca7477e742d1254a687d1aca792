@@ -55,6 +55,23 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "06d8bee5_ace09642",
+        "filename": "db845c/device.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-02-16T18:30:02Z",
+      "side": 1,
+      "message": "This is where we are overriding (resetting?) the vendor/linaro/.../device.mk PRODUCT_COPY_FILES macros.",
+      "revId": "c0bf00d2c0ab2ca7477e742d1254a687d1aca792",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "0e2e39fa_418e128c",
         "filename": "device-common.mk",
         "patchSetId": 3
