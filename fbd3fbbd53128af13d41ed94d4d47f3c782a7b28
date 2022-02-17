@@ -33,6 +33,23 @@
       "message": "With the changes to the internal repos pushed, I\u0027ve re-tested this and its looking ok.\n\nAt this point, just waiting on Steve to get the builders manifest updated to pull in the internal vendor-package trees, and then this can land. \n\nI\u0027m removing my -1, so Steve can merge this when he\u0027s ready.",
       "revId": "fbd3fbbd53128af13d41ed94d4d47f3c782a7b28",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b8f9b465_0eadc90d",
+        "filename": "db845c/BoardConfig.mk",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-17T20:58:16Z",
+      "side": 1,
+      "message": "It looks like this is 10G, not 96M? (same below)",
+      "revId": "fbd3fbbd53128af13d41ed94d4d47f3c782a7b28",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
