@@ -48,6 +48,10 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
+# Install scripts to set vendor.* properties
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/qcom/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh
+
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=QRB5165
 
