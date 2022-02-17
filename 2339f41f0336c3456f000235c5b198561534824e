@@ -34,6 +34,24 @@
       "parentUuid": "9bca02f6_c732f9c0",
       "revId": "2339f41f0336c3456f000235c5b198561534824e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "7d130ad3_a1c95253",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-02-17T05:05:15Z",
+      "side": 1,
+      "message": "A new reference got added earlier this week in aosp/1984950. We can remove it in this patch or I\u0027ll do it in a followup cleanup patch. Works for me either way.",
+      "parentUuid": "c5e356fe_82c4c2ff",
+      "revId": "2339f41f0336c3456f000235c5b198561534824e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
