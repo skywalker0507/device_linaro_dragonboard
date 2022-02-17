@@ -24,6 +24,16 @@ ifneq ($(filter db845c pixel3_mainline rb5, $(TARGET_BOARD_PLATFORM)),)
 
 LOCAL_PATH := $(call my-dir)
 
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,.conf))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,.kl))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,.policy))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,.rc))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,.sh))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,.xml))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,fstab.db845c))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,fstab.pixel3_mainline))
+$(eval $(call declare-1p-copy-files,device/linaro/dragonboard,fstab.rb5))
+
 # If some modules are built directly from this directory (not subdirectories),
 # their rules should be written here.
 
