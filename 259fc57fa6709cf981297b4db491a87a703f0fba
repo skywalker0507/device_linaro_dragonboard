@@ -16,6 +16,24 @@
       "message": "Smoke tested the current series on db845c and rb5 full targets, and didn\u0027t run into any obvious regression. _mini target builds still fail to build even after cherry-picking system/core and build/target patches from Gerrit, so I\u0027m assuming it is still a WIP.",
       "revId": "259fc57fa6709cf981297b4db491a87a703f0fba",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2976636_6079a14f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-17T19:59:28Z",
+      "side": 1,
+      "message": "Hi Amit, what did the build failure for the _mini target look like for you? As far as I recall https://android-review.googlesource.com/q/Ic26f76142afb5f700bd7b12359d62feb2652b617 (which landed today) was the only dependency.",
+      "parentUuid": "4437fd58_20d74e77",
+      "revId": "259fc57fa6709cf981297b4db491a87a703f0fba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
