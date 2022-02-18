@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "af0920a5_6f4c2f5e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-02-18T08:49:46Z",
+      "side": 1,
+      "message": "Can wait for Peter\u0027s _mini targets to land first.",
+      "revId": "561ed998fde2d46ff1ee75327e2e2b7cb99519b6",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
