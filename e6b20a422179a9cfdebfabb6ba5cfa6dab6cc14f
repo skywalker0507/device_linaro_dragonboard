@@ -16,6 +16,23 @@
       "message": "Can wait for Peter\u0027s _mini targets to land.",
       "revId": "e6b20a422179a9cfdebfabb6ba5cfa6dab6cc14f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cd33f14d_cf01915e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-02-18T15:38:30Z",
+      "side": 1,
+      "message": "Hi, Amit\n\nJust curious, which files would be conditional by the boot header version?",
+      "revId": "e6b20a422179a9cfdebfabb6ba5cfa6dab6cc14f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
