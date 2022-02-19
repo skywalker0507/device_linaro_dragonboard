@@ -52,6 +52,24 @@
       "parentUuid": "c2976636_6079a14f",
       "revId": "259fc57fa6709cf981297b4db491a87a703f0fba",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "514b84fd_f7b69376",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-19T01:51:06Z",
+      "side": 1,
+      "message": "Thanks, that explains it. I had the vintf checks disabled locally because they were causing some problems for me when using a self-built kernel. With my local changes backed out I can reproduce the build failure. Looking.",
+      "parentUuid": "b5fdb124_b6dc16e1",
+      "revId": "259fc57fa6709cf981297b4db491a87a703f0fba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
