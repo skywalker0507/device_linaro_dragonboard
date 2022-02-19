@@ -70,6 +70,24 @@
       "parentUuid": "b5fdb124_b6dc16e1",
       "revId": "259fc57fa6709cf981297b4db491a87a703f0fba",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1a4eaa3_86716660",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1067098
+      },
+      "writtenOn": "2022-02-19T04:11:11Z",
+      "side": 1,
+      "message": "Figured it out -- we need to set PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE to false for mini targets to disable the vintf check (done in https://r.android.com/1966051). This causes PRODUCT_FULL_TREBLE to be set to false, which is currently broken so sent https://r.android.com/1992237 to fix.",
+      "parentUuid": "514b84fd_f7b69376",
+      "revId": "259fc57fa6709cf981297b4db491a87a703f0fba",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
