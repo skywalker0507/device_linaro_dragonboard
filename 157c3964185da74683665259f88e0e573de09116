@@ -16,6 +16,23 @@
       "message": "Ping -- the dependent change https://r.android.com/1992237 has landed.",
       "revId": "157c3964185da74683665259f88e0e573de09116",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49a0222d_4956922d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 6
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-02-27T15:58:13Z",
+      "side": 1,
+      "message": "Build and smoke tested the full and mini builds on DB845c and RB5.",
+      "revId": "157c3964185da74683665259f88e0e573de09116",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
