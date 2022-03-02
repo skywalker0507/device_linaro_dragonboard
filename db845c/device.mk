@@ -18,27 +18,11 @@
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 include $(LOCAL_PATH)/../vendor-package-ver.mk
-# Enable Virtual A/B
-AB_OTA_UPDATER := true
-AB_OTA_PARTITIONS += \
-    product \
-    system \
-    system_ext \
-    vendor
-
 ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 endif
-
-PRODUCT_COPY_FILES := \
-    $(DB845C_KERNEL_DIR)/Image.gz:kernel \
-    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.db845c \
-    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.db845c \
-    device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.db845c.rc \
-    device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.db845c.usb.rc \
-    device/linaro/dragonboard/common.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/db845c.kl
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.db845c
@@ -67,3 +51,8 @@ PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=160
 # Copy firmware files
 $(call inherit-product-if-exists, vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
 $(call inherit-product-if-exists, vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
+
+TARGET_HARDWARE := db845c
+TARGET_KERNEL_USE ?= 5.15
+
+include device/linaro/dragonboard/device-common.mk
