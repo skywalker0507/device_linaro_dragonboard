@@ -51,6 +51,24 @@
       "message": "Smoke tested with db845c-userdebug lunch target on db845c and rb5.",
       "revId": "91c2af545430598ffce1b34de3d6cba1bee0de0c",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cb4a31bd_a30a6f3c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-03-02T00:54:57Z",
+      "side": 1,
+      "message": "I think I managed to get it working w/o the duplicate assignment. I\u0027m not sure why I was having trouble earlier.",
+      "parentUuid": "392eafe7_5abe7f4e",
+      "revId": "91c2af545430598ffce1b34de3d6cba1bee0de0c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
