@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2c1cc018_1406da58",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010110
+      },
+      "writtenOn": "2022-03-03T01:01:30Z",
+      "side": 1,
+      "message": "Holding on this until vendor package is published and updated in internal repos",
+      "revId": "00bb0f4d6f61772503e596fb66b43c9da97b64e0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
