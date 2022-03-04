@@ -42,6 +42,8 @@
 
 /sys/class/udc										u:object_r:sysfs_udc:s0
 
+/sys/firmware/devicetree/base/compatible						u:object_r:sysfs_dt_compatible:s0
+
 /data/vendor/tmp(/.*)?									u:object_r:tqftpserv_vendor_data_file:s0
 /data/vendor/readwrite(/.*)?								u:object_r:tqftpserv_vendor_data_file:s0
 /data/vendor/readonly(/.*)?								u:object_r:tqftpserv_vendor_data_file:s0
@@ -58,6 +60,7 @@
 /vendor/bin/rmtfs									u:object_r:rmtfs_exec:s0
 /vendor/bin/tqftpserv									u:object_r:tqftpserv_exec:s0
 /vendor/bin/suspend_blocker								u:object_r:suspend_blocker_exec:s0
+/vendor/bin/set_hw\.sh									u:object_r:set_hw_exec:s0
 /vendor/bin/set_udc\.sh									u:object_r:set_udc_exec:s0
 
 /vendor/lib(64)?/dri/.*									u:object_r:same_process_hal_file:s0
