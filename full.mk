@@ -173,9 +173,27 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml
 
+# V4L2-Codec2
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.v4l2_codec2.drm_device_name=msm \
+    ro.vendor.v4l2_codec2.drm_device_path=/dev/dri/renderD* \
+    ro.vendor.v4l2_codec2.decode_concurrent_instances=8 \
+    ro.vendor.v4l2_codec2.encode_concurrent_instances=8
+
+PRODUCT_PACKAGES += \
+    android.hardware.media.c2@1.0-service-v4l2 \
+    libc2plugin_store
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    debug.stagefright.c2-poolmask=0xf50000
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/seccomp_policy/codec2.vendor.ext.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext.policy
+
 # Copy media codecs config file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    $(LOCAL_PATH)/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
     frameworks/av/media/libeffects/data/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_video.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml
