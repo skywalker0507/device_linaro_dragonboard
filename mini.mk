@@ -24,6 +24,7 @@ PRODUCT_PACKAGES += \
     android.hidl.allocator@1.0-service \
     android.system.suspend@1.0-service \
     com.android.i18n \
+    com.android.os.statsd \
     com.android.runtime \
     keystore2 \
     init_vendor \
