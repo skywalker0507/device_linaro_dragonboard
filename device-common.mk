@@ -53,7 +53,6 @@ endif
 
 PRODUCT_SOONG_NAMESPACES += \
     device/linaro/dragonboard \
-    external/mesa3d \
     vendor/linaro/linux-firmware/$(EXPECTED_LINARO_VENDOR_VERSION) \
     vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION) \
     vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)
