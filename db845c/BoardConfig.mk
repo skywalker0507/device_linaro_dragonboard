@@ -1,12 +1,24 @@
 include device/linaro/dragonboard/BoardConfigCommon.mk
 
+# Primary Arch
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-2a
+TARGET_CPU_VARIANT := kryo385
+TARGET_CPU_ABI := arm64-v8a
+
+# Secondary Arch
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_CPU_VARIANT := kryo385
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+
 # Board Information
 TARGET_BOOTLOADER_BOARD_NAME := db845c
 TARGET_BOARD_PLATFORM := db845c
 
 TARGET_NO_KERNEL := false
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_USES_BOOT_HDR_V3 ?= true
 ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
  BOARD_BOOT_HEADER_VERSION := 3
  BOARD_KERNEL_PAGESIZE := 4096
