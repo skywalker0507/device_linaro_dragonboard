@@ -39,13 +39,22 @@ PRODUCT_PRODUCT_PROPERTIES := \
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.3-service.clearkey \
-    android.hardware.drm@1.3-service.widevine \
+    android.hardware.drm@1.3-service.widevine
+
+# Mesa
+PRODUCT_PACKAGES += \
     libGLES_mesa \
     libEGL_mesa \
     libGLESv1_CM_mesa \
     libGLESv2_mesa \
     libgallium_dri \
     libglapi
+
+TARGET_BUILD_MESA ?= false
+ifeq ($(TARGET_BUILD_MESA), true)
+   PRODUCT_SOONG_NAMESPACES += \
+       external/mesa3d
+endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=minigbm_msm \
