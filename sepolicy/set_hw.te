@@ -6,6 +6,10 @@ vendor_public_prop(vendor_hw_prop)
 set_prop(set_hw, vendor_hw_prop)
 get_prop(vendor_init, vendor_hw_prop)
 
+vendor_public_prop(vendor_sound_card_prop)
+set_prop(set_hw, vendor_sound_card_prop)
+get_prop(vendor_init, vendor_sound_card_prop)
+
 allow set_hw vendor_shell_exec:file rx_file_perms;
 allow set_hw vendor_toolbox_exec:file rx_file_perms;
 allow set_hw sysfs_dt_compatible:file { open read };

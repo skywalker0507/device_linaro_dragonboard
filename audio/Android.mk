@@ -33,7 +33,8 @@ LOCAL_SRC_FILES := audio_hw.c \
     audio_aec.c \
     fifo_wrapper.cpp \
     fir_filter.c
-LOCAL_SHARED_LIBRARIES := liblog libcutils libtinyalsa libaudioroute libaudioutils
+LOCAL_SHARED_LIBRARIES := liblog libcutils libtinyalsa libaudioroute \
+    libaudioutils
 LOCAL_CFLAGS := -Wno-unused-parameter
 LOCAL_C_INCLUDES += \
         external/tinyalsa/include \
