@@ -1,0 +1,6 @@
+<mixer>
+    <!-- Enable HDMI out for rb5 -->
+    <path name="hdmi" device="0">
+        <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+</mixer>

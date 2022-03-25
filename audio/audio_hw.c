@@ -28,6 +28,7 @@
 #include <sys/time.h>
 #include <unistd.h>
 #include <string.h>
+#include <dirent.h>
 
 #include <log/log.h>
 #include <cutils/str_parms.h>
@@ -53,6 +54,23 @@
 #include "audio_aec.h"
 #include "audio_hw.h"
 
+const struct parse_device device_name_table[] = {
+    {"speaker",     AUDIO_DEVICE_OUT_SPEAKER},
+    {"hdmi",        AUDIO_DEVICE_OUT_HDMI},
+    {"earpiece",    AUDIO_DEVICE_OUT_EARPIECE},
+    {"headset",     AUDIO_DEVICE_OUT_WIRED_HEADSET},
+    {"headset_in",  AUDIO_DEVICE_IN_WIRED_HEADSET},
+    {"headphone",   AUDIO_DEVICE_OUT_WIRED_HEADPHONE},
+    {"sco",         AUDIO_DEVICE_OUT_ALL_SCO},
+    {"sco_in",      AUDIO_DEVICE_IN_ALL_SCO},
+    {"a2dp",        AUDIO_DEVICE_OUT_ALL_A2DP},
+    {"usb",         AUDIO_DEVICE_OUT_ALL_USB},
+    {"mic",         AUDIO_DEVICE_IN_BUILTIN_MIC},
+    {"back mic",    AUDIO_DEVICE_IN_BACK_MIC},
+    {"voice",       AUDIO_DEVICE_IN_VOICE_CALL},
+    {"aux",         AUDIO_DEVICE_IN_AUX_DIGITAL},
+};
+
 static int adev_get_mic_mute(const struct audio_hw_device* dev, bool* state);
 static int adev_get_microphones(const struct audio_hw_device* dev,
                                 struct audio_microphone_characteristic_t* mic_array,
@@ -69,9 +87,75 @@ static bool is_aec_input(const struct alsa_stream_in* in) {
     return aec_input;
 }
 
-static int get_audio_output_port(audio_devices_t devices) {
-    /* Only HDMI out for now #FIXME */
-    return PORT_HDMI;
+/* Kanged from tinyHAL: https://github.com/CirrusLogic/tinyhal/blob/9b120b3e4426cf867c66db2fde33db423971553b/configmgr/audio_config.c#L2557 */
+/* Get the sound card name from ID */
+static int get_card_name_for_id(int id, char* name, int len)
+{
+    char cardInfoFile[32];
+    FILE *fp;
+    int ret = 0;
+    snprintf(cardInfoFile, sizeof(cardInfoFile), "/proc/asound/card%u/id", id);
+
+    fp = fopen(cardInfoFile, "r");
+    if (fp == NULL) {
+        ALOGE("Failed to open file: %s", cardInfoFile);
+        return -EINVAL;
+    }
+
+    if (fgets(name, len, fp) == NULL) {
+        ALOGE("Failed to read name from file: %s", cardInfoFile);
+        ret = -EINVAL;
+        goto read_fail;
+    }
+    //Only return first line of file, without new lines.
+    name[strcspn(name, "\n")] = 0;
+read_fail:
+    fclose(fp);
+    return ret;
+}
+
+/* Get the sound card ID from a card name */
+static int get_card_id_for_name(const char* name, int *id)
+{
+    if (name == NULL || strlen(name) == 0) {
+        return -EINVAL;
+    }
+
+    DIR* dir;
+    struct dirent* entry;
+    int ret = -EINVAL;
+
+    dir = opendir("/proc/asound");
+
+    if (dir != NULL) {
+        while ((entry = readdir(dir)) != NULL) {
+            int t_id;
+            if (sscanf(entry->d_name, "card%d" , &t_id)) {
+                char t_name[128];
+                if (get_card_name_for_id(t_id, t_name, sizeof(t_name)) == 0 &&
+                        strcmp(t_name, name) == 0) {
+                    ALOGD("Found card %u with name %s", t_id, name);
+                    *id = t_id;
+                    ret = 0;
+                    break;
+                }
+            }
+        }
+        closedir(dir);
+    }
+    return ret;
+}
+
+static const char* audio_device_get_path(audio_devices_t device)
+{
+    unsigned int i;
+
+    for (i = 0; i < sizeof(device_name_table) / sizeof(device_name_table[0]); i++) {
+        if (device_name_table[i].device & device)
+            return device_name_table[i].name;
+    }
+
+    return NULL;
 }
 
 static int get_audio_card(int direction, int port) {
@@ -179,6 +263,7 @@ static void out_set_eq(struct alsa_stream_out* out) {
 static int start_output_stream(struct alsa_stream_out *out)
 {
     struct alsa_audio_device *adev = out->dev;
+    int ret;
 
     /* default to low power: will be corrected in out_write if necessary before first write to
      * tinyalsa.
@@ -188,8 +273,27 @@ static int start_output_stream(struct alsa_stream_out *out)
     out->config.avail_min = PLAYBACK_PERIOD_SIZE;
     out->unavailable = true;
     unsigned int pcm_retry_count = PCM_OPEN_RETRIES;
-    int out_port = get_audio_output_port(out->devices);
-    int out_card = get_audio_card(PCM_OUT, out_port);
+    const char* path_name = audio_device_get_path(out->devices);
+    int out_port = audio_route_get_device_for_path(adev->audio_route, path_name);
+    if (out_port < 0) {
+        ALOGW("%s: Failed to get output port for device, using default port %s (%x)", __func__, path_name, (out->devices));
+        out_port = 0;
+    }
+    int out_card = adev->default_card;
+
+    if (out_port != adev->active_port && path_name) {
+        audio_route_reset(adev->audio_route);
+        ret = audio_route_apply_and_update_path(adev->audio_route, path_name);
+        if (ret < 0) {
+            ALOGE("%s: Failed to reset and update path %s (%x)",
+                __func__, path_name, (out->devices));
+            return -ENODEV;
+        }
+        adev->active_port = out_port;
+    }
+
+    ALOGV("%s: Opening PCM device card_id(%d) device_id(%d) device_name(%s)",
+          __func__, out_card, out_port, path_name);
 
     while (1) {
         out->pcm = pcm_open(out_card, out_port, PCM_OUT | PCM_MONOTONIC, &out->config);
@@ -811,9 +915,14 @@ static int adev_open_output_stream(struct audio_hw_device *dev,
 {
     ALOGV("adev_open_output_stream...");
 
-    struct alsa_audio_device *ladev = (struct alsa_audio_device *)dev;
-    int out_port = get_audio_output_port(devices);
-    int out_card = get_audio_card(PCM_OUT, out_port);
+    struct alsa_audio_device *adev = (struct alsa_audio_device *)dev;
+    const char* path_name = audio_device_get_path(devices);
+    int out_port = audio_route_get_device_for_path(adev->audio_route, path_name);
+    if (out_port < 0) {
+        ALOGW("%s: Failed to get output port for device, using default port %s (%x)", __func__, path_name, devices);
+        out_port = 0;
+    }
+    int out_card = adev->default_card;
     struct pcm_params* params = pcm_params_get(out_card, out_port, PCM_OUT);
     if (!params) {
         return -ENOSYS;
@@ -862,10 +971,12 @@ static int adev_open_output_stream(struct audio_hw_device *dev,
     ALOGI("adev_open_output_stream selects channels=%d rate=%d format=%d, devices=%d",
           out->config.channels, out->config.rate, out->config.format, devices);
 
-    out->dev = ladev;
+    out->dev = adev;
     out->standby = 1;
     out->unavailable = false;
     out->devices = devices;
+
+    adev->active_port = -1;
 
     config->format = out_get_format(&out->stream.common);
     config->channel_mask = out_get_channels(&out->stream.common);
@@ -879,7 +990,7 @@ static int adev_open_output_stream(struct audio_hw_device *dev,
         }
     }
 
-    int aec_ret = init_aec_reference_config(ladev->aec, out);
+    int aec_ret = init_aec_reference_config(adev->aec, out);
     if (aec_ret) {
         ALOGE("AEC: Speaker config init failed!");
         goto error_2;
@@ -1125,7 +1236,7 @@ static int adev_open(const hw_module_t* module, const char* name,
 {
     char vendor_hw[PROPERTY_VALUE_MAX] = {0};
     // Prefix for the hdmi path, the board name is the suffix
-    char path_name[256] = "hdmi_";
+    char path_name[MIXER_XML_PATH_LEN] = MIXER_XML_PATH_PREFIX;
     ALOGV("adev_open: %s", name);
 
     if (strcmp(name, AUDIO_HARDWARE_INTERFACE) != 0) {
@@ -1162,27 +1273,32 @@ static int adev_open(const hw_module_t* module, const char* name,
 
     *device = &adev->hw_device.common;
 
+    property_get("vendor.sound_card", vendor_hw, "DB845c");
+
     int out_card = get_audio_card(PCM_OUT, 0);
+    /* try fetching the default sound card by name, if it's set */
+    get_card_id_for_name(vendor_hw, &out_card);
+    adev->default_card = out_card;
     adev->mixer = mixer_open(out_card);
     if (!adev->mixer) {
         ALOGE("Unable to open the mixer, aborting.");
         goto error_1;
     }
 
-    adev->audio_route = audio_route_init(out_card, MIXER_XML_PATH);
+    /*
+     * To support both the db845c and rb5 we need to used the right mixer paths
+     * we do this by checking the hardware name. Which is set at boot time.
+     */
+    property_get("vendor.hw", vendor_hw, "db845c");
+    strlcat(path_name, vendor_hw, MIXER_XML_PATH_LEN);
+    strlcat(path_name, ".xml", MIXER_XML_PATH_LEN);
+    ALOGI("Using mixer paths config: %s", path_name);
+
+    adev->audio_route = audio_route_init(out_card, path_name);
     if (!adev->audio_route) {
         ALOGE("%s: Failed to init audio route controls, aborting.", __func__);
         goto error_2;
     }
-
-    /*
-     * To support both the db845c and rb5 we need to used the right mixer path
-     * we do this by checking the hardware name. Which is set at boot time.
-     */
-    property_get("vendor.hw", vendor_hw, "db845c");
-    strlcat(path_name, vendor_hw, 256);
-    ALOGV("%s: Using mixer path: %s", __func__, path_name);
-    audio_route_apply_and_update_path(adev->audio_route, path_name);
 
     pthread_mutex_lock(&adev->lock);
     if (init_aec(CAPTURE_CODEC_SAMPLING_RATE, NUM_AEC_REFERENCE_CHANNELS,
