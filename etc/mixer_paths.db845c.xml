@@ -1,0 +1,6 @@
+<mixer>
+    <!-- Enable HDMI out for db845c -->
+    <path name="hdmi" device="0">
+        <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+</mixer>

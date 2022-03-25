@@ -21,9 +21,6 @@ include $(LOCAL_PATH)/../vendor-package-ver.mk
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
-PRODUCT_COPY_FILES := \
-    $(LOCAL_PATH)/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
-
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.rb5
 
@@ -35,6 +32,7 @@ PRODUCT_PACKAGES += \
 
 # Install scripts to set vendor.* properties
 PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/etc/mixer_paths.rb5.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.rb5.xml \
     device/linaro/dragonboard/qcom/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh
 
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
