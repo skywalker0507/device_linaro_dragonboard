@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "068c24e7_9cc2b531",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1890913
+      },
+      "writtenOn": "2022-03-28T14:46:39Z",
+      "side": 1,
+      "message": "Tested on db845c, haven\u0027t validated the case where the sound card isn\u0027t the default (e.g. a usb sound card probes first). Needs testing on rb5",
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
