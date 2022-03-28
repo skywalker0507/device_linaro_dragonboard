@@ -16,6 +16,23 @@
       "message": "Tested on db845c, haven\u0027t validated the case where the sound card isn\u0027t the default (e.g. a usb sound card probes first). Needs testing on rb5",
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0bd0c5f5_dea2bb5f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1890913
+      },
+      "writtenOn": "2022-03-28T17:59:40Z",
+      "side": 1,
+      "message": "This change depends on the mixer_paths parser change here: https://android-review.googlesource.com/c/platform/system/media/+/2036767",
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
