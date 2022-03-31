@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e2ddcbe0_36691f83",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1561731
+      },
+      "writtenOn": "2022-03-31T19:49:30Z",
+      "side": 1,
+      "message": "Note: ag/17006039 needs to be submitted first to handle merge conflicts",
+      "revId": "4258135988051a50efa69a4ad8d8b6ffca273d50",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
