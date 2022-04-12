@@ -51,6 +51,24 @@
       "parentUuid": "a06d8d55_589e53b3",
       "revId": "0da4365a62703beeddee3d69b9a31d9399881239",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cefeba98_8b456717",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-04-12T19:31:06Z",
+      "side": 1,
+      "message": "I did. Just tried it on RB5 as well to rule out any hardware issue but I see same error on RB5 as well.",
+      "parentUuid": "48517574_5b61ec58",
+      "revId": "0da4365a62703beeddee3d69b9a31d9399881239",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
