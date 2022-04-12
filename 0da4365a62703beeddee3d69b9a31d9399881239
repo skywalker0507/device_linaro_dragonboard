@@ -16,6 +16,23 @@
       "message": "Just a heads up, this seems to resolve the adb remount issue on db845c. I still need to try to narrow down what part of the change is the actual fix.",
       "revId": "0da4365a62703beeddee3d69b9a31d9399881239",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a06d8d55_589e53b3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-04-12T19:00:54Z",
+      "side": 1,
+      "message": "I have tried this patch with different kernel versions but no luck for me. \"adb root; adb remount\" and system/core/fs_mgr/tests/adb-remount-test.sh both fail.\n\n01-01 03:39:32.025  2214  2214 W device-mapper: table: 254:7: len\u003d99828 not aligned to h/w logical block size 4096 of sda10\n01-01 03:39:32.035  2214  2214 E device-mapper: core: Cannot calculate initial queue limits\n01-01 03:39:32.043  2214  2214 W device-mapper: ioctl: unable to set up device queue for new table.\n04-12 18:36:28.966  2214  2214 E gsid    : DM_TABLE_LOAD failed: Invalid argument\n04-12 18:36:28.982  2214  2214 E gsid    : Didn\u0027t generate uevent for [scratch] removal\n04-12 18:36:28.983  2214  2214 E gsid    : Error creating device-mapper node for image scratch\n04-12 18:36:28.983  2211  2211 E remount : virtual bool android::fiemap::ImageManagerBinder:[  325.123872][ T2214] device-mapper: ioctl: unable to set up device queue for new table.\n:MapImageDevice(const std::string \u0026, const std::chrono::milliseconds \u0026, std::string *) binder returned: Failed to map\n04-12 18:36:28.983  2211  2211 E remount : [libfs_mgr]could not map scratch image\n04-12 18:36:28.984  2211  2211 E remount : Overlayfs setup for /system failed, skipping: No such process",
+      "revId": "0da4365a62703beeddee3d69b9a31d9399881239",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
