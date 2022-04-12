@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "842276d6_cf6cc3b2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-04-12T05:00:08Z",
+      "side": 1,
+      "message": "Just a heads up, this seems to resolve the adb remount issue on db845c. I still need to try to narrow down what part of the change is the actual fix.",
+      "revId": "0da4365a62703beeddee3d69b9a31d9399881239",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
