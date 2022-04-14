@@ -33,6 +33,23 @@
       "message": "db845c is one of the few platforms whose inline encryption hardware is actually supported by the upstream kernel, so we shouldn\u0027t be disabling inline encryption on it.  If there is a problem, we need to figure out what it is.",
       "revId": "fea8caf0349d73d022c0da7afbcc9b16393db632",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "02e029de_f773731e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-04-14T03:19:09Z",
+      "side": 1,
+      "message": "Yea, I\u0027ll -1 this myself, as today without this patch as I was adding some extra debug to the kernel the issue disappeared on me, and I\u0027ve not been able to trigger it with a clobbered/clean AOSP tree using the prebuilt kernel.\n\nSo I\u0027ll need to keep an eye on this and work w/ Amit to see if we can figure out what might be varying between builds/boots. ",
+      "revId": "fea8caf0349d73d022c0da7afbcc9b16393db632",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
