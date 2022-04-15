@@ -57,7 +57,7 @@ ifeq ($(TARGET_BUILD_MESA), true)
 endif
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.gralloc=minigbm_msm \
+    ro.hardware.gralloc=minigbm_dmabuf \
     ro.hardware.hwcomposer=drm \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
@@ -88,10 +88,16 @@ PRODUCT_PACKAGES += \
 #
 # Gralloc HAL
 #
+#PRODUCT_PACKAGES += \
+#    gralloc.minigbm_msm \
+#    android.hardware.graphics.allocator@4.0-service.minigbm_msm \
+#    android.hardware.graphics.mapper@4.0-impl.minigbm_msm
+
 PRODUCT_PACKAGES += \
-    gralloc.minigbm_msm \
-    android.hardware.graphics.allocator@4.0-service.minigbm_msm \
-    android.hardware.graphics.mapper@4.0-impl.minigbm_msm
+    gralloc.minigbm_dmabuf \
+    android.hardware.graphics.allocator@4.0-service.minigbm_dmabuf \
+    android.hardware.graphics.mapper@4.0-impl.minigbm_dmabuf
+
 
 
 # Use Launcher3QuickStep
