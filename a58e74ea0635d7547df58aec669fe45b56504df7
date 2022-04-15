@@ -16,6 +16,24 @@
       "message": "Hi, John\n\nJust curious, do you have any idea why the remount causes the sepolicy related problem?",
       "revId": "a58e74ea0635d7547df58aec669fe45b56504df7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97872578_f83f1904",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-04-15T02:33:13Z",
+      "side": 1,
+      "message": "It\u0027s not immediately obvious. My suspicion is that files in the overlayfs that are adb sync\u0027ed end up with slightly different labels (vendor_file in particular) than what the underlying partitions have. Thus they need explicit allow lines.",
+      "parentUuid": "6338e62f_14b8a226",
+      "revId": "a58e74ea0635d7547df58aec669fe45b56504df7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
