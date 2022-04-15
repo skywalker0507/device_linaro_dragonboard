@@ -34,6 +34,23 @@
       "parentUuid": "6338e62f_14b8a226",
       "revId": "a58e74ea0635d7547df58aec669fe45b56504df7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ab4f87a3_4d66f580",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-04-15T17:34:11Z",
+      "side": 1,
+      "message": "Amit/YongQin: Could I get a +1 from either of you if this looks/tests ok for you?",
+      "revId": "a58e74ea0635d7547df58aec669fe45b56504df7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
