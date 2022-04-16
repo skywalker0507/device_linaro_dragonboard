@@ -51,6 +51,23 @@
       "message": "Amit/YongQin: Could I get a +1 from either of you if this looks/tests ok for you?",
       "revId": "a58e74ea0635d7547df58aec669fe45b56504df7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89c6d7e6_2da8f1b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-04-16T02:45:55Z",
+      "side": 1,
+      "message": "I have not tested it yet, just from the rules here, there should be no harm to give more permissions for the kernel, surfacefliner, system_server processes, so I will +1 here.\nbut from another point, these rules look more generic, if we really need to add such rules, it would be better to add them to the system/sepolicy repository(te files under the public directory), so that it would fix the same problem for all the platforms.",
+      "revId": "a58e74ea0635d7547df58aec669fe45b56504df7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
