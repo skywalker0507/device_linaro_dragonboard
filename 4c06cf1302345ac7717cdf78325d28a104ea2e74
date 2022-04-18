@@ -33,6 +33,29 @@
       "message": "This change depends on the mixer_paths parser change here: https://android-review.googlesource.com/c/platform/system/media/+/2036767",
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c5fb9352_53ccb96c",
+        "filename": "etc/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1042638
+      },
+      "writtenOn": "2022-04-18T20:51:36Z",
+      "side": 1,
+      "message": "Are you sure there is always something attached to the HDMI output? \u0027attachedDevices\u0027 is meant for devices that can always be used for audio output or input.",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
