@@ -80,6 +80,30 @@
       },
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6d6a3bf0_c7011f89",
+        "filename": "etc/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1042638
+      },
+      "writtenOn": "2022-04-20T18:04:18Z",
+      "side": 1,
+      "message": "Yes. You can consider \u0027Wired Headset/Headphones\u0027 as examples of pluggable devices.",
+      "parentUuid": "ef9dfc7d_a29c6fcf",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
