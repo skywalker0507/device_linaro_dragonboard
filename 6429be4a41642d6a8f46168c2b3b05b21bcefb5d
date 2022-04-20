@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9ef8357a_02c7d1ed",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-04-20T23:35:30Z",
+      "side": 1,
+      "message": "Here\u0027s the db845c enablement side",
+      "revId": "6429be4a41642d6a8f46168c2b3b05b21bcefb5d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
