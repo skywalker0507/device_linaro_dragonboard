@@ -56,6 +56,30 @@
       },
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ef9dfc7d_a29c6fcf",
+        "filename": "etc/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1890913
+      },
+      "writtenOn": "2022-04-20T14:23:15Z",
+      "side": 1,
+      "message": "Ah I hadn\u0027t considered that, I\u0027m not sure how this would work in a headless configuration. Is it ok to drop HDMI from AttachedDevices but still have it be the top options (default?) in \u003cdevicePorts\u003e?",
+      "parentUuid": "c5fb9352_53ccb96c",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
