@@ -176,6 +176,30 @@
       },
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0d363bb_1d951531",
+        "filename": "etc/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1042638
+      },
+      "writtenOn": "2022-04-21T20:08:54Z",
+      "side": 1,
+      "message": "I see. Yes, then listing HDMI as an attached device was a correct step. You might also want try to remove Speaker devicePort at all (and the route to it) if you are saying that it\u0027s a fake device anyway. It will make the config look more logical.",
+      "parentUuid": "181b49c0_da0877c7",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
