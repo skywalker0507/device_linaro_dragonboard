@@ -152,6 +152,30 @@
       },
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "181b49c0_da0877c7",
+        "filename": "etc/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1890913
+      },
+      "writtenOn": "2022-04-21T19:58:02Z",
+      "side": 1,
+      "message": "Ah apologies for the confusion. Right now HDMI is the only supported output device, so I want to have all audio routed to it, no matter what.",
+      "parentUuid": "8e1b5e5c_f65aaea2",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
