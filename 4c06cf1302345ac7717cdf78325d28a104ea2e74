@@ -104,6 +104,30 @@
       },
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "b1b43a97_e9a222ba",
+        "filename": "etc/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1890913
+      },
+      "writtenOn": "2022-04-21T19:40:47Z",
+      "side": 1,
+      "message": "Hi, I\u0027ve done some testing with this, it seems like the Android audio policy configuration will always use an \"attached device\" for notification/alarm/ringtone sounds (the audio policy \"sonification\" strategy).\n\nI tried playing with custom audio policy engine strategies but I didn\u0027t seem to have much luck, I noticed there\u0027s a \"Force use for HDMI system audio\" flag, but I\u0027m not sure how to make use of it.\n\nDo you have any ideas for how to deal with this? Otherwise, given we don\u0027t actually support the \"speaker\" device here at all (before this patch series the HAL hardcoded all output to use the HDMI device) would it be reasonable to treat the HDMI output as an attached device?",
+      "parentUuid": "6d6a3bf0_c7011f89",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
