@@ -128,6 +128,30 @@
       },
       "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "8e1b5e5c_f65aaea2",
+        "filename": "etc/audio_policy_configuration.xml",
+        "patchSetId": 2
+      },
+      "lineNbr": 49,
+      "author": {
+        "id": 1042638
+      },
+      "writtenOn": "2022-04-21T19:54:15Z",
+      "side": 1,
+      "message": "\u003e it seems like the Android audio policy configuration will always use an \"attached device\" for notification/alarm/ringtone sounds\n\nThat\u0027s the intention. Since the device is attached, chances are high that it will actually make a sound. Then, once an HDMI device is connected, the audio framework will receive a notification about that and change routing rules to use HDMI.\n\n\u003e I tried playing with custom audio policy engine strategies but I didn\u0027t seem to have much luck...\n\nCould you please explain what behavior you are trying to achieve? If there is no HDMI sink connected, but HDMI is listed in attached devices, sound will also not get played. I see no difference in behavior with having a fake Speaker device.",
+      "parentUuid": "b1b43a97_e9a222ba",
+      "range": {
+        "startLine": 49,
+        "startChar": 0,
+        "endLine": 49,
+        "endChar": 33
+      },
+      "revId": "4c06cf1302345ac7717cdf78325d28a104ea2e74",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
