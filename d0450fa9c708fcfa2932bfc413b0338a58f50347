@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56667913_15d9ff93",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-04-27T03:14:10Z",
+      "side": 1,
+      "message": "Tested with other changes together, the db845c build could boot to home screen",
+      "revId": "d0450fa9c708fcfa2932bfc413b0338a58f50347",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
