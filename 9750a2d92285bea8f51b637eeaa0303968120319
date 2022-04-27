@@ -16,6 +16,23 @@
       "message": "Ok YongQin, I\u0027ve restored and rebased the other two patches you wanted for android11-gsi.\n\nI\u0027ve not tested these, so could you test and confirm they resolve your issue?",
       "revId": "9750a2d92285bea8f51b637eeaa0303968120319",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5857635d_782aea71",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-04-27T03:14:29Z",
+      "side": 1,
+      "message": "Tested with other changes together, the db845c build could boot to home screen",
+      "revId": "9750a2d92285bea8f51b637eeaa0303968120319",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
