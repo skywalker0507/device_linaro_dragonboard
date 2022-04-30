@@ -16,6 +16,23 @@
       "message": "Hi, All\nI have tested this and the other one locally, please help check and merge them if there is no issues.\n\nThanks,\nYongqin Liu",
       "revId": "8c5ba9cdab9f5168e16ab1a8146e411c6d9f295d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07237322_8d51e56d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-04-30T04:51:49Z",
+      "side": 1,
+      "message": "Hi, Hung-ying Tyan\n\nJust want to check if there is still any concerns to have this series changes merged.\n\nThanks,\nYongqin Liu",
+      "revId": "8c5ba9cdab9f5168e16ab1a8146e411c6d9f295d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
