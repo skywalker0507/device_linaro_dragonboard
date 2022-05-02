@@ -33,6 +33,24 @@
       "message": "Hi, Hung-ying Tyan\n\nJust want to check if there is still any concerns to have this series changes merged.\n\nThanks,\nYongqin Liu",
       "revId": "8c5ba9cdab9f5168e16ab1a8146e411c6d9f295d",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5591faa3_35277878",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1061057
+      },
+      "writtenOn": "2022-05-02T15:06:39Z",
+      "side": 1,
+      "message": "No concern from me. I have DrNo approved the CLs. Feel free to merge them.",
+      "parentUuid": "07237322_8d51e56d",
+      "revId": "8c5ba9cdab9f5168e16ab1a8146e411c6d9f295d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
