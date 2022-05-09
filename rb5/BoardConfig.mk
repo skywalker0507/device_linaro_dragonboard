@@ -1,5 +1,18 @@
 include device/linaro/dragonboard/BoardConfigCommon.mk
 
+# Primary Arch
+TARGET_ARCH := arm64
+TARGET_ARCH_VARIANT := armv8-2a
+TARGET_CPU_VARIANT := kryo385
+TARGET_CPU_ABI := arm64-v8a
+
+# Secondary Arch
+TARGET_2ND_ARCH := arm
+TARGET_2ND_ARCH_VARIANT := armv8-2a
+TARGET_2ND_CPU_VARIANT := kryo385
+TARGET_2ND_CPU_ABI := armeabi-v7a
+TARGET_2ND_CPU_ABI2 := armeabi
+
 # Board Information
 TARGET_BOOTLOADER_BOARD_NAME := rb5
 TARGET_BOARD_PLATFORM := rb5
@@ -16,6 +29,7 @@ BOARD_KERNEL_CMDLINE := earlycon firmware_class.path=/vendor/firmware/ androidbo
 BOARD_KERNEL_CMDLINE += init=/init androidboot.boot_devices=soc@0/1d84000.ufshc printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += pcie_pme=nomsi #For WiFi to work
 BOARD_KERNEL_CMDLINE += deferred_probe_timeout=30
+BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 103079215104 #96M
