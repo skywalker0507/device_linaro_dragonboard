@@ -52,6 +52,10 @@ PRODUCT_PACKAGES += \
 
 TARGET_BUILD_MESA ?= false
 ifeq ($(TARGET_BUILD_MESA), true)
+   TARGET_BUILD_UPSTREAM_MESA ?= false
+   ifeq ($(TARGET_BUILD_UPSTREAM_MESA), true)
+       include device/linaro/dragonboard/build-hooks.mk
+   endif
    PRODUCT_SOONG_NAMESPACES += \
        external/mesa3d
 endif
