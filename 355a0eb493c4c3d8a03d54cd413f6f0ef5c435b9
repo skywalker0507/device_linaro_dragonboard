@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "71d2cf86_d39c6859",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-05-18T18:09:37Z",
+      "side": 1,
+      "message": "Setting TARGET_BUILD_MESA\u003dtrue TARGET_BUILD_UPSTREAM_MESA\u003dtrue build flags while running lunch command is useful to checkout the relevant branches during lunch itself. Setting the flags while running the make command sometimes fail to checkout the branches in time for the other parallel make threads to index the Android .mk and .bp files and we run into the following build errors:\n\n$ make TARGET_KERNEL_USE\u003dupstream TARGET_BUILD_MESA\u003dtrue TARGET_BUILD_UPSTREAM_MESA\u003dtrue -j33\nPrevious HEAD position was fec253b8291c Merge \"Hack to handle latest minigbm changes\"\nHEAD is now at 058823906ee1 svga: add svga_compile_shader helper function\nPrevious HEAD position was bc74646e9086 Merge \"drm_hwcomposer: Merge remote-tracking branch \u0027aosp/upstream-main\u0027 into HEAD\"\nHEAD is now at 59bb481f9642 drm_hwcomposer: Add non-blocking commit support\nbuild/make/core/soong_config.mk:211: warning: BOARD_PLAT_PUBLIC_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS instead.\nbuild/make/core/soong_config.mk:212: warning: BOARD_PLAT_PRIVATE_SEPOLICY_DIR has been deprecated. Use SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS instead.\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\nPLATFORM_VERSION_CODENAME\u003dUpsideDownCake\nPLATFORM_VERSION\u003dUpsideDownCake\nTARGET_PRODUCT\u003ddb845c\nTARGET_BUILD_VARIANT\u003duserdebug\nTARGET_BUILD_TYPE\u003drelease\nTARGET_ARCH\u003darm64\nTARGET_ARCH_VARIANT\u003darmv8-2a\nTARGET_CPU_VARIANT\u003dkryo385\nTARGET_2ND_ARCH\u003darm\nTARGET_2ND_ARCH_VARIANT\u003darmv8-2a\nTARGET_2ND_CPU_VARIANT\u003dkryo385\nHOST_ARCH\u003dx86_64\nHOST_2ND_ARCH\u003dx86\nHOST_OS\u003dlinux\nHOST_OS_EXTRA\u003dLinux-5.13.0-41-generic-x86_64-Ubuntu-20.04.4-LTS\nHOST_CROSS_OS\u003dwindows\nHOST_CROSS_ARCH\u003dx86\nHOST_CROSS_2ND_ARCH\u003dx86_64\nHOST_BUILD_TYPE\u003drelease\nBUILD_ID\u003dAOSP.MASTER\nOUT_DIR\u003dout\nPRODUCT_SOONG_NAMESPACES\u003dexternal/mesa3d device/linaro/dragonboard vendor/linaro/linux-firmware/20220303 vendor/linaro/db845c/20220303 vendor/linaro/rb5/20220303\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\ninternal error: open external/mesa3d/Android.bp: no such file or directory\ninternal error: open external/mesa3d/src/Android.bp: no such file or directory\ninternal error: open external/mesa3d/src/mesa/Android.bp: no such file or directory\n\n#### failed to build some targets (1 seconds) ####",
+      "revId": "355a0eb493c4c3d8a03d54cd413f6f0ef5c435b9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
