@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f54ac9ef_e4249959",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-05-23T15:31:16Z",
+      "side": 1,
+      "message": "Exhaustive list copied from one of the Pixel devices. Needs cleanup to enable only relevant properties.",
+      "revId": "e2b22a6e56331ae40f7f3d090c121bc436c0e35f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
