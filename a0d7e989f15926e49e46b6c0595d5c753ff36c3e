@@ -16,6 +16,24 @@
       "message": "Seems sane to me. I don\u0027t have cycles to test today, so just +1 for now. But if Amit/Yongqin think is ok I will +2.",
       "revId": "a0d7e989f15926e49e46b6c0595d5c753ff36c3e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1bbeb336_e17385b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-05-26T09:34:44Z",
+      "side": 1,
+      "message": "I don\u0027t have any objections to this patch either but I just found out that ABL on db845c and rb5 do not append CONFIG_CMDLINE bootargs at all. So I can boot android-mainline-5.18 on these devices as usual with no serial/uart breakage. May be this breakage is more visible on sm8450(?).\n\nI don\u0027t remember customising ABL to skip CONFIG_CMDLINE bootargs for any of our usecases but I\u0027ll take a look if this is a fallout from any of our other fixes.",
+      "parentUuid": "2d6990e2_39edd952",
+      "revId": "a0d7e989f15926e49e46b6c0595d5c753ff36c3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
