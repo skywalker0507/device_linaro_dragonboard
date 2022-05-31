@@ -16,6 +16,24 @@
       "message": "BT mouse and speakers work as expected. Tried pairing with my Pixel 4a but ran into following selinux denial:\n\n[  T339] type\u003d1400 audit(1654017285.989:28): avc: denied { sys_module } for comm\u003d\"NetworkStats\" capability\u003d16 scontext\u003du:r:system_server:s0 tcontext\u003du:r:system_server:s0\n tclass\u003dcapability permissive\u003d0 bug\u003db/228030183\n\nI\u0027ll take a look at it separately.",
       "revId": "6f15c9ce31173cb7d767244210006129dc7b93c2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "82d35462_37587aad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-05-31T17:33:56Z",
+      "side": 1,
+      "message": "That bug link seems to come from: https://android-review.googlesource.com/c/platform/system/sepolicy/+/2063148/\n\nWhich has some extra context in the review discussion.",
+      "parentUuid": "b2f8237d_814c77a0",
+      "revId": "6f15c9ce31173cb7d767244210006129dc7b93c2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
