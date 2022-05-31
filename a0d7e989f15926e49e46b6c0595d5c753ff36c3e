@@ -34,6 +34,23 @@
       "parentUuid": "2d6990e2_39edd952",
       "revId": "a0d7e989f15926e49e46b6c0595d5c753ff36c3e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "74cd4fd9_d80719c3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-05-31T23:21:17Z",
+      "side": 1,
+      "message": "Ok, I did manage to test booting w/ this on db845c without any regression. ",
+      "revId": "a0d7e989f15926e49e46b6c0595d5c753ff36c3e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
