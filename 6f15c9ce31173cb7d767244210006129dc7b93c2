@@ -87,6 +87,24 @@
       "parentUuid": "88e1c91f_02417ad3",
       "revId": "6f15c9ce31173cb7d767244210006129dc7b93c2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6d19e21c_a0b100db",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-06-01T12:40:15Z",
+      "side": 1,
+      "message": "Hi, John, Amit\n\nThere is a crash reported when turn on the hikey960 bluetooth with the change like this. The crash error in logcat is like this:\nhttps://gist.github.com/liuyq/7921a558ed1e0c7653bdb76d3830d187\n\nbtw, is the db845c crash resolved by this change similar to the above hikey960 crash?",
+      "parentUuid": "a4a718d1_b661dd5c",
+      "revId": "6f15c9ce31173cb7d767244210006129dc7b93c2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
