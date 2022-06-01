@@ -247,6 +247,8 @@ PRODUCT_COPY_FILES +=  \
     frameworks/native/data/etc/android.software.opengles.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml \
     frameworks/native/data/etc/android.software.device_admin.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.device_admin.xml
 
+TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
+
 DEVICE_MANIFEST_FILE := device/linaro/dragonboard/manifest.xml
 DEVICE_MATRIX_FILE := device/linaro/dragonboard/compatibility_matrix.xml
 
