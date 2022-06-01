@@ -51,6 +51,24 @@
       "message": "Validated here. Resolves bluetooth crashes.\n\nWill similar be needed for HiKey960?",
       "revId": "6f15c9ce31173cb7d767244210006129dc7b93c2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "88e1c91f_02417ad3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-06-01T08:27:43Z",
+      "side": 1,
+      "message": "Yes we do. @liuyq did you get a chance to test this on hikey and hikey960?",
+      "parentUuid": "8e2be340_629392a2",
+      "revId": "6f15c9ce31173cb7d767244210006129dc7b93c2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
