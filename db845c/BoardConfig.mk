@@ -22,9 +22,11 @@ BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
  BOARD_BOOT_HEADER_VERSION := 3
  BOARD_KERNEL_CMDLINE += androidboot.hardware=db845c androidboot.boot_devices=soc@0/1d84000.ufshc
+ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 else
  BOARD_BOOT_HEADER_VERSION := 4
  BOARD_BOOTCONFIG += androidboot.hardware=db845c androidboot.boot_devices=soc@0/1d84000.ufshc
+ BOARD_BOOTCONFIG += androidboot.selinux=permissive
 endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_BASE := 0x80000000
