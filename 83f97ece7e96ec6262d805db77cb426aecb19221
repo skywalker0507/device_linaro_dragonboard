@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8614ebe_9157d178",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-06-06T11:47:29Z",
+      "side": 1,
+      "message": "WiFi, BT, audio/video playback works.\nChromium webview is broken https://bugs.chromium.org/p/chromium/issues/detail?id\u003d1316427\n\nMajor blocker in this approach are the selinux denials.\n\nThe vendor_init do not have the privilege to set sys.use_memfd property:\ntype\u003d1107 audit(3423.511:245): uid\u003d0 auid\u003d4294967295 ses\u003d4294967295 subj\u003du:r:init:s0 msg\u003d\u0027avc: denied { set } for property\u003dsys.use_memfd pid\u003d261 uid\u003d0 gid\u003d0 sconte     xt\u003du:r:vendor_init:s0 tcontext\u003du:object_r:use_memfd_prop:s0 tclass\u003dproperty_service permissive\u003d1\u0027\n\nAnd tmpfs:file{getattr read map write} access need to be more fine controlled as well.",
+      "revId": "83f97ece7e96ec6262d805db77cb426aecb19221",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
