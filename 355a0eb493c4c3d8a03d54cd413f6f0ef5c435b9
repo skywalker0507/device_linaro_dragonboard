@@ -55,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "7e64ebb3_231c2667",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1074628
+      },
+      "writtenOn": "2022-06-09T04:22:26Z",
+      "side": 1,
+      "message": "Yeah... the build (and especially product configuration) really really shouldn\u0027t be making modifications to the source directory. And doing this in the product configuration ends up running these git commands at least 4 times during `lunch \u0026\u0026 m` (that\u0027s roughly how many times the product configs are read -- they should be fast and not modify any state)",
+      "parentUuid": "1068720f_acdfa2b1",
+      "revId": "355a0eb493c4c3d8a03d54cd413f6f0ef5c435b9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "fe1465c3_724091d6",
         "filename": "build-hooks.sh",
         "patchSetId": 1
