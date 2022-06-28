@@ -51,6 +51,23 @@
       "parentUuid": "86e73d8f_73eeea1e",
       "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a62d52c0_6e2d8f96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-06-28T18:34:11Z",
+      "side": 1,
+      "message": "Ok, follow up, is there details about why both BOARD_BOOTCONFIG and BOARD_KERNEL_CMDLINE are both used? \n\nI (maybe mistakenly) thought it was intended to switch fully from KERNEL_CMDLINE in the BOOTCONFIG case?",
+      "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
