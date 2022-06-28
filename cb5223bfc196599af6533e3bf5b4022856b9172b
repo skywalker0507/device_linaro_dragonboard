@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "2ac03ddf_06911c28",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-06-28T18:38:28Z",
+      "side": 1,
+      "message": "Its a little unclear to me, is this (switching rb5 to v4) safe to land now before the bootloader/firmware package is updated?\n\nIf not please -1 this so it doesn\u0027t accidentally get merged.",
+      "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "46aecc4c_87ff11e3",
@@ -66,6 +83,24 @@
       "writtenOn": "2022-06-28T18:34:11Z",
       "side": 1,
       "message": "Ok, follow up, is there details about why both BOARD_BOOTCONFIG and BOARD_KERNEL_CMDLINE are both used? \n\nI (maybe mistakenly) thought it was intended to switch fully from KERNEL_CMDLINE in the BOOTCONFIG case?",
+      "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0693a9a7_63f14558",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-06-28T18:38:28Z",
+      "side": 1,
+      "message": "I am a bit wistful of being able to quickly boot static kernels w/ v2, but I\u0027m not personally doing that sort of testing anymore, so it ok by me.",
+      "parentUuid": "46aecc4c_87ff11e3",
       "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
