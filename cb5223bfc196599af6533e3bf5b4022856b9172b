@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "46aecc4c_87ff11e3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-06-28T08:18:20Z",
+      "side": 1,
+      "message": "Bootloader binaries to support boot image header v4 for DB845c and RB5 are ready to go. If we agree on dropping the v2 header version support for DB845c then I\u0027ll start the process of publishing the vendor package on releases.linaro.org",
+      "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
