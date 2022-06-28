@@ -16,6 +16,23 @@
       "message": "Bootloader binaries to support boot image header v4 for DB845c and RB5 are ready to go. If we agree on dropping the v2 header version support for DB845c then I\u0027ll start the process of publishing the vendor package on releases.linaro.org",
       "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "86e73d8f_73eeea1e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-06-28T18:30:52Z",
+      "side": 1,
+      "message": "This looks reasonable.\n\nI recall there was some detail, when abootimgv4 was first raised, about using it to support bootconfig? But I\u0027m not seeing anything bootconfig specific here. Is that magically handled by the build? Or is that something that needs to be switched on later?",
+      "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
