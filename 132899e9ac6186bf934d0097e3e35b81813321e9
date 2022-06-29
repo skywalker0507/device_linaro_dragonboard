@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b1fed938_2e6fa15c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-06-29T12:15:55Z",
+      "side": 1,
+      "message": "Waiting for updated vendor package to land at https://releases.linaro.org/android/aosp-linaro-vendor-package/extract-linaro_devices-20220629.tgz",
+      "revId": "132899e9ac6186bf934d0097e3e35b81813321e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
