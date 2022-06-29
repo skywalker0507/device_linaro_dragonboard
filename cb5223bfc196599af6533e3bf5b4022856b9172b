@@ -20,6 +20,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "9d9b0612_9dd965ce",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 4
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-06-29T11:40:00Z",
+      "side": 1,
+      "message": "Ack. I did -1 the WIP patch but I may have lost that when I moved this patch from WIP to Ready for Review. I\u0027ll -1 it again and submit the vendor-package related changes too.",
+      "parentUuid": "2ac03ddf_06911c28",
+      "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "46aecc4c_87ff11e3",
         "filename": "/PATCHSET_LEVEL",
         "patchSetId": 4
@@ -101,6 +119,24 @@
       "side": 1,
       "message": "I am a bit wistful of being able to quickly boot static kernels w/ v2, but I\u0027m not personally doing that sort of testing anymore, so it ok by me.",
       "parentUuid": "46aecc4c_87ff11e3",
+      "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "40560f5b_6b7f181e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-06-29T11:40:00Z",
+      "side": 1,
+      "message": "I followed the instructions and Cuttlefish example from here https://source.android.com/devices/bootloader/implementing-bootconfig and it talks about moving only androidboot* bootargs to bootconfig.",
+      "parentUuid": "a62d52c0_6e2d8f96",
       "revId": "cb5223bfc196599af6533e3bf5b4022856b9172b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
