@@ -16,6 +16,23 @@
       "message": "Waiting for updated vendor package to land at https://releases.linaro.org/android/aosp-linaro-vendor-package/extract-linaro_devices-20220629.tgz",
       "revId": "132899e9ac6186bf934d0097e3e35b81813321e9",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d298526a_8e12eacb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-07-01T22:19:31Z",
+      "side": 1,
+      "message": "Validated here. Builds and boots ok on db845c (both before and after reflashing the bios). Looks ok. ",
+      "revId": "132899e9ac6186bf934d0097e3e35b81813321e9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
