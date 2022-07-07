@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "582f3623_10d7b486",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-07-07T00:06:11Z",
+      "side": 1,
+      "message": "I shared a proposed fix for the mesa_prebuilt Android.mk. \n\nI might prefer that over this one for now? Though maybe we could take this as a short-term fix.",
+      "revId": "b93dd094658bd3800185b48ea5fa07e1b82efce2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
