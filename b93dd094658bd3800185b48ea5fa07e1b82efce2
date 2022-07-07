@@ -16,6 +16,24 @@
       "message": "I shared a proposed fix for the mesa_prebuilt Android.mk. \n\nI might prefer that over this one for now? Though maybe we could take this as a short-term fix.",
       "revId": "b93dd094658bd3800185b48ea5fa07e1b82efce2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "824bd6d3_6a62f33f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-07-07T16:34:15Z",
+      "side": 1,
+      "message": "Thanks for the fix John. I have pushed it on linaro-vendor-package project as well. I\u0027ll upload the newer vendor-package shortly. But unfortunately the fix doesn\u0027t help if the user have an older vendor-package pre-installed so I suggest we take this one as a short term fix.",
+      "parentUuid": "582f3623_10d7b486",
+      "revId": "b93dd094658bd3800185b48ea5fa07e1b82efce2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
