@@ -88,6 +88,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "5d93cc63_f99453a1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000701
+      },
+      "writtenOn": "2022-07-11T21:41:27Z",
+      "side": 1,
+      "message": "I\u0027ll be a little bit more forceful about this.  If you need extra projects, add them to the repo manifest, don\u0027t check them out at build time, or even worse, during lunch.",
+      "revId": "355a0eb493c4c3d8a03d54cd413f6f0ef5c435b9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fe1465c3_724091d6",
