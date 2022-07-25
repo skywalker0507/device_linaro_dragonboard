@@ -16,6 +16,23 @@
       "message": "When paired with aosp/2159540(remount: Ensure that scratch images are block-size aligned.), I can pass system/core/fs_mgr/tests/adb-remount-test.sh test and no longer see following error in my limited test runs so far:\n\nW device-mapper: table: 254:4: len\u003d191316 not aligned to h/w logical block size 4096 of sda10\nE device-mapper: core: Cannot calculate initial queue limits\nW device-mapper: ioctl: unable to set up device queue for new table.",
       "revId": "2a5ca1a30fc9e7eb9e09244385444e0ca6cf222a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e31c8803_821ab180",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-07-25T11:29:55Z",
+      "side": 1,
+      "message": "Need to test run it across all the supported kernel versions.",
+      "revId": "2a5ca1a30fc9e7eb9e09244385444e0ca6cf222a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
