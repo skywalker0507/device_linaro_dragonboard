@@ -33,6 +33,23 @@
       "message": "Need to test run it across all the supported kernel versions.",
       "revId": "2a5ca1a30fc9e7eb9e09244385444e0ca6cf222a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5e6975b_2ed9d9ff",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-07-25T16:21:45Z",
+      "side": 1,
+      "message": "Looks reasonable to me. Let me know when its ready.",
+      "revId": "2a5ca1a30fc9e7eb9e09244385444e0ca6cf222a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
