@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63992e59_43a3da7b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-07-26T09:38:59Z",
+      "side": 1,
+      "message": "Waiting for releases.l.o link to go live and sync the internal partner mirrors.",
+      "revId": "6c52dd7b3c032055b2fc13b3f6cb639ede35ce72",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
