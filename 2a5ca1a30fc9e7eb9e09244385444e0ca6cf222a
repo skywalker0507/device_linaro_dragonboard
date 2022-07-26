@@ -67,6 +67,23 @@
       "message": "Just to be sure this time, I have tested this patch and adb-remount-test.sh script across all* supported kernel versions to rule out any false negatives unlike previous times:\n\nupstream (v5.19-rc8)\nandroid-mainline (5.19.0-rc7-mainline-02474-g7d5fc93e8cc4-ab8858667)\nandroid13-5.15 (5.15.41-android13-8-00038-g9c6d1cf9ffb9-ab8858663)\nandroid13-5.10 (5.10.107-android13-4-00012-geb4344203d97-ab8862890)\nandroid12-5.10 (5.10.110-android12-9-00038-gc301d142e807-ab8857398)\nandroid12-5.4 (5.4.190-android12-9-00009-g397b3ca493cb-ab8861015)\nandroid11-5.4 (5.4.191-android11-2-00003-g9b75ceec6194-ab8860984)\n\n*android14-5.15 (broken KABI)",
       "revId": "2a5ca1a30fc9e7eb9e09244385444e0ca6cf222a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "121b950d_e19d43b5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-07-26T16:11:49Z",
+      "side": 1,
+      "message": "Thanks so much Amit, for chasing this issue down!",
+      "revId": "2a5ca1a30fc9e7eb9e09244385444e0ca6cf222a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
