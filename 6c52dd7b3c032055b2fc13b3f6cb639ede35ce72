@@ -16,6 +16,23 @@
       "message": "Waiting for releases.l.o link to go live and sync the internal partner mirrors.",
       "revId": "6c52dd7b3c032055b2fc13b3f6cb639ede35ce72",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7c1d38b6_497245de",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-07-28T16:19:54Z",
+      "side": 1,
+      "message": "Good to go!",
+      "revId": "6c52dd7b3c032055b2fc13b3f6cb639ede35ce72",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
