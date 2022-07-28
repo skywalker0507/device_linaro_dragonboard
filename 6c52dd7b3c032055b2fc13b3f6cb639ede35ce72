@@ -50,6 +50,23 @@
       "message": "Looks ok. I\u0027m doing some local build tests here, and then will +2",
       "revId": "6c52dd7b3c032055b2fc13b3f6cb639ede35ce72",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b3cee6f2_9de8bfd7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-07-28T17:47:36Z",
+      "side": 1,
+      "message": "Haven\u0027t boot tested, but builds ok here.",
+      "revId": "6c52dd7b3c032055b2fc13b3f6cb639ede35ce72",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
