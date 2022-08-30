@@ -50,6 +50,29 @@
       "message": "Ok, with the previous build problems from last week now sorted, I think its a good time to try to merge this.",
       "revId": "21e42a31e003cbb6ee0393a0784ebc63baf8ef09",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "cc5f4f94_f589f4bc",
+        "filename": "rb5/BoardConfig.mk",
+        "patchSetId": 5
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-08-30T02:15:14Z",
+      "side": 1,
+      "message": "Hi, Amit\nCurrently we use the same images from the db845c build for rb5 as well, that seems work, but from here, it seems the value for androidboot.hardware should be different.\n\nIf we flash the db845c build images onto the rb5 board, then the value of androidboot.hardware should be db845c I think, not sure if there is any feature depends on the value of this config.(From the experience, there seems no problem though).\n\nThanks,\nYongqin Liu",
+      "range": {
+        "startLine": 34,
+        "startChar": 20,
+        "endLine": 34,
+        "endChar": 44
+      },
+      "revId": "21e42a31e003cbb6ee0393a0784ebc63baf8ef09",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
