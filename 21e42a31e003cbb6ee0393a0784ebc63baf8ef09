@@ -52,6 +52,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b747562c_91eedd96",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 5
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2022-08-30T02:18:33Z",
+      "side": 1,
+      "message": "Hi, Amit\n\nIn the commit message, it\u0027s mentioned android11-5.4 does not support the v4 version?\nHow about the android12-5.4, android12-5.10, android13-5.10 branches?\n\nThanks,\nYongqin Liu",
+      "revId": "21e42a31e003cbb6ee0393a0784ebc63baf8ef09",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "cc5f4f94_f589f4bc",
