@@ -71,6 +71,23 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f60ccfd2_7565c858",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1877755
+      },
+      "writtenOn": "2022-09-02T13:50:14Z",
+      "side": 1,
+      "message": "Hi, is there any progress on getting this to work with selinux enforcing?",
+      "revId": "83f97ece7e96ec6262d805db77cb426aecb19221",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "3d7645f9_e590751a",
