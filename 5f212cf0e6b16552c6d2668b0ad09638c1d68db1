@@ -16,6 +16,23 @@
       "message": "Looks sane. Thanks for debugging and submitting this!",
       "revId": "5f212cf0e6b16552c6d2668b0ad09638c1d68db1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b37d995f_3903f0f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1052193
+      },
+      "writtenOn": "2022-09-21T12:44:31Z",
+      "side": 1,
+      "message": "blocking for DB845c",
+      "revId": "5f212cf0e6b16552c6d2668b0ad09638c1d68db1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
