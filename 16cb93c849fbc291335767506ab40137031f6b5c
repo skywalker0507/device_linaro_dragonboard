@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "186bb178_1e3983f6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-10-06T16:17:45Z",
+      "side": 1,
+      "message": "It totally does. I thought adding CEC bits here would help improve recent CtsHardwareTestCases.android.hardware.input.cts.tests.* failures but they didn\u0027t. So we might as well skip them from here. I\u0027m fix that.",
+      "parentUuid": "f75e4cfa_a1e0617f",
+      "revId": "16cb93c849fbc291335767506ab40137031f6b5c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "b4cb70a0_7a5137fe",
