@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "36bc679c_28d3d44e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-10-06T10:20:32Z",
+      "side": 1,
+      "message": "So this patch does fix the WiFi/Sound/UART regression on DB845c but it has its own issues. For example Display doesn\u0027t initialize properly and SurfaceFlinger keep crashing until it succeeds eventually. So that has bumped up the default boot time significantly. And sometimes display doesn\u0027t even come up.\n\nE spi_master spi0: failed to transfer one message from queue\nE mcp251xfd spi0.0: error -ETIMEDOUT: Failed to detect MCP2517FD.\nW mcp251xfd: probe of spi0.0 failed with error -110\nI i2c 10-003b: Fixing up cyclic dependency with hdmi-out\nI i2c 10-003b: Fixing up cyclic dependency with ae94000.dsi\nI lt9611 10-003b: LT9611 revision: 0xe1\nE lt9611 10-003b: failed to find dsi host\nI lt9611 10-003b: LT9611 revision: 0xe1\nI msm_dpu ae01000.display-controller: bound ae94000.dsi (ops dsi_ops [msm])\nW adreno 5000000.gpu: supply vdd not found, using dummy regulator\nW adreno 5000000.gpu: supply vddcx not found, using dummy regulator\nI platform 506a000.gmu: Adding to iommu group 25\nI msm_dpu ae01000.display-controller: bound 5000000.gpu (ops a3xx_ops [msm])\nI         : [drm:dpu_kms_hw_init:1074] dpu hardware revision:0x40000000\nI         : [drm] Initialized msm 1.9.0 20130625 for ae01000.display-controller on minor 0\n\nCurious if you had any ideas what might be going wrong here, I figured I\u0027d ask just in case it\u0027s obvious to you. I\u0027m happy to test or run any debug patches, if it would help narrow the issue down.",
+      "revId": "c38c523bdf0d153454efeca9f5cc9183f766cc6e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
