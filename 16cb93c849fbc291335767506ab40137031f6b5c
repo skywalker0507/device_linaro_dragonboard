@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f75e4cfa_a1e0617f",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-10-06T16:11:23Z",
+      "side": 1,
+      "message": "Would it make sense to just reference the frameworks/base/data/keyboards/Generic.kl directly, rather then having a copy of it? That way it will stay current?\n\nWe would be missing the CEC bits, but maybe those deserve to be in the Generic.kl file (I don\u0027t know how much they might differ)?",
+      "revId": "16cb93c849fbc291335767506ab40137031f6b5c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b4cb70a0_7a5137fe",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-10-06T16:11:23Z",
+      "side": 1,
+      "message": "No major objection, but just a question to possibly ease long term maintenance.",
+      "revId": "16cb93c849fbc291335767506ab40137031f6b5c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
