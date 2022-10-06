@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "54cbb451_5b0ae5c1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-10-06T16:12:09Z",
+      "side": 1,
+      "message": "Does this address the bluetooth cts failures? Might be worth mentioning in the commit message if so.",
+      "revId": "ea17d4b4815e7bb40411b456e4093e9e012c7226",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
