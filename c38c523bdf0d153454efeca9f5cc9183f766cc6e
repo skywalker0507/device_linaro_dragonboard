@@ -68,6 +68,24 @@
       "message": "fwiw can not reproduce this bug on android-mainline gcc (non-gki and non-bazel) build.\n\nPS: display regression is still there.",
       "revId": "c38c523bdf0d153454efeca9f5cc9183f766cc6e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c00a7b57_b569e6be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-10-06T17:20:18Z",
+      "side": 1,
+      "message": "If I compare the android-mainline GKI defconfig and my local defconfig for upstream tree then the only relevant difference I see is this aosp/2240377 (QCOM_GPI_DMA), which I enabled recently to fix an I2C pending probe. I didn\u0027t look into the details yet but with this config enabled on android-mainline, I couldn\u0027t reproduce the original wifi/sound/uart bug in my 10+ test runs so far.\n\nPS: Display is still buggy and yet to be looked into.",
+      "parentUuid": "4d68c8cc_53c8832d",
+      "revId": "c38c523bdf0d153454efeca9f5cc9183f766cc6e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
