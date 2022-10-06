@@ -34,6 +34,23 @@
       "parentUuid": "36bc679c_28d3d44e",
       "revId": "c38c523bdf0d153454efeca9f5cc9183f766cc6e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f6a943c0_4daff5be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-10-06T16:04:01Z",
+      "side": 1,
+      "message": "Did some more local tests and it looks like the original Wifi/Sound/Serial breakage is most likely introduced by one or more out-of-tree fw_devlink patch in android-mainline tree.\n\nI can not reproduce this breakage on an upstream tracking tree which is at the same upstream commit as android-mainline (c79e6fa98ca8 Merge tag \u0027pm-6.1-rc1\u0027 of git://git.kernel.org/pub/scm/linux/kernel/git/rafael/linux-pm). Though the display regression is real and I can reproduce it on upstream kernel as well. Android boots to completion (sys.boot_completed\u003d1) but there is no display on monitor in 2/5 test runs.",
+      "revId": "c38c523bdf0d153454efeca9f5cc9183f766cc6e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
