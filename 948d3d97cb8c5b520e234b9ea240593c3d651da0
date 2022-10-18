@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "31ecec11_d8a8e4ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-10-18T18:37:00Z",
+      "side": 1,
+      "message": "Going to hold on this until the vendor package is merged internally",
+      "revId": "948d3d97cb8c5b520e234b9ea240593c3d651da0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
