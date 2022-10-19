@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "56f5ef13_34437052",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-10-19T15:08:46Z",
+      "side": 1,
+      "message": "Smoke tested on db845c with v5.4, v5.10, v5.15 and v6.1-rc1 kernel versions.",
+      "revId": "c2840b75d1c87ec39ef15b86cf9e92e41c992da1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
