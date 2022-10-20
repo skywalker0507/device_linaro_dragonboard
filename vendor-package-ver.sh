@@ -1,9 +1,9 @@
 #!/bin/bash
 
-export EXPECTED_LINARO_VENDOR_VERSION=20220726
+export EXPECTED_LINARO_VENDOR_VERSION=20221011
 #make sure to use sha512sum here
-export EXPECTED_LINARO_VENDOR_SHA=62ff5d98eb9ab568aff035857379fa1cc2dbd69e5cdb13124e577ac1abd70ff21013c19956b5ae9834e1f5dbed672f52663c22d404c060c2cb7fff8aa85067f1
-export VND_PKG_URL=https://releases.linaro.org/android/aosp-linaro-vendor-package/extract-linaro_devices-20220726.tgz
+export EXPECTED_LINARO_VENDOR_SHA=aa7cc267985be207beac3c67c80ce9bffb12562fa970de49f3832f997996a03299147b94e24738c74d2a68783f29129ba6ac127146b730a5c10b6eb8f1d0da51
+export VND_PKG_URL=https://releases.linaro.org/android/aosp-linaro-vendor-package/extract-linaro_devices-20221011.tgz
 
 if [ "$1" = "url" ]; then
  echo $VND_PKG_URL
