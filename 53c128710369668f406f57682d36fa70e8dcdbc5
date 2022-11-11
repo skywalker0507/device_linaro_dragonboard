@@ -16,6 +16,24 @@
       "message": "The linter is grumpy about tunning vs tuning here, but it looks like that typeo made it into a partition name? Can you double check this is something we need to live with?",
       "revId": "53c128710369668f406f57682d36fa70e8dcdbc5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9989fdfb_be479ecd",
+        "filename": "qcom/rmtfs/storage.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-11-11T18:53:38Z",
+      "side": 1,
+      "message": "Looked up the patch that introduced it and it seems to be there to support specific hardware: https://github.com/andersson/rmtfs/commit/417f04a9a76321fca6d2127d0b36fad468ec99e0#diff-5d2f7094cc83e41709a4d9730a1cc632eddba6b61c2ec57bba797ac280f10608R44\n\nI\u0027ve requested some clarification to make sure that\u0027s the case.",
+      "parentUuid": "c0ed0ccc_626eb3ed",
+      "revId": "53c128710369668f406f57682d36fa70e8dcdbc5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
