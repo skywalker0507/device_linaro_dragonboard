@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b4bfe91_e15af80f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-11-11T15:00:11Z",
+      "side": 1,
+      "message": "Smoke tested on DB845c and RB5.\n\nAndroid specific patches submitted upstream:\nhttps://github.com/andersson/pd-mapper/pull/8\nhttps://github.com/andersson/tqftpserv/pull/8",
+      "revId": "76fff874afd52d1b7f5aec0ab3536d45918cd466",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
