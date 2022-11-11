@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c0ed0ccc_626eb3ed",
+        "filename": "qcom/rmtfs/storage.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-11-11T18:36:39Z",
+      "side": 1,
+      "message": "The linter is grumpy about tunning vs tuning here, but it looks like that typeo made it into a partition name? Can you double check this is something we need to live with?",
+      "revId": "53c128710369668f406f57682d36fa70e8dcdbc5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
