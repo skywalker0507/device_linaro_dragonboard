@@ -34,6 +34,24 @@
       "parentUuid": "c0ed0ccc_626eb3ed",
       "revId": "53c128710369668f406f57682d36fa70e8dcdbc5",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ffd208a1_5de7822e",
+        "filename": "qcom/rmtfs/storage.c",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-11-14T17:57:28Z",
+      "side": 1,
+      "message": "Confirmed it is for support of specific shipped hardware partition names.",
+      "parentUuid": "9989fdfb_be479ecd",
+      "revId": "53c128710369668f406f57682d36fa70e8dcdbc5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
