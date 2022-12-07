@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "150429d3_d517e1c9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2022-12-07T13:25:44Z",
+      "side": 1,
+      "message": "This new Mesa update fixes display crashes during CtsHardwareTestCases test runs on Db845c running android13-gsi build.",
+      "revId": "de1d0b69547fa7483d2e51b1ffa7d9e0a88fd7ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
