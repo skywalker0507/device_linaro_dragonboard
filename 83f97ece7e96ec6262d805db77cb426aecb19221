@@ -90,6 +90,29 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "d086c7bc_5579afdd",
+        "filename": "sepolicy/memfd.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2022-12-07T19:17:24Z",
+      "side": 1,
+      "message": "memfd objects should never be labeled as tmpfs. They should be \u003cfoo\u003e_tmpfs e.g. in this case bluetooth_tmpfs.",
+      "range": {
+        "startLine": 8,
+        "startChar": 16,
+        "endLine": 8,
+        "endChar": 21
+      },
+      "revId": "83f97ece7e96ec6262d805db77cb426aecb19221",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "3d7645f9_e590751a",
         "filename": "sepolicy/memfd.te",
         "patchSetId": 1
