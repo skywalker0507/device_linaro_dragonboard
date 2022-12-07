@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "c15a8ce2_f6c14bc7",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-12-07T17:19:09Z",
+      "side": 1,
+      "message": "Oof. You mentioned this earlier, but I had forgotten about it.\n\nIs there any plan for a resolution here? Can libbacktrace be statically linked against the mesa binaries? Or do we need to include libbacktrace in the vendor package?",
+      "revId": "de1d0b69547fa7483d2e51b1ffa7d9e0a88fd7ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "150429d3_d517e1c9",
