@@ -33,6 +33,23 @@
       "message": "Viktor: Do you know what we need for DrNo-Review on this?",
       "revId": "fbd770c811c7045277af45a220b6ffe11b9d2d5e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd6609c3_a2b65356",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-12-08T23:18:47Z",
+      "side": 1,
+      "message": "Hey Sandeep: Looks like we need your +2 on this for Dr-No.\n\nJust updates the dragonboard project to use a newer version of the firmware package.",
+      "revId": "fbd770c811c7045277af45a220b6ffe11b9d2d5e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
