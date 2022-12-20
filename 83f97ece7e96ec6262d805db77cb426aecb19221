@@ -105,6 +105,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "c2ad0cf5_007eb635",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1365444
+      },
+      "writtenOn": "2022-12-20T11:01:35Z",
+      "side": 1,
+      "message": "That\u0027s nice. \nDo you think it\u0027s upstreamable (when complete)?\n\nAlso I wonder if those packages using ashmem ioctls aren\u0027t also just opening /dev/ashmem to get a memory region, making this not so helpful...\n\nAre you tracking a list of affected apps? I\u0027ve heard some (or maybe all) games by Gameloft on the Play Store currently require some ashmem operations",
+      "parentUuid": "0c006c4f_ed509b86",
+      "revId": "83f97ece7e96ec6262d805db77cb426aecb19221",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d086c7bc_5579afdd",
