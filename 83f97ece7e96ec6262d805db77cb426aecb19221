@@ -123,6 +123,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "2fad68f8_1ef116f9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2022-12-20T18:38:01Z",
+      "side": 1,
+      "message": "I think as its fairly self-contained and uninteresting it might make it upstream. But I\u0027m ok with it staying out of tree if it allows Android to retire its current active use of ashmem. \n\nThe Android kernels will still need to keep /dev/ashmem (also currently out of tree) for existing apps that directly access it. But I think since Q its been disabled for new applications via sepolicy. \n\nSo my hope is the ashmem ioctl support for memfd is only a compatibility layer that will hopefully allow the system code to shift to memfd (where it currently uses ashmem) without breaking those older existing applications.",
+      "parentUuid": "c2ad0cf5_007eb635",
+      "revId": "83f97ece7e96ec6262d805db77cb426aecb19221",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "d086c7bc_5579afdd",
