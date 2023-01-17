@@ -36,10 +36,10 @@ PRODUCT_PRODUCT_PROPERTIES := \
     persist.adb.nonblocking_ffs=0 \
     ro.adb.nonblocking_ffs=0
 
-# Display
+# DRM HAL
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey \
-    android.hardware.drm@1.3-service.widevine
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm-service.widevine
 
 # Mesa
 PRODUCT_PACKAGES += \
