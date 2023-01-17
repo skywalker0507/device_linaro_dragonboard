@@ -16,6 +16,23 @@
       "message": "There is a very good chance that I have no idea what I\u0027m doing here :(",
       "revId": "82b6c0ea94172006923f0c1e6db35e2851d2dbe0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0f98125_eb0cbcdd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1000414
+      },
+      "writtenOn": "2023-01-17T19:10:55Z",
+      "side": 1,
+      "message": "You may also want to replace drm services in full.mk, like here:\n  yukawa: Move Widevine DRM HAL to AIDL\n(Can\u0027t show you the gerrit link - it was merged to AOSP from internal branch)",
+      "revId": "82b6c0ea94172006923f0c1e6db35e2851d2dbe0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
