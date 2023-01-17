@@ -33,6 +33,24 @@
       "message": "You may also want to replace drm services in full.mk, like here:\n  yukawa: Move Widevine DRM HAL to AIDL\n(Can\u0027t show you the gerrit link - it was merged to AOSP from internal branch)",
       "revId": "82b6c0ea94172006923f0c1e6db35e2851d2dbe0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89aae899_d02f4dc3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-01-17T21:04:27Z",
+      "side": 1,
+      "message": "I think this is the link to the change Dmitry is suggesting:\nhttps://android.googlesource.com/device/amlogic/yukawa/+/82e25584dbb479167cffc1a28fb9b80abb2b726f%5E%21/",
+      "parentUuid": "f0f98125_eb0cbcdd",
+      "revId": "82b6c0ea94172006923f0c1e6db35e2851d2dbe0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
