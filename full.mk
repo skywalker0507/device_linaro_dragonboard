@@ -29,7 +29,7 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # vndk
-PRODUCT_PACKAGES := vndk-sp
+PRODUCT_PACKAGES += vndk-sp
 
 # HACK: Avoid usb crash
 PRODUCT_PRODUCT_PROPERTIES := \
