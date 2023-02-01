@@ -29,17 +29,17 @@ PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # vndk
-PRODUCT_PACKAGES := vndk-sp
+PRODUCT_PACKAGES += vndk-sp
 
 # HACK: Avoid usb crash
 PRODUCT_PRODUCT_PROPERTIES := \
     persist.adb.nonblocking_ffs=0 \
     ro.adb.nonblocking_ffs=0
 
-# Display
+# DRM HAL
 PRODUCT_PACKAGES += \
-    android.hardware.drm@1.3-service.clearkey \
-    android.hardware.drm@1.3-service.widevine
+    android.hardware.drm-service.clearkey \
+    android.hardware.drm-service.widevine
 
 # Mesa
 PRODUCT_PACKAGES += \
@@ -146,7 +146,6 @@ PRODUCT_PACKAGES += \
 
 # Build default bluetooth a2dp and usb audio HALs
 PRODUCT_PACKAGES += \
-    audio.a2dp.default \
     audio.bluetooth.default \
     audio.usb.default \
     audio.r_submix.default
