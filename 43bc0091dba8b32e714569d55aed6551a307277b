@@ -33,6 +33,23 @@
       "message": "Thanks Amit.\n\nJust to make sure understanding is correct:\n\nThis is not a fatal error:\n\n`module verification failed: signature and/or required key missing - tainting kernel`\n\nUnsigned modules are allowed to load; what is not not allowed is unsigned modules accessing the KMI symbols without listing them in the vendor symbol list or they can not export the same symbols which are supposed to get exported by the GKI modules.\n\nWhen GKI modules are stripped; signature data is lost as it\u0027s not part of the ELF header. In this case, GKI modules will become unsigned and will behave as they are vendor modules but they will try to export symbols exported by GKI modules (as these modules have contributed those symbols in the export protection list being intended as GKI modules) and they will fail to load.",
       "revId": "43bc0091dba8b32e714569d55aed6551a307277b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8bab843c_828805b1",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1889091
+      },
+      "writtenOn": "2023-02-07T19:33:04Z",
+      "side": 1,
+      "message": "Won\u0027t this skip stripping all the vendor modules as well? That will bloat the size of your vendor ramdisk, won\u0027t it?",
+      "revId": "43bc0091dba8b32e714569d55aed6551a307277b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
