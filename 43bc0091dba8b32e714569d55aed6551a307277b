@@ -37,6 +37,24 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "d67a1945_57dd670f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-02-08T17:15:06Z",
+      "side": 1,
+      "message": "Thanks a lot Ramji for the explanation. Really appreciate it.",
+      "parentUuid": "b0a94c4c_f2bb3051",
+      "revId": "43bc0091dba8b32e714569d55aed6551a307277b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "8bab843c_828805b1",
         "filename": "device-common.mk",
         "patchSetId": 2
@@ -48,6 +66,24 @@
       "writtenOn": "2023-02-07T19:33:04Z",
       "side": 1,
       "message": "Won\u0027t this skip stripping all the vendor modules as well? That will bloat the size of your vendor ramdisk, won\u0027t it?",
+      "revId": "43bc0091dba8b32e714569d55aed6551a307277b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f30bc091_3675d023",
+        "filename": "device-common.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-02-08T17:15:06Z",
+      "side": 1,
+      "message": "I thought so too but I was surprised to see that there wasn\u0027t much difference in the size of $ANDROID_PRODUCT_OUT/vendor_boot.img and $ANDROID_PRODUCT_OUT/vendor_ramdisk before and after setting BOARD_DO_NOT_STRIP_VENDOR_RAMDISK_MODULES.",
+      "parentUuid": "8bab843c_828805b1",
       "revId": "43bc0091dba8b32e714569d55aed6551a307277b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
