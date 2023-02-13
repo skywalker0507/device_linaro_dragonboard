@@ -15,6 +15,7 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/rb5.mk \
     $(LOCAL_DIR)/rb5_mini.mk \
     $(LOCAL_DIR)/sm8450_mini.mk \
+    $(LOCAL_DIR)/dragonboard_swr.mk \
 
 COMMON_LUNCH_CHOICES := \
     db845c-userdebug \

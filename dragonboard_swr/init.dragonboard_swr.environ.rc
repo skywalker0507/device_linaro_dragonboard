@@ -1,0 +1,3 @@
+# set up the global environment
+on early-init
+    export MINIGBM_DEBUG nocompression

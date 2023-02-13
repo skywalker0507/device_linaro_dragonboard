@@ -40,6 +40,21 @@ PRODUCT_COPY_FILES += \
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=QRB5165
 
+# Mesa
+PRODUCT_PACKAGES += \
+    libGLES_mesa \
+    libEGL_mesa \
+    libGLESv1_CM_mesa \
+    libGLESv2_mesa \
+    libgallium_dri \
+    libglapi
+
+TARGET_BUILD_MESA ?= false
+ifeq ($(TARGET_BUILD_MESA), true)
+   PRODUCT_SOONG_NAMESPACES += \
+       external/mesa3d
+endif
+
 PRODUCT_PROPERTY_OVERRIDES += ro.sf.lcd_density=160
 
 # Copy firmware files

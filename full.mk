@@ -41,42 +41,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm-service.widevine
 
-# Mesa
-PRODUCT_PACKAGES += \
-    libGLES_mesa \
-    libEGL_mesa \
-    libGLESv1_CM_mesa \
-    libGLESv2_mesa \
-    libgallium_dri \
-    libglapi
-
-TARGET_BUILD_MESA ?= false
-ifeq ($(TARGET_BUILD_MESA), true)
-   PRODUCT_SOONG_NAMESPACES += \
-       external/mesa3d
-endif
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.gralloc=minigbm_msm \
-    ro.hardware.hwcomposer=drm \
-    ro.opengles.version=196608 \
-    persist.demo.rotationlock=1
-
-# Vulkan
-PRODUCT_PACKAGES += \
-       vulkan.freedreno
-
-PRODUCT_COPY_FILES += \
-       frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
-       frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
-       frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-
-PRODUCT_VENDOR_PROPERTIES += \
-       ro.hardware.vulkan=freedreno
-
-# Will need to enable this after ANDROID_external_memory_android_hardware_buffer lands in mesa
-#TARGET_USES_VULKAN = true
-
 #
 # Hardware Composer HAL
 #
@@ -92,6 +56,20 @@ PRODUCT_PACKAGES += \
     gralloc.minigbm_msm \
     android.hardware.graphics.allocator@4.0-service.minigbm_msm \
     android.hardware.graphics.mapper@4.0-impl.minigbm_msm
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.hardware.gralloc=minigbm_msm \
+    ro.hardware.hwcomposer=drm \
+    ro.opengles.version=196608 \
+    persist.demo.rotationlock=1
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
+    frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
+    frameworks/native/data/etc/android.hardware.vulkan.compute-0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.compute.xml \
+    frameworks/native/data/etc/android.software.vulkan.deqp.level-2022-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
+    frameworks/native/data/etc/android.software.opengles.deqp.level-2022-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.opengles.deqp.level.xml
 
 
 # Use Launcher3QuickStep
