@@ -21,6 +21,7 @@ TARGET_USES_GKI ?= true
 ifeq ($(TARGET_USES_GKI), true)
   TARGET_MODS := $(wildcard $(TARGET_KERNEL_DIR)/*.ko)
   ifneq ($(TARGET_MODS),)
+    BOARD_DO_NOT_STRIP_VENDOR_RAMDISK_MODULES := true
     BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(TARGET_MODS)
   endif
 endif
