@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "895d8368_3771748b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-03-15T21:32:00Z",
+      "side": 1,
+      "message": "Looks ok to me, but I\u0027m curious if you could clarify in the commit more about why it broke with 6.3-rc1? Did the sysfs path change from what was being used before? Just want to make sure its not an issue that should be fixed upstream as well (rather then userland working around it).",
+      "revId": "fafc1a71905922d70e912bad975d657cb209085b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
