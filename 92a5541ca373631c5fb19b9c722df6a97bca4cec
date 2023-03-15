@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4acc5b1c_cd9384b0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-03-15T19:53:35Z",
+      "side": 1,
+      "message": "For what it\u0027s worth, this patch breaks external/mesa3d project build for Dragonboards.\n\ndevice/linaro/dragonboard/BoardConfigCommon.mk was modified, regenerating...\n[ 53% 125/235] including external/mesa3d/Android.mk ...\nFAILED: \nIn file included from build/make/core/prebuilt.mk:53:\nexternal/mesa3d/Android.mk:137: error: external/mesa3d in PRODUCT_SOONG_NAMESPACES, but not configured in Make.\n01:17:11 ckati failed with: exit status 1",
+      "revId": "92a5541ca373631c5fb19b9c722df6a97bca4cec",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
