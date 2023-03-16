@@ -16,6 +16,24 @@
       "message": "Looks ok to me, but I\u0027m curious if you could clarify in the commit more about why it broke with 6.3-rc1? Did the sysfs path change from what was being used before? Just want to make sure its not an issue that should be fixed upstream as well (rather then userland working around it).",
       "revId": "fafc1a71905922d70e912bad975d657cb209085b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "a6b8a691_22d73a3d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-03-16T05:49:09Z",
+      "side": 1,
+      "message": "Sorry should have checked it before pushing the fix. The sysfs path got renamed https://lore.kernel.org/all/20230109051402.317577-4-dmitry.baryshkov@linaro.org/. Uploaded a revised patch.",
+      "parentUuid": "895d8368_3771748b",
+      "revId": "fafc1a71905922d70e912bad975d657cb209085b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
