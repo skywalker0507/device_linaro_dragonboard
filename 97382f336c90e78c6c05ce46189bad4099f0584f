@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "04a0c646_cb25d660",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-03-16T16:17:49Z",
+      "side": 1,
+      "message": "Thanks for the extra context! Your change is fine by me, but I do think upstream needs to avoid breaking userland in this way.\n\nIf someone is looking for a talk idea, doing one on all the times DTS (really sysfs path) changes have broken AOSP might be interesting. But unfortunately I don\u0027t have enough cycles to make a stink about it. 😊",
+      "revId": "97382f336c90e78c6c05ce46189bad4099f0584f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
