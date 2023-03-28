@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "72eb1dde_f0774dd3",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2023-03-28T00:42:47Z",
+      "side": 1,
+      "message": "Hi, All\n\nPlease help check if this CL could be merged to update the android12-gsi branch, and please let me know if there is other better method to update the android12-gsi branch.\n\nThanks,\nYongqin Liu",
+      "revId": "3f4ea786687d195252ecd5dfbff9b1669e8c8165",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
