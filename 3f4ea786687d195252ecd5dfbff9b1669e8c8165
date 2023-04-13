@@ -54,6 +54,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "0cd3a10e_8a07527c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2023-04-13T03:26:30Z",
+      "side": 1,
+      "message": "Sorry, just updated the commit message. Please help check again.",
+      "parentUuid": "e6b4e9e5_2bcf1528",
+      "revId": "3f4ea786687d195252ecd5dfbff9b1669e8c8165",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "72eb1dde_f0774dd3",
