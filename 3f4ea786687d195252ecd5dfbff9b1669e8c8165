@@ -36,6 +36,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "e6b4e9e5_2bcf1528",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-04-13T03:20:18Z",
+      "side": 1,
+      "message": "Thanks for providing more detail here, but can you amend the commit message to clarify it there so the rationale will persist in the git history?",
+      "parentUuid": "4cd0afd2_3d69bfaf",
+      "revId": "3f4ea786687d195252ecd5dfbff9b1669e8c8165",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "72eb1dde_f0774dd3",
