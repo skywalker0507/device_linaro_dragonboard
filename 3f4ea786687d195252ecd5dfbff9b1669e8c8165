@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "4cd0afd2_3d69bfaf",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2023-04-13T00:54:18Z",
+      "side": 1,
+      "message": "Hi, John\n\nHere is some background about the commit here:\n\nThe android12-gsi branch is the correct branch that everyone should use for the Android12 version development, but it misses some changes like the PRODUCT_SHIPPING_API_LEVEL updates which are necessary for the Android12 Version, so the android12-gsi branch needs to be updated with some changes after it was created. And about the reason to merge the android-s-beta-5 branch here is that the Linaro LKFT project uses this branch since the setup for the Android12 version projects, and the android-s-beta-5 was the one branch close to but not too far from for the Android12 version development at the point it\u0027s selected, and since it\u0027s been tested by the LKFT projects, it\u0027s the best option to be used for the merge here.\n\nThanks,\nYongqin Liu",
+      "parentUuid": "3ee83f73_d7848092",
+      "revId": "3f4ea786687d195252ecd5dfbff9b1669e8c8165",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "72eb1dde_f0774dd3",
