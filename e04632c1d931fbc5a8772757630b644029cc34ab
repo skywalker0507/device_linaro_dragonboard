@@ -52,6 +52,24 @@
       "parentUuid": "cc46c1c7_56ed7dd9",
       "revId": "e04632c1d931fbc5a8772757630b644029cc34ab",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "597f1c6b_734435c2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-05-11T17:39:39Z",
+      "side": 1,
+      "message": "Maybe can some of the context on why these are recommended (even if not required) be included in the commit message?",
+      "parentUuid": "ac6449ef_ad70fac0",
+      "revId": "e04632c1d931fbc5a8772757630b644029cc34ab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
