@@ -34,6 +34,24 @@
       "parentUuid": "277f66f4_c97083d4",
       "revId": "e04632c1d931fbc5a8772757630b644029cc34ab",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ac6449ef_ad70fac0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-05-11T16:36:15Z",
+      "side": 1,
+      "message": "Just to reiterate, this change has nothing to do with the regression that I\u0027m chasing where rpmh doesn\u0027t get configure correctly at times https://bugs.linaro.org/attachment.cgi?id\u003d1135.\n\nThis is just a general advice given to me regarding these devboards and that they are working on dropping these bootargs again soon.",
+      "parentUuid": "cc46c1c7_56ed7dd9",
+      "revId": "e04632c1d931fbc5a8772757630b644029cc34ab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
