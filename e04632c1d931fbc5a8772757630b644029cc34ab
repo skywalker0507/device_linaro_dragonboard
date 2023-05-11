@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "277f66f4_c97083d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-05-11T15:28:46Z",
+      "side": 1,
+      "message": "I\u0027m chasing a v6.4-rc1 breakage on DB845c and I have been told that these bootargs should always be enabled while booting these boards. It didn\u0027t help in fixing the breakage that I see but taking the advice anyway.",
+      "revId": "e04632c1d931fbc5a8772757630b644029cc34ab",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
