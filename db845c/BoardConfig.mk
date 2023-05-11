@@ -37,6 +37,7 @@ BOARD_KERNEL_CMDLINE += deferred_probe_timeout=30
 BOARD_KERNEL_CMDLINE += pcie_pme=nomsi #For WiFi to work on rb5
 BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
+BOARD_KERNEL_CMDLINE += clk_ignore_unused pd_ignore_unused
 
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 103079215104 #96M

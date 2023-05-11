@@ -31,6 +31,7 @@ BOARD_KERNEL_CMDLINE += pcie_pme=nomsi #For WiFi to work
 BOARD_KERNEL_CMDLINE += deferred_probe_timeout=30
 BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 BOARD_KERNEL_CMDLINE += console=ttyMSM0
+BOARD_KERNEL_CMDLINE += clk_ignore_unused pd_ignore_unused
 BOARD_BOOTCONFIG += androidboot.hardware=rb5 androidboot.boot_devices=soc@0/1d84000.ufshc
 BOARD_BOOTCONFIG += androidboot.verifiedbootstate=orange
 
