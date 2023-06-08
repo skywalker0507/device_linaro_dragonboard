@@ -47,7 +47,7 @@ $(call inherit-product-if-exists, vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VER
 
 TARGET_DTB := qrb5165-rb5.dtb
 TARGET_HARDWARE := rb5
-TARGET_KERNEL_USE ?= 5.15
+TARGET_KERNEL_USE ?= 6.1
 
 include device/linaro/dragonboard/device-common.mk
 
