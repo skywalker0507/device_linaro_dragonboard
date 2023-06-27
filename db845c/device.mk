@@ -53,6 +53,6 @@ $(call inherit-product-if-exists, vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_
 $(call inherit-product-if-exists, vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
 
 TARGET_HARDWARE := db845c
-TARGET_KERNEL_USE ?= 5.15
+TARGET_KERNEL_USE ?= 6.1
 
 include device/linaro/dragonboard/device-common.mk
