@@ -33,6 +33,7 @@ BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 BOARD_KERNEL_CMDLINE += console=ttyMSM0
 BOARD_BOOTCONFIG += androidboot.hardware=rb5 androidboot.boot_devices=soc@0/1d84000.ufshc
 BOARD_BOOTCONFIG += androidboot.verifiedbootstate=orange
+BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
 
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 103079215104 #96M
