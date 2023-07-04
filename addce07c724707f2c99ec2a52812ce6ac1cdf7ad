@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5e85f83d_322531b1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-07-04T06:10:51Z",
+      "side": 1,
+      "message": "Smoke tested (boots to UI, HDMI audio, WiFi-BT) this change with android-{5.10,5.15,6.1} and vanilla v6.4 on DB845c and relevant kernel versions on RB5.",
+      "revId": "addce07c724707f2c99ec2a52812ce6ac1cdf7ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
