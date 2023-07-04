@@ -33,6 +33,23 @@
       "message": "But there is one kernel NULL pointer dereference during arm_smmu_probe_device() which is easy to miss if one is not paying attention to the serial log because the system reboots fine. Reproducible 3/20 times. https://bugs.linaro.org/show_bug.cgi?id\u003d5996",
       "revId": "addce07c724707f2c99ec2a52812ce6ac1cdf7ad",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "aa043c0e_16444633",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-07-04T18:59:00Z",
+      "side": 1,
+      "message": "WIP",
+      "revId": "addce07c724707f2c99ec2a52812ce6ac1cdf7ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
