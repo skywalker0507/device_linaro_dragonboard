@@ -16,6 +16,23 @@
       "message": "Smoke tested (boots to UI, HDMI audio, WiFi-BT) this change with android-{5.10,5.15,6.1} and vanilla v6.4 on DB845c and relevant kernel versions on RB5.",
       "revId": "addce07c724707f2c99ec2a52812ce6ac1cdf7ad",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "9905576c_977c13bb",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-07-04T06:14:15Z",
+      "side": 1,
+      "message": "But there is one kernel NULL pointer dereference during arm_smmu_probe_device() which is easy to miss if one is not paying attention to the serial log because the system reboots fine. Reproducible 3/20 times. https://bugs.linaro.org/show_bug.cgi?id\u003d5996",
+      "revId": "addce07c724707f2c99ec2a52812ce6ac1cdf7ad",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
