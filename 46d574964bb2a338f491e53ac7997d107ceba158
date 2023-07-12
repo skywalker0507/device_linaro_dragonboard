@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "9b67b3f3_ec24080d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-07-12T17:25:32Z",
+      "side": 1,
+      "message": "This seems generically useful enough that it might be worth having it live in the common btlinux HAL?",
+      "revId": "46d574964bb2a338f491e53ac7997d107ceba158",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7f0a31b7_ceebd3ab",
