@@ -33,6 +33,24 @@
       "message": "license?  Normally, each new file has a license header.",
       "revId": "46d574964bb2a338f491e53ac7997d107ceba158",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "adae689c_1a353a00",
+        "filename": "shared/utils/bdaddr/bdaddr.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-07-14T09:02:52Z",
+      "side": 1,
+      "message": "Added the standard Android-Apache-2.0 license header in source files.",
+      "parentUuid": "7f0a31b7_ceebd3ab",
+      "revId": "46d574964bb2a338f491e53ac7997d107ceba158",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
