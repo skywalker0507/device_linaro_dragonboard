@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "f713d224_d67f946d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1076123
+      },
+      "writtenOn": "2023-07-14T16:17:17Z",
+      "side": 1,
+      "message": "I\u0027m not opposed to that, but I don\u0027t feel like I\u0027m in the best position to maintain it.",
+      "parentUuid": "9b67b3f3_ec24080d",
+      "revId": "46d574964bb2a338f491e53ac7997d107ceba158",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "7f0a31b7_ceebd3ab",
