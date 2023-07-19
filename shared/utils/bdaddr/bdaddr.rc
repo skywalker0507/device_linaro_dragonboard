@@ -19,6 +19,8 @@ service set_bdaddr /vendor/bin/set_bdaddr.sh
     user root
     group system
     capabilities NET_ADMIN
+    disabled
+    oneshot
 
 on post-fs
     start set_bdaddr
