@@ -49,7 +49,7 @@
 /data/vendor/readwrite(/.*)?								u:object_r:tqftpserv_vendor_data_file:s0
 /data/vendor/readonly(/.*)?								u:object_r:tqftpserv_vendor_data_file:s0
 
-/system/bin/eth_mac_addr\.sh								u:object_r:eth_mac_addr_exec:s0
+/system/bin/set_ethaddr\.sh								u:object_r:set_ethaddr_exec:s0
 /system/bin/tinymix									u:object_r:tinymix_exec:s0
 
 /vendor/bin/grep									u:object_r:vendor_toolbox_exec:s0
