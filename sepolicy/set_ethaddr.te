@@ -1,0 +1,13 @@
+type set_ethaddr, domain, coredomain;
+type set_ethaddr_exec, exec_type, system_file_type, file_type;
+init_daemon_domain(set_ethaddr);
+
+allow set_ethaddr proc_cmdline:file { open read };
+allow set_ethaddr proc_bootconfig:file { open read };
+allow set_ethaddr rootfs:dir { open read };
+allow set_ethaddr self:capability net_admin;
+allow set_ethaddr self:netlink_route_socket { bind create getattr nlmsg_read nlmsg_readpriv nlmsg_write read setopt write };
+allow set_ethaddr self:udp_socket { create ioctl };
+allow set_ethaddr shell_exec:file { execute getattr map read };
+allow set_ethaddr system_file:file execute_no_trans;
+allow set_ethaddr toolbox_exec:file { execute execute_no_trans getattr map open read };
