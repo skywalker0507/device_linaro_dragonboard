@@ -24,6 +24,11 @@ else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 endif
 
+# dlkm_loader
+include device/linaro/dragonboard/shared/utils/dlkm_loader/device.mk
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/shared/utils/dlkm_loader/dlkm_loader.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlkm_loader.rc
+
 # Build generic Audio HAL
 PRODUCT_PACKAGES += audio.primary.db845c
 
