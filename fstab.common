@@ -5,4 +5,5 @@ system		/system		erofs	ro				wait,logical,first_stage_mount,slotselect
 /devices/platform/soc@0/8804000.sdhci/mmc_host/mmc*	auto	auto	defaults	voldmanaged=sdcard1:auto
 vendor		/vendor		erofs	ro				wait,logical,first_stage_mount,slotselect
 system_ext	/system_ext	erofs	ro				wait,logical,first_stage_mount,slotselect
-product	/product	erofs	ro				wait,logical,first_stage_mount,slotselect
+product		/product	erofs	ro				wait,logical,first_stage_mount,slotselect
+system_dlkm	/system_dlkm	ext4	ro				wait,logical,first_stage_mount,slotselect

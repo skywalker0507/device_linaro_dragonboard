@@ -24,6 +24,11 @@ else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 endif
 
+# dlkm_loader
+include device/linaro/dragonboard/shared/utils/dlkm_loader/device.mk
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/shared/utils/dlkm_loader/dlkm_loader.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlkm_loader.rc
+
 # Build generic Audio HAL
 PRODUCT_PACKAGES += audio.primary.db845c
 
@@ -33,15 +38,22 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
+# Set BT address
+PRODUCT_PACKAGES += bdaddr
+
+# Install bdaddr script
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/shared/utils/bdaddr/set_bdaddr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_bdaddr.sh
+
 # Install scripts to set vendor.* properties
 PRODUCT_COPY_FILES += \
-    device/linaro/dragonboard/qcom/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh \
-    device/linaro/dragonboard/qcom/set_udc.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_udc.sh
+    device/linaro/dragonboard/shared/utils/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh \
+    device/linaro/dragonboard/shared/utils/set_udc.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_udc.sh
 
 # Install scripts to set Ethernet MAC address
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/eth_mac_addr.rc:/system/etc/init/eth_mac_addr.rc \
-    $(LOCAL_PATH)/eth_mac_addr.sh:/system/bin/eth_mac_addr.sh
+    device/linaro/dragonboard/shared/utils/ethaddr/ethaddr.rc:/system/etc/init/ethaddr.rc \
+    device/linaro/dragonboard/shared/utils/ethaddr/set_ethaddr.sh:/system/bin/set_ethaddr.sh
 
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SDM845
