@@ -21,8 +21,12 @@ include $(LOCAL_PATH)/../vendor-package-ver.mk
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
+# dlkm_loader
+include device/linaro/dragonboard/shared/utils/dlkm_loader/device.mk
+
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    device/linaro/dragonboard/shared/utils/dlkm_loader/dlkm_loader.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlkm_loader.rc
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES += audio.primary.rb5
@@ -33,9 +37,16 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
+# Set BT address
+PRODUCT_PACKAGES += bdaddr
+
+# Install bdaddr script
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/shared/utils/bdaddr/set_bdaddr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_bdaddr.sh
+
 # Install scripts to set vendor.* properties
 PRODUCT_COPY_FILES += \
-    device/linaro/dragonboard/qcom/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh
+    device/linaro/dragonboard/shared/utils/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh
 
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=QRB5165
