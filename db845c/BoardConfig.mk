@@ -56,3 +56,6 @@ BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/utils/dlkm_loader/sepoli
 include device/linaro/dragonboard/shared/graphics/drm_hwcomposer/BoardConfig.mk
 include device/linaro/dragonboard/shared/graphics/mesa/BoardConfig.mk
 BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/graphics/minigbm_msm/sepolicy/
+
+# Thermal
+BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/hal/thermal/sepolicy/

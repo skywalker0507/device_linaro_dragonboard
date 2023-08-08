@@ -38,6 +38,15 @@ PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl.recovery \
     android.hardware.boot@1.2-service
 
+ifneq ($(TARGET_KERNEL_USE),5.4)
+# Thermal HAL
+PRODUCT_PACKAGES += \
+    android.hardware.thermal@2.0-service.linaro-generic
+
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/shared/hal/thermal/etc/thermal-db845c.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.json
+endif
+
 # Set BT address
 PRODUCT_PACKAGES += bdaddr
 
