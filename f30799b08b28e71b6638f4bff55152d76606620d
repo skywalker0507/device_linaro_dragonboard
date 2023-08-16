@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1103a280_f3f11689",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-08-16T18:39:33Z",
+      "side": 1,
+      "message": "Fixes a boot regression on Dragonboards as reported here: https://android-review.googlesource.com/c/kernel/common/+/2679479/comments/d456aba3_ac14d853?tab\u003dcomments",
+      "revId": "f30799b08b28e71b6638f4bff55152d76606620d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
