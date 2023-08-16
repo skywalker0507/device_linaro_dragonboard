@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "21e403d1_03a673f6",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-08-16T19:21:53Z",
+      "side": 0,
+      "message": "I feel like this was added back when I was still testing static kernel images without modules. Is that workflow fully deprecated?",
+      "revId": "b0274055b83bbb2a78cbb39da47dcaaf7bd317e2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
