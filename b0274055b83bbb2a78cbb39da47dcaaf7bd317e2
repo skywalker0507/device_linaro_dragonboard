@@ -16,6 +16,24 @@
       "message": "I feel like this was added back when I was still testing static kernel images without modules. Is that workflow fully deprecated?",
       "revId": "b0274055b83bbb2a78cbb39da47dcaaf7bd317e2",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5c0eb5ba_ba892866",
+        "filename": "device-common.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-08-17T06:21:32Z",
+      "side": 0,
+      "message": "It is still possible to build and smoke test static kernel images on DB845c (just verified v6.5-rc6) as long as you keep CONFIG_MODULES\u003dy. Otherwise CONFIG_BPF_JIT won\u0027t be enabled and bpfloader service will crash and reboot the device.\n\nIIRC we had this hook back when empty vendor_ramdisk.img were not allowed. I don\u0027t know if it is still allowed, but we have been using vendor_ramdisk.img to store and load a few of our firmware binaries early in the boot process, so empty vendor_ramdisk.img has not been a case with our Dragonboard builds for sometime anyway.",
+      "parentUuid": "21e403d1_03a673f6",
+      "revId": "b0274055b83bbb2a78cbb39da47dcaaf7bd317e2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
