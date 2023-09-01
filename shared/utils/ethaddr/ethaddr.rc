@@ -5,5 +5,5 @@ service set_ethaddr /system/bin/set_ethaddr.sh
     disabled
     oneshot
 
-on post-fs-data && property:vendor.hw=db845c
+on post-fs-data
     start set_ethaddr
