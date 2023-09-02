@@ -48,6 +48,11 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/shared/utils/set_hw.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_hw.sh
 
+# Install scripts to set Ethernet MAC address
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/shared/utils/ethaddr/ethaddr.rc:/system/etc/init/ethaddr.rc \
+    device/linaro/dragonboard/shared/utils/ethaddr/set_ethaddr.sh:/system/bin/set_ethaddr.sh
+
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=QRB5165
 
