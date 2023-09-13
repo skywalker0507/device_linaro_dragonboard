@@ -1,0 +1,2 @@
+vendor_public_prop(vendor_minigbm_debug_prop)
+set_prop(vendor_init, vendor_minigbm_debug_prop)
