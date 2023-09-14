@@ -1,6 +1,0 @@
-#####################################
-# minigbm_access(client_domain)
-# Allow client_domain to communicate with the minigbm lib
-define(`minigbm_access', `
-allow $1 vendor_minigbm_debug_prop:file { getattr map open read };
-')
