@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a350752_abcead37",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-09-15T21:16:27Z",
+      "side": 1,
+      "message": "This looks ok to me, but I wonder if it doesn\u0027t have some overlap with some of the cuttlefish swrenderer target. Not sure if there is a more common place for some of this configuration to reside.",
+      "revId": "b2534ba9661d343fbf1e43e93e4e3d4667137a2d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
