@@ -48,3 +48,11 @@ BOARD_SUPER_PARTITION_SIZE := 12437225472
 BOARD_DB_DYNAMIC_PARTITIONS_SIZE := 12433031168 # Reserve 4M for DAP metadata
 BOARD_SUPER_PARTITION_METADATA_DEVICE := super
 BOARD_SUPER_IMAGE_IN_UPDATE_PACKAGE := true
+# dlkm partition
+include device/linaro/dragonboard/shared/utils/dlkm_loader/BoardConfig.mk
+BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/utils/dlkm_loader/sepolicy/
+
+# Graphics
+include device/linaro/dragonboard/shared/graphics/drm_hwcomposer/BoardConfig.mk
+include device/linaro/dragonboard/shared/graphics/mesa/BoardConfig.mk
+BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/graphics/minigbm_msm/sepolicy/

@@ -49,8 +49,9 @@ license {
 }
 
 subdirs = [
-    "qcom/pd-mapper",
-    "qcom/qrtr",
-    "qcom/rmtfs",
-    "qcom/tqftpserv",
+    "shared/utils/bdaddr",
+    "shared/utils/pd-mapper",
+    "shared/utils/qrtr",
+    "shared/utils/rmtfs",
+    "shared/utils/tqftpserv",
 ]
