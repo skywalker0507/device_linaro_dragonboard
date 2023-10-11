@@ -33,6 +33,24 @@
       "message": "+Viktor for SPR",
       "revId": "aae33f50c0280a1fd855846a7e2c1041acab7bc1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f0d9ba83_bfaa1376",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-10-11T05:53:19Z",
+      "side": 1,
+      "message": "No regressions as such. Caught my eye while bringing up AOSP on a newer SoC, which was giving the usual bringup troubles. We were lucky that we never crossed 96M limit with our boot images :)",
+      "parentUuid": "4cecfe70_e4690f9e",
+      "revId": "aae33f50c0280a1fd855846a7e2c1041acab7bc1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
