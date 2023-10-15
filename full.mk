@@ -60,6 +60,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.hardware.gralloc=minigbm_msm \
     ro.hardware.hwcomposer=drm \
     ro.opengles.version=196608 \
+    ro.hardware.egl=mesa \
     persist.demo.rotationlock=1
 
 # Vulkan
