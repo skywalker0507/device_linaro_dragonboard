@@ -16,6 +16,23 @@
       "message": "+ Viktor for SPR",
       "revId": "3f8e884b158dc3b1c1fa73abc99284e3dc2f5561",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dafa53f5_9e27259c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1959117
+      },
+      "writtenOn": "2023-10-16T00:56:12Z",
+      "side": 1,
+      "message": "LGTM",
+      "revId": "3f8e884b158dc3b1c1fa73abc99284e3dc2f5561",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
