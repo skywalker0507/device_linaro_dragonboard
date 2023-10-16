@@ -16,6 +16,138 @@
       "message": "No obvious regression found in limited smoke testing on DB845c and RB5 booting db845c-userdebug target.",
       "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7b5a766d_3a007701",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-10-16T18:10:01Z",
+      "side": 1,
+      "message": "Just some providing some initial complaints from Lint.",
+      "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e1def7d3_68b9ee31",
+        "filename": "shared/hal/thermal/etc/thermal-db845c.json",
+        "patchSetId": 1
+      },
+      "lineNbr": 165,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-10-16T18:10:01Z",
+      "side": 1,
+      "message": "Please fix this ERROR reported by Common Typos: Common typo found: \"UNKOWN\" -- should it be \"UNKNOWN\"?\n\nAnalyzer Description: Linter for catching common typos motivated by go/todo-fail and go/lol-codesearch. Shared with google3 common typos library go/common-typos.\nOwner: ayeaye-team@google.com\n\nCommon typo found: \"UNKOWN\" -- should it be \"UNKNOWN\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line or include \u0027No-Typo-Check: \u003creason\u003e\u0027in the commit message.",
+      "range": {
+        "startLine": 165,
+        "startChar": 20,
+        "endLine": 165,
+        "endChar": 26
+      },
+      "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f9a29801_50c07baf",
+        "filename": "shared/hal/thermal/hal/CpuInfo.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 69,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-10-16T18:10:01Z",
+      "side": 1,
+      "message": "Please fix this WARNING reported by Check Contents: Please don\u0027t use std::stoi* functions. Exceptions are disabled by default on Android and your code will abort. Consider atoi() if -1 is suitable for reporting errors, \u003candroid-base/parseint.h\u003e for C++, or the strtol()/scanf() family otherwi...\n\nAnalyzer Description: Validates that changes do not have prohibited expressions in them.\nOwner: ayeaye-team@google.com\n\nPlease don\u0027t use std::stoi* functions. Exceptions are disabled by default on Android and your code will abort. Consider atoi() if -1 is suitable for reporting errors, \u003candroid-base/parseint.h\u003e for C++, or the strtol()/scanf() family otherwise.",
+      "range": {
+        "startLine": 69,
+        "startChar": 25,
+        "endLine": 69,
+        "endChar": 35
+      },
+      "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "76645f67_f13aca62",
+        "filename": "shared/hal/thermal/hal/CpuInfo.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-10-16T18:10:01Z",
+      "side": 1,
+      "message": "Please fix this WARNING reported by Check Contents: Please don\u0027t use std::stoi* functions. Exceptions are disabled by default on Android and your code will abort. Consider atoi() if -1 is suitable for reporting errors, \u003candroid-base/parseint.h\u003e for C++, or the strtol()/scanf() family otherwi...\n\nAnalyzer Description: Validates that changes do not have prohibited expressions in them.\nOwner: ayeaye-team@google.com\n\nPlease don\u0027t use std::stoi* functions. Exceptions are disabled by default on Android and your code will abort. Consider atoi() if -1 is suitable for reporting errors, \u003candroid-base/parseint.h\u003e for C++, or the strtol()/scanf() family otherwise.",
+      "range": {
+        "startLine": 73,
+        "startChar": 26,
+        "endLine": 73,
+        "endChar": 36
+      },
+      "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ad36d6f8_51c9ee1a",
+        "filename": "shared/hal/thermal/hal/Thermal.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 744,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-10-16T18:10:01Z",
+      "side": 1,
+      "message": "Please fix this ERROR reported by Common Typos: Common typo found: \"the the\" -- should it be \"the\"?\n\nAnalyzer Description: Linter for catching common typos motivated by go/todo-fail and go/lol-codesearch. Shared with google3 common typos library go/common-typos.\nOwner: ayeaye-team@google.com\n\nCommon typo found: \"the the\" -- should it be \"the\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line or include \u0027No-Typo-Check: \u003creason\u003e\u0027in the commit message.",
+      "range": {
+        "startLine": 744,
+        "startChar": 30,
+        "endLine": 744,
+        "endChar": 37
+      },
+      "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0ce409a1_6259b975",
+        "filename": "shared/hal/thermal/hal/Thermal.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 755,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-10-16T18:10:01Z",
+      "side": 1,
+      "message": "Please fix this ERROR reported by Common Typos: Common typo found: \"implicitely\" -- should it be \"implicitly\"?\n\nAnalyzer Description: Linter for catching common typos motivated by go/todo-fail and go/lol-codesearch. Shared with google3 common typos library go/common-typos.\nOwner: ayeaye-team@google.com\n\nCommon typo found: \"implicitely\" -- should it be \"implicitly\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line or include \u0027No-Typo-Check: \u003creason\u003e\u0027in the commit message.",
+      "range": {
+        "startLine": 755,
+        "startChar": 28,
+        "endLine": 755,
+        "endChar": 39
+      },
+      "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
