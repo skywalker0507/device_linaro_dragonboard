@@ -31,6 +31,7 @@ endif
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.sf.lcd_density=160 \
+    ro.hardware.egl=mesa \
     ro.opengles.version=196608 \
     persist.demo.rotationlock=1
 
