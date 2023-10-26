@@ -183,6 +183,24 @@
       "parentUuid": "dd5ab0c6_2329067b",
       "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2150bd3c_f51b8ead",
+        "filename": "shared/hal/thermal/lib/libthermal/COPYING.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-10-26T18:29:00Z",
+      "side": 1,
+      "message": "While I\u0027m getting more details on this, could you split this patch into two (or more) changes:\n1) Adding the libthermal library\n2) Adding the hal that uses the library?",
+      "parentUuid": "df0f99ed_60dced25",
+      "revId": "f39433f90f173219bbde26f76752e8884e99a4c0",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
