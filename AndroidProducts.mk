@@ -18,6 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/linaro_swr.mk \
 
 COMMON_LUNCH_CHOICES := \
-    db845c-userdebug \
-    rb5-userdebug \
+    db845c-trunk_staging-userdebug \
+    rb5-trunk_staging-userdebug \
 
