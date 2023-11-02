@@ -16,6 +16,24 @@
       "message": "Hi Greg, Do we need to switch our daily DB845c builds to use this new lunch target \"db845c-trunk_staging-userdebug\" or wait for any WIP patches that will eventually translate this new lunch target to the original \"db845c-userdebug\" build target?",
       "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "697e4b46_c93c265b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1096713
+      },
+      "writtenOn": "2023-11-02T12:43:19Z",
+      "side": 1,
+      "message": "The original \"db845c-userdebug\" build target doesn\u0027t have meaning anymore in trunk stable branches (like git_main).  You\u0027ll need to switch your daily builds to using  \"db845c-trunk_staging-userdebug\" (or \"db845c-trunk_food-userdebug\" or \"db845c-next-userdebug\", if those are more appropriate).",
+      "parentUuid": "d124c374_954ddf69",
+      "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
