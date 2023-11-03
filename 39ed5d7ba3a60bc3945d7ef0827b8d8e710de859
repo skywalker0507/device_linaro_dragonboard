@@ -34,6 +34,24 @@
       "parentUuid": "d124c374_954ddf69",
       "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "11a7a12e_1749c9ea",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2023-11-03T06:42:35Z",
+      "side": 1,
+      "message": "Hi, Greg\nwhat\u0027s the difference of them? I see trunk_food and trunk_staging on ci.android.com for the aosp_arm64 builds, do them have the same meaning for both db845 and aosp_arm64?",
+      "parentUuid": "697e4b46_c93c265b",
+      "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
