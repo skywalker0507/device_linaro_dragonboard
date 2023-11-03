@@ -52,6 +52,24 @@
       "parentUuid": "697e4b46_c93c265b",
       "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e72d2eb_12d3fe87",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1096713
+      },
+      "writtenOn": "2023-11-03T15:11:10Z",
+      "side": 1,
+      "message": "Yes, release configs like \"trunk_food\" and \"trunk_staging\" have the same meaning for all products in trunk stable.  go/trunk-stable-release-configurations explains them in more details.  go/android-trunk-stable explains trunk stable in general in much more detail.  Thanks!",
+      "parentUuid": "11a7a12e_1749c9ea",
+      "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
