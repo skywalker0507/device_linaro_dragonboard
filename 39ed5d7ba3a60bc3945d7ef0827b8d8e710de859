@@ -70,6 +70,24 @@
       "parentUuid": "11a7a12e_1749c9ea",
       "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bc3701ca_659dc4d4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2023-11-06T01:30:31Z",
+      "side": 1,
+      "message": "Hi, Greg, sorry, I don\u0027t have the permission to access the above two links, are there public links for them?",
+      "parentUuid": "0e72d2eb_12d3fe87",
+      "revId": "39ed5d7ba3a60bc3945d7ef0827b8d8e710de859",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
