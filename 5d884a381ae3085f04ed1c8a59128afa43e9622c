@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8d5b0f88_3016c37d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-11-14T09:49:51Z",
+      "side": 1,
+      "message": "Smoke tested on DB845c and RB5 with no obvious regressions.\n\nThere is one specific thermal_zone breakage which we are hitting on DB845c with Antutu v10_3d_lite benchmark. Daniel already shared a DeviceTree fix for that crash and we will hopefully be pushing that upstream soon.",
+      "revId": "5d884a381ae3085f04ed1c8a59128afa43e9622c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
