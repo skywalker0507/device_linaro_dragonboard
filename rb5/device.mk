@@ -34,6 +34,8 @@ PRODUCT_COPY_FILES := \
     $(RB5_KERNEL_DIR)/Image.gz:kernel \
     $(RB5_KERNEL_DIR)/qrb5165-rb5.dtb:dtb.img \
     $(LOCAL_PATH)/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    device/linaro/dragonboard/db845c/eth_mac_addr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eth_mac_addr.rc \
+    device/linaro/dragonboard/db845c/eth_mac_addr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/eth_mac_addr.sh
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_RAMDISK)/fstab.rb5 \
     device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.rb5 \
     device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.rb5.rc \
