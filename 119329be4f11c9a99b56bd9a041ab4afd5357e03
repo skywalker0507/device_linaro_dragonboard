@@ -16,6 +16,69 @@
       "message": "+Matthias for 3p review",
       "revId": "119329be4f11c9a99b56bd9a041ab4afd5357e03",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "d23121bc_8cf407ec",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1402878
+      },
+      "writtenOn": "2023-11-22T11:32:06Z",
+      "side": 1,
+      "message": "This change needs still some METADATA documentation. Something like https://opensource.google/documentation/reference/thirdparty/documentation, just Android style. John can help you with that. We are also considering to move this just to a proper 3p project.\n\nHence blocking for now.",
+      "revId": "119329be4f11c9a99b56bd9a041ab4afd5357e03",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "9d25b23f_be2be1d2",
+        "filename": "shared/hal/thermal/lib/libthermal/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1402878
+      },
+      "writtenOn": "2023-11-22T11:32:06Z",
+      "side": 1,
+      "message": "```suggestion\n\n\n// See: http://go/android-license-faq\n```",
+      "range": {
+        "startLine": 6,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 37
+      },
+      "revId": "119329be4f11c9a99b56bd9a041ab4afd5357e03",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ebc5c643_537b4277",
+        "filename": "shared/hal/thermal/lib/libthermal/Android.bp",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1402878
+      },
+      "writtenOn": "2023-11-22T11:32:06Z",
+      "side": 1,
+      "message": "what does actually apply? In my understanding this package is LGPL 2.1? Why the mention of LGPLv3?",
+      "range": {
+        "startLine": 25,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 43
+      },
+      "revId": "119329be4f11c9a99b56bd9a041ab4afd5357e03",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
