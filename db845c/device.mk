@@ -61,8 +61,8 @@ PRODUCT_COPY_FILES += \
 
 # Install scripts to set Ethernet MAC address
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/eth_mac_addr.rc:/system/etc/init/eth_mac_addr.rc \
-    $(LOCAL_PATH)/eth_mac_addr.sh:/system/bin/eth_mac_addr.sh
+    $(LOCAL_PATH)/eth_mac_addr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eth_mac_addr.rc \
+    $(LOCAL_PATH)/eth_mac_addr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/eth_mac_addr.sh
 
 # Copy firmware files
 $(call inherit-product-if-exists, $(LOCAL_PATH)/firmware/device.mk)
