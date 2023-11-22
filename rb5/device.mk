@@ -60,6 +60,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
 
+# Install scripts to set Ethernet MAC address
+PRODUCT_COPY_FILES += \
+    device/linaro/dragonboard/db845c/eth_mac_addr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eth_mac_addr.rc \
+    device/linaro/dragonboard/db845c/eth_mac_addr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/eth_mac_addr.sh
+
 PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
 PRODUCT_VENDOR_PROPERTIES += ro.soc.model=QRB5165
 
