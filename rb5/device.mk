@@ -23,6 +23,8 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 
 PRODUCT_COPY_FILES := \
     $(LOCAL_PATH)/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
+    device/linaro/dragonboard/db845c/eth_mac_addr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/eth_mac_addr.rc \
+    device/linaro/dragonboard/db845c/eth_mac_addr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/eth_mac_addr.sh
 
 # Build generic Audio HAL
 PRODUCT_PACKAGES := audio.primary.rb5
