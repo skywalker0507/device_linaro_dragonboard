@@ -16,6 +16,23 @@
       "message": "+Viktor for SPR",
       "revId": "e721f61feef4677a0be08988e1c748ba27cd9d9a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dd97cb38_e77652c5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-11-28T21:50:51Z",
+      "side": 1,
+      "message": "+Viktor for SPR",
+      "revId": "e721f61feef4677a0be08988e1c748ba27cd9d9a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
