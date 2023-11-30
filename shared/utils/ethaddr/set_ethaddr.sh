@@ -1,4 +1,4 @@
-#! /system/bin/sh
+#! /vendor/bin/sh
 # Set eth0 mac address.
 #
 # Get the unique board serial number from /proc/cmdline or
@@ -9,17 +9,17 @@
 # Format the output in xx:xx:xx:xx:xx:xx format for the "ip"
 # set address command to work.
 
-ETHADDR=`cat /proc/cmdline | grep -o serialno.* | cut -f2 -d'=' |\
-	 awk '{printf("02%010s\n", $1)}' | sed 's/\(..\)/\1:/g' |\
-	 sed '$s/:$//'`
+ETHADDR=`/vendor/bin/cat /proc/cmdline | /vendor/bin/grep -o serialno.* |\
+	 /vendor/bin/cut -f2 -d'=' | /vendor/bin/awk '{printf("02%010s\n", $1)}' |\
+	 /vendor/bin/sed 's/\(..\)/\1:/g' | /vendor/bin/sed '$s/:$//'`
 if [ -z "${ETHADDR}" ]
 then
-ETHADDR=`cat /proc/bootconfig | grep -o serialno.* |\
-	 cut -f2 -d'=' | cut -c 3-10 |\
-	 awk '{printf("02%010s\n", $1)}' | sed 's/\(..\)/\1:/g' |\
-	 sed '$s/:$//'`
+  ETHADDR=`/vendor/bin/cat /proc/bootconfig | /vendor/bin/grep -o serialno.* |\
+	   /vendor/bin/cut -f2 -d'=' | /vendor/bin/cut -c 3-10 |\
+	   /vendor/bin/awk '{printf("02%010s\n", $1)}' |\
+	   /vendor/bin/sed 's/\(..\)/\1:/g' | /vendor/bin/sed '$s/:$//'`
 fi
 
-ip link set dev eth0 down
-ip link set dev eth0 address "${ETHADDR}"
-ip link set dev eth0 up
+/vendor/bin/ifconfig eth0 down
+/vendor/bin/ifconfig eth0 hw ether "${ETHADDR}"
+/vendor/bin/ifconfig eth0 up
