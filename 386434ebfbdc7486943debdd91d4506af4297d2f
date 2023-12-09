@@ -16,6 +16,23 @@
       "message": "WIP: Not tested yet.",
       "revId": "386434ebfbdc7486943debdd91d4506af4297d2f",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ff7f6322_d9e71bbf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-12-09T11:43:18Z",
+      "side": 1,
+      "message": "smoke tested on db845c running android11-gsi",
+      "revId": "386434ebfbdc7486943debdd91d4506af4297d2f",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
