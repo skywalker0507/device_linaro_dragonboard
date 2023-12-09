@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6faddd9d_c3707e40",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-12-09T11:45:31Z",
+      "side": 1,
+      "message": "Sumit verified it on android13-gsi",
+      "revId": "22ae3ccbfe995c621241eae61193cee6ff7e43ac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
