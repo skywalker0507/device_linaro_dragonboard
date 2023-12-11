@@ -16,6 +16,23 @@
       "message": "with this with the android12-gsi branch on db845c, it could boot to the homescreen with eth0 created, and ping works.",
       "revId": "97973c135e3a0468dd0075f4bb74b66c197c4812",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "07e1fee3_a6f1e4b6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-12-11T20:42:39Z",
+      "side": 1,
+      "message": "+tyanh for DrNo",
+      "revId": "97973c135e3a0468dd0075f4bb74b66c197c4812",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
