@@ -33,6 +33,23 @@
       "message": "+tyanh@ for Dr No",
       "revId": "22ae3ccbfe995c621241eae61193cee6ff7e43ac",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34c6cc6d_17090839",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1061057
+      },
+      "writtenOn": "2023-12-12T01:59:17Z",
+      "side": 1,
+      "message": "Do we need similar fix for android14-gsi?",
+      "revId": "22ae3ccbfe995c621241eae61193cee6ff7e43ac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
