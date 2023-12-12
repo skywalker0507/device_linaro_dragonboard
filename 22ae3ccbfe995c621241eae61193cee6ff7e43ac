@@ -50,6 +50,24 @@
       "message": "Do we need similar fix for android14-gsi?",
       "revId": "22ae3ccbfe995c621241eae61193cee6ff7e43ac",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d5c67972_49651423",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-12-12T03:20:01Z",
+      "side": 1,
+      "message": "Thanks for the review!\n\nYes, though I think there\u0027s an outstanding request to get the android14-gsi branch created. Once it is created, I\u0027d expect this to be cherry-picked over.",
+      "parentUuid": "34c6cc6d_17090839",
+      "revId": "22ae3ccbfe995c621241eae61193cee6ff7e43ac",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
