@@ -4,6 +4,7 @@ system		/system		erofs	ro				wait,logical,first_stage_mount,slotselect
 /dev/block/platform/soc@0/1d84000.ufshc/by-name/misc /misc emmc defaults defaults
 /devices/platform/soc@0/8804000.sdhci/mmc_host/mmc*	auto	auto	defaults	voldmanaged=sdcard1:auto
 /devices/platform/soc@0/8804000.mmc/mmc_host/mmc*	auto	auto	defaults	voldmanaged=sdcard1:auto
+/devices/platform/soc@0/a8f8800.usb/a800000.usb/xhci-hcd.0.auto/usb*	auto	auto	defaults	voldmanaged=usb:auto
 vendor		/vendor		erofs	ro				wait,logical,first_stage_mount,slotselect
 system_ext	/system_ext	erofs	ro				wait,logical,first_stage_mount,slotselect
 product		/product	erofs	ro				wait,logical,first_stage_mount,slotselect
