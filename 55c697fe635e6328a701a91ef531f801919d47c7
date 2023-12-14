@@ -34,6 +34,24 @@
       "parentUuid": "3fe5edc3_c2e00777",
       "revId": "55c697fe635e6328a701a91ef531f801919d47c7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "228b8a2a_b72488de",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-12-14T09:23:07Z",
+      "side": 1,
+      "message": "Done. Also TIL learned that wildcards (*) can be used in fstab to simplify finding device paths.",
+      "parentUuid": "ee489fe9_c9853450",
+      "revId": "55c697fe635e6328a701a91ef531f801919d47c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
