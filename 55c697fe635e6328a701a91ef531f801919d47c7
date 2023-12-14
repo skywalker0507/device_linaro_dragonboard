@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "3fe5edc3_c2e00777",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2023-12-14T06:17:16Z",
+      "side": 1,
+      "message": "Commit message leaves something to be desired. :)",
+      "revId": "55c697fe635e6328a701a91ef531f801919d47c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
