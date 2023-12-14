@@ -16,6 +16,24 @@
       "message": "Commit message leaves something to be desired. :)",
       "revId": "55c697fe635e6328a701a91ef531f801919d47c7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee489fe9_c9853450",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2023-12-14T06:28:53Z",
+      "side": 1,
+      "message": "heh.. sorry I added reviewers way too early this time. I\u0027m yet to figure out why only one of the usb-A ports with usb storage can be auto-mounted and not the other one. Moving it to WIP until then.",
+      "parentUuid": "3fe5edc3_c2e00777",
+      "revId": "55c697fe635e6328a701a91ef531f801919d47c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
