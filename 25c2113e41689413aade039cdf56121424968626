@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0c6fc05a_b3aa273c",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-03T18:19:06Z",
+      "side": 1,
+      "message": "Can we get some sense of the impact of skipping things here? Its not immediately obvious.\n\nCan you also reference a bug # for the crash you\u0027re seeing?",
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ee7fc31c_3b647d50",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-03T18:19:06Z",
+      "side": 1,
+      "message": "Please fix this ERROR reported by Common Typos: Common typo found: \"necesary\" -- should it be \"necessary\"?\n\nAnalyzer Description: Linter for catching common typos motivated by go/todo-fail and go/lol-codesearch. Shared with google3 common typos library go/common-typos.\nOwner: ayeaye-team@google.com\n\nCommon typo found: \"necesary\" -- should it be \"necessary\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line or include \u0027No-Typo-Check: \u003creason\u003e\u0027in the commit message.",
+      "range": {
+        "startLine": 36,
+        "startChar": 6,
+        "endLine": 36,
+        "endChar": 14
+      },
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
