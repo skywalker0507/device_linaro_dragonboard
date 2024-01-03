@@ -4,6 +4,7 @@ init_daemon_domain(set_bdaddr);
 
 # audit2allow
 allow set_bdaddr proc_cmdline:file { open read };
+allow set_bdaddr proc_version:file { open read getattr };
 allow set_bdaddr proc_bootconfig:file { open read };
 allow set_bdaddr rootfs:dir { open read };
 allow set_bdaddr self:bluetooth_socket { bind create read write };
