@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "3e9fdda3_414923f5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-01-04T11:37:01Z",
+      "side": 1,
+      "message": "This change is still under test, let me set it as WIP for now.",
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "0c6fc05a_b3aa273c",
@@ -20,6 +37,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "1c53504c_2845a73d",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-01-04T11:37:01Z",
+      "side": 1,
+      "message": "\u003e Can we get some sense of the impact of skipping things here? Its not immediately obvious.\n\nsorry, could you please help give an example of your concerns here?\ncurrently the problem is only reported by the 5.4 kernels, so only skipping the bdaddr setting for 5.4 kernels.\n\n\u003e Can you also reference a bug # for the crash you\u0027re seeing?\n\nyeah, the bug is reported here: https://issuetracker.google.com/issues/318404233",
+      "parentUuid": "0c6fc05a_b3aa273c",
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ee7fc31c_3b647d50",
         "filename": "shared/utils/bdaddr/set_bdaddr.sh",
         "patchSetId": 2
@@ -31,6 +66,30 @@
       "writtenOn": "2024-01-03T18:19:06Z",
       "side": 1,
       "message": "Please fix this ERROR reported by Common Typos: Common typo found: \"necesary\" -- should it be \"necessary\"?\n\nAnalyzer Description: Linter for catching common typos motivated by go/todo-fail and go/lol-codesearch. Shared with google3 common typos library go/common-typos.\nOwner: ayeaye-team@google.com\n\nCommon typo found: \"necesary\" -- should it be \"necessary\"?\nNote: a line containing \"common_typos_disable\" or \"common_typos_enable\" will turn off or on (respectively) the linter for subsequent lines in the file. Alternatively include the token \"NOTYPO\" within a line to skip typo linting that line or include \u0027No-Typo-Check: \u003creason\u003e\u0027in the commit message.",
+      "range": {
+        "startLine": 36,
+        "startChar": 6,
+        "endLine": 36,
+        "endChar": 14
+      },
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "04db3dac_acac1cdc",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-01-04T11:37:01Z",
+      "side": 1,
+      "message": "thanks, will fix it",
+      "parentUuid": "ee7fc31c_3b647d50",
       "range": {
         "startLine": 36,
         "startChar": 6,
