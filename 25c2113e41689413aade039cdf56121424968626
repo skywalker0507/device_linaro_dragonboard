@@ -55,6 +55,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "41eff1aa_6f9925a8",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-04T16:58:40Z",
+      "side": 1,
+      "message": "I\u0027m mostly worried as we call bdaddr for a reason, to skip calling seems like there may be a disadvantage?\n\nI\u0027m guessing the bluetooth mac address will change boot to boot? Will this affect paired devices? What is the effect of not running the logic?\n\n\nThanks for linking to the bug, but I was suggesting you add the bug to the comment here, so it will be easy to find when someone is looking at the code later.",
+      "parentUuid": "1c53504c_2845a73d",
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ee7fc31c_3b647d50",
         "filename": "shared/utils/bdaddr/set_bdaddr.sh",
         "patchSetId": 2
