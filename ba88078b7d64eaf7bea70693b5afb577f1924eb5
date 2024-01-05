@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "efe34b11_38ca2179",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-01-05T05:47:05Z",
+      "side": 1,
+      "message": "Hi, All\n\nThis is just a workaround to avoid the crash for the 5.4 kernels which is reported as https://issuetracker.google.com/issues/318404233, which should work for most of the normal development activities.\nThe ideal solution would be to not have StackManager::StartUp crash while have the the unique MAC address set for each board, but it\u0027s too difficult for me to debug that part, so submit this workaround here, and also would like to have your suggestions on this issue.\n\nThanks in advance!",
+      "revId": "ba88078b7d64eaf7bea70693b5afb577f1924eb5",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}

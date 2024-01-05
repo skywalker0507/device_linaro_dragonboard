@@ -73,6 +73,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "f54f0348_5e28ceb9",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-01-05T05:47:05Z",
+      "side": 1,
+      "message": "\u003e I\u0027m mostly worried as we call bdaddr for a reason, to skip calling seems like there may be a disadvantage?\n\nfrom the following commit:\nhttps://android-review.googlesource.com/c/device/linaro/dragonboard/+/2655101\nit\u0027s for v6.5 kernel which needs to have the bluetooth address set in advance.\nAnd another feature is to make each board to have its own unique address\n\nthe disadvantage here is that the 5.4 kernel version build would have the same address for all boards.\n\n\u003e I\u0027m guessing the bluetooth mac address will change boot to boot? Will this affect paired devices? What is the effect of not running the logic?\n\nI checked with two boards, it will not change boot to boot, even after each reflash, but it will be the same value for different boards. it\u0027s 39:90:21:64:07:00 for the two boards I checked, but I am not sure how that value is set.\n\n\u003e Thanks for linking to the bug, but I was suggesting you add the bug to the comment here, so it will be easy to find when someone is looking at the code later.\n\nupdated the link in the script comment now.",
+      "parentUuid": "41eff1aa_6f9925a8",
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ee7fc31c_3b647d50",
         "filename": "shared/utils/bdaddr/set_bdaddr.sh",
         "patchSetId": 2
