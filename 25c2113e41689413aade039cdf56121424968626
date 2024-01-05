@@ -91,6 +91,24 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "c876499f_913d4977",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-05T18:26:56Z",
+      "side": 1,
+      "message": "\u003e from the following commit:\n\u003e https://android-review.googlesource.com/c/device/linaro/dragonboard/+/2655101\n\u003e it\u0027s for v6.5 kernel which needs to have the bluetooth address set in advance.\n\nSo this is great context to add to the commit message (\"functionality added required for 6.5 \u003clink to commit\u003e is causing problems when running with 5.4, so disable it for the older kernel\")",
+      "parentUuid": "f54f0348_5e28ceb9",
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "ee7fc31c_3b647d50",
         "filename": "shared/utils/bdaddr/set_bdaddr.sh",
         "patchSetId": 2
