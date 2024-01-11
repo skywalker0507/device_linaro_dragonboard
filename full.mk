@@ -176,8 +176,13 @@ PRODUCT_PACKAGES += \
     rmtfs \
     tqftpserv
 
+ifeq ($(TARGET_SDCARD_BOOT), true)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/shared/utils/sdcard-boot/init.utils.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.utils.rc
+else
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/shared/utils/init.utils.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.utils.rc
+endif
 
 # Copy standard platform config files
 PRODUCT_COPY_FILES +=  \
