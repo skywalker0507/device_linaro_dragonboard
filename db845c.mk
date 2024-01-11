@@ -12,6 +12,13 @@ else
   TARGET_USES_BOOT_HDR_V3 ?= false
 endif
 
+TARGET_SDCARD_BOOT ?= false
+ifeq ($(TARGET_SDCARD_BOOT),true)
+  TARGET_USES_BOOT_HDR_V2 := true
+else
+  TARGET_USES_BOOT_HDR_V2 ?= false
+endif
+
 # Product overrides
 PRODUCT_NAME := db845c
 PRODUCT_DEVICE := db845c
