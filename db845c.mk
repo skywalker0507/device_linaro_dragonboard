@@ -12,6 +12,8 @@ else
   TARGET_USES_BOOT_HDR_V3 ?= false
 endif
 
+TARGET_SDCARD_BOOT ?= false
+
 # Product overrides
 PRODUCT_NAME := db845c
 PRODUCT_DEVICE := db845c
