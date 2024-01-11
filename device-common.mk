@@ -18,7 +18,14 @@ TARGET_KERNEL_DIR ?= device/linaro/dragonboard-kernel/android-$(TARGET_KERNEL_US
 TARGET_MODS := $(wildcard $(TARGET_KERNEL_DIR)/*.ko)
 
 BOARD_DO_NOT_STRIP_VENDOR_RAMDISK_MODULES := true
-BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(TARGET_MODS)
+BOARD_DO_NOT_STRIP_GENERIC_RAMDISK_MODULES := true
+ifeq ($(TARGET_SDCARD_BOOT), true)
+  # UFS module filename varies from ufs_qcom.ko to ufs-qcom.ko across different kernel versions
+  BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(TARGET_KERNEL_DIR)/ufs*qcom.ko)
+  BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(filter-out $(BOARD_VENDOR_KERNEL_MODULES),$(TARGET_MODS))
+else
+  BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(TARGET_MODS)
+endif
 
 PRODUCT_SHIPPING_API_LEVEL := 31
 
@@ -63,10 +70,24 @@ AB_OTA_PARTITIONS += \
     system_ext \
     vendor
 
+ifeq ($(TARGET_SDCARD_BOOT), true)
+  ifneq ($(filter 5.4 5.10 5.15, $(TARGET_KERNEL_USE)),)
+    PRODUCT_COPY_FILES += \
+        device/linaro/dragonboard/shared/utils/sdcard-boot/fstab.sdhci:$(TARGET_COPY_OUT_RAMDISK)/first_stage_ramdisk/fstab.$(TARGET_HARDWARE) \
+        device/linaro/dragonboard/shared/utils/sdcard-boot/fstab.sdhci:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_HARDWARE)
+  else
+    PRODUCT_COPY_FILES += \
+        device/linaro/dragonboard/shared/utils/sdcard-boot/fstab.mmc:$(TARGET_COPY_OUT_RAMDISK)/first_stage_ramdisk/fstab.$(TARGET_HARDWARE) \
+        device/linaro/dragonboard/shared/utils/sdcard-boot/fstab.mmc:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_HARDWARE)
+  endif
+else
+  PRODUCT_COPY_FILES += \
+      device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_RAMDISK)/first_stage_ramdisk/fstab.$(TARGET_HARDWARE) \
+      device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_HARDWARE)
+endif
+
 PRODUCT_COPY_FILES += \
     $(TARGET_KERNEL_DIR)/Image.gz:kernel \
-    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_RAMDISK)/first_stage_ramdisk/fstab.$(TARGET_HARDWARE) \
-    device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_HARDWARE) \
     device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(TARGET_HARDWARE).rc \
     device/linaro/dragonboard/init.common.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(TARGET_HARDWARE).usb.rc \
     frameworks/base/data/keyboards/Generic.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/$(TARGET_HARDWARE).kl
