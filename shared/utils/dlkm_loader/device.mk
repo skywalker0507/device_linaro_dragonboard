@@ -1,4 +1,4 @@
-AB_OTA_PARTITIONS += system_dlkm
+AB_OTA_PARTITIONS += system_dlkm vendor_dlkm
 PRODUCT_PACKAGES += dlkm_loader
 
 # List of modules that should not load automatically
