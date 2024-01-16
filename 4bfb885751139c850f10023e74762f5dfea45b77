@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "0a0a79e3_6b4dddb1",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-16T22:27:26Z",
+      "side": 1,
+      "message": "I know it can be hard on these obvious things but please provide some commit message as to why this change is helpful.",
+      "revId": "4bfb885751139c850f10023e74762f5dfea45b77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
