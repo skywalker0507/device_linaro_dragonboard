@@ -107,6 +107,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "374ddc72_e885e675",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-17T19:55:26Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "c876499f_913d4977",
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "ee7fc31c_3b647d50",
@@ -144,6 +162,30 @@
       "side": 1,
       "message": "thanks, will fix it",
       "parentUuid": "ee7fc31c_3b647d50",
+      "range": {
+        "startLine": 36,
+        "startChar": 6,
+        "endLine": 36,
+        "endChar": 14
+      },
+      "revId": "25c2113e41689413aade039cdf56121424968626",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ae922135_58d53e6b",
+        "filename": "shared/utils/bdaddr/set_bdaddr.sh",
+        "patchSetId": 2
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-17T19:55:26Z",
+      "side": 1,
+      "message": "Acknowledged",
+      "parentUuid": "04db3dac_acac1cdc",
       "range": {
         "startLine": 36,
         "startChar": 6,
