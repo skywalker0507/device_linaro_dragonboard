@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78775cd0_189488aa",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 9
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-01-17T10:08:23Z",
+      "side": 1,
+      "message": "Smoke tested on stock v5.4, v5.10, v5.15, v6.1, android-mainline prebuilt kernel binaries and upstream kernel v6.7.",
+      "revId": "bd63675276efa48bb81bd479fd3889a32441ab6a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
