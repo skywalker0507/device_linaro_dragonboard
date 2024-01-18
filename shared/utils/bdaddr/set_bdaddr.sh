@@ -26,6 +26,19 @@
 # Format the output in xx:xx:xx:xx:xx:xx format for the
 # "bdaddr" command to work.
 
+if /vendor/bin/grep -o 'Linux version 5.4.' /proc/version; then
+    # for 5.4 kernels, setting the bdaddr would cause
+    # bluetooth::StackManager::StartUp crash like reported here:
+    #     https://issuetracker.google.com/issues/318404233
+    # so skipping it here.
+    # It's possible to not integrate this script at building time,
+    # but that way would make 5.4 and other kernel versions use different
+    # super.img files, for development convenience doing the check
+    # at runtime here, so that only boot.img/vendor_boot.img are
+    # necessary for different versions
+    exit 0
+fi
+
 BTADDR=`/vendor/bin/cat /proc/cmdline | /vendor/bin/grep -o serialno.* |\
 	/vendor/bin/cut -f2 -d'=' | /vendor/bin/awk '{printf("c0%010s\n", $1)}' |\
 	/vendor/bin/sed 's/\(..\)/\1:/g' | /vendor/bin/sed '$s/:$//'`
