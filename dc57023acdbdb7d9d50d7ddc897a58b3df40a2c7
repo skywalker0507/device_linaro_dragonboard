@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d1cb8203_05f5b63d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 12
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-01-18T17:21:00Z",
+      "side": 1,
+      "message": "Bump up the sdcard requirement from 8GB to 16GB, and BOARD_USERDATAIMAGE_PARTITION_SIZE from 4GB to 8GB to pass the android.hardware.cts.LowRamDeviceTest#testMinDataPartitionSize CTS test, which otherwise fail because of minimum userdata size requirement.\n\n\"Application data partition size does not meet requirement. Found \u003d 2013085696, Minimum \u003d 4294967296\"",
+      "revId": "dc57023acdbdb7d9d50d7ddc897a58b3df40a2c7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
