@@ -16,6 +16,24 @@
       "message": "I know it can be hard on these obvious things but please provide some commit message as to why this change is helpful.",
       "revId": "4bfb885751139c850f10023e74762f5dfea45b77",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "742a22ed_4f1c5193",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-01-18T17:17:24Z",
+      "side": 1,
+      "message": "Done. Apologies for taking a short route there.",
+      "parentUuid": "0a0a79e3_6b4dddb1",
+      "revId": "4bfb885751139c850f10023e74762f5dfea45b77",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
