@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4fd34a4a_08cf14e6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-01-20T17:50:12Z",
+      "side": 1,
+      "message": "Smoke tested only on DB845c so far and that too only with android12-5.4-lts kernel where this UFS probe is more frequent and causes super disk mount failures.",
+      "revId": "facdf7e41a0959704df91057007829dce597cd8b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
