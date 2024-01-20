@@ -25,6 +25,14 @@ ifeq ($(TARGET_SDCARD_BOOT), true)
   BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(filter-out $(BOARD_VENDOR_KERNEL_MODULES),$(TARGET_MODS))
 else
   BOARD_VENDOR_RAMDISK_KERNEL_MODULES := $(TARGET_MODS)
+  # Prepare modules.load to work-around a UFS probe deferral bug by loading UFS and dependent modules first.
+  BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := \
+    rpmhpd.ko \
+    qcom-rpmh-regulator.ko \
+    gcc-sdm845.ko \
+    socinfo.ko \
+    $(wildcard $(TARGET_KERNEL_DIR)/ufs*qcom.ko)
+  BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD += $(filter-out $(BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD),$(TARGET_MODS))
 endif
 
 PRODUCT_SHIPPING_API_LEVEL := 31
