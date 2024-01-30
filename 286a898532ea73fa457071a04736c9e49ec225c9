@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f70be81d_9898f9c0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-01-30T13:57:50Z",
+      "side": 1,
+      "message": "Hi, All\n\nFor this api level update change, I just tested with booting them to the home screen. But I am not sure what should be the official instructions on the API level upgrade, please help check and give suggestions.",
+      "revId": "286a898532ea73fa457071a04736c9e49ec225c9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
