@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "944f1d51_180d490a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-01-30T21:35:36Z",
+      "side": 1,
+      "message": "Might mention the manifest changes here as well and they\u0027re impact",
+      "revId": "286a898532ea73fa457071a04736c9e49ec225c9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "f70be81d_9898f9c0",
