@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": true,
+      "key": {
+        "uuid": "d3742638_4b84543c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-02-02T13:50:14Z",
+      "side": 1,
+      "message": "Thanks for the suggestions! I will do more tests to make sure there is no obvious broken first for now, will update here and mark it for review after the test.\nbut before that, if you have any other suggestions, please let me know.",
+      "parentUuid": "944f1d51_180d490a",
+      "revId": "286a898532ea73fa457071a04736c9e49ec225c9",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": false,
       "key": {
         "uuid": "f70be81d_9898f9c0",
