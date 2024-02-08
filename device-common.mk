@@ -86,6 +86,9 @@ else
       device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_HARDWARE)
 endif
 
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.sys.zram_enabled=1
+
 PRODUCT_COPY_FILES += \
     $(TARGET_KERNEL_DIR)/Image.gz:kernel \
     device/linaro/dragonboard/init.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.$(TARGET_HARDWARE).rc \
