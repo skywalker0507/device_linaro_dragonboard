@@ -18,11 +18,7 @@
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 include $(LOCAL_PATH)/../vendor-package-ver.mk
-ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
-else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-endif
 
 # dlkm_loader
 include device/linaro/dragonboard/shared/utils/dlkm_loader/device.mk
@@ -30,7 +26,7 @@ PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/shared/utils/dlkm_loader/dlkm_loader.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dlkm_loader.rc
 
 # Build generic Audio HAL
-PRODUCT_PACKAGES += audio.primary.db845c
+PRODUCT_PACKAGES += audio.primary.linaro_swr
 
 # BootControl HAL
 PRODUCT_PACKAGES += \
@@ -55,14 +51,18 @@ PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/shared/utils/ethaddr/ethaddr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ethaddr.rc \
     device/linaro/dragonboard/shared/utils/ethaddr/set_ethaddr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_ethaddr.sh
 
-PRODUCT_VENDOR_PROPERTIES += ro.soc.manufacturer=Qualcomm
-PRODUCT_VENDOR_PROPERTIES += ro.soc.model=SDM845
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.soc.manufacturer=Generic Qcom arm64 arch \
+    ro.soc.model=linaro_swr
+
+PRODUCT_VENDOR_PROPERTIES += \
+    vendor.minigbm.debug=nocompression
 
 # Copy firmware files
 $(call inherit-product-if-exists, vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
 $(call inherit-product-if-exists, vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
 
-TARGET_HARDWARE := db845c
+TARGET_HARDWARE := linaro_swr
 TARGET_KERNEL_USE ?= 6.1
 
 include device/linaro/dragonboard/device-common.mk
