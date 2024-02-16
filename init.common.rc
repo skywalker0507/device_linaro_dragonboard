@@ -16,6 +16,9 @@ on late-fs
     mount_all /vendor/etc/fstab.${ro.hardware} --late
 
 on init
+    # ZRAM setup
+    write /sys/block/zram0/comp_algorithm lz4
+
     # For legacy support
     # See storage config details at http://source.android.com/tech/storage/
     # since /storage is mounted on post-fs in init.rc
@@ -58,6 +61,15 @@ on property:sys.boot_completed=1
     # system-background is for system tasks that should only run on
     # little cores, not on bigs to be used only by init
     write /dev/cpuset/system-background/cpus 0-3
+
+    trigger sys-boot-completed-set
+
+# We want one opportunity per boot to enable zram, so we
+# use a trigger we fire from the above stanza. If
+# persist.sys.zram_enabled becomes true after boot,
+# we don't want to run swapon_all at that time.
+on sys-boot-completed-set && property:persist.sys.zram_enabled=1
+    swapon_all
 
 service wpa_supplicant /vendor/bin/hw/wpa_supplicant \
                        -Dnl80211 -g@android:wpa_wlan0
