@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3eed122a_3870f25f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-02-22T20:25:53Z",
+      "side": 1,
+      "message": "+Isaac for SPR (as Viktor is out)",
+      "revId": "dfe152c1448e72d1f91007ec19c7ea7aba4119c2",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
