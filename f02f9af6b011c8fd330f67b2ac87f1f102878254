@@ -33,6 +33,24 @@
       "message": "Hi, John, Isaac\n\nDo you have any idea if there is any replacement for the definition in the manifest?\nI am asking because I found it\u0027s still used by MediaCodec::CreatePersistentInputSurface()[1] via  OMXClient.connect(), without this definition, the following message could be seen in the logcat:\n```\n02-25 13:48:16.554   295   295 I hwservicemanager: getTransport: Cannot find entry android.hardware.media.omx@1.0::IOmx/default in either framework or device VINTF manifest.\n02-25 13:48:16.554  3697  3845 E OMXClient: Cannot obtain IOmx service.\n02-25 13:48:16.554  3697  3845 E MediaCodec: Failed to connect to OMX to create persistent input surface.\n``` \n\nduring the CtsCameraTestCases android.hardware.camera2.cts.RecordingTest#testRecordingFromPersistentSurface[0] test, and causes it failed.\n\n[1]: https://cs.android.com/android/platform/superproject/main/+/main:frameworks/av/media/libstagefright/MediaCodec.cpp;l\u003d1150;bpv\u003d1;bpt\u003d1?q\u003dMediaCodec::CreatePersistentInputSurface",
       "revId": "f02f9af6b011c8fd330f67b2ac87f1f102878254",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "400ad53b_353fb8ae",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-02-26T05:28:12Z",
+      "side": 1,
+      "message": "never mind, I found it\u0027s the debug.stagefright.c2inputsurface property.",
+      "parentUuid": "0e0fc96b_670b965c",
+      "revId": "f02f9af6b011c8fd330f67b2ac87f1f102878254",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
