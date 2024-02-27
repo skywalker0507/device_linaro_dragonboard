@@ -34,6 +34,24 @@
       "parentUuid": "84052765_10fb6598",
       "revId": "d21f339af2e5c5ff10348500fa4cb25164088045",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0e6802e7_01873a63",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-02-27T04:27:07Z",
+      "side": 1,
+      "message": "Sorry, there\u0027s a broken presubmit configuration that\u0027s been causing trouble. Not likely related to your change.",
+      "parentUuid": "72208cc4_fd86cfec",
+      "revId": "d21f339af2e5c5ff10348500fa4cb25164088045",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
