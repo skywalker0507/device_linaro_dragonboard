@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d42735e3_f4c9a93c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-02-29T19:28:34Z",
+      "side": 1,
+      "message": "+Viktor for SPR+2",
+      "revId": "7e92ba6104eb1cbd5cf3781d8b201605cc2b3cc8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
