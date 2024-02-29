@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58eb5b15_88ef31a9",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-02-29T15:22:37Z",
+      "side": 1,
+      "message": "Hi, All\n\nSorry for the confusions, I am doing the full cts vts for the API level 33 build now, and there might be more fix changes submitted later, so I set the topic for these series to \"fixes-for-api-level-33\", please wait for some time before the merge.",
+      "revId": "bb20ff2c4d29a21c2a621dfffb3432ec9b712d4c",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
