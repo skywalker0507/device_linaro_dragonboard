@@ -97,6 +97,12 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.r_submix.default
 
+# Bluetooth Audio AIDL HAL
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml \
+
 # Build tinyalsa cli tools for debugging
 PRODUCT_PACKAGES += \
     tinyplay \
@@ -104,12 +110,12 @@ PRODUCT_PACKAGES += \
     tinymix \
     tinypcminfo
 
+
 # audio policy configuration
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(LOCAL_PATH)/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml \
@@ -154,10 +160,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-cuttlefish \
-    android.hardware.health@2.1-service
+# Health HAL
+PRODUCT_PACKAGES += com.google.cf.health
+
+# Thermal HAL
+PRODUCT_PACKAGES += com.android.hardware.thermal
 
 # TODO: disable this service once we implement system suspend
 PRODUCT_PACKAGES += \
@@ -181,7 +188,7 @@ PRODUCT_COPY_FILES += \
 
 # Copy standard platform config files
 PRODUCT_COPY_FILES +=  \
-    $(LOCAL_PATH)/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
+    $(LOCAL_PATH)/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     frameworks/native/data/etc/android.software.cts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.cts.xml \
     frameworks/native/data/etc/android.software.app_widgets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.app_widgets.xml \
     frameworks/native/data/etc/android.software.backup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.backup.xml \
