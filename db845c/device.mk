@@ -18,11 +18,10 @@
 $(call inherit-product, frameworks/native/build/tablet-10in-xhdpi-2048-dalvik-heap.mk)
 
 include $(LOCAL_PATH)/../vendor-package-ver.mk
-ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
-else
-$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
-endif
+# Enable Virtual A/B
+$(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/android_t_baseline.mk)
+PRODUCT_VIRTUAL_AB_COMPRESSION_METHOD := lz4
+PRODUCT_VIRTUAL_AB_COW_VERSION := 3
 
 # dlkm_loader
 include device/linaro/dragonboard/shared/utils/dlkm_loader/device.mk
