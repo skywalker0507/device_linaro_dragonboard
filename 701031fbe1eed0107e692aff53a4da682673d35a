@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "97223919_3ddfa475",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-03-18T17:05:26Z",
+      "side": 1,
+      "message": "Smoke tested db845c-userdebug and linaro_swr-userdebug build images on DB845c and RB5.",
+      "revId": "701031fbe1eed0107e692aff53a4da682673d35a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
