@@ -58,6 +58,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.minigbm.debug=nocompression
 
+PRODUCT_SOONG_NAMESPACES += \
+    vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION) \
+    vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)
+
 # Copy firmware files
 $(call inherit-product-if-exists, vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
 $(call inherit-product-if-exists, vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
