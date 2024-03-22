@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fef6982d_1b1f4367",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-03-22T06:13:40Z",
+      "side": 1,
+      "message": "Smoke tested on DB845c running v6.8",
+      "revId": "1fee17378e1a9c7a6277173815d81400571cfc66",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
