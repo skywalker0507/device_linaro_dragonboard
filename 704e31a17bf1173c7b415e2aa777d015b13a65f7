@@ -16,6 +16,23 @@
       "message": "Smoke tested on RB5 with ACK versions 5.15, 6.1 and 6.6.",
       "revId": "704e31a17bf1173c7b415e2aa777d015b13a65f7",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de4f2964_a17c6675",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-03-26T16:14:52Z",
+      "side": 1,
+      "message": "Smoke tested on DB845c with ACK versions 5.4, 5.10, 5.15, 6.1 and 6.6.",
+      "revId": "704e31a17bf1173c7b415e2aa777d015b13a65f7",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
