@@ -68,11 +68,6 @@ AB_OTA_PARTITIONS += \
     system_ext \
     vendor
 
-# Tools to build f2fs images
-PRODUCT_HOST_PACKAGES := \
-    fsck.f2fs \
-    make_f2fs
-
 ifeq ($(TARGET_SDCARD_BOOT), true)
   ifneq ($(filter 5.4 5.10 5.15, $(TARGET_KERNEL_USE)),)
     PRODUCT_COPY_FILES += \
