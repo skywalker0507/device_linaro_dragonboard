@@ -2,7 +2,7 @@
 
 INSTALLER_DIR="`dirname ${0}`"
 
-# for cases that don't run "lunch rb5-userdebug"
+# for cases that don't run "lunch db845c-trunk_staging-userdebug"
 if [ -z "${ANDROID_BUILD_TOP}" ]; then
     ANDROID_BUILD_TOP="`readlink -f ${INSTALLER_DIR}/../../../../../`"
 fi
