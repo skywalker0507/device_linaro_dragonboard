@@ -21,3 +21,8 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.hardware.gralloc=minigbm_msm
+
+ifeq ($(TARGET_USES_SWR), true)
+PRODUCT_VENDOR_PROPERTIES := \
+    vendor.minigbm.debug=nocompression
+endif
