@@ -20,7 +20,7 @@
 # to only building on ARM if they include assembly. Individual makefiles
 # are responsible for having their own logic, for fine-grained control.
 
-ifneq ($(filter db845c linaro_swr, $(TARGET_BOARD_PLATFORM)),)
+ifneq ($(filter db845c linaro_swr sm8x50, $(TARGET_BOARD_PLATFORM)),)
 
 LOCAL_PATH := $(call my-dir)
 
