@@ -170,8 +170,11 @@ PRODUCT_PACKAGES += com.android.hardware.thermal
 PRODUCT_PACKAGES += \
     suspend_blocker
 
+# dtc and fdtoverlay tools to apply dt overlays
 # mkbootimg host tool to build boot.img separately
 PRODUCT_HOST_PACKAGES := \
+    dtc \
+    fdtoverlay \
     mkbootimg
 
 # Userspace vendor services for WiFi/Audio to work

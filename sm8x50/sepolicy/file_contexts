@@ -1,0 +1,17 @@
+/dev/block/platform/soc@0/1d84000\.ufs/by-name/fsc				u:object_r:modem_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufs/by-name/fsg				u:object_r:modem_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufs/by-name/modemst[12]			u:object_r:modem_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufs/by-name/metadata				u:object_r:metadata_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufs/by-name/super				u:object_r:super_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufs/by-name/userdata				u:object_r:userdata_block_device:s0
+/dev/block/platform/soc@0/1d84000\.ufs/by-name/misc				u:object_r:misc_block_device:s0
+
+/sys/devices/platform/d4a80000.memory/rmtfs					u:object_r:sysfs_rmtfs:s0
+/sys/devices/platform/d4a80000.rmtfs-region/rmtfs				u:object_r:sysfs_rmtfs:s0
+
+/sys/devices/platform/soc@0/30000000.remoteproc					u:object_r:sysfs_remoteproc:s0
+/sys/devices/platform/soc@0/32300000.remoteproc					u:object_r:sysfs_remoteproc:s0
+
+#wakeups
+/sys/devices/platform/soc@0/4080000.remoteproc/wakeup/wakeup3			u:object_r:sysfs_wakeup:s0
+/sys/devices/platform/soc@0/30000000.remoteproc/wakeup/wakeup4			u:object_r:sysfs_wakeup:s0
