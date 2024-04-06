@@ -1,0 +1,9 @@
+genfscon	sysfs	/devices/platform/d4a80000.memory/rmtfs					u:object_r:sysfs_rmtfs:s0
+genfscon	sysfs	/devices/platform/d4a80000.rmtfs-region/rmtfs				u:object_r:sysfs_rmtfs:s0
+
+genfscon	sysfs	/devices/platform/soc@0/30000000.remoteproc				u:object_r:sysfs_remoteproc:s0
+genfscon	sysfs	/devices/platform/soc@0/32300000.remoteproc				u:object_r:sysfs_remoteproc:s0
+
+#wakeups
+genfscon	sysfs	/devices/platform/soc@0/4080000.remoteproc/wakeup/wakeup3		u:object_r:sysfs_wakeup:s0
+genfscon	sysfs	/devices/platform/soc@0/30000000.remoteproc/wakeup/wakeup4		u:object_r:sysfs_wakeup:s0
