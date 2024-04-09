@@ -2,15 +2,15 @@ $(call inherit-product, device/linaro/dragonboard/full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-# Target is using software rendering
+# Target boots with software rendering
 TARGET_USES_SWR := true
 $(call inherit-product, device/linaro/dragonboard/shared/graphics/drm_hwcomposer/device.mk)
-$(call inherit-product, device/linaro/dragonboard/shared/graphics/minigbm_msm/device.mk)
 $(call inherit-product, device/linaro/dragonboard/shared/graphics/swangle/device.mk)
+$(call inherit-product, device/linaro/dragonboard/shared/graphics/minigbm_msm/device.mk)
 
-$(call inherit-product, device/linaro/dragonboard/linaro_swr/device.mk)
+$(call inherit-product, device/linaro/dragonboard/sm8x50/device.mk)
 
 # Product overrides
-PRODUCT_NAME := linaro_swr
-PRODUCT_DEVICE := linaro_swr
+PRODUCT_NAME := sm8x50
+PRODUCT_DEVICE := sm8x50
 PRODUCT_BRAND := Android
