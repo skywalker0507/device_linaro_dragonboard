@@ -48,5 +48,9 @@ BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/utils/dlkm_loader/sepoli
 
 # Graphics
 include device/linaro/dragonboard/shared/graphics/drm_hwcomposer/BoardConfig.mk
+ifeq ($(TARGET_USES_SWR), true)
 BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/graphics/swangle/sepolicy
+else
+include device/linaro/dragonboard/shared/graphics/mesa/BoardConfig.mk
+endif
 BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/graphics/minigbm_msm/sepolicy
