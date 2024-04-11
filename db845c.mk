@@ -1,6 +1,14 @@
 # Target defaults to 64- and 32-bit
 TARGET_64BIT_ONLY ?= false
 
+# Target can boot 16K kernels - defaults to false
+# If 16K_PAGESIZE is set, enable 64BIT_ONLY as well
+# since that's a prerequisite
+TARGET_16K_PAGESIZE ?= false
+ifeq ($(TARGET_16K_PAGESIZE), true)
+  TARGET_64BIT_ONLY := true
+endif
+
 $(call inherit-product, device/linaro/dragonboard/full.mk)
 ifeq ($(TARGET_64BIT_ONLY), true)
   $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
