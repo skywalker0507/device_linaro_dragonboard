@@ -51,9 +51,11 @@ PRODUCT_COPY_FILES += \
     device/linaro/dragonboard/shared/utils/ethaddr/ethaddr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ethaddr.rc \
     device/linaro/dragonboard/shared/utils/ethaddr/set_ethaddr.sh:$(TARGET_COPY_OUT_VENDOR)/bin/set_ethaddr.sh
 
+ifneq ($(TARGET_SDCARD_BOOT), true)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/fstab:$(TARGET_COPY_OUT_RAMDISK)/first_stage_ramdisk/fstab.sm8x50 \
     $(LOCAL_PATH)/fstab:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.sm8x50
+endif
 
 PRODUCT_VENDOR_PROPERTIES += \
     ro.soc.manufacturer=Snapdragon 8 Gen Devboard \
