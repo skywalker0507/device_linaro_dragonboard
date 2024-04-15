@@ -40,7 +40,6 @@
 #include <audio_effects/effect_aec.h>
 #include <audio_route/audio_route.h>
 #include <audio_utils/clock.h>
-#include <audio_utils/echo_reference.h>
 #include <audio_utils/resampler.h>
 #include <cutils/properties.h>
 #include <hardware/audio_alsaops.h>
