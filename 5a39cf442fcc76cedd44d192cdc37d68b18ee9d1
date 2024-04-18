@@ -16,6 +16,24 @@
       "message": "Yet to test on rb5",
       "revId": "5a39cf442fcc76cedd44d192cdc37d68b18ee9d1",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2eb12563_599c6516",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-04-18T15:12:05Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "2a696f12_9b2aede7",
+      "revId": "5a39cf442fcc76cedd44d192cdc37d68b18ee9d1",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
