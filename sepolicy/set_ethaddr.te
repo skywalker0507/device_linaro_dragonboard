@@ -6,6 +6,7 @@ allow set_ethaddr proc_cmdline:file { open read };
 allow set_ethaddr proc_bootconfig:file { open read };
 allow set_ethaddr rootfs:dir { open read };
 allow set_ethaddr self:capability net_admin;
+allow set_ethaddr self:capability sys_module;
 allow set_ethaddr self:udp_socket create_socket_perms;
 allow set_ethaddr vendor_file:file execute_no_trans;
 allow set_ethaddr vendor_toolbox_exec:file execute_no_trans;
