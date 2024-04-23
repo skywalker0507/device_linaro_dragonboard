@@ -43,6 +43,9 @@ else ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
     BOARD_BOOTCONFIG += androidboot.boot_devices=soc@0/1d84000.ufshc
     BOARD_BOOTCONFIG += androidboot.hardware=db845c
     BOARD_BOOTCONFIG += androidboot.verifiedbootstate=orange
+    ifeq ($(TARGET_USES_LMP), true)
+      BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
+    endif
 endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_BASE := 0x80000000
