@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "49c20281_f36247bd",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-04-24T07:45:16Z",
+      "side": 1,
+      "message": "just curious, why paths like /sys/devices/platform/remoteproc-adsp/wakeup need to be set in both the file_contexts and the file_contexts?\n\nAnd another question, is there some other kernel versions(older kernel versions) that still use soc@0/1c00000.pci/pci0000:00/0000:00:00.0/0000:01:00.0/wakeup instead of remoteproc-adsp?",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 44
+      },
+      "revId": "e07c376c28066120451148e7135302a5f3ddc558",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "f272f7d0_382525e0",
+        "filename": "sepolicy/hal_health_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-04-24T07:45:16Z",
+      "side": 1,
+      "message": "why this file and the next system_server.te need to be updated?\nI am asking because it seems there is no such avc denials reported on my side with the db845c build",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 49
+      },
+      "revId": "e07c376c28066120451148e7135302a5f3ddc558",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
