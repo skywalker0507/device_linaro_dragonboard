@@ -16,7 +16,7 @@ BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_PAGESIZE := 4096
+# BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_CMDLINE += earlycon firmware_class.path=/vendor/firmware/
 BOARD_KERNEL_CMDLINE += init=/init printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += deferred_probe_timeout=30
@@ -25,6 +25,14 @@ BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
 BOARD_BOOTCONFIG := androidboot.hardware=linaro_swr androidboot.boot_devices=soc@0/1d84000.ufshc
 BOARD_BOOTCONFIG += androidboot.verifiedbootstate=orange
+
+# page-agnostic needs
+BOARD_MKBOOTIMG_ARGS += --pagesize 4096
+INTERNAL_VENDOR_BOOTIMAGE_ARGS += --pagesize 4096
+
+# since f2fs doesn't support multiple pagesize kernels,
+# set /userdata to ext4 for this build target
+BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := ext4
 
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296 #96M
