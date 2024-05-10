@@ -15,7 +15,7 @@
 #
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_no_zygote.mk)
-$(call inherit-product, device/generic/goldfish/minimal_system.mk)
+$(call inherit-product, device/generic/goldfish/fvpbase/minimal_system.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/runtime_libart.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
