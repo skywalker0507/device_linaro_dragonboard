@@ -41,59 +41,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm-service.widevine
 
-# Mesa
-PRODUCT_PACKAGES += \
-    libGLES_mesa \
-    libEGL_mesa \
-    libGLESv1_CM_mesa \
-    libGLESv2_mesa \
-    libgallium_dri \
-    libglapi
-
-TARGET_BUILD_MESA ?= false
-ifeq ($(TARGET_BUILD_MESA), true)
-   PRODUCT_SOONG_NAMESPACES += \
-       external/mesa3d
-endif
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.hardware.gralloc=minigbm_msm \
-    ro.hardware.hwcomposer=drm \
-    ro.opengles.version=196608 \
-    persist.demo.rotationlock=1
-
-# Vulkan
-PRODUCT_PACKAGES += \
-       vulkan.freedreno
-
-PRODUCT_COPY_FILES += \
-       frameworks/native/data/etc/android.hardware.vulkan.level-1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.level.xml \
-       frameworks/native/data/etc/android.hardware.vulkan.version-1_1.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.vulkan.version.xml \
-       frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
-
-PRODUCT_VENDOR_PROPERTIES += \
-       ro.hardware.vulkan=freedreno
-
-# Will need to enable this after ANDROID_external_memory_android_hardware_buffer lands in mesa
-#TARGET_USES_VULKAN = true
-
-#
-# Hardware Composer HAL
-#
-PRODUCT_PACKAGES += \
-    hwcomposer.drm \
-    android.hardware.graphics.composer@2.3-impl \
-    android.hardware.graphics.composer@2.3-service
-
-#
-# Gralloc HAL
-#
-PRODUCT_PACKAGES += \
-    gralloc.minigbm_msm \
-    android.hardware.graphics.allocator@4.0-service.minigbm_msm \
-    android.hardware.graphics.mapper@4.0-impl.minigbm_msm
-
-
 # Use Launcher3QuickStep
 PRODUCT_PACKAGES += Launcher3QuickStep
 
@@ -117,7 +64,7 @@ PRODUCT_COPY_FILES += \
 
 # Enable BT
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1-service.btlinux
+    android.hardware.bluetooth-service.default
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
@@ -150,6 +97,12 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.r_submix.default
 
+# Bluetooth Audio AIDL HAL
+PRODUCT_PACKAGES += \
+    android.hardware.bluetooth.audio-impl \
+PRODUCT_COPY_FILES += \
+    frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_7_0.xml \
+
 # Build tinyalsa cli tools for debugging
 PRODUCT_PACKAGES += \
     tinyplay \
@@ -157,12 +110,12 @@ PRODUCT_PACKAGES += \
     tinymix \
     tinypcminfo
 
+
 # audio policy configuration
 USE_XML_AUDIO_POLICY_CONF := 1
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml \
     $(LOCAL_PATH)/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    $(LOCAL_PATH)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml \
@@ -207,17 +160,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-service.software
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-cuttlefish \
-    android.hardware.health@2.1-service
+# Health HAL
+PRODUCT_PACKAGES += com.google.cf.health
+
+# Thermal HAL
+PRODUCT_PACKAGES += com.android.hardware.thermal
 
 # TODO: disable this service once we implement system suspend
 PRODUCT_PACKAGES += \
     suspend_blocker
 
+# dtc and fdtoverlay tools to apply dt overlays
 # mkbootimg host tool to build boot.img separately
 PRODUCT_HOST_PACKAGES := \
+    dtc \
+    fdtoverlay \
     mkbootimg
 
 # Userspace vendor services for WiFi/Audio to work
@@ -230,11 +187,11 @@ PRODUCT_PACKAGES += \
     tqftpserv
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/qcom/init.qcom.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.qcom.rc
+    $(LOCAL_PATH)/shared/utils/init.utils.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.utils.rc
 
 # Copy standard platform config files
 PRODUCT_COPY_FILES +=  \
-    $(LOCAL_PATH)/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/ueventd.rc \
+    $(LOCAL_PATH)/ueventd.common.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     frameworks/native/data/etc/android.software.cts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.cts.xml \
     frameworks/native/data/etc/android.software.app_widgets.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.app_widgets.xml \
     frameworks/native/data/etc/android.software.backup.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.backup.xml \
@@ -250,6 +207,3 @@ TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
 DEVICE_MANIFEST_FILE := device/linaro/dragonboard/manifest.xml
 DEVICE_MATRIX_FILE := device/linaro/dragonboard/compatibility_matrix.xml
-
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
