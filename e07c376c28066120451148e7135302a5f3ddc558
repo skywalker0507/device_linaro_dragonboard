@@ -24,6 +24,54 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "b8579632_6bccaec0",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-05-31T09:39:52Z",
+      "side": 1,
+      "message": "Sorry missed the notifications on this patch.\n\nYes these new additions are based on my test runs on all supported LTS kernel versions from v5.4 to v6.6 and upstream v6.9.",
+      "parentUuid": "49c20281_f36247bd",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 44
+      },
+      "revId": "e07c376c28066120451148e7135302a5f3ddc558",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d9d92e32_b0f0c66e",
+        "filename": "sepolicy/file_contexts",
+        "patchSetId": 1
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-05-31T09:39:52Z",
+      "side": 1,
+      "message": "Sorry missed the notifications on this patch.\n\nThese new wakeup paths are based on my local testing on all the supported LTS kernel versions from v5.4 to v6.6 and upstream v6.9",
+      "parentUuid": "49c20281_f36247bd",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 44
+      },
+      "revId": "e07c376c28066120451148e7135302a5f3ddc558",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "f272f7d0_382525e0",
@@ -37,6 +85,30 @@
       "writtenOn": "2024-04-24T07:45:16Z",
       "side": 1,
       "message": "why this file and the next system_server.te need to be updated?\nI am asking because it seems there is no such avc denials reported on my side with the db845c build",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 49
+      },
+      "revId": "e07c376c28066120451148e7135302a5f3ddc558",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "027417d0_a2cc3dd5",
+        "filename": "sepolicy/hal_health_default.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-05-31T09:39:52Z",
+      "side": 1,
+      "message": "These new denials are observed in upstream kernel v6.9 iirc",
+      "parentUuid": "f272f7d0_382525e0",
       "range": {
         "startLine": 1,
         "startChar": 0,
