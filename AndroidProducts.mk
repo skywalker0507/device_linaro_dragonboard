@@ -12,11 +12,9 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/db845c.mk \
     $(LOCAL_DIR)/db845c_mini.mk \
-    $(LOCAL_DIR)/rb5.mk \
-    $(LOCAL_DIR)/rb5_mini.mk \
     $(LOCAL_DIR)/sm8450_mini.mk \
+    $(LOCAL_DIR)/linaro_swr.mk \
+    $(LOCAL_DIR)/sm8x50/sm8x50.mk
 
 COMMON_LUNCH_CHOICES := \
-    db845c-userdebug \
-    rb5-userdebug \
-
+    db845c-trunk_staging-userdebug
