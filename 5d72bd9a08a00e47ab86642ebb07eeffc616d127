@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "17885c85_508ba6ce",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-06-06T17:05:13Z",
+      "side": 1,
+      "message": "Could we use \"Reapply\" instead of revert^2 ?   It starts to get muddy which way the reverts are going.\n\nMaking the commit message also more clear that you\u0027re re-applying an earlier reverted change is easier to understand than the \"Reason for revert\" of a revert.",
+      "revId": "5d72bd9a08a00e47ab86642ebb07eeffc616d127",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
