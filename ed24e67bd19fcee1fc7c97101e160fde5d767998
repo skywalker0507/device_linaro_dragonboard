@@ -16,6 +16,24 @@
       "message": "I feel like there was a recent thread you started about issues with f2fs and remounting? Are those issues resolved now?",
       "revId": "ed24e67bd19fcee1fc7c97101e160fde5d767998",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "34191541_c6ce45cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-06-14T10:56:13Z",
+      "side": 1,
+      "message": "f2fs + adb-remount regression fixed in aosp/3133633",
+      "parentUuid": "caac5f41_96f1e4ae",
+      "revId": "ed24e67bd19fcee1fc7c97101e160fde5d767998",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
