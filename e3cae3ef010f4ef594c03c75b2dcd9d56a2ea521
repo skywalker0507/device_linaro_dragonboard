@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1fd4d0e9_f51d8d7c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-06-26T18:31:20Z",
+      "side": 1,
+      "message": "Hopefully the upstream driver gets fixed soon?",
+      "revId": "e3cae3ef010f4ef594c03c75b2dcd9d56a2ea521",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
