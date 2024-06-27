@@ -16,6 +16,24 @@
       "message": "Apparently this needs a \"Test:\" tag",
       "revId": "22ecb07e6ee5d5c470fea6b5fa9c9382ddfe4192",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c5466399_7458ccf4",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-06-27T11:45:06Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "2612a862_9213ac62",
+      "revId": "22ecb07e6ee5d5c470fea6b5fa9c9382ddfe4192",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
