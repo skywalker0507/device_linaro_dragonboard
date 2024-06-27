@@ -16,6 +16,24 @@
       "message": "Hopefully the upstream driver gets fixed soon?",
       "revId": "e3cae3ef010f4ef594c03c75b2dcd9d56a2ea521",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dcd65b8f_f0c6e6d2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-06-27T11:46:18Z",
+      "side": 1,
+      "message": "Ack. Mani is working on that.",
+      "parentUuid": "1fd4d0e9_f51d8d7c",
+      "revId": "e3cae3ef010f4ef594c03c75b2dcd9d56a2ea521",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
