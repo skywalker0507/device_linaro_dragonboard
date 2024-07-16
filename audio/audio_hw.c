@@ -1124,8 +1124,8 @@ static int adev_open(const hw_module_t* module, const char* name,
         hw_device_t** device)
 {
     char vendor_hw[PROPERTY_VALUE_MAX] = {0};
-    // Prefix for the hdmi path, the board name is the suffix
-    char path_name[256] = "hdmi_";
+    // Prefix for the default audio out path, the board name is the suffix
+    char path_name[256] = "default_";
     ALOGV("adev_open: %s", name);
 
     if (strcmp(name, AUDIO_HARDWARE_INTERFACE) != 0) {
