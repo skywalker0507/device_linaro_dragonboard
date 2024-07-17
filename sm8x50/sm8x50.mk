@@ -18,7 +18,7 @@ $(call inherit-product, device/linaro/dragonboard/shared/graphics/minigbm_msm/de
 $(call inherit-product, device/linaro/dragonboard/sm8x50/device.mk)
 
 #Boot from mmc-sdcard
-TARGET_SDCARD_BOOT ?= false
+TARGET_SDCARD_BOOT ?= true
 
 # Product overrides
 PRODUCT_NAME := sm8x50
