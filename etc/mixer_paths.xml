@@ -1,11 +1,26 @@
 <mixer>
-    <!-- Enable HDMI out for db845c -->
-    <path name="hdmi_db845c">
+    <!-- Enable HDMI as default audio out for db845c -->
+    <path name="default_db845c">
         <ctl name="QUAT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
     </path>
 
-    <!-- Enable HDMI out for rb5 -->
-    <path name="hdmi_rb5">
+    <!-- Enable HDMI as default audio out for rb5 -->
+    <path name="default_rb5">
         <ctl name="TERT_MI2S_RX Audio Mixer MultiMedia1" value="1" />
+    </path>
+
+    <!-- Enable on board Speakers as default audio out for sm8550-hdk -->
+    <path name="default_sm8550hdk">
+        <ctl name="SpkrLeft PA Volume" value="15" />
+        <ctl name="SpkrRight PA Volume" value="15" />
+        <ctl name="WSA RX0 MUX" value="AIF1_PB" />
+        <ctl name="WSA RX1 MUX" value="AIF1_PB" />
+        <ctl name="WSA_RX0 INP0" value="RX0" />
+        <ctl name="WSA_RX1 INP0" value="RX1" />
+        <ctl name="SpkrLeft DAC Switch" value="1" />
+        <ctl name="SpkrRight DAC Switch" value="1" />
+        <ctl name="WSA_RX0 Digital Volume" value="85" />
+        <ctl name="WSA_RX1 Digital Volume" value="85" />
+        <ctl name="WSA_CODEC_DMA_RX_0 Audio Mixer MultiMedia1" value="1" />
     </path>
 </mixer>
