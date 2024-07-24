@@ -128,7 +128,7 @@ const char *assoc_next(struct assoc *assoc, void **value, unsigned long *iter)
 {
 	unsigned long it = *iter;
 
-	while (it < assoc->size && !assoc->keys[it])
+	while (!assoc->keys[it] && it < assoc->size)
 		it++;
 
 	if (it == assoc->size)
