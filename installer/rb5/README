@@ -2,7 +2,7 @@ These instructions will help you flashing the prebuilt bootloader
 and AOSP images(built from sources) on rb5.
 
 First, make sure you have built the AOSP images for RB5 by
-running the rb5-userdebug lunch target.
+running the db845c-trunk_staging-userdebug lunch target.
 
 
 Boot the board into fastboot mode:
