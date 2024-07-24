@@ -50,6 +50,30 @@
     {
       "unresolved": true,
       "key": {
+        "uuid": "091da125_5f172041",
+        "filename": "db845c.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1052193
+      },
+      "writtenOn": "2024-07-24T06:40:01Z",
+      "side": 1,
+      "message": "Thanks Kalesh and Juan, I\u0027ll rework and resend.",
+      "parentUuid": "791a82cb_94b56ce8",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 19
+      },
+      "revId": "ef9b9bf2acd0db7d12d0b997114e70b20e12a9da",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
         "uuid": "369f2eef_954d47c3",
         "filename": "db845c/BoardConfig.mk",
         "patchSetId": 2
