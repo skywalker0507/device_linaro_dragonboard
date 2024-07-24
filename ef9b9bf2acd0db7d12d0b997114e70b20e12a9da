@@ -72,6 +72,30 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "fab556bc_e51cbed8",
+        "filename": "db845c.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1052193
+      },
+      "writtenOn": "2024-07-24T10:16:17Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "091da125_5f172041",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 19
+      },
+      "revId": "ef9b9bf2acd0db7d12d0b997114e70b20e12a9da",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "369f2eef_954d47c3",
@@ -85,6 +109,30 @@
       "writtenOn": "2024-07-23T18:27:45Z",
       "side": 1,
       "message": "Could you please use TARGET_BOOTS_16K?\n\nThis target build flag will configure the system property ro.product.page_size.\n\nhttps://cs.android.com/android/platform/superproject/main/+/main:build/make/core/sysprop_config.mk;l\u003d53",
+      "range": {
+        "startLine": 63,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 5
+      },
+      "revId": "ef9b9bf2acd0db7d12d0b997114e70b20e12a9da",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "bffccc28_8a15466c",
+        "filename": "db845c/BoardConfig.mk",
+        "patchSetId": 2
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1052193
+      },
+      "writtenOn": "2024-07-24T10:16:17Z",
+      "side": 1,
+      "message": "done",
+      "parentUuid": "369f2eef_954d47c3",
       "range": {
         "startLine": 63,
         "startChar": 0,
