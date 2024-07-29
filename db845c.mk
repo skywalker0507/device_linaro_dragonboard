@@ -1,5 +1,12 @@
+# Target defaults to 64- and 32-bit
+TARGET_64BIT_ONLY ?= false
+
 $(call inherit-product, device/linaro/dragonboard/full.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+ifeq ($(TARGET_64BIT_ONLY), true)
+  $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
+else
+  $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+endif
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, device/linaro/dragonboard/shared/graphics/drm_hwcomposer/device.mk)
 $(call inherit-product, device/linaro/dragonboard/shared/graphics/mesa/device.mk)
