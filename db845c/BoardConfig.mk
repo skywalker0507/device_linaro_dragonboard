@@ -6,12 +6,14 @@ TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_VARIANT := kryo385
 TARGET_CPU_ABI := arm64-v8a
 
-# Secondary Arch
-TARGET_2ND_ARCH := arm
-TARGET_2ND_ARCH_VARIANT := armv8-2a
-TARGET_2ND_CPU_VARIANT := kryo385
-TARGET_2ND_CPU_ABI := armeabi-v7a
-TARGET_2ND_CPU_ABI2 := armeabi
+ifeq ($(TARGET_64BIT_ONLY), false)
+  # Secondary Arch
+  TARGET_2ND_ARCH := arm
+  TARGET_2ND_ARCH_VARIANT := armv8-2a
+  TARGET_2ND_CPU_VARIANT := kryo385
+  TARGET_2ND_CPU_ABI := armeabi-v7a
+  TARGET_2ND_CPU_ABI2 := armeabi
+endif
 
 # Board Information
 TARGET_BOOTLOADER_BOARD_NAME := db845c
@@ -49,13 +51,19 @@ else ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
 endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_KERNEL_BASE := 0x80000000
-BOARD_KERNEL_PAGESIZE := 4096
+BOARD_MKBOOTIMG_ARGS += --pagesize 4096
+INTERNAL_VENDOR_BOOTIMAGE_ARGS += --pagesize 4096
 BOARD_KERNEL_CMDLINE += earlycon firmware_class.path=/vendor/firmware/
 BOARD_KERNEL_CMDLINE += init=/init printk.devkmsg=on
 BOARD_KERNEL_CMDLINE += deferred_probe_timeout=30
 BOARD_KERNEL_CMDLINE += pcie_pme=nomsi #For WiFi to work on rb5
 BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
+
+ifeq ($(TARGET_BOOTS_16K), true)
+  BOARD_EROFS_BLOCKSIZE := 16384
+  BOARD_F2FS_BLOCKSIZE := 16384
+endif
 
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296 #96M

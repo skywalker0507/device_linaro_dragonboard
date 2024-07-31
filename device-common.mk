@@ -38,7 +38,7 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 # Check vendor package version
 # If you need to make changes to the vendor partition,
 # please modify the source git project here:
-#   https://staging-git.codelinaro.org/linaro/linaro-aosp/aosp-linaro-vendor-package
+#   https://source.devboardsforandroid.linaro.org/linaro-vendor-package/
 include device/linaro/dragonboard/vendor-package-ver.mk
 ifneq (,$(wildcard $(LINARO_VENDOR_PATH)/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/version.mk))
   # Unfortunately inherit-product doesn't export build variables from the
