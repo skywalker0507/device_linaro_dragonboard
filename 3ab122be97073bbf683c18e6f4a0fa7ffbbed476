@@ -34,6 +34,24 @@
       "parentUuid": "07b9bafb_6c77cfa9",
       "revId": "3ab122be97073bbf683c18e6f4a0fa7ffbbed476",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3cfd60c1_f4c077be",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-08-09T06:26:10Z",
+      "side": 1,
+      "message": "Yes I plan to update dragonboard-kernel/android-mainline prebuilts as soon as power-sequencing and DT patches from v6.11-rc1 land in android-mainline, that will enable WiFi-BT and SM8650-HDK support as well.",
+      "parentUuid": "0a836493_85a71aaf",
+      "revId": "3ab122be97073bbf683c18e6f4a0fa7ffbbed476",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
