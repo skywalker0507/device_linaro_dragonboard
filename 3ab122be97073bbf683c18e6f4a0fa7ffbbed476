@@ -16,6 +16,24 @@
       "message": "Thank you for catching this. I\u0027m glad that you are trying this build on a QRD. So far we have only managed to test run this build target on HDKs. Really appreciate some testing on QRDs.",
       "revId": "3ab122be97073bbf683c18e6f4a0fa7ffbbed476",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a836493_85a71aaf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1858345
+      },
+      "writtenOn": "2024-08-09T00:21:14Z",
+      "side": 1,
+      "message": "Happy to do it 😊\n\nBTW -- tip of dragonboard-kernel/android-mainline prebuilts don\u0027t boot, but the tip of android-mainline boots when I copy all the binaries over from my build (https://android.googlesource.com/device/linaro/dragonboard-kernel/+/f751a271872b70a705bab2569fb8bf8c037617d3)",
+      "parentUuid": "07b9bafb_6c77cfa9",
+      "revId": "3ab122be97073bbf683c18e6f4a0fa7ffbbed476",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
