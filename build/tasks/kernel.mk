@@ -19,7 +19,7 @@ $(PRODUCT_OUT)/dtb.img: $(DTC) $(FDTOVERLAY)
 	-$(FDTOVERLAY) -i $(SM8550QRD_DTB) -o $(PRODUCT_OUT)/sm8550-qrd.dtb $(PRODUCT_OUT)/sm8550-qrd.dtbo
 	-$(DTC) -@ -I dts -O dtb -o $(PRODUCT_OUT)/sm8650-qrd.dtbo $(SM8650QRD_DTS_OVERLAY)
 	-$(FDTOVERLAY) -i $(SM8650QRD_DTB) -o $(PRODUCT_OUT)/sm8650-qrd.dtb $(PRODUCT_OUT)/sm8650-qrd.dtbo
-	-cat $(DB845C_DTB) $(RB5_DTB) $(PRODUCT_OUT)/sm8550-hdk.dtb $(PRODUCT_OUT)/sm8550-qrd.dtb $(PRODUCT_OUT)/sm8650-qrd.dtbo > $@
+	-cat $(DB845C_DTB) $(RB5_DTB) $(PRODUCT_OUT)/sm8550-hdk.dtb $(PRODUCT_OUT)/sm8550-qrd.dtb $(PRODUCT_OUT)/sm8650-qrd.dtb > $@
 	-rm $(PRODUCT_OUT)/sm8*dtb*
 
 droidcore: $(PRODUCT_OUT)/dtb.img
