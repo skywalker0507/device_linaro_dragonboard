@@ -12,7 +12,7 @@ SM8550HDK_DTB := $(wildcard $(TARGET_KERNEL_DIR)/sm8550-hdk.dtb)
 SM8550QRD_DTB := $(wildcard $(TARGET_KERNEL_DIR)/sm8550-qrd.dtb)
 SM8650QRD_DTB := $(wildcard $(TARGET_KERNEL_DIR)/sm8650-qrd.dtb)
 
-$(PRODUCT_OUT)/dtb.img: $(DTC) $(FDTOVERLAY)
+$(PRODUCT_OUT)/dtb.img: $(DTC) $(FDTOVERLAY) $(SM8550HDK_DTB) $(SM8550QRD_DTB) $(SM8650QRD_DTB) $(RB5_DTB) $(DB845C_DTB)
 	-$(DTC) -@ -I dts -O dtb -o $(PRODUCT_OUT)/sm8550-hdk.dtbo $(SM8550HDK_DTS_OVERLAY)
 	-$(FDTOVERLAY) -i $(SM8550HDK_DTB) -o $(PRODUCT_OUT)/sm8550-hdk.dtb $(PRODUCT_OUT)/sm8550-hdk.dtbo
 	-$(DTC) -@ -I dts -O dtb -o $(PRODUCT_OUT)/sm8550-qrd.dtbo $(SM8550QRD_DTS_OVERLAY)
