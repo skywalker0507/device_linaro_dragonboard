@@ -20,9 +20,10 @@ TARGET_MODS := $(wildcard $(TARGET_KERNEL_DIR)/*.ko)
 BOARD_DO_NOT_STRIP_VENDOR_RAMDISK_MODULES := true
 BOARD_DO_NOT_STRIP_GENERIC_RAMDISK_MODULES := true
 ifeq ($(TARGET_SDCARD_BOOT), true)
+  # Do not copy UFS kernel module in vendor_dlkm.img
   # UFS module filename varies from ufs_qcom.ko to ufs-qcom.ko across different kernel versions
-  BOARD_VENDOR_KERNEL_MODULES := $(wildcard $(TARGET_KERNEL_DIR)/ufs*qcom.ko)
-  BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(filter-out $(BOARD_VENDOR_KERNEL_MODULES),$(TARGET_MODS))
+  UFS_MODULE := $(wildcard $(TARGET_KERNEL_DIR)/ufs*qcom.ko)
+  BOARD_GENERIC_RAMDISK_KERNEL_MODULES := $(filter-out $(UFS_MODULE),$(TARGET_MODS))
 else ifeq ($(TARGET_USES_LMP), true)
     include device/linaro/dragonboard/shared/utils/dlkm_loader/vendor.modules.list.mk
     BOARD_VENDOR_KERNEL_MODULES := $(patsubst %,$(TARGET_KERNEL_DIR)/%,$(VENDOR_DLKM_KERNEL_MODULES_LIST))
@@ -37,7 +38,7 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 # Check vendor package version
 # If you need to make changes to the vendor partition,
 # please modify the source git project here:
-#   https://staging-git.codelinaro.org/linaro/linaro-aosp/aosp-linaro-vendor-package
+#   https://source.devboardsforandroid.linaro.org/linaro-vendor-package/
 include device/linaro/dragonboard/vendor-package-ver.mk
 ifneq (,$(wildcard $(LINARO_VENDOR_PATH)/db845c/$(EXPECTED_LINARO_VENDOR_VERSION)/version.mk))
   # Unfortunately inherit-product doesn't export build variables from the
