@@ -16,6 +16,24 @@
       "message": "Lint is nagging for a Test: tag",
       "revId": "9c18252177635255447660c383a260c41d741181",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "62baac01_4886d1a8",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-08-19T18:46:12Z",
+      "side": 1,
+      "message": "Done.",
+      "parentUuid": "808401ea_d51046ac",
+      "revId": "9c18252177635255447660c383a260c41d741181",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
