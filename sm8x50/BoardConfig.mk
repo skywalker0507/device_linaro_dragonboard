@@ -33,6 +33,13 @@ endif
 BOARD_KERNEL_CMDLINE += androidboot.hardware=sm8x50
 BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
 
+# Enable 16k support
+TARGET_BOOTS_16K ?= false
+ifeq ($(TARGET_BOOTS_16K), true)
+   BOARD_EROFS_BLOCKSIZE := 16384
+   BOARD_F2FS_BLOCKSIZE := 16384
+endif
+
 # Image Configuration
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864 #64M
 
