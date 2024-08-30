@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "272c2053_4b2e1b4c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-08-30T09:49:33Z",
+      "side": 1,
+      "message": "Blocked on device/linaro/dragonboard-kernel/android-mainline prebuilts update.",
+      "revId": "5b384af9533ad7052e46ed3242526fc1c5379d47",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
