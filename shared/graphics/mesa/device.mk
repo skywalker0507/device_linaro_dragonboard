@@ -53,4 +53,5 @@ PRODUCT_VENDOR_PROPERTIES += \
     ro.hardware.vulkan=freedreno
 
 # Will need to enable this after ANDROID_external_memory_android_hardware_buffer lands in Freedreno
-#TARGET_USES_VULKAN = true
+PRODUCT_VENDOR_PROPERTIES += debug.hwui.renderer=skiagl
+TARGET_USES_VULKAN := true

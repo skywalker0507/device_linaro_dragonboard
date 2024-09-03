@@ -14,10 +14,9 @@
 # limitations under the License.
 #
 
-BOARD_GPU_DRIVERS := freedreno
 ifeq ($(TARGET_BUILD_MESA),true)
 BOARD_MESA3D_USES_MESON_BUILD := true
-BOARD_MESA3D_GALLIUM_DRIVERS := freedreno zink
+BOARD_MESA3D_GALLIUM_DRIVERS := freedreno
 BOARD_MESA3D_VULKAN_DRIVERS := freedreno
 else
 BOARD_USE_CUSTOMIZED_MESA := true
