@@ -74,4 +74,9 @@ $(call inherit-product-if-exists, vendor/linaro/sm8x50/$(EXPECTED_LINARO_VENDOR_
 TARGET_HARDWARE := sm8x50
 TARGET_KERNEL_USE ?= mainline
 
+# Page agnostic support - will build ELF files 16K aligned,
+# which will allow 4k/16k page size aligned kernels
+PRODUCT_MAX_PAGE_SIZE_SUPPORTED := 16384
+PRODUCT_NO_BIONIC_PAGE_SIZE_MACRO := true
+
 include device/linaro/dragonboard/device-common.mk
