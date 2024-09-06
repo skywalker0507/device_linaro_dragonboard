@@ -9,9 +9,6 @@ ifeq ($(TARGET_USES_SWR), true)
   $(call inherit-product, device/linaro/dragonboard/shared/graphics/swangle/device.mk)
 else
   $(call inherit-product, device/linaro/dragonboard/shared/graphics/mesa/device.mk)
-  TARGET_USES_VULKAN := true
-  PRODUCT_VENDOR_PROPERTIES += debug.hwui.renderer=skiagl
-  PRODUCT_COPY_FILES += $(LOCAL_PATH)/init.environ.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.environ.rc
 endif
 $(call inherit-product, device/linaro/dragonboard/shared/graphics/minigbm_msm/device.mk)
 
