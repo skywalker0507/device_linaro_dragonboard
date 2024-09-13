@@ -33,6 +33,24 @@
       "message": "I thought it would be nice to be able to define this from command line as well, to make it easier for someone to add the board they care about without having to modify the makefile.",
       "revId": "4203c4a85a0b97cfaca53c94cb6d803c3bc16f2b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fc5f0b34_757f87b0",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1539256
+      },
+      "writtenOn": "2024-09-13T00:46:18Z",
+      "side": 1,
+      "message": "Resolving",
+      "parentUuid": "6e3f6711_88abae3a",
+      "revId": "4203c4a85a0b97cfaca53c94cb6d803c3bc16f2b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
