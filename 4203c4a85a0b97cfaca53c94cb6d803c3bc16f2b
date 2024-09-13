@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d320a285_b82170c8",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1858345
+      },
+      "writtenOn": "2024-09-13T00:44:25Z",
+      "side": 1,
+      "message": "There\u0027s a side effect here that we can\u0027t rm the intermediate DTB and DTBOs, so I stash them now in this SM8X50_STAGING_DIR.",
+      "revId": "4203c4a85a0b97cfaca53c94cb6d803c3bc16f2b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
