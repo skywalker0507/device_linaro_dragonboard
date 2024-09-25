@@ -3,6 +3,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "b80cf611_81b552a2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-09-25T02:46:40Z",
+      "side": 1,
+      "message": "@yongqin.liu@linaro.org @sumit.semwal@linaro.org if one of you can quickly smoke test it on RB3 and RB5 while I\u0027m away, that would be great. LGTM otherwise.",
+      "revId": "4203c4a85a0b97cfaca53c94cb6d803c3bc16f2b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "d320a285_b82170c8",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 1
@@ -49,6 +66,23 @@
       "side": 1,
       "message": "Resolving",
       "parentUuid": "6e3f6711_88abae3a",
+      "revId": "4203c4a85a0b97cfaca53c94cb6d803c3bc16f2b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "13ad56f6_f16be769",
+        "filename": "build/tasks/kernel.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-09-25T02:46:40Z",
+      "side": 1,
+      "message": "I\u0027m not familiar with the usage of \"|\" operator in a Makefile target. But I trust your judgement here.",
       "revId": "4203c4a85a0b97cfaca53c94cb6d803c3bc16f2b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
