@@ -37,6 +37,23 @@
     {
       "unresolved": false,
       "key": {
+        "uuid": "8386270e_d765ff1b",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-09-25T13:49:29Z",
+      "side": 1,
+      "message": "boot tested to the home screen with the db845c board",
+      "revId": "4203c4a85a0b97cfaca53c94cb6d803c3bc16f2b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
         "uuid": "d320a285_b82170c8",
         "filename": "build/tasks/kernel.mk",
         "patchSetId": 1
