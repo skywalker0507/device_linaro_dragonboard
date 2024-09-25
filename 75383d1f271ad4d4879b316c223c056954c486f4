@@ -33,6 +33,23 @@
       "message": "+Viktor for SPR+2",
       "revId": "75383d1f271ad4d4879b316c223c056954c486f4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f98d8c37_907f3908",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-09-25T13:50:06Z",
+      "side": 1,
+      "message": "boot tested to the home screen with the db845c board",
+      "revId": "75383d1f271ad4d4879b316c223c056954c486f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
