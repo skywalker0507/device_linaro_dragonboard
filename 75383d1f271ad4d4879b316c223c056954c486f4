@@ -16,6 +16,23 @@
       "message": "Also closed aosp/3247696 as a duplicate of this one.",
       "revId": "75383d1f271ad4d4879b316c223c056954c486f4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "627b7dfd_e16b37f2",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-09-25T03:13:37Z",
+      "side": 1,
+      "message": "+Viktor for SPR+2",
+      "revId": "75383d1f271ad4d4879b316c223c056954c486f4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
