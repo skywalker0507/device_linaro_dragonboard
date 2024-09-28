@@ -5,7 +5,7 @@ FDTOVERLAY := $(HOST_OUT)/bin/fdtoverlay
 
 SM8X50_STAGING_DIR := $(call intermediates-dir-for,PACKAGING,dtb)
 
-SM8X50_BOARDS ?= sm8550-hdk sm8550-qrd sm8650-qrd
+SM8X50_BOARDS ?= sm8450-hdk sm8450-qrd sm8550-hdk sm8550-qrd sm8650-hdk sm8650-mtp sm8650-qrd
 SM8X50_DTBS := $(foreach board,$(SM8X50_BOARDS),$(wildcard $(TARGET_KERNEL_DIR)/$(board).dtb))
 SM8X50_DTBS := $(addprefix $(SM8X50_STAGING_DIR)/,$(notdir $(SM8X50_DTBS)))
 SM8X50_DTBOS := $(patsubst %.dtb,%.dtbo,$(SM8X50_DTBS))
