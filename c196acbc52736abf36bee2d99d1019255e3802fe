@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "fb2de6a0_a8407eb8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1377251
+      },
+      "writtenOn": "2024-10-07T19:30:54Z",
+      "side": 1,
+      "message": "Hi Yongqin, this is my attempt to use drm_hwcomposer\u0027s hwc3 implementation for the dragonboards. I don\u0027t have hardware to test against, though. Is this similar to what you had done for verifying https://r.android.com/3276095?",
+      "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
