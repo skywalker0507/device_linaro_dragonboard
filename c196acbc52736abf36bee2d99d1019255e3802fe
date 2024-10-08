@@ -16,6 +16,23 @@
       "message": "Hi Yongqin, this is my attempt to use drm_hwcomposer\u0027s hwc3 implementation for the dragonboards. I don\u0027t have hardware to test against, though. Is this similar to what you had done for verifying https://r.android.com/3276095?",
       "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "91186b2f_adf406ef",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-10-08T01:31:52Z",
+      "side": 1,
+      "message": "Hi, Drew\n\nSorry, I am just back today, will verify this change with the db845c board this week, please wait for a while. Thanks for the work!",
+      "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
