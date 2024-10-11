@@ -50,6 +50,23 @@
       "message": "Sorry for the late, it booted to the homescreen, also tested with the CtsGraphicsTestCases, VtsHalGraphicsMapperV4_0TargetTest and VtsHalGraphicsComposer3_TargetTest modules, here are the details:\n\n* CtsGraphicsTestCases, 6 failures reported, but no regressions compared to tests before, arm64-v8a CtsGraphicsTestCases/ armeabi-v7a CtsGraphicsTestCases/arm64-v8a CtsGraphicsTestCases[instant] modules, each reported the same 2 failures.\n * android.graphics.cts.VulkanFeaturesTest#testVulkanHardwareFeatures: \njava.lang.AssertionError: System feature android.hardware.vulkan.version version 0x401000 isn\u0027t close enough (same major and minor version, less or equal patch version) to best physical device\n * android.graphics.cts.VulkanFeaturesTest#testVulkanExposedDeviceExtensions:\njava.lang.AssertionError: This device exposes the extensions:\n[VK_KHR_maintenance4, VK_KHR_format_feature_flags2, VK_KHR_dynamic_rendering, VK_KHR_shader_subgroup_uniform_control_flow, VK_KHR_global_priority]\n\n\n* VtsHalGraphicsMapperV4_0TargetTest, 0 failures reported.\n\n* VtsHalGraphicsComposer3_TargetTest, 4 failures reported, arm64-v8a and armeabi-v7a reports the same 2 failures separately. It was VtsHalGraphicsComposerV2_3TargetTest tested before, no failures reported.\n * PerInstance/GraphicsComposerAidlTest#GetDisplayConfigNoRepetitions/0_android_hardware_graphics_composer3_IComposer_default:\n hardware/interfaces/graphics/composer/aidl/vts/VtsHalGraphicsComposer3_TargetTest.cpp:1190: Failure\nValue of: width1 \u003d\u003d width2 \u0026amp;\u0026amp; height1 \u003d\u003d height2 \u0026amp;\u0026amp; vsyncPeriod1 \u003d\u003d vsyncPeriod2 \u0026amp;\u0026amp; group1 \u003d\u003d group2\n  Actual: true\nExpected: false\n * PerInstance/GraphicsComposerAidlCommandTest#SetActiveConfigWithConstraints/0_android_hardware_graphics_composer3_IComposer_default:\nNo test results.",
       "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d173af7a_b8194f19",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2024-10-11T19:08:38Z",
+      "side": 1,
+      "message": "Amit/Yongqin: Could we get a +1 from either of you to make sure this is ok by you to land?",
+      "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
