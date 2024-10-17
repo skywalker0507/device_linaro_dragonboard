@@ -84,6 +84,23 @@
       "message": "Although there are 2 failures reported by the VtsHalGraphicsComposer3_TargetTest test, I think it\u0027s OK to merge first, no block there. so +1 from me",
       "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e01d462b_b3c062df",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-10-17T07:48:13Z",
+      "side": 1,
+      "message": "Hi, Drew, John\n\nI spent some time to check if it\u0027s possible to update the hikey960 build to use the apex implementation too, and it seems not easy especially with the requirement of bufferinfo/legacy/BufferInfoMaliHisi.cpp, so want check with you again, to know what do you think about it?\n\nThanks in advance!",
+      "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
