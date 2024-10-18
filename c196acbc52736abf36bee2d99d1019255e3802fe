@@ -101,6 +101,24 @@
       "message": "Hi, Drew, John\n\nI spent some time to check if it\u0027s possible to update the hikey960 build to use the apex implementation too, and it seems not easy especially with the requirement of bufferinfo/legacy/BufferInfoMaliHisi.cpp, so want check with you again, to know what do you think about it?\n\nThanks in advance!",
       "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8e19ea0c_4231d654",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1377251
+      },
+      "writtenOn": "2024-10-18T16:27:40Z",
+      "side": 1,
+      "message": "Hi Yongqin, there is also some discussiong here [1] about challenges that the Baylibre team is running into using the apex, though it may be a different issue than you have here.\n\nFor hikey960, is it possible to use IMapper4 and BufferInfoMapperMetadata instead of the legacy BufferInfoGetter?\n\n[1] https://android-review.git.corp.google.com/c/platform/external/drm_hwcomposer/+/3276095/comments/9b5b36f4_f3a4ba1a",
+      "parentUuid": "e01d462b_b3c062df",
+      "revId": "c196acbc52736abf36bee2d99d1019255e3802fe",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
