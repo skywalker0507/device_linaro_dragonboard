@@ -16,9 +16,4 @@
 
 # Hardware Composer HAL
 PRODUCT_PACKAGES := \
-    hwcomposer.drm \
-    android.hardware.graphics.composer@2.3-impl \
-    android.hardware.graphics.composer@2.3-service
-
-PRODUCT_PROPERTY_OVERRIDES := \
-    ro.hardware.hwcomposer=drm
+    com.android.hardware.graphics.composer.drm_hwcomposer
