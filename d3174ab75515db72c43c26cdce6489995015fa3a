@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "fd363702_73a34179",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1291338
+      },
+      "writtenOn": "2024-11-12T01:44:06Z",
+      "side": 1,
+      "message": "we\u0027ve just landed aosp/3337514 which labels `/sys/class/udc` to `sysfs_udc`. Can you test aosp/3337514 and check if we still need permissions to `sysfs`?",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 45
+      },
+      "revId": "d3174ab75515db72c43c26cdce6489995015fa3a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
