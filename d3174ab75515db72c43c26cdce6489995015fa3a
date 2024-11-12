@@ -22,6 +22,30 @@
       },
       "revId": "d3174ab75515db72c43c26cdce6489995015fa3a",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "842883a4_5801eba4",
+        "filename": "sepolicy/set_udc.te",
+        "patchSetId": 1
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-11-12T16:24:36Z",
+      "side": 1,
+      "message": "Hi, Inseob\n\nI only repo sync the system/sepolicy repository in the AOSP tree to save the build time. The build itself finished now, but it seems aosp/3337514 does not set /sys/class/udc to sysfs_udc. Here are what I checked:\n\n```\n### to confirm aosp/3337514  is there\n$ git log --oneline -n3292fc6fe12a6 (HEAD, m/main, aosp/master, aosp/main) Merge \"Add BOARD_GENFS_LABELS_VERSION\" into main\n6854dd7187d3 Add com.android.nfcservices-file_contexts to Android.bp\na2e9c5c12208 Merge \"bluetooth: Add policy for bluetooth.hardware.wakeup_supported\" into main\n$\n\n### to confirm this change is not there\n$ cd ../../device/linaro/dragonboard\n$ git log --oneline -n3\na1c5a56c4208 (HEAD, m/main, aosp/master, aosp/main) Merge \"dragonboard: Use drm_hwcomposer hwc3 implementation\" into main75383d1f271a sm8x50: Add support for sm8450-{hdk,qrd} and sm8650-{hdk,mtp}\nc196acbc5273 dragonboard: Use drm_hwcomposer hwc3 implementation\n$\n\n### to check the label of /sys/class/udc$ adb shell ls -l -1d -Z /sys/class/udcdrwxr-xr-x 2 root root u:object_r:sysfs:s0  0 1970-01-01 00:29 /sys/class/udc\n$\n\n### to check the labels under /sys/class/udc\n$ adb shell ls -l -1d -Z /sys/class/udc/*\nlrwxrwxrwx 1 root root u:object_r:sysfs:s0  0 2024-11-12 15:58 /sys/class/udc/a600000.usb -\u003e ../../devices/platform/soc@0/a6f8800.usb/a600000.usb/udc/a600000.usb$\n\n### to check the avc denials reported on /sys/class/udc\n$ grep avc /tmp/console.log |grep udc\n[   16.724755][  T361] type\u003d1400 audit(1787.795:6): avc:  denied  { read } for  comm\u003d\"ls\" name\u003d\"udc\" dev\u003d\"sysfs\" ino\u003d11879 scontext\u003du:r:set_udc:s0 tcontext\u003du:object_r:sysfs:s0 tclass\u003ddir permissive\u003d0$\n\n### to check the property to confirm the result$ adb shell su 0 getprop vendor.usb.controller\n\n$\n```\n\nPlease let me know if there is anything I did wrong.",
+      "parentUuid": "fd363702_73a34179",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 45
+      },
+      "revId": "d3174ab75515db72c43c26cdce6489995015fa3a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
