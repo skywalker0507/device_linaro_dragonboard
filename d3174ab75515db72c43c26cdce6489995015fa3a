@@ -1,6 +1,23 @@
 {
   "comments": [
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "42db9133_4645da15",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-11-22T16:26:12Z",
+      "side": 1,
+      "message": "Hi, Inseod\n\nI am not sure the reason, but it seems the label of /sys/class/udc is sysfs_udc now with the latest build, so I reverted this commit, could you please help check the revert change there again?",
+      "revId": "d3174ab75515db72c43c26cdce6489995015fa3a",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "fd363702_73a34179",
