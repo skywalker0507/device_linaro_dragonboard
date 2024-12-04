@@ -159,7 +159,7 @@ PRODUCT_COPY_FILES += \
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.software
+    com.android.hardware.gatekeeper.nonsecure
 
 # Health HAL
 PRODUCT_PACKAGES += com.google.cf.health
