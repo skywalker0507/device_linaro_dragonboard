@@ -160,9 +160,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
-# Gatekeeper
+# Gatekeeper.  Note that this is an insecure implementation that should not be
+# used on a production device as it does not comply with [9.11/H-0-4] of the
+# Android CDD ("Handheld device implementations MUST perform the lock screen
+# authentication in the isolated execution environment ").
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.software
+    com.android.hardware.gatekeeper.nonsecure
 
 # Health HAL
 PRODUCT_PACKAGES += com.google.cf.health
