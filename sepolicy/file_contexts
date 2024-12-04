@@ -50,7 +50,6 @@
 
 /vendor/bin/grep									u:object_r:vendor_toolbox_exec:s0
 /vendor/bin/ifconfig									u:object_r:vendor_toolbox_exec:s0
-/vendor/bin/hw/android\.hardware\.gatekeeper@1\.0-service\.software			u:object_r:hal_gatekeeper_default_exec:s0
 /vendor/bin/pd-mapper									u:object_r:pd_mapper_exec:s0
 /vendor/bin/qrtr-cfg									u:object_r:qrtr_exec:s0
 /vendor/bin/qrtr-ns									u:object_r:qrtr_exec:s0
