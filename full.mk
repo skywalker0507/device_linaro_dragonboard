@@ -151,10 +151,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/etc/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
-# Keymaster
+# keymint
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+    com.android.hardware.keymint.rust_nonsecure
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
