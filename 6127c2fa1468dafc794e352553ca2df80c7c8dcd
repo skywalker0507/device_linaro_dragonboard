@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e766a30b_ed84656f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-12-05T16:00:43Z",
+      "side": 1,
+      "message": "Hi, Cody\n\nCould you please help review on the use of the keymint apex version and the binary version, and if there is any other issue with this change?\n\nI see the apex version change was submitted by you, \nhttps://android-review.googlesource.com/c/platform/hardware/interfaces/+/3017012,\nand the cuttlefish builds uses the apex version as well.\n\nI submit this change with cuttlefish as reference, but I am not sure if there is any other thing I am not aware of.",
+      "revId": "6127c2fa1468dafc794e352553ca2df80c7c8dcd",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
