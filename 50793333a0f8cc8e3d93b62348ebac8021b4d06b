@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "30121a1f_db35bb0c",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1836235
+      },
+      "writtenOn": "2024-12-05T08:18:37Z",
+      "side": 1,
+      "message": "pre-existing: could we add a reminder comment here that the version of KeyMint used here is not secure, just to slightly reduce the chances of vendors copying the setup?\n\n```\n# KeyMint.  Note that this is an insecure implementation that should not be\n# used on a production device as it does not comply with [9.11/H-0-2] of the\n# Android CDD (\"Handheld device implementations MUST back up the keystore \n# implementation with an isolated execution environment\").\n```",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "da38dfd3_2c55de70",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1836235
+      },
+      "writtenOn": "2024-12-05T08:18:37Z",
+      "side": 1,
+      "message": "Just to check: this pulls in the nonsecure version of KeyMint as an apex, rather than directly as a binary -- is that what you\u0027re after?",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
