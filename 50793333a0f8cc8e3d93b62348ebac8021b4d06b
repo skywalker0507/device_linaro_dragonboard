@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "43fc73de_89c982bb",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 154,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-12-05T08:39:30Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "30121a1f_db35bb0c",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "da38dfd3_2c55de70",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-12-05T08:18:37Z",
       "side": 1,
       "message": "Just to check: this pulls in the nonsecure version of KeyMint as an apex, rather than directly as a binary -- is that what you\u0027re after?",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "2688bda5_2c566b1c",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-12-05T08:39:30Z",
+      "side": 1,
+      "message": "To be honest, I don\u0027t know the difference, just thought apex was better than binary(like the apex version includes sepolicy and manifest hal definitions, which would help to save the maintenance work in the future), but would like to have your suggestions here.",
+      "parentUuid": "da38dfd3_2c55de70",
       "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
