@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "81ce3613_ad5ae336",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1836235
+      },
+      "writtenOn": "2024-12-05T08:24:52Z",
+      "side": 1,
+      "message": "pre-existing: could we add a reminder comment here that the version of Gatekeeper used here is not secure, just to slightly reduce the chances of vendors copying the setup?\n\n```\n# Gatekeeper.  Note that this is an insecure implementation that should not be\n# used on a production device as it does not comply with [9.11/H-0-4] of the\n# Android CDD (\"Handheld device implementations MUST perform the lock screen\n# authentication in the isolated execution environment \").\n```",
+      "revId": "95a8625f6b43dfe4ba2324ce31948f309ecd2dd8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbf15155_7e771113",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1836235
+      },
+      "writtenOn": "2024-12-05T08:24:52Z",
+      "side": 1,
+      "message": "Just to check - you want the apex not the binary, correct?",
+      "revId": "95a8625f6b43dfe4ba2324ce31948f309ecd2dd8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
