@@ -69,6 +69,24 @@
       "parentUuid": "da38dfd3_2c55de70",
       "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6e1d42dc_0449af81",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1836235
+      },
+      "writtenOn": "2024-12-05T10:53:56Z",
+      "side": 1,
+      "message": "Sorry, I\u0027m not really familiar with the pros and cons for apexes -- maybe one of the other Google reviewers can weigh in?",
+      "parentUuid": "2688bda5_2c566b1c",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
