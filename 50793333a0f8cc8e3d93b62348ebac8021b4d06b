@@ -105,6 +105,24 @@
       "parentUuid": "6e1d42dc_0449af81",
       "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "dbbdffac_df46d755",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1836235
+      },
+      "writtenOn": "2024-12-06T07:04:27Z",
+      "side": 1,
+      "message": "One random thought though: are there any concerns with KeyMint coming out of an apex, given that it needs to be up at `early_hal` init stage?  (I\u0027m not sure if that\u0027s before `apexd` has done its thing.)  \n\nCody, were there any problems with boot ordering on Cuttlefish?",
+      "parentUuid": "95d93c69_13a6fc73",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
