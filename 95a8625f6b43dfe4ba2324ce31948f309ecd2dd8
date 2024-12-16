@@ -18,6 +18,24 @@
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     },
     {
+      "unresolved": false,
+      "key": {
+        "uuid": "497baf4e_a8c114c3",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 160,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-12-16T14:55:44Z",
+      "side": 1,
+      "message": "Sorry, I missed this comment:(\n\nJust updated as suggested.",
+      "parentUuid": "81ce3613_ad5ae336",
+      "revId": "95a8625f6b43dfe4ba2324ce31948f309ecd2dd8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
       "unresolved": true,
       "key": {
         "uuid": "dbf15155_7e771113",
@@ -31,6 +49,24 @@
       "writtenOn": "2024-12-05T08:24:52Z",
       "side": 1,
       "message": "Just to check - you want the apex not the binary, correct?",
+      "revId": "95a8625f6b43dfe4ba2324ce31948f309ecd2dd8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c6049428_edf7c231",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2024-12-16T14:55:44Z",
+      "side": 1,
+      "message": "From my limit understanding, and the discussions under https://r.android.com/c/3391349, the anwser is yes here.",
+      "parentUuid": "dbf15155_7e771113",
       "revId": "95a8625f6b43dfe4ba2324ce31948f309ecd2dd8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
