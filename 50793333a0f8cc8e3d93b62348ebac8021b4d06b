@@ -123,6 +123,24 @@
       "parentUuid": "95d93c69_13a6fc73",
       "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e2761407_6f833896",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1291337
+      },
+      "writtenOn": "2024-12-17T20:56:39Z",
+      "side": 1,
+      "message": "Sorry, lost track of this change.\n\nWe had an ordering problem between keymint and gatekeeper that was fixed in aosp/3077417.\n\nThe Vendor APEX equivalent to `early_hal` is to make it a \"bootstrap\" APEX ( https://source.android.com/docs/core/ota/vendor-apex#bootstrap-vendor-apex ), which is [done for insecure keymint]( https://cs.android.com/android/platform/superproject/main/+/main:hardware/interfaces/security/keymint/aidl/default/manifest.json;l\u003d4;drc\u003d895ba8bdfacfdca906e310c45b1d7091bb31810b).\n\nIf this change replaced `android.hardware.gatekeeper@1.0-service.software` as well with the [gatekeeper APEX equivalent](https://cs.android.com/android/platform/superproject/main/+/main:hardware/interfaces/gatekeeper/aidl/software/Android.bp;l\u003d59;drc\u003d097e62533553885f64e32e2fcfd5bd89399cd70d), that would have parity with Cuttlefish which is already validated in CI.",
+      "parentUuid": "dbbdffac_df46d755",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
