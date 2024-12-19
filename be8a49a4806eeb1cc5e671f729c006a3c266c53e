@@ -16,6 +16,24 @@
       "message": "Why is 6.12 prefered over mainline?",
       "revId": "be8a49a4806eeb1cc5e671f729c006a3c266c53e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e3fd16c5_58f049a6",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2024-12-19T09:40:09Z",
+      "side": 1,
+      "message": "Mostly because of LTS. Historically we have always started with android-mainline for new devices and switched over to the next LTS/ACK when available. But there is no hard rule on that and we can stick to `android-mainline` as well if anyone got a valid reasoning.\n\nAlso, we keep updating android-mainline prebuilts at fairly regular interval and user can continue using android-mainline by setting `TARGET_KERNEL_USE\u003dmainline` variable at the build time.",
+      "parentUuid": "3ebd7bdf_3e0e3053",
+      "revId": "be8a49a4806eeb1cc5e671f729c006a3c266c53e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
