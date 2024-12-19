@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3ebd7bdf_3e0e3053",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1054468
+      },
+      "writtenOn": "2024-12-19T09:19:44Z",
+      "side": 1,
+      "message": "Why is 6.12 prefered over mainline?",
+      "revId": "be8a49a4806eeb1cc5e671f729c006a3c266c53e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
