@@ -12,7 +12,25 @@ TARGET_BOARD_PLATFORM := sm8x50
 
 TARGET_NO_KERNEL := false
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+
+ifeq ($(TARGET_USES_GBL), true)
+BOARD_BOOT_HEADER_VERSION := 4
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_INIT_ARGS := --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+BOARD_BOOTCONFIG += androidboot.hardware=sm8x50
+BOARD_BOOTCONFIG += androidboot.boot_devices=soc@0/8804000.mmc
+else
 BOARD_BOOT_HEADER_VERSION := 2 # XXX v4 is WIP
+BOARD_KERNEL_CMDLINE += androidboot.hardware=sm8x50
+BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
+BOARD_KERNEL_CMDLINE += androidboot.slot_suffix=_a
+ifeq ($(TARGET_SDCARD_BOOT), true)
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/8804000.mmc
+else
+BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/1d84000.ufs
+endif
+endif
+
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --base 0x0 --kernel_offset 0x0 --ramdisk_offset 0x0
 
@@ -24,15 +42,6 @@ BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
 BOARD_KERNEL_CMDLINE += allow_mismatched_32bit_el0 clk_ignore_unused pd_ignore_unused
 
-ifeq ($(TARGET_SDCARD_BOOT), true)
-BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/8804000.mmc
-else
-BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/1d84000.ufs
-endif
-
-BOARD_KERNEL_CMDLINE += androidboot.hardware=sm8x50
-BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
-
 # Enable 16k support
 TARGET_BOOTS_16K ?= false
 ifeq ($(TARGET_BOOTS_16K), true)
@@ -41,7 +50,13 @@ ifeq ($(TARGET_BOOTS_16K), true)
 endif
 
 # Image Configuration
+ifeq ($(TARGET_USES_GBL), true)
+BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728 #128M
+BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 134217728 #128M
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 134217728 #128M
+else
 BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864 #64M
+endif
 
 ifeq ($(TARGET_SDCARD_BOOT), true)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 8589934592 #8G
