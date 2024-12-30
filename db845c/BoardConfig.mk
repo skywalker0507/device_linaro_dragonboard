@@ -22,25 +22,39 @@ TARGET_BOARD_PLATFORM := db845c
 TARGET_NO_KERNEL := false
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 ifeq ($(TARGET_SDCARD_BOOT), true)
-  BOARD_BOOT_HEADER_VERSION := 2
-  # Older kernel versions define mmc@ nodes as sdhci@ nodes in their device tree
-  ifneq ($(filter 5.4 5.10 5.15, $(TARGET_KERNEL_USE)),)
-    BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/8804000.sdhci
+  ifeq ($(TARGET_USES_GBL), true)
+    BOARD_BOOT_HEADER_VERSION := 4
+    BOARD_INIT_BOOT_HEADER_VERSION := 4
+    BOARD_MKBOOTIMG_INIT_ARGS := --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+    BOARD_BOOTCONFIG += androidboot.hardware=db845c
+    ifneq ($(filter 5.4 5.10 5.15, $(TARGET_KERNEL_USE)),)
+      BOARD_BOOTCONFIG += androidboot.boot_devices=soc@0/8804000.sdhci
+    else
+      BOARD_BOOTCONFIG += androidboot.boot_devices=soc@0/8804000.mmc
+    endif
+    BOARD_BOOTCONFIG += androidboot.verifiedbootstate=orange
+    BOARD_BOOTCONFIG += androidboot.slot_suffix=_a
   else
-    BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/8804000.mmc
+    BOARD_BOOT_HEADER_VERSION := 2
+    # Older kernel versions define mmc@ nodes as sdhci@ nodes in their device tree
+    ifneq ($(filter 5.4 5.10 5.15, $(TARGET_KERNEL_USE)),)
+      BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/8804000.sdhci
+    else
+      BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/8804000.mmc
+    endif
+    BOARD_KERNEL_CMDLINE += androidboot.hardware=db845c
+    BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
+    # In case we are booting from U-Boot directly and androidboot.slot_suffix
+    # is not set. Otherwise we run into the following error:
+    # "init: [libfstab] Error updating for slotselect"
+    BOARD_KERNEL_CMDLINE += androidboot.slot_suffix=_a
   endif
-  BOARD_KERNEL_CMDLINE += androidboot.hardware=db845c
-  BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
-  # In case we are booting from U-Boot directly and androidboot.slot_suffix
-  # is not set. Otherwise we run into the following error:
-  # "init: [libfstab] Error updating for slotselect"
-  BOARD_KERNEL_CMDLINE += androidboot.slot_suffix=_a
 else ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
     BOARD_BOOT_HEADER_VERSION := 3
     BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/1d84000.ufshc
     BOARD_KERNEL_CMDLINE += androidboot.hardware=db845c
     BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
-  else
+else
     BOARD_BOOT_HEADER_VERSION := 4
     BOARD_BOOTCONFIG += androidboot.boot_devices=soc@0/1d84000.ufshc
     BOARD_BOOTCONFIG += androidboot.hardware=db845c
@@ -65,14 +79,21 @@ ifeq ($(TARGET_BOOTS_16K), true)
 endif
 
 # Image Configuration
-BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296 #96M
 BOARD_FLASH_BLOCK_SIZE := 4096
 ifeq ($(TARGET_SDCARD_BOOT), true)
-  BOARD_USERDATAIMAGE_PARTITION_SIZE := 8589934592 #8G
-  BOARD_SUPER_PARTITION_SIZE := 4294967296 #4G
-  BOARD_DB_DYNAMIC_PARTITIONS_SIZE := 4290772992 # Reserve 4M for DAP metadata
-  BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/utils/sdcard-boot/sepolicy/
+  ifeq ($(TARGET_USES_GBL), true)
+    BOARD_BOOTIMAGE_PARTITION_SIZE := 134217728 #128M
+    BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 134217728 #128M
+    BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 134217728 #128M
+  else
+    BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296 #96M
+  endif
+    BOARD_USERDATAIMAGE_PARTITION_SIZE := 8589934592 #8G
+    BOARD_SUPER_PARTITION_SIZE := 4294967296 #4G
+    BOARD_DB_DYNAMIC_PARTITIONS_SIZE := 4290772992 # Reserve 4M for DAP metadata
+    BOARD_SEPOLICY_DIRS += device/linaro/dragonboard/shared/utils/sdcard-boot/sepolicy/
 else
+  BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296 #96M
   BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 100663296 #96M
   BOARD_USERDATAIMAGE_PARTITION_SIZE := 21474836480 #20G
   BOARD_SUPER_PARTITION_SIZE := 12437225472

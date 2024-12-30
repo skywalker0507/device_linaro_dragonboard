@@ -14,8 +14,15 @@ $(call inherit-product, device/linaro/dragonboard/shared/graphics/minigbm_msm/de
 
 $(call inherit-product, device/linaro/dragonboard/sm8x50/device.mk)
 
-#Boot from mmc-sdcard
+# Boot from mmc-sdcard
 TARGET_SDCARD_BOOT ?= true
+
+# Target uses GBL efi app
+ifeq ($(TARGET_SDCARD_BOOT), true)
+  TARGET_USES_GBL ?= false
+else
+  TARGET_USES_GBL := false
+endif
 
 # Product overrides
 PRODUCT_NAME := sm8x50

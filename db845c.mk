@@ -31,6 +31,13 @@ endif
 #Boot from mmc-sdcard
 TARGET_SDCARD_BOOT ?= false
 
+#Target uses GBL efi app
+ifeq ($(TARGET_SDCARD_BOOT), true)
+  TARGET_USES_GBL ?= false
+else
+  TARGET_USES_GBL := false
+endif
+
 #Load kernel modules in parallel
 ifneq ($(filter 5.15 6.1 6.6, $(TARGET_KERNEL_USE)),)
   TARGET_USES_LMP ?= false
