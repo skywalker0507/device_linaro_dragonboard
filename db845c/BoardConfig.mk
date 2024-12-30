@@ -50,7 +50,6 @@ else ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
     endif
 endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
-BOARD_KERNEL_BASE := 0x80000000
 BOARD_MKBOOTIMG_ARGS += --pagesize 4096
 INTERNAL_VENDOR_BOOTIMAGE_ARGS += --pagesize 4096
 BOARD_KERNEL_CMDLINE += earlycon firmware_class.path=/vendor/firmware/
