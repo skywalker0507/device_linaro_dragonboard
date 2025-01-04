@@ -69,6 +69,24 @@
       "parentUuid": "dbf15155_7e771113",
       "revId": "95a8625f6b43dfe4ba2324ce31948f309ecd2dd8",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "61596bfd_35a2a038",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2025-01-04T03:30:09Z",
+      "side": 1,
+      "message": "Hi, David, let me mark this as resolved here, if you have other questions please feel free to let me know.",
+      "parentUuid": "c6049428_edf7c231",
+      "revId": "95a8625f6b43dfe4ba2324ce31948f309ecd2dd8",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
