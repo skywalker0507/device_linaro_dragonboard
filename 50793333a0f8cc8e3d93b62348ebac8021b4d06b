@@ -141,6 +141,24 @@
       "parentUuid": "dbbdffac_df46d755",
       "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "50846415_c6c42674",
+        "filename": "full.mk",
+        "patchSetId": 1
+      },
+      "lineNbr": 156,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2025-01-04T03:33:26Z",
+      "side": 1,
+      "message": "Hi, David, I think Cody already helped answer your questions, so let me mark this as resolved, if you have other questions please feel free to let me know.",
+      "parentUuid": "e2761407_6f833896",
+      "revId": "50793333a0f8cc8e3d93b62348ebac8021b4d06b",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
