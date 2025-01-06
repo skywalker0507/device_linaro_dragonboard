@@ -34,6 +34,23 @@
       "parentUuid": "3ebd7bdf_3e0e3053",
       "revId": "be8a49a4806eeb1cc5e671f729c006a3c266c53e",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "950cd8cb_51653646",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2025-01-06T18:29:00Z",
+      "side": 1,
+      "message": "Just to clarify this as it looked a little confusing. This change got blamed for what seems to be a build flake, so was teed up to be reverted, but that revert was abandoned.  All seems to be well with this.",
+      "revId": "be8a49a4806eeb1cc5e671f729c006a3c266c53e",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ],
   "submitRequirementResults": [
