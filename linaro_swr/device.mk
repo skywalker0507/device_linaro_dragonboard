@@ -64,7 +64,7 @@ $(call inherit-product-if-exists, vendor/linaro/db845c/$(EXPECTED_LINARO_VENDOR_
 $(call inherit-product-if-exists, vendor/linaro/rb5/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
 
 TARGET_HARDWARE := linaro_swr
-TARGET_KERNEL_USE ?= 6.12
+TARGET_KERNEL_USE ?= 6.6
 
 # Page agnostic support - will build ELF files 16K aligned,
 # which will allow 4k/16k page size aligned kernels
