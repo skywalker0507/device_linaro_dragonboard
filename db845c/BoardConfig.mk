@@ -6,15 +6,6 @@ TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_VARIANT := kryo385
 TARGET_CPU_ABI := arm64-v8a
 
-ifeq ($(TARGET_64BIT_ONLY), false)
-  # Secondary Arch
-  TARGET_2ND_ARCH := arm
-  TARGET_2ND_ARCH_VARIANT := armv8-2a
-  TARGET_2ND_CPU_VARIANT := kryo385
-  TARGET_2ND_CPU_ABI := armeabi-v7a
-  TARGET_2ND_CPU_ABI2 := armeabi
-endif
-
 # Board Information
 TARGET_BOOTLOADER_BOARD_NAME := db845c
 TARGET_BOARD_PLATFORM := db845c

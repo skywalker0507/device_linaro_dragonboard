@@ -72,7 +72,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/linaro/sm8x50/$(EXPECTED_LINARO_VENDOR_VERSION)/device.mk)
 
 TARGET_HARDWARE := sm8x50
-TARGET_KERNEL_USE ?= mainline
+TARGET_KERNEL_USE ?= 6.12
 
 # Page agnostic support - will build ELF files 16K aligned,
 # which will allow 4k/16k page size aligned kernels
