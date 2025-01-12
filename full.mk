@@ -151,14 +151,21 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/etc/media_profiles.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
     $(LOCAL_PATH)/etc/external_camera_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/external_camera_config.xml
 
-# Keymaster
+# KeyMint.  Note that this is an insecure implementation that should not be
+# used on a production device as it does not comply with [9.11/H-0-2] of the
+# Android CDD ("Handheld device implementations MUST back up the keystore
+# implementation with an isolated execution environment").
 PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service
+    com.android.hardware.keymint.rust_nonsecure
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
-# Gatekeeper
+# Gatekeeper.  Note that this is an insecure implementation that should not be
+# used on a production device as it does not comply with [9.11/H-0-4] of the
+# Android CDD ("Handheld device implementations MUST perform the lock screen
+# authentication in the isolated execution environment ").
 PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-service.software
+    com.android.hardware.gatekeeper.nonsecure
 
 # Health HAL
 PRODUCT_PACKAGES += com.google.cf.health
