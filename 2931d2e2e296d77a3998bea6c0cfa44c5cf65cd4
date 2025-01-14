@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "c27d0151_0a5d9288",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2025-01-14T17:22:59Z",
+      "side": 1,
+      "message": "I recognize sometimes it can be a deep dig and there\u0027s not enough time in the world, but might it be possible to expand this a bit to explain why the value is now unnecssary and how it fixes the crash?",
+      "revId": "2931d2e2e296d77a3998bea6c0cfa44c5cf65cd4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
