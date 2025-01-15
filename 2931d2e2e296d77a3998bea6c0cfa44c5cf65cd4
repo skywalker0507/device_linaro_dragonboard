@@ -16,6 +16,24 @@
       "message": "I recognize sometimes it can be a deep dig and there\u0027s not enough time in the world, but might it be possible to expand this a bit to explain why the value is now unnecssary and how it fixes the crash?",
       "revId": "2931d2e2e296d77a3998bea6c0cfa44c5cf65cd4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "49f70aaa_42c698ba",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2025-01-15T18:07:51Z",
+      "side": 1,
+      "message": "On it.\nFWIW I got this hint/fix when I compared the mkbootimg arguments which we use in AOSP with the mkbootimg arguments used by the Landing team for their Linux builds. I did not dig further. I\u0027ll check with the landing team if they already know the reason behind this bug/crash associated with this seemingly wrong kernel base address.",
+      "parentUuid": "c27d0151_0a5d9288",
+      "revId": "2931d2e2e296d77a3998bea6c0cfa44c5cf65cd4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
