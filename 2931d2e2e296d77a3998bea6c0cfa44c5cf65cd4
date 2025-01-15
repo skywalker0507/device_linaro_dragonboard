@@ -34,6 +34,24 @@
       "parentUuid": "c27d0151_0a5d9288",
       "revId": "2931d2e2e296d77a3998bea6c0cfa44c5cf65cd4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "7ff15c0e_bbfefc69",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2025-01-15T23:22:33Z",
+      "side": 1,
+      "message": "Do we have a sense of where the baseaddress value that was being used came from?",
+      "parentUuid": "49f70aaa_42c698ba",
+      "revId": "2931d2e2e296d77a3998bea6c0cfa44c5cf65cd4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
