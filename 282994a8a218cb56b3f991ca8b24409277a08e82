@@ -33,6 +33,24 @@
       "message": "YongQin: I appreciate you asking Roman for details about why this change is a good idea.  It would be nice to have a bit more context in the commit message for a reason to make the change.\n\nThat said, if it continues to work for you, it sounds reasonable to me.",
       "revId": "282994a8a218cb56b3f991ca8b24409277a08e82",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "f1486084_0c66b5ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1041813
+      },
+      "writtenOn": "2025-01-16T17:58:24Z",
+      "side": 1,
+      "message": "Just found another commit[1] related to DEVICE_MATRIX_FILE, when it\u0027s not specified, the default[2] will be used, and according to Steven\u0027s comments there, it seems dropping DEVICE_MATRIX_FILE like here is the right direction.\nSteven could you please help check and give some suggestions here?\n\nBTW, I will update the commit message later after I have better understanding.\n\n[1]: https://android-review.googlesource.com/c/platform/system/libhidl/+/606266\n[2]: https://android.googlesource.com/platform/system/libhidl/+/refs/heads/main/vintfdata/device_compatibility_matrix.default.xml",
+      "parentUuid": "861a491e_7b898b22",
+      "revId": "282994a8a218cb56b3f991ca8b24409277a08e82",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
