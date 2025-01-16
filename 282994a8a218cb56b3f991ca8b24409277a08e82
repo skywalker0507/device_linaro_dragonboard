@@ -16,6 +16,23 @@
       "message": "Hi, All\n\nI didn\u0027t find much information on the removal of DEVICE_MATRIX_FILE, just see it\u0027s removed for goldfish build, and not used by the cuttlefish build, and build \u0026 boot tested without any obvious issue found, so I am thinking maybe it\u0027s time to remove it now. But please help review and give comments.",
       "revId": "282994a8a218cb56b3f991ca8b24409277a08e82",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "861a491e_7b898b22",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2025-01-16T05:46:36Z",
+      "side": 1,
+      "message": "YongQin: I appreciate you asking Roman for details about why this change is a good idea.  It would be nice to have a bit more context in the commit message for a reason to make the change.\n\nThat said, if it continues to work for you, it sounds reasonable to me.",
+      "revId": "282994a8a218cb56b3f991ca8b24409277a08e82",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
