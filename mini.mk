@@ -37,8 +37,4 @@ PRODUCT_PACKAGES += \
     vendor_compatibility_matrix.xml \
     vendor_manifest.xml \
 
-# Disable vintf manifest checking. The mini targets do not have the usual
-# set of hardware interfaces, some of which are required by the vintf
-# compatibility matrix.
-PRODUCT_ENFORCE_VINTF_MANIFEST_OVERRIDE := false
 DEVICE_MANIFEST_FILE := device/linaro/dragonboard/mini-manifest.xml
