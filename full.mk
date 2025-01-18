@@ -213,4 +213,3 @@ PRODUCT_COPY_FILES +=  \
 TARGET_PRODUCT_PROP := $(LOCAL_PATH)/product.prop
 
 DEVICE_MANIFEST_FILE := device/linaro/dragonboard/manifest.xml
-DEVICE_MATRIX_FILE := device/linaro/dragonboard/compatibility_matrix.xml
