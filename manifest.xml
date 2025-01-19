@@ -1,4 +1,4 @@
-<manifest version="1.0" type="device" target-level="8">
+<manifest version="1.0" type="device" target-level="7">
     <hal format="hidl">
         <name>android.hardware.audio</name>
         <transport>hwbinder</transport>
@@ -15,6 +15,16 @@
         <interface>
             <name>IEffectsFactory</name>
             <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <impl level="generic"></impl>
+        <version>2.4</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>external/0</instance>
         </interface>
     </hal>
     <hal format="hidl">
