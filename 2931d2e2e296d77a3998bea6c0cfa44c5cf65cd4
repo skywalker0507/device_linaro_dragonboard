@@ -52,6 +52,24 @@
       "parentUuid": "49f70aaa_42c698ba",
       "revId": "2931d2e2e296d77a3998bea6c0cfa44c5cf65cd4",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "e94603ce_29e47f71",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2025-01-20T16:36:07Z",
+      "side": 1,
+      "message": "Thank you for your patience, I\u0027m still looking for the right answers. It looks like we copied it over from db845c and it worked from ABL but U-boot is not happy with that address.\n\nApparently 0x80000000 maybe wrong for db845c as well, as I have been told.\n\nAtleast for sm8550-hdk right value should be 0x0 as I see in the downstream code https://git.codelinaro.org/clo/la/platform/vendor/qcom/kalama/-/blob/qcom-devices.lnx.13.0.r1-rel/BoardConfig.mk?ref_type\u003dheads#L168.\n\nI\u0027m marking it as WIP, while I look for answers. Thanks.",
+      "parentUuid": "7ff15c0e_bbfefc69",
+      "revId": "2931d2e2e296d77a3998bea6c0cfa44c5cf65cd4",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
