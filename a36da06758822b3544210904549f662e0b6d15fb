@@ -16,6 +16,24 @@
       "message": "I\u0027m assuming there\u0027s no interlock issue with other (non-uboot) bootloaders?",
       "revId": "a36da06758822b3544210904549f662e0b6d15fb",
       "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0b7cdde5_31bc6624",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2025-01-21T18:33:44Z",
+      "side": 1,
+      "message": "No regressions found with ABL and GBL.",
+      "parentUuid": "6761ba59_a4c330d0",
+      "revId": "a36da06758822b3544210904549f662e0b6d15fb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
     }
   ]
 }
