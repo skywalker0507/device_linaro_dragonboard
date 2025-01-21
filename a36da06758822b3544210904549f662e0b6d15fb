@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6761ba59_a4c330d0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1945845
+      },
+      "writtenOn": "2025-01-21T18:25:13Z",
+      "side": 1,
+      "message": "I\u0027m assuming there\u0027s no interlock issue with other (non-uboot) bootloaders?",
+      "revId": "a36da06758822b3544210904549f662e0b6d15fb",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
