@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0edcf0c3_a026dd55",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 4
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1031448
+      },
+      "writtenOn": "2025-01-21T17:23:57Z",
+      "side": 1,
+      "message": "HowTo instructions uploaded on DevboardsForAndroid gerrit for review https://gerrit.devboardsforandroid.linaro.org/c/website/+/207",
+      "revId": "6729a6cc40e805136d7bef44b4df6ea5ef7ac18d",
+      "serverId": "85c56323-6fa9-3386-8a01-6480fb634889"
+    }
+  ]
+}
