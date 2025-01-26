@@ -70,4 +70,3 @@ dontaudit hal_bootctl self:capability sys_rawio;
 #   gpt_block_device
 #   root_block_device
 #  }:blk_file rw_file_perms;
-

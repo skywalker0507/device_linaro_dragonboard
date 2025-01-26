@@ -14,7 +14,6 @@
 # limitations under the License.
 #
 
-TARGET_KERNEL_DIR ?= device/linaro/dragonboard-kernel/android-$(TARGET_KERNEL_USE)
 TARGET_KERNEL_DIR ?= device/linaro/dragonboard-kernel/android-mainline-custom
 TARGET_MODS := $(wildcard $(TARGET_KERNEL_DIR)/*.ko)
 

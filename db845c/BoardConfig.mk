@@ -65,6 +65,7 @@ BOARD_KERNEL_CMDLINE += deferred_probe_timeout=30
 BOARD_KERNEL_CMDLINE += pcie_pme=nomsi #For WiFi to work on rb5
 BOARD_KERNEL_CMDLINE += qcom_geni_serial.con_enabled=1
 BOARD_KERNEL_CMDLINE += console=ttyMSM0,115200n8
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 ifeq ($(TARGET_BOOTS_16K), true)
   BOARD_EROFS_BLOCKSIZE := 16384
