@@ -1,0 +1,45 @@
+cc_library_shared {
+    name: "android.hardware.boot@1.1-impl-qti",
+    stem: "android.hardware.boot@1.0-impl-1.1-qti",
+    defaults: ["android.hardware.boot@1.1-impl-qti_defaults"],
+    static_libs: ["libgptutils-sg.qcom"],
+}
+
+cc_library_shared {
+    name: "android.hardware.boot@1.2-impl-qti",
+    stem: "android.hardware.boot@1.0-impl-1.2-qti",
+    defaults: ["android.hardware.boot@1.2-impl-qti_defaults"],
+    static_libs: ["libgptutils-bsg.qcom"],
+}
+
+cc_defaults {
+    name: "android.hardware.boot-service.qti.common",
+    relative_install_path: "hw",
+    defaults: ["libboot_control_defaults"],
+    vintf_fragments: ["boot-service.qti.xml"],
+    shared_libs: [
+        "libboot_control_qti",
+        "libbase",
+        "libbinder_ndk",
+        "android.hardware.boot@1.1",
+        "android.hardware.boot-V1-ndk",
+    ],
+    static_libs: [
+        "libboot_control",
+    ],
+    srcs: ["main.cpp", "BootControl.cpp"],
+}
+
+cc_binary {
+    name: "android.hardware.boot-service.qti",
+    defaults: ["android.hardware.boot-service.qti.common"],
+    init_rc: ["android.hardware.boot-service.qti.rc"],
+    vendor: true,
+}
+
+cc_binary {
+    name: "android.hardware.boot-service.qti.recovery",
+    defaults: ["android.hardware.boot-service.qti.common"],
+    init_rc: ["android.hardware.boot-service.qti.recovery.rc"],
+    recovery: true,
+}

@@ -15,6 +15,7 @@
 #
 
 TARGET_KERNEL_DIR ?= device/linaro/dragonboard-kernel/android-$(TARGET_KERNEL_USE)
+TARGET_KERNEL_DIR ?= device/linaro/dragonboard-kernel/android-mainline-custom
 TARGET_MODS := $(wildcard $(TARGET_KERNEL_DIR)/*.ko)
 
 BOARD_DO_NOT_STRIP_VENDOR_RAMDISK_MODULES := true
@@ -76,7 +77,10 @@ AB_OTA_PARTITIONS += \
     product \
     system \
     system_ext \
-    vendor
+    vendor \
+    boot \
+    vendor_boot \
+    vbmeta
 
 ifeq ($(TARGET_SDCARD_BOOT), true)
   ifneq ($(filter 5.4 5.10 5.15, $(TARGET_KERNEL_USE)),)
@@ -91,7 +95,8 @@ ifeq ($(TARGET_SDCARD_BOOT), true)
 else
   PRODUCT_COPY_FILES += \
       device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_RAMDISK)/first_stage_ramdisk/fstab.$(TARGET_HARDWARE) \
-      device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_HARDWARE)
+      device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR)/etc/fstab.$(TARGET_HARDWARE) \
+      device/linaro/dragonboard/fstab.common:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.$(TARGET_HARDWARE)
 endif
 
 PRODUCT_VENDOR_PROPERTIES += \

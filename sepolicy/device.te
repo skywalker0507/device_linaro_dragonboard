@@ -1,0 +1,6 @@
+#Block device for A/B partitions
+type custom_ab_block_device, dev_type;
+type xbl_block_device, dev_type;
+type gpt_block_device, dev_type;
+type sda_block_device, dev_type;
+type bsg_device, dev_type;

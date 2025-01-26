@@ -12,7 +12,11 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-soong_namespace {}
+soong_namespace {
+    imports: [
+        "hardware/qcom/bootctrl",
+    ],
+}
 
 // *** THIS PACKAGE HAS SPECIAL LICENSING CONDITIONS.  PLEASE
 //     CONSULT THE OWNERS AND opensource-licensing@google.com BEFORE

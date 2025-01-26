@@ -6,6 +6,9 @@ TARGET_ARCH_VARIANT := armv8-2a
 TARGET_CPU_VARIANT := kryo385
 TARGET_CPU_ABI := arm64-v8a
 
+# Enable AVB
+BOARD_AVB_ENABLE := true
+
 ifeq ($(TARGET_64BIT_ONLY), false)
   # Secondary Arch
   TARGET_2ND_ARCH := arm
@@ -40,7 +43,7 @@ else ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
     BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/1d84000.ufshc
     BOARD_KERNEL_CMDLINE += androidboot.hardware=db845c
     BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
-  else
+else
     BOARD_BOOT_HEADER_VERSION := 4
     BOARD_BOOTCONFIG += androidboot.boot_devices=soc@0/1d84000.ufshc
     BOARD_BOOTCONFIG += androidboot.hardware=db845c
@@ -48,6 +51,9 @@ else ifeq ($(TARGET_USES_BOOT_HDR_V3), true)
     ifeq ($(TARGET_USES_LMP), true)
       BOARD_BOOTCONFIG += androidboot.load_modules_parallel=true
     endif
+    BOARD_KERNEL_CMDLINE += androidboot.boot_devices=soc@0/1d84000.ufshc
+    BOARD_KERNEL_CMDLINE += androidboot.hardware=db845c
+    BOARD_KERNEL_CMDLINE += androidboot.verifiedbootstate=orange
 endif
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_MKBOOTIMG_ARGS += --base 0x0 --kernel_offset 0x0 --ramdisk_offset 0x0

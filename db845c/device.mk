@@ -24,6 +24,37 @@ else
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 endif
 
+# enable VABc
+$(call inherit-product, \
+    $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
+
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+$(call inherit-product, \
+    $(SRC_TARGET_DIR)/product/virtual_ab_ota/vabc_features.mk)
+
+PRODUCT_PACKAGES += \
+    otapreopt_script \
+    cppreopts.sh \
+    update_engine \
+    update_engine_sideload \
+    update_verifier \
+    sg_write_buffer \
+    f2fs_io \
+    check_f2fs \
+    bootctl \
+    update_engine_client
+
+# Boot control HIDL
+# PRODUCT_PACKAGES += \
+#     android.hardware.boot@1.2-impl-qti \
+#     android.hardware.boot@1.2-impl-qti.recovery \
+#     android.hardware.boot@1.2-service
+
+# Boot control AIDL
+PRODUCT_PACKAGES += \
+    android.hardware.boot-service.qti \
+    android.hardware.boot-service.qti.recovery
+
 # dlkm_loader
 include device/linaro/dragonboard/shared/utils/dlkm_loader/device.mk
 PRODUCT_COPY_FILES += \
@@ -33,9 +64,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += audio.primary.db845c
 
 # BootControl HAL
-PRODUCT_PACKAGES += \
-    com.android.hardware.boot \
-    android.hardware.boot-service.default_recovery
+# PRODUCT_PACKAGES += \
+#     com.android.hardware.boot \
+#     android.hardware.boot-service.default_recovery
 
 # Set BT address
 PRODUCT_PACKAGES += bdaddr

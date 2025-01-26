@@ -1,0 +1,10 @@
+allow hal_bootctl_default rootfs:file r_file_perms;
+allow hal_bootctl_default sysfs:dir r_dir_perms;
+allow hal_bootctl_default xbl_block_device:blk_file rw_file_perms;
+allowxperm hal_bootctl_default xbl_block_device:blk_file ioctl {
+ UFS_IOCTLCMD
+};
+allow hal_bootctl_default proc_cmdline:file r_file_perms;
+allow hal_bootctl_default self:capability sys_rawio;
+allow hal_bootctl_default bsg_device:chr_file {getattr open read ioctl lock watch watch_reads append write};
+allow hal_bootctl_default unlabeled:dir { search };
